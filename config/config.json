@@ -1,0 +1,6 @@
+{
+    "bot_ID": 123456,
+    "authKey": "1234567890",
+    "host_port": "8088",
+    "enable_websocket": 1
+}
