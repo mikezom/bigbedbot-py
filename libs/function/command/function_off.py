@@ -27,25 +27,22 @@ channel = Channel.current()
 )
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
 
-    try: 
-        Permission.user_permission_check(member, Permission.MASTER)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"只有bot拥有者才能开关功能哦。{e}")
-        )
-        raise ExecutionStop()
-
     if anything.matched:
         msg = anything.result.display
         try:
             cmd = Permission.get_corresponding_cmd(msg)
         except:
+            raise ExecutionStop()
+
+        try: 
+            Permission.user_permission_check(member, Permission.MASTER)
+        except Exception as e :
             await app.send_group_message(
                 group,
-                MessageChain(f"{msg}: 没有此功能喵！")
+                MessageChain(f"只有bot拥有者才能开关功能哦。{e}")
             )
             raise ExecutionStop()
+
         Permission.change_group_permission(group, cmd, False)
         await app.send_group_message(
             group,
