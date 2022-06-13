@@ -82,6 +82,9 @@ class Permission:
 
     @classmethod
     def get_corresponding_cmd(cls, msg: str):
+        '''
+        可能应该搬到其他地方
+        '''
         with open('config/function_name.json') as f:
             function_names = json.load(f)
             
