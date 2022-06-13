@@ -27,13 +27,21 @@ channel = Channel.current()
 async def main(app: Ariadne, member: Member, group: Group):
     
     try:
-        Permission.group_permission_check(group, "fashenme")
+        Permission.group_permission_check(group, "fashenme_x10")
     except Exception as e:
         await app.send_group_message(
             group,
             MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
+    
+    try: 
+        Permission.user_permission_check(member, Permission.DEFAULT)
+    except Exception as e :
+        await app.send_group_message(
+            group,
+            MessageChain(f"不配：{e}")
+        )
     
     read_fashenme()
 

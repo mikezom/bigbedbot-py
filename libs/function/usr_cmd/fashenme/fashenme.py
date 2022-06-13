@@ -35,6 +35,14 @@ async def main(app: Ariadne, member: Member, group: Group):
         )
         raise ExecutionStop()
     
+    try: 
+        Permission.user_permission_check(member, Permission.DEFAULT)
+    except Exception as e :
+        await app.send_group_message(
+            group,
+            MessageChain(f"不配：{e}")
+        )
+    
     read_fashenme()
     random_choice = random.randrange(0, get_fashenme_size())
     

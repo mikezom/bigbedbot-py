@@ -9,6 +9,9 @@ python = "^3.8"
 graia-ariadne = {extras = ["full"], version = "^0.7.6"}
 prompt-toolkit = "^3.0.29"
 graia-saya = "^0.0.15"
+numpy = "^1.22.4"
+regex = "^2022.6.2"
+graiax-silkcoder = "^0.2.8"
 
 [tool.poetry.dev-dependencies]
 

@@ -63,6 +63,9 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.fashenme.fashenme_x10")
     # saya.require("libs.function.usr_cmd.fashenme.fashenme_remove")
     # saya.require("libs.function.usr_cmd.fashenme.fashenme_too_long")
+    
+    saya.require("libs.function.usr_cmd.play.play_chinese_number_notation")
+    saya.require("libs.function.usr_cmd.play.play_abc_notation")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()

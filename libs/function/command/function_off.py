@@ -32,7 +32,7 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"只有bot拥有者才能开关功能哦")
+            MessageChain(f"只有bot拥有者才能开关功能哦。{e}")
         )
         raise ExecutionStop()
 
