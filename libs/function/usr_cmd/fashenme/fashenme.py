@@ -1,5 +1,3 @@
-import asyncio
-
 from graia.saya import Channel
 from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
@@ -12,7 +10,11 @@ from graia.ariadne.message.parser.twilight import (
     FullMatch
 )
 
+import random
+
 from libs.control import Permission
+
+from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme
 
 channel = Channel.current()
 
@@ -33,15 +35,10 @@ async def main(app: Ariadne, member: Member, group: Group):
         )
         raise ExecutionStop()
     
-    try: 
-        Permission.user_permission_check(member, Permission.GROUP_ADMIN)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"不配：{e}")
-        )
+    read_fashenme()
+    random_choice = random.randrange(0, get_fashenme_size())
     
     await app.send_group_message(
         group,
-        MessageChain(f"测试：群消息，mem_perm = {member.permission}")
+        MessageChain(f"{get_fashenme(random_choice)}")
     )

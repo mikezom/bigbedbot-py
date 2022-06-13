@@ -57,6 +57,12 @@ with saya.module_context():
     
     saya.require("libs.function.usr_cmd.member_permission_test")
     saya.require("libs.function.usr_cmd.group_permission_test")
+    
+    saya.require("libs.function.usr_cmd.fashenme.fashenme")
+    saya.require("libs.function.usr_cmd.fashenme.fashenme_add")
+    saya.require("libs.function.usr_cmd.fashenme.fashenme_x10")
+    # saya.require("libs.function.usr_cmd.fashenme.fashenme_remove")
+    # saya.require("libs.function.usr_cmd.fashenme.fashenme_too_long")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()

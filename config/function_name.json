@@ -21,7 +21,7 @@
     },
     "减发": {
         "name": "fashenme_remove",
-        "description": "别乱加（什么是乱？）"
+        "description": "待实现功能：删除一项。别乱加（什么是乱？）"
     },
     "发什么长度测试": {
         "name": "fashenme_too_long",
@@ -50,5 +50,9 @@
     "二次元sample": {
         "name": "nijigen_sample",
         "description": "播放一些典中典"
+    },
+    "solidot": {
+        "name": "solidot",
+        "description": "solidot新闻爬虫"
     }
 }
