@@ -1,0 +1,16 @@
+{
+    "mirai" : {
+        "bot_ID": 123456,
+        "authKey": "authKey",
+        "mirai_host": "http://localhost:8080",
+        "enable_websocket": true
+    },
+    "debug" : {
+        "enable": false,
+        "groups": []
+    },
+    "name": "bigbedbot",
+    "master": 10000,
+    "admins": [10000],
+    "bans": []
+}

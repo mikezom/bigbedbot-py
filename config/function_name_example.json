@@ -1,0 +1,10 @@
+{
+    "测试1": {
+        "name": "test_function_1",
+        "description": "测试群友是不是配用这个功能"
+    },
+    "测试2": {
+        "name": "test_function_2",
+        "description": "群功能开关"
+    }
+}

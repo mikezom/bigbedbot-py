@@ -1,6 +1,16 @@
 {
-    "bot_ID": 123456,
-    "authKey": "1234567890",
-    "host_port": "8088",
-    "enable_websocket": 1
+    "mirai" : {
+        "bot_ID": 2420862130,
+        "authKey": "1234567890",
+        "mirai_host": "http://localhost:8080",
+        "enable_websocket": true
+    },
+    "debug" : {
+        "enable": true,
+        "groups": [263571637, 769317237]
+    },
+    "name": "bigbedbot",
+    "master": 879712286,
+    "admins": [879712286],
+    "bans": []
 }

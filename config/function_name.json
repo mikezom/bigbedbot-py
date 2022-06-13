@@ -1,0 +1,54 @@
+{
+    "测试1": {
+        "name": "test_function_1",
+        "description": "测试群友是不是配用这个功能"
+    },
+    "测试2": {
+        "name": "test_function_2",
+        "description": "群功能开关"
+    },
+    "发什么": {
+        "name": "fashenme",
+        "description": "发什么？？"
+    },
+    "加发": {
+        "name": "fashenme_add",
+        "description": "往列表里加发"
+    },
+    "发什么十连": {
+        "name": "fashenme_x10",
+        "description": "发什么发什么发什么发什么发什么发什么发什么发什么发什么发什么"
+    },
+    "减发": {
+        "name": "fashenme_remove",
+        "description": "别乱加（什么是乱？）"
+    },
+    "发什么长度测试": {
+        "name": "fashenme_too_long",
+        "description": "待实现功能：察看最长发什么"
+    },
+    "基金": {
+        "name": "jijin",
+        "description": "查看一个基金的当日涨跌情况"
+    },
+    "查询流量": {
+        "name": "ladder_traffic_remaining",
+        "description": "看看我梯子还有多少流量"
+    },
+    "播放": {
+        "name": "play_chinese_number_notation",
+        "description": "播放中式(?)简谱"
+    },
+    "9播放": {
+        "name": "play_abc_notation",
+        "description": "播放简谱"
+    },
+    "复读": {
+        "name": "repeater",
+        "description": "随机复读群友说的话"
+    },
+    "二次元sample": {
+        "name": "nijigen_sample",
+        "description": "播放一些典中典"
+    }
+}
