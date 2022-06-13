@@ -2,6 +2,7 @@ test.ipynb
 .vscode
 config/config.json
 config/group_permissions.json
+data/fashenme/fashenme.xml
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
