@@ -58,6 +58,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.member_permission_test")
     saya.require("libs.function.usr_cmd.group_permission_test")
     
+    saya.require("libs.function.event.repeater")
+    
     saya.require("libs.function.usr_cmd.fashenme.fashenme")
     saya.require("libs.function.usr_cmd.fashenme.fashenme_add")
     saya.require("libs.function.usr_cmd.fashenme.fashenme_x10")
@@ -66,6 +68,8 @@ with saya.module_context():
     
     saya.require("libs.function.usr_cmd.play.play_chinese_number_notation")
     saya.require("libs.function.usr_cmd.play.play_abc_notation")
+    
+    saya.require("libs.function.usr_cmd.solidot")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()

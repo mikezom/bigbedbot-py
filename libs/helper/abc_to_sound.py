@@ -4,6 +4,8 @@ import numpy as np
 import wave
 import struct
 
+from graiax import silkcoder
+
 class Parser:
     note_dict = { 
         "C": 0, 
@@ -198,3 +200,6 @@ def save(sine_wave):
         data = struct.pack('<h', int(i))
         wf.writeframesraw(data)
     wf.close()
+    
+    # Convert wave into silk
+    silkcoder.encode('data/play/sine.wav', 'data/play/sine.silk', rate=44100)

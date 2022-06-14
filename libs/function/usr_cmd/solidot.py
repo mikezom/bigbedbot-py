@@ -2,35 +2,34 @@ from graia.saya import Channel
 from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
 from graia.ariadne.message.chain import MessageChain
-from graia.ariadne.message.element import Voice
 from graia.ariadne.event.message import GroupMessage
 from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
     FullMatch,
+    RegexMatch,
     RegexResult,
     WildcardMatch,
+    ResultValue
 )
-
-from libs.helper import jianpu_to_sound
 
 from libs.control import Permission
 
-
+from libs.helper.solidot import solidot_update, solidot_list, solidot_news, is_solidot_update_required
 
 channel = Channel.current()
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("播放"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[Twilight([FullMatch("solidot"), "anything" @ WildcardMatch()])]
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
     
     try:
-        Permission.group_permission_check(group, "play_chinese_number_notation")
+        Permission.group_permission_check(group, "solidot")
     except Exception as e:
         await app.send_group_message(
             group,
@@ -46,18 +45,18 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             MessageChain(f"不配：{e}")
         )
     
-    if anything.matched:
-        speed_and_score = anything.result.display
-        score_info = speed_and_score.split(';')
-        speed = int(score_info[0])
-        if speed > 1000 or speed < 1:
-            await app.send_group_message(
-                group,
-                MessageChain(f"Bad Speed")
-            )
-        else:
-            jianpu_to_sound.number_notation_to_silk(speed, score_info[1])
-            await app.send_group_message(
-                group, 
-                MessageChain([Voice(path = 'data/play/sine.silk')])
-            )
+    if not anything.matched:
+        if (is_solidot_update_required()):
+            solidot_update()
+        await app.send_group_message(
+            group,
+            MessageChain(solidot_list())
+        )
+    else:
+        news_code = int(anything.result.display)
+        if (is_solidot_update_required()):
+            solidot_update()
+        await app.send_group_message(
+            group,
+            MessageChain(solidot_news(news_code))
+        )

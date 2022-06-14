@@ -13,11 +13,9 @@ from graia.ariadne.message.parser.twilight import (
     WildcardMatch,
 )
 
-from libs.helper import jianpu_to_sound
+from libs.helper import abc_to_sound
 
 from libs.control import Permission
-
-
 
 channel = Channel.current()
 
@@ -30,7 +28,7 @@ channel = Channel.current()
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
     
     try:
-        Permission.group_permission_check(group, "play_chinese_number_notation")
+        Permission.group_permission_check(group, "play_abc_notation")
     except Exception as e:
         await app.send_group_message(
             group,
@@ -56,8 +54,8 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
                 MessageChain(f"Bad Speed")
             )
         else:
-            jianpu_to_sound.number_notation_to_silk(speed, score_info[1])
-            await app.sendGroupMessage(
+            abc_to_sound.save(abc_to_sound.gen_wav(score_info[1], speed, 2000))
+            await app.send_group_message(
                 group, 
                 MessageChain([Voice(path = 'data/play/sine.silk')])
             )
