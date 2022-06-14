@@ -192,7 +192,7 @@ def save(sine_wave):
     # save wav file
     framerate = 44100
     sample_width = 2
-    wf = wave.open("sine.wav", 'wb')
+    wf = wave.open("data/play/sine.wav", 'wb')
     wf.setnchannels(1)
     wf.setframerate(framerate)
     wf.setsampwidth(sample_width)

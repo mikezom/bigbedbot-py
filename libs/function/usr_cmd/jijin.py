@@ -14,20 +14,20 @@ from graia.ariadne.message.parser.twilight import (
 
 from libs.control import Permission
 
-from libs.helper.solidot import solidot_update, solidot_list, solidot_news, is_solidot_update_required
+from libs.helper.jijin import jj_search
 
 channel = Channel.current()
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("solidot"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[Twilight([FullMatch("基金"), "anything" @ WildcardMatch()])]
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
     
     try:
-        Permission.group_permission_check(group, "solidot")
+        Permission.group_permission_check(group, "jijin")
     except Exception as e:
         await app.send_group_message(
             group,
@@ -44,17 +44,21 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
         )
     
     if not anything.matched:
-        if (is_solidot_update_required()):
-            solidot_update()
         await app.send_group_message(
             group,
-            MessageChain(solidot_list())
+            MessageChain(f"保存基金信息开发中...")
         )
     else:
-        news_code = int(anything.result.display)
-        if (is_solidot_update_required()):
-            solidot_update()
-        await app.send_group_message(
-            group,
-            MessageChain(solidot_news(news_code))
-        )
+        jjcode = anything.result.display.strip()
+        message_chain = jj_search(jjcode)
+        
+        if message_chain is not None:
+            await app.send_group_message(
+                group,
+                message_chain
+            )
+        else:
+            await app.send_group_message(
+                group,
+                MessageChain(f"找不到基金：{jjcode}")
+            )

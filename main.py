@@ -70,6 +70,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.play.play_abc_notation")
     
     saya.require("libs.function.usr_cmd.solidot")
+    
+    saya.require("libs.function.usr_cmd.jijin")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()
