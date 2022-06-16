@@ -48,7 +48,7 @@
         "description": "随机复读群友说的话"
     },
     "二次元sample": {
-        "name": "nijigen_sample",
+        "name": "sample_player",
         "description": "播放一些典中典"
     },
     "solidot": {

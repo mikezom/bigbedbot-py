@@ -59,6 +59,7 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.group_permission_test")
     
     saya.require("libs.function.event.repeater")
+    saya.require("libs.function.event.sample_player")
     
     saya.require("libs.function.usr_cmd.fashenme.fashenme")
     saya.require("libs.function.usr_cmd.fashenme.fashenme_add")

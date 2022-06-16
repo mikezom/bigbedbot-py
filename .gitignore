@@ -3,6 +3,8 @@ test.ipynb
 config/config.json
 config/group_permissions.json
 data/fashenme/fashenme.xml
+test/
+data/users/genshin.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

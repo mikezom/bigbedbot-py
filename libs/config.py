@@ -5,7 +5,7 @@ from pydantic import AnyHttpUrl
 # load config file
 with open('config/config.json') as f:
     config_data = json.load(f)
-    
+
 class BotConfig:
     class Mirai:
         account: int = config_data["mirai"]["bot_ID"]
