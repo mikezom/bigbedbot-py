@@ -54,5 +54,13 @@
     "solidot": {
         "name": "solidot",
         "description": "solidot新闻爬虫"
+    },
+    "禁嘟": {
+        "name": "no_du",
+        "description": "禁嘟"
+    },
+    "什么值得买": {
+        "name": "smzdm",
+        "description": "什么值得买"
     }
 }

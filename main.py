@@ -60,6 +60,7 @@ with saya.module_context():
     
     saya.require("libs.function.event.repeater")
     saya.require("libs.function.event.sample_player")
+    saya.require("libs.function.event.no_du")
     
     saya.require("libs.function.usr_cmd.fashenme.fashenme")
     saya.require("libs.function.usr_cmd.fashenme.fashenme_add")
@@ -73,6 +74,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.solidot")
     
     saya.require("libs.function.usr_cmd.jijin")
+    
+    saya.require("libs.function.usr_cmd.smzdm.smzdm")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()
