@@ -5,6 +5,9 @@ config/group_permissions.json
 data/fashenme/fashenme.xml
 test/
 data/users/genshin.json
+data/play/sine.silk
+data/play/sine.wav
+data/yecao/cookie.txt
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
