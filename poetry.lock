@@ -331,7 +331,7 @@ reference = "tuna-tsinghua"
 
 [[package]]
 name = "graia-ariadne"
-version = "0.7.11"
+version = "0.7.12"
 description = "Another elegant Python QQ Bot framework for mirai and mirai-api-http v2."
 category = "main"
 optional = false
@@ -646,6 +646,19 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tuna-tsinghua"
 
 [[package]]
+name = "python-levenshtein"
+version = "0.12.2"
+description = "Python extension for computing string edit distances and similarities."
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tuna-tsinghua"
+
+[[package]]
 name = "regex"
 version = "2022.6.2"
 description = "Alternative regular expression module, to replace re."
@@ -816,6 +829,22 @@ url = "https://pypi.tuna.tsinghua.edu.cn/simple"
 reference = "tuna-tsinghua"
 
 [[package]]
+name = "thefuzz"
+version = "0.19.0"
+description = "Fuzzy string matching in python"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+speedup = ["python-levenshtein (>=0.12)"]
+
+[package.source]
+type = "legacy"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+reference = "tuna-tsinghua"
+
+[[package]]
 name = "trio"
 version = "0.21.0"
 description = "A friendly Python library for async concurrency and I/O"
@@ -958,7 +987,7 @@ reference = "tuna-tsinghua"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.8"
-content-hash = "57195e02d708a31226a03520c92f20740cb23d0d869fd57e2b7ae35b0b577613"
+content-hash = "0da5c22b926702c3619bce7f367226cae88216e52e6f31b6a3417bd6a6b79b82"
 
 [metadata.files]
 aiohttp = [
@@ -1230,8 +1259,8 @@ graia-amnesia = [
     {file = "graia_amnesia-0.5.2-py3-none-any.whl", hash = "sha256:8f5c3fa216cdc198a17b93c420ec339f007e5b44dec6a434a5276bcaf9aeca0f"},
 ]
 graia-ariadne = [
-    {file = "graia-ariadne-0.7.11.tar.gz", hash = "sha256:367e6714f979a13b18bb12a796f32e5b0e7eb73484d1bae19e8c96d9a7d813db"},
-    {file = "graia_ariadne-0.7.11-py3-none-any.whl", hash = "sha256:f1aafb174941380fea36d8a678cd88a7325ab719bbf2531baeb36d09054eb5b2"},
+    {file = "graia-ariadne-0.7.12.tar.gz", hash = "sha256:ef6e4ab23897678083ec9f19a060203fa50c2dec18e8efac9096e118e8d714a6"},
+    {file = "graia_ariadne-0.7.12-py3-none-any.whl", hash = "sha256:0e981577ee3f41ddc8e3d01b420afb996df7e8461b4e76aa813d9b5f6999f66d"},
 ]
 graia-broadcast = [
     {file = "graia-broadcast-0.17.5.tar.gz", hash = "sha256:986d484b198bc51a937041c56e70460783c254070825e6d11bdbf7a7b57bef79"},
@@ -1445,6 +1474,9 @@ python-dateutil = [
     {file = "python-dateutil-2.8.2.tar.gz", hash = "sha256:0123cacc1627ae19ddf3c27a5de5bd67ee4586fbdd6440d9748f8abb483d3e86"},
     {file = "python_dateutil-2.8.2-py2.py3-none-any.whl", hash = "sha256:961d03dc3453ebbc59dbdea9e4e11c5651520a876d0f4db161e8674aae935da9"},
 ]
+python-levenshtein = [
+    {file = "python-Levenshtein-0.12.2.tar.gz", hash = "sha256:dc2395fbd148a1ab31090dd113c366695934b9e85fe5a4b2a032745efd0346f6"},
+]
 regex = [
     {file = "regex-2022.6.2-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:042d122f9fee3ceb6d7e3067d56557df697d1aad4ff5f64ecce4dc13a90a7c01"},
     {file = "regex-2022.6.2-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:ffef4b30785dc2d1604dfb7cf9fca5dc27cd86d65f7c2a9ec34d6d3ae4565ec2"},
@@ -1558,6 +1590,10 @@ soupsieve = [
 statv = [
     {file = "statv-0.2.2-py3-none-any.whl", hash = "sha256:24e3c37df0db49dbb02d252ae45043342fd0862ddf4442d7f484684ad0994b34"},
     {file = "statv-0.2.2.tar.gz", hash = "sha256:a0e3be14e8a416d3b39bff18c498672abbed4bbe9648613c5bfeb45cba05cca7"},
+]
+thefuzz = [
+    {file = "thefuzz-0.19.0-py2.py3-none-any.whl", hash = "sha256:4fcdde8e40f5ca5e8106bc7665181f9598a9c8b18b0a4d38c41a095ba6788972"},
+    {file = "thefuzz-0.19.0.tar.gz", hash = "sha256:6f7126db2f2c8a54212b05e3a740e45f4291c497d75d20751728f635bb74aa3d"},
 ]
 trio = [
     {file = "trio-0.21.0-py3-none-any.whl", hash = "sha256:4dc0bf9d5cc78767fc4516325b6d80cc0968705a31d0eec2ecd7cdda466265b0"},
