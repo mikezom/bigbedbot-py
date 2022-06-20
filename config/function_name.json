@@ -62,5 +62,9 @@
     "什么值得买": {
         "name": "smzdm",
         "description": "什么值得买"
+    },
+    "随机塔菲": {
+        "name": "random_taffy",
+        "description": "随机播放sample来自塔菲按钮"
     }
 }

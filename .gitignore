@@ -8,6 +8,7 @@ data/users/genshin.json
 data/play/sine.silk
 data/play/sine.wav
 data/yecao/cookie.txt
+data/play/taffy/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

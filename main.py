@@ -70,6 +70,7 @@ with saya.module_context():
     
     saya.require("libs.function.usr_cmd.play.play_chinese_number_notation")
     saya.require("libs.function.usr_cmd.play.play_abc_notation")
+    saya.require("libs.function.usr_cmd.play.random_taffy")
     
     saya.require("libs.function.usr_cmd.solidot")
     
