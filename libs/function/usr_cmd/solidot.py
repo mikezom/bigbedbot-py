@@ -56,5 +56,5 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             solidot_update()
         await app.send_group_message(
             group,
-            MessageChain(solidot_news(news_code))
+            MessageChain(solidot_news(news_code)[:-1])
         )
