@@ -66,5 +66,9 @@
     "随机塔菲": {
         "name": "random_taffy",
         "description": "随机播放sample来自塔菲按钮"
+    },
+    "国旗": {
+        "name": "avatar_flag",
+        "description": "给你的头像加一面国旗"
     }
 }
