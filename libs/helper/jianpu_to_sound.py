@@ -149,4 +149,4 @@ def number_notation_to_silk(speed, score):
     wf.close()
     
     # Convert wave into silk
-    silkcoder.encode('data/play/sine.wav', 'data/play/sine.silk', rate=44100)
+    silkcoder.encode('data/play/sine.wav', 'data/play/sine.silk', rate=44100, ios_adaptive=True)
