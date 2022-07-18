@@ -7,24 +7,26 @@ from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
-    FullMatch
+    FullMatch,
+    WildcardMatch,
+    RegexResult
 )
 
 import random
 
 from libs.control import Permission
 
-from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme
+from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme, find_fashenme
 
 channel = Channel.current()
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("发什么")])]
+        inline_dispatchers=[Twilight([FullMatch("发什么"), "anything" @ WildcardMatch()])]
     )
 )
-async def main(app: Ariadne, member: Member, group: Group):
+async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
     
     try:
         Permission.group_permission_check(group, "fashenme")
@@ -44,9 +46,20 @@ async def main(app: Ariadne, member: Member, group: Group):
         )
     
     read_fashenme()
-    random_choice = random.randrange(0, get_fashenme_size())
     
-    await app.send_group_message(
-        group,
-        MessageChain(f"{get_fashenme(random_choice)}")
-    )
+    if not anything.matched:
+    
+        random_choice = random.randrange(0, get_fashenme_size())
+        
+        await app.send_group_message(
+            group,
+            MessageChain(f"{get_fashenme(random_choice)}")
+        )
+    
+    else:
+        
+        to_search = anything.result.display
+        await app.send_group_message(
+            group,
+            MessageChain(f"{find_fashenme(to_search)}")
+        )
