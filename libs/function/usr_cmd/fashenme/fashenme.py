@@ -59,7 +59,14 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     else:
         
         to_search = anything.result.display
-        await app.send_group_message(
-            group,
-            MessageChain(f"{find_fashenme(to_search)}")
-        )
+        
+        if to_search.isdigit():
+            await app.send_group_message(
+                group,
+                MessageChain(f"{get_fashenme(int(to_search))}")
+            )
+        else:
+            await app.send_group_message(
+                group,
+                MessageChain(f"{find_fashenme(to_search)}")
+            )

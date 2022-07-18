@@ -5,7 +5,8 @@ fname = "data/fashenme/fashenme.xml"
 
 def get_fashenme(fsm_code: int):
     """返回编号对应内容"""
-    return fashenme[fsm_code]
+    res_string = f"{fsm_code}. {fashenme[fsm_code]}"
+    return res_string
 
 def find_fashenme(content: str):
     """在发什么里找内容"""
