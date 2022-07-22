@@ -65,7 +65,6 @@ with saya.module_context():
     
     saya.require("libs.function.usr_cmd.fashenme.fashenme")
     saya.require("libs.function.usr_cmd.fashenme.fashenme_add")
-    saya.require("libs.function.usr_cmd.fashenme.fashenme_x10")
     # saya.require("libs.function.usr_cmd.fashenme.fashenme_remove")
     # saya.require("libs.function.usr_cmd.fashenme.fashenme_too_long")
     
@@ -76,6 +75,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.solidot")
     
     saya.require("libs.function.usr_cmd.jijin")
+    
+    saya.require("libs.function.usr_cmd.liuliang")
     
     saya.require("libs.function.usr_cmd.smzdm.smzdm")
     

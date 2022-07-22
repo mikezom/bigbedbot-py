@@ -70,5 +70,9 @@
     "国旗": {
         "name": "avatar_flag",
         "description": "给你的头像加一面国旗"
+    },
+    "流量": {
+        "name": "liuliang",
+        "description": "查询床梯流量"
     }
 }

@@ -60,7 +60,17 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
         
         to_search = anything.result.display
         
-        if to_search.isdigit():
+        if to_search == "十连":
+            msg_chain = ""
+            for r_choice in random.sample(range(get_fashenme_size()), 10):
+                msg_chain += (f"{get_fashenme(r_choice)}\n")
+            msg_chain += (f"怎么发什么都要十连！")
+            
+            await app.send_group_message(
+                group,
+                MessageChain(msg_chain)
+            )
+        elif to_search.isdigit():
             await app.send_group_message(
                 group,
                 MessageChain(f"{get_fashenme(int(to_search))}")
