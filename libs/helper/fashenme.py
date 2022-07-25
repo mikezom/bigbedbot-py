@@ -34,6 +34,19 @@ def read_fashenme():
     for child in root:
         fashenme.append(child.text)
 
+def export_fashenme(filename: str):
+    file_path = f"data/fashenme/{filename}.txt"
+    try:
+        with open(file_path, 'w') as fp:
+            count = 0
+            for l in fashenme:
+                if len(l) <= 20:
+                    fp.write(f"{l}\n")
+                    count += 1
+        return count
+    except:
+        return 0
+
 def add_fashenme(str):
     """加发"""
     fashenme.append(str)

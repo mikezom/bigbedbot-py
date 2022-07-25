@@ -9,7 +9,6 @@ from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
-    FullMatch,
     RegexMatch
 )
 

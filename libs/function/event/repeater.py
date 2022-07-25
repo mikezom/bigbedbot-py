@@ -10,8 +10,6 @@ import random
 
 from libs.control import Permission
 
-
-
 channel = Channel.current()
 
 @channel.use(

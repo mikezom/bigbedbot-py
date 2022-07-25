@@ -52,6 +52,7 @@ with saya.module_context():
     saya.require("libs.function.command.announcement")
     saya.require("libs.function.command.function_off")
     saya.require("libs.function.command.function_on")
+    saya.require("libs.function.command.export_fashenme")
     
     # saya.require("libs.function.event.bot_launch")
     
