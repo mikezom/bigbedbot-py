@@ -62,7 +62,7 @@ def liuliang():
 
     my_params = {'action': 'productdetails', 'id': '19731'}
     my_cookies = parseCookieFile(fname)
-    res = requests.get('https://www.yecao100.org/clientarea.php', params = my_params, cookies= my_cookies)
+    res = requests.get('https://yecao100.org/clientarea.php', params = my_params, cookies= my_cookies)
     
     r_html = etree.HTML(res.text, etree.HTMLParser())
     

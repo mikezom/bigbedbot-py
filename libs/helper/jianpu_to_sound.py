@@ -119,7 +119,7 @@ def number_notation_to_silk(speed, score):
     framerate = 44100
     # bytes needed every sample
     sample_width = 2
-    volume = 2000
+    volume = 1500
     sine_wave_array = np.array([])
     for chords in list_to_change:
         chord_length = chords[0][1]
