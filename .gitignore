@@ -8,9 +8,11 @@ data/users/genshin.json
 data/play/sine.silk
 data/play/sine.wav
 data/yecao/cookie.txt
+data/yecao/userdata.json
 data/play/taffy/
 data/avatar/result.png
 data/smzdm/smzdm.json
+data/group/group_info.json
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

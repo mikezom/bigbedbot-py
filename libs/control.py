@@ -76,7 +76,7 @@ class Permission:
                 group_config_data[groupID][cmd] = True
 
         with open('config/group_permissions.json', 'w') as f:
-            f.write(json.dumps(group_config_data))
+            f.write(json.dumps(group_config_data, indent=4))
         
         return group_config_data[groupID][cmd]
 
@@ -110,7 +110,7 @@ class Permission:
         group_config_data[groupID][cmd] = isAllowed
 
         with open('config/group_permissions.json', 'w') as f:
-            f.write(json.dumps(group_config_data))
+            f.write(json.dumps(group_config_data, indent=4))
 
     @classmethod
     def require(cls, level: int = DEFAULT) -> Depend:
