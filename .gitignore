@@ -176,3 +176,4 @@ cython_debug/
 #.idea/
 data/smzdm/smzdm.json
 data/avatar/result.png
+data/info/
