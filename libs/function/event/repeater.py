@@ -23,10 +23,6 @@ async def main(app: Ariadne, message: MessageChain, group: Group):
         try:
             Permission.group_permission_check(group, "repeater")
         except Exception as e:
-            await app.send_group_message(
-                group,
-                MessageChain(f"本群不开放此功能，错误信息：{e}")
-            )
             raise ExecutionStop()
         
         await app.send_group_message(
