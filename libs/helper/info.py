@@ -15,21 +15,21 @@ import json
 @dataclass
 class QQInfo:
     id: int
-    nickname: str
+    nickname: str = ""
     
     def update_nickname(self, new_nickname: str): self.nickname = new_nickname
             
 
 @dataclass
 class QQGroup(QQInfo):
-    repeater_count: int
+    repeater_count: int = 0
     
     def update_repeater_count(self, new_repeater_count: int): self.repeater_count = new_repeater_count
     def increment_repeater_count(self): self.repeater_count += 1
 
-@dataclass
+@dataclass()
 class QQUser(QQInfo):
-    fsm_count: int
+    fsm_count: int = 0
 
 class QQInfoConfig:
     
@@ -42,11 +42,28 @@ class QQInfoConfig:
                 group_info = json.load(f)
             
             if group_id_string not in group_info:
-                my_group_info = QQGroup(id, "", 0)
+                my_group_info = QQGroup(id)
             else:
-                my_group_info = QQGroup(id, group_info[group_id_string]["nickname"], group_info[group_id_string]["repeater_count"])
+                my_group_info = QQGroup(id,
+                                        group_info[group_id_string]["nickname"],
+                                        group_info[group_id_string]["repeater_count"])
             
             return my_group_info
+
+        elif content_type == 1:
+            # user
+            user_id_string = str(id)
+            with open('data/info/user_info.json', 'r') as f:
+                user_info = json.load(f)
+            
+            if user_id_string not in user_info:
+                my_user_info = QQUser(id)
+            else:
+                my_user_info = QQUser(id,
+                                      user_info[user_id_string]["nickname"],
+                                      user_info[user_id_string]["fsm_count"])
+            
+            return my_user_info
     
     @classmethod
     def update_file(cls, content: Union[QQGroup, QQUser]):

@@ -74,5 +74,9 @@
     "流量": {
         "name": "liuliang",
         "description": "查询床梯流量"
+    },
+    "Dice": {
+        "name": "dice",
+        "description": "bot必须要有骰子"
     }
 }

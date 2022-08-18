@@ -82,6 +82,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.smzdm.smzdm")
     
     saya.require("libs.function.usr_cmd.avatar.flag")
+    
+    saya.require("libs.function.usr_cmd.dice")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()
