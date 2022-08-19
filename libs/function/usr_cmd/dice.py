@@ -52,10 +52,28 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
     n = int(msg_res[0])
     faces = int(msg_res[1])
     
-    if n >= 255 or faces >= 1000:
+    if n >= 256 or faces >= 1000:
         await app.send_group_message(
             group,
             MessageChain(f"要不你自己搓个骰子耍耍")
+        )
+        raise ExecutionStop()
+    elif n <= 0:
+        await app.send_group_message(
+            group,
+            MessageChain(f"结果是...1! 没想到吧")
+        )
+        raise ExecutionStop()
+    elif faces == 1:
+        await app.send_group_message(
+            group,
+            MessageChain(f"111111111111111111111111")
+        )
+        raise ExecutionStop()
+    elif faces <= 0:
+        await app.send_group_message(
+            group,
+            MessageChain(f"他有脸吗？他没有！")
         )
         raise ExecutionStop()
     
@@ -69,7 +87,11 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
         res_string += (str(x) + ", ")
     res_string = res_string[:-2]
     
+    sum_string = ""
+    if n > 1:
+        sum_string = f"\n总和为{sum(rand_result)}"
+    
     await app.send_group_message(
         group,
-        MessageChain(f"你成功掷出了{n}个{faces}面骰，结果为: \n" + res_string + f"\n总和为{sum(rand_result)}")
+        MessageChain(f"你成功掷出了{n}个{faces}面骰，结果为: \n" + res_string + sum_string)
     )

@@ -77,7 +77,7 @@ gacha要素
 
 `基金 <code>`
 
-查看基金当日涨跌，api来自[doctorxiong](api.doctorxiong.club)
+查看基金当日涨跌，api来自[doctorxiong](https://api.doctorxiong.club)
 
 ### 查询流量
 
@@ -89,7 +89,7 @@ gacha要素
 
 `solidot [n]`
 
-看看新闻，来源是[solidot](www.solidot.org)。加数字`1-5`可以看新闻具体内容以及链接。
+看看新闻，来源是[solidot](https://www.solidot.org)。加数字`1-5`可以看新闻具体内容以及链接。
 
 ### 什么值得买
 
@@ -114,3 +114,9 @@ gacha要素
 `<num_dice>{d|D}<dice_faces>`
 
 所有的bot都该有的功能：扔骰子。只不过用的不是numpy的random库。
+
+### 佛曰
+
+`{佛曰：|听佛说：}`
+
+解密/加密信息，算法作者：蓝色的风之精灵，链接：[与佛论禅](https://www.keyfc.net/bbs/tools/tudoucode.aspx)

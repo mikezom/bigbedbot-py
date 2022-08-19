@@ -78,5 +78,9 @@
     "Dice": {
         "name": "dice",
         "description": "bot必须要有骰子"
+    },
+    "佛曰": {
+        "name": "buddhist",
+        "description": "佛曰翻译"
     }
 }

@@ -84,6 +84,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.avatar.flag")
     
     saya.require("libs.function.usr_cmd.dice")
+    
+    saya.require("libs.function.usr_cmd.buddhist")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()
