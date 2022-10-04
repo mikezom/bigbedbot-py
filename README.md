@@ -12,9 +12,9 @@ A rework of a personal bot
 
 ### Launch
 
-1. 使用 `poetry` 以及 `python 3.10.5` 安装对应的库
+1. 使用 `python 3.10.5` 安装对应的库 (由于poetry总是有莫名其妙的包冲突，故弃用)
 2. 打开 `mcl` （版本需高于2.0）
-3. `poetry run python3 main.py`
+3. `python3 main.py`
 
 ## 功能
 
@@ -35,3 +35,4 @@ A rework of a personal bot
 ## 鸣谢
 
 - [BBot-Graia](../../../../djkcyl/BBot-Graia) 学习文件结构以及permission模块
+- [VITS](../../../../jaywalnut310/vits/) 使用基于VITS的原神TTS
