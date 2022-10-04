@@ -11,12 +11,13 @@ from graia.ariadne.message.parser.twilight import (
     RegexResult,
     WildcardMatch,
 )
+from loguru import logger
 
 import random
 
 from libs.control import Permission
 
-from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme, add_fashenme, has_duplicate
+from libs.helper.fashenme import get_fashenme_size, read_fashenme, add_fashenme, has_duplicate
 
 channel = Channel.current()
 
@@ -49,6 +50,7 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     
     if anything.matched:
         msg = anything.result.display
+        logger.info(f"adding fsm requested: {msg}")
         if has_duplicate(msg):
             await app.send_group_message(
                 group,

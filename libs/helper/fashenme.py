@@ -1,4 +1,5 @@
 import xml.etree.ElementTree as ET
+from loguru import logger
 import random
 
 fname = "data/fashenme/fashenme.xml"
@@ -49,6 +50,7 @@ def export_fashenme(filename: str):
 
 def add_fashenme(str):
     """加发"""
+    logger.info(f"adding fashenme: {str}")
     fashenme.append(str)
     
     tree = ET.parse(fname)

@@ -69,7 +69,8 @@ async def main(app: Ariadne, member: Member, group: Group):
 #     return cookies
 
 def liuliang():
-    current_ip = socket.getaddrinfo("www.yecao100.org", 80, 0, 0, socket.SOL_TCP)[0][4][0]
+    # current_ip = socket.getaddrinfo("www.yecao100.org", 80, 0, 0, socket.SOL_TCP)[0][4][0]
+    current_ip = '47.244.30.150'
     login_address = 'https://' + current_ip + '/dologin.php'
     info_address = 'https://' + current_ip + '/clientarea.php'
 

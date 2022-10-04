@@ -19,6 +19,15 @@ feedparser = "^6.0.10"
 thefuzz = "^0.19.0"
 python-levenshtein = "^0.12.2"
 pillow = "^9.1.1"
+jieba = "^0.42.1"
+Cython = "^0.29.21"
+librosa = "^0.8.0"
+matplotlib = "^3.3.1"
+phonemizer = "^2.2.1"
+scipy = "^1.5.2"
+tensorboard = "^2.3.0"
+torchvision = "^0.7.0"
+Unidecode = "^1.1.1"
 
 [tool.poetry.dev-dependencies]
 

@@ -13,6 +13,7 @@ data/play/taffy/
 data/avatar/result.png
 data/smzdm/smzdm.json
 data/group/group_info.json
+libs/helper/vits/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

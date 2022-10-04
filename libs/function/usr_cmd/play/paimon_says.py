@@ -8,27 +8,34 @@ from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
+    FullMatch,
     RegexResult,
+    RegexMatch,
     WildcardMatch,
 )
 
 from libs.control import Permission
-from libs.dict_loader import DictData
+from libs.helper.vits.paimon_says import paimon_says
 
+import requests
 
 channel = Channel.current()
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight(["anything" @ WildcardMatch()])]
+        inline_dispatchers=[Twilight(RegexMatch(r".+(说：).+$"))]
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
+async def main(app: Ariadne, member: Member, group: Group, message: MessageChain):
     
     try:
-        Permission.group_permission_check(group, "sample_player")
+        Permission.group_permission_check(group, "paimon_says")
     except Exception as e:
+        await app.send_group_message(
+            group,
+            MessageChain(f"本群不开放此功能，错误信息：{e}")
+        )
         raise ExecutionStop()
     
     try: 
@@ -39,12 +46,14 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             MessageChain(f"不配：{e}")
         )
     
-    if anything.matched:
-        msg = anything.result.display
-        if msg in DictData.GenshinSample.dictionary.keys():
-            my_path = "data/play/samples/" + DictData.GenshinSample.dictionary[msg] + ".silk"
-            await app.send_group_message(
-                group,
-                MessageChain([Voice(path = my_path)])
-            )
-        
+    msg = message.display.strip().lower()
+    split_pos = msg.find('说：')
+    speaker = msg[:split_pos]
+    req_content = msg[split_pos+2:]
+
+    paimon_says(speaker, req_content)
+    
+    await app.send_group_message(
+        group, 
+        MessageChain([Voice(path = 'data/play/new_paimon_test.silk')])
+    )

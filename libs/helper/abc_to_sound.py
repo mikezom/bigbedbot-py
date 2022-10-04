@@ -202,4 +202,4 @@ def save(sine_wave):
     wf.close()
     
     # Convert wave into silk
-    silkcoder.encode('data/play/sine.wav', 'data/play/sine.silk', rate=44100)
+    silkcoder.encode('data/play/sine.wav', 'data/play/sine.silk', rate=44100, ios_adaptive=True)
