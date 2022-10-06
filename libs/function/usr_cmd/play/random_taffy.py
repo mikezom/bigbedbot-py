@@ -40,7 +40,7 @@ async def main(app: Ariadne, member: Member, group: Group):
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"随机塔菲：不配：{e}")
         )
     
     random_sample = choice(listdir('data/play/taffy'))

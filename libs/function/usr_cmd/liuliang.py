@@ -41,23 +41,23 @@ async def main(app: Ariadne, member: Member, group: Group):
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"流量：不配：{e}")
         )
     await app.send_group_message(
         group,
         MessageChain(f"这次真的在查了...")
     )
     try:
-        liuliang_res = liuliang()
+        liuliang_result = liuliang()
+        await app.send_group_message(
+            group,
+            MessageChain(f"{liuliang_result[0]}\n{liuliang_result[1][:-2]}")
+        )
     except:
         await app.send_group_message(
             group,
             MessageChain(f"我靠，又翻车了！")
         )
-    await app.send_group_message(
-        group,
-        MessageChain(f"{liuliang_res[0]}\n{liuliang_res[1][:-2]}")
-    )
 
 # def parseCookieFile(cookiefile):
 #     cookies = {}
@@ -77,6 +77,7 @@ def liuliang():
     headers = {'User-Agent': 'Mozilla/5.0'}
 
     session = requests.Session()
+    session.trust_env = False
     first_res = session.post(login_address, headers=headers)
     r_html = etree.HTML(first_res.text, etree.HTMLParser())
     r1 = r_html.xpath('//*[@name="token"]')

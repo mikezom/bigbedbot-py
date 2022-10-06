@@ -45,7 +45,7 @@ async def decoding(app: Ariadne, member: Member, group: Group, anything: RegexRe
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"佛曰：不配：{e}")
         )
         raise ExecutionStop()
     

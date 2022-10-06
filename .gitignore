@@ -11,9 +11,11 @@ data/yecao/cookie.txt
 data/yecao/userdata.json
 data/play/taffy/
 data/avatar/result.png
-data/smzdm/smzdm.json
+data/smzdm/
 data/group/group_info.json
 libs/helper/vits/
+libs/helper/MoeGoe/
+libs/helper/VITS_Paimon/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -178,3 +180,9 @@ cython_debug/
 data/smzdm/smzdm.json
 data/avatar/result.png
 data/info/
+data/play/nene_test.silk
+data/play/nene_test.wav
+data/play/new_paimon_test.silk
+data/play/new_paimon_test.wav
+data/play/true_paimon_test.silk
+data/play/true_paimon_test.wav

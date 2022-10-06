@@ -41,7 +41,7 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"9播放：不配：{e}")
         )
     
     if anything.matched:

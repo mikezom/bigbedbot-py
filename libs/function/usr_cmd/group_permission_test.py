@@ -38,7 +38,7 @@ async def main(app: Ariadne, member: Member, group: Group):
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"group_permission_test: 不配：{e}")
         )
     
     await app.send_group_message(

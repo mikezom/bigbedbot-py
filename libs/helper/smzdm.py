@@ -3,10 +3,12 @@ import random
 import time
 import json
 import requests
+from os.path import exists
 from bs4 import BeautifulSoup
 from graia.ariadne.message.chain import MessageChain
 from dateutil import parser
 from thefuzz import process
+from loguru import logger
 
 class SMZDM:
     buffer: dict
@@ -23,20 +25,34 @@ class SMZDM:
     
     @classmethod
     def load_buffer(cls) -> None:
-        with open('data/smzdm/smzdm.json') as f:
-            cls.buffer = json.load(f)
+        if not exists('data/smzdm/smzdm.json'):
+            cls.buffer = {
+                'title': [],
+                'link': [],
+                'time': [],
+                'update_time': 0
+            }
+        else:
+            with open('data/smzdm/smzdm.json') as f:
+                cls.buffer = json.load(f)
     
     @classmethod
     def save_buffer(cls) -> None:
-        with open('data/smzdm/smzdm.json', 'w') as f:
+        with open('data/smzdm/smzdm.json', 'w+') as f:
             f.write(json.dumps(cls.buffer))
     
     @classmethod
     def update_buffer(cls, title, link, time, i):
-        cls.buffer['title'][i] = title
-        cls.buffer['link'][i] = link
-        cls.buffer['time'][i] = cls.time_parser(time)
-    
+        if len(cls.buffer['title']) <= i:
+            cls.buffer['title'].append(title)
+            cls.buffer['link'].append(link)
+            cls.buffer['time'].append(cls.time_parser(time))
+        else:
+            cls.buffer['title'][i] = title
+            cls.buffer['link'][i] = link
+            cls.buffer['time'][i] = cls.time_parser(time)
+        logger.info(f"updated buffer at {i}: {title}, {time}")
+
     @classmethod
     def update_smzdm(cls):
         
@@ -114,7 +130,9 @@ class SMZDM:
             'offset': '0'
         }
 
-        res = requests.get(smzdm_url, params = request_data)
+        session = requests.Session()
+        session.trust_env = False
+        res = session.get(smzdm_url, params = request_data)
         soup = BeautifulSoup(res.content, 'html.parser')
         smzdm_data = json.loads(soup.prettify())
         smzdm_string = ""

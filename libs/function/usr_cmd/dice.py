@@ -42,7 +42,7 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
     except Exception as e :
         await app.send_group_message(
             group,
-            MessageChain(f"不配：{e}")
+            MessageChain(f"dice: 不配：{e}")
         )
         raise ExecutionStop()
 

@@ -34,10 +34,7 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     try: 
         Permission.user_permission_check(member, Permission.DEFAULT)
     except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"不配：{e}")
-        )
+        raise ExecutionStop()
     
     if anything.matched:
         msg = anything.result.display
