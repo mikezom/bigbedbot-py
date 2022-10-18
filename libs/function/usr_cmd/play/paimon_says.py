@@ -10,6 +10,7 @@ from graia.ariadne.message.parser.twilight import (
     Twilight,
     RegexMatch,
 )
+# from graia.ariadne.util.async_exec import run_func
 
 from libs.control import Permission
 from libs.helper.vits.paimon_says import paimon_says
