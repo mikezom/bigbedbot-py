@@ -86,5 +86,9 @@
     "派蒙说": {
         "name": "paimon_says",
         "description": "伟大的派蒙说："
+    },
+    "random4chan": {
+        "name": "random_4chan_pic",
+        "description": "随机4chan梗图"
     }
 }

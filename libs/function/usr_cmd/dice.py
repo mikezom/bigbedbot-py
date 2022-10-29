@@ -27,7 +27,7 @@ channel = Channel.current()
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, message: MessageChain):
-    
+
     try:
         Permission.group_permission_check(group, "dice")
     except Exception as e:
@@ -36,8 +36,8 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
             MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
     except Exception as e :
         await app.send_group_message(
@@ -48,10 +48,10 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
 
     msg = message.display.strip().lower()
     msg_res = msg.split('d')
-    
+
     n = int(msg_res[0])
     faces = int(msg_res[1])
-    
+
     if n >= 256 or faces >= 1000:
         await app.send_group_message(
             group,
@@ -76,21 +76,21 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
             MessageChain(f"他有脸吗？他没有！")
         )
         raise ExecutionStop()
-    
+
     rand_result = []
-    
+
     for _ in range(n):
         rand_result.append(random.randint(1, faces))
-    
+
     res_string = ""
     for x in rand_result:
         res_string += (str(x) + ", ")
     res_string = res_string[:-2]
-    
+
     sum_string = ""
     if n > 1:
         sum_string = f"\n总和为{sum(rand_result)}"
-    
+
     await app.send_group_message(
         group,
         MessageChain(f"你成功掷出了{n}个{faces}面骰，结果为: \n" + res_string + sum_string)

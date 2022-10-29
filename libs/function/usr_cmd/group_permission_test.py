@@ -1,4 +1,5 @@
-import asyncio
+import random
+from datetime import datetime
 
 from graia.saya import Channel
 from graia.ariadne.app import Ariadne
@@ -11,6 +12,8 @@ from graia.ariadne.message.parser.twilight import (
     Twilight,
     FullMatch
 )
+from graia.ariadne.message.element import At, Plain, Image, Forward, ForwardNode
+from graia.ariadne.util.async_exec import io_bound, cpu_bound
 
 from libs.control import Permission
 
@@ -23,25 +26,23 @@ channel = Channel.current()
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):
-    
-    try:
-        Permission.group_permission_check(group, "test_function_2")
-    except Exception as e:
-        await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+
+    fwd_nodeList = [
+        ForwardNode(
+            target=member,
+            time=datetime.now(),
+            message=MessageChain(Image(path="test/vision_api_test/random/221.png")),
         )
-        raise ExecutionStop()
-    
-    try: 
-        Permission.user_permission_check(member, Permission.GROUP_ADMIN)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"group_permission_test: 不配：{e}")
+    ]
+    member_list = await app.get_member_list(group)
+    for _ in range(3):
+        random_member: Member = random.choice(member_list)
+        fwd_nodeList.append(
+            ForwardNode(
+                target=random_member,
+                time=datetime.now(),
+                message=MessageChain("牛逼"),
+            )
         )
-    
-    await app.send_group_message(
-        group,
-        MessageChain(f"测试：群消息，mem_perm = {member.permission}")
-    )
+    message = MessageChain(Forward(nodeList=fwd_nodeList))
+    await app.send_message(group, message)

@@ -10,6 +10,10 @@ from graia.ariadne.message.parser.twilight import (
     Twilight,
     RegexMatch,
 )
+
+import asyncio
+import os
+import time
 # from graia.ariadne.util.async_exec import run_func
 
 from libs.control import Permission
@@ -40,7 +44,7 @@ channel = Channel.current()
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, message: MessageChain):
-    
+
     try:
         Permission.group_permission_check(group, "paimon_says")
     except Exception as e:
@@ -49,48 +53,40 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
             MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
     except Exception as e :
         await app.send_group_message(
             group,
             MessageChain(f"说：不配：{e}")
         )
-    
+
     msg = message.display.strip()
     split_pos = msg.find('说：')
     speaker = msg[:split_pos]
     req_content = msg[split_pos+2:]
 
     if speaker == '派蒙':
-        true_paimon_says(req_content)
+        audio_file_path = await asyncio.to_thread(true_paimon_says, req_content)
         logger.info(f"Paimon VITS: {speaker}, {req_content}, length = {len(req_content)}")
     elif speaker in genshin_speaker_list:
-        paimon_says(speaker, req_content)
+        audio_file_path = await asyncio.to_thread(paimon_says, speaker, req_content)
         logger.info(f"Genshin VITS: {speaker}, {req_content}, length = {len(req_content)}")
     elif speaker == '宁宁':
-        my_moegoe(nene_speaker_list[0], req_content)
+        audio_file_path = await asyncio.to_thread(my_moegoe, nene_speaker_list[0], req_content)
         logger.info(f"MoeGoe VITS: {nene_speaker_list[0]}, {req_content}, length = {len(req_content)}")
     elif speaker in nene_speaker_list:
-        my_moegoe(speaker, req_content)
+        audio_file_path = await asyncio.to_thread(my_moegoe, speaker, req_content)
         logger.info(f"MoeGoe VITS: {speaker}, {req_content}, length = {len(req_content)}")
     else:
-        paimon_says(speaker, req_content)
-        logger.info(f"Genshin VITS: Paimon, {req_content}, length = {len(req_content)}")
-    
-    if speaker == '派蒙':
-        await app.send_group_message(
-            group, 
-            MessageChain([Voice(path = 'data/play/true_paimon_test.silk')])
+        audio_file_path = await asyncio.to_thread(paimon_says, speaker, req_content)
+        logger.info(f"Genshin VITS: {speaker}, {req_content}, length = {len(req_content)}")
+
+    await app.send_group_message(
+            group,
+            MessageChain([Voice(path = audio_file_path)])
         )
-    elif speaker == '宁宁' or speaker in nene_speaker_list:
-        await app.send_group_message(
-            group, 
-            MessageChain([Voice(path = 'data/play/nene_test.silk')])
-        )
-    else:
-        await app.send_group_message(
-            group, 
-            MessageChain([Voice(path = 'data/play/new_paimon_test.silk')])
-        )
+
+    time.sleep(10)
+    os.remove(audio_file_path)

@@ -52,14 +52,14 @@ def add_fashenme(str):
     """加发"""
     logger.info(f"adding fashenme: {str}")
     fashenme.append(str)
-    
+
     tree = ET.parse(fname)
     root = tree.getroot()
-    
+
     new_element = ET.Element('item')
     new_element.text = str
     root.append(new_element)
-    
+
     tree.write(fname)
 
 def has_duplicate(str):
