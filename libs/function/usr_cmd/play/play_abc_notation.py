@@ -1,3 +1,7 @@
+"""9播放
+
+Author: 9先生 @DeadEnnea
+"""
 from graia.saya import Channel
 from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
@@ -26,7 +30,7 @@ channel = Channel.current()
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-    
+
     try:
         Permission.group_permission_check(group, "play_abc_notation")
     except Exception as e:
@@ -35,15 +39,15 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
     except Exception as e :
         await app.send_group_message(
             group,
             MessageChain(f"9播放：不配：{e}")
         )
-    
+
     if anything.matched:
         speed_and_score = anything.result.display
         score_info = speed_and_score.split(';')
@@ -56,6 +60,6 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
         else:
             abc_to_sound.save(abc_to_sound.gen_wav(score_info[1], speed, 2000))
             await app.send_group_message(
-                group, 
+                group,
                 MessageChain([Voice(path = 'data/play/sine.silk')])
             )

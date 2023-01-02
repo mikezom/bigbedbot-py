@@ -89,6 +89,7 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.buddhist")
 
     saya.require("libs.function.usr_cmd.four_chan_pic")
+    saya.require("libs.function.usr_cmd.aminer_search")
 
     saya.require("libs.function.schedule.wake_up")
 

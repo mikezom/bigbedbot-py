@@ -27,7 +27,7 @@ channel = Channel.current()
     )
 )
 async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-    
+
     try:
         Permission.group_permission_check(group, "fashenme")
     except Exception as e:
@@ -36,36 +36,36 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
     except Exception as e :
         await app.send_group_message(
             group,
             MessageChain(f"发什么：不配：{e}")
         )
-    
+
     read_fashenme()
-    
+
     if not anything.matched:
-    
+
         random_choice = random.randrange(0, get_fashenme_size())
-        
+
         await app.send_group_message(
             group,
             MessageChain(f"{get_fashenme(random_choice)}")
         )
-    
+
     else:
-        
+
         to_search = anything.result.display
-        
+
         if to_search == "十连":
             msg_chain = ""
             for r_choice in random.sample(range(get_fashenme_size()), 10):
                 msg_chain += (f"{get_fashenme(r_choice)}\n")
             msg_chain += (f"怎么发什么都要十连！")
-            
+
             await app.send_group_message(
                 group,
                 MessageChain(msg_chain)

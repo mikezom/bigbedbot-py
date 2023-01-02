@@ -12,6 +12,6 @@ channel = Channel.current()
 @channel.use(SchedulerSchema(timers.crontabify("0 9 * * * 0")))
 async def main(app: Ariadne):
     await app.send_group_message(
-        479733965,
-        MessageChain(f"Hey, wake up", Face(277))
+        714870727,
+        MessageChain(f"起床上班了！！！！")
     )

@@ -1,6 +1,6 @@
-import requests # for html requests
-import time # for cache timing
 import re # Regex
+import time # for cache timing
+import requests # for html requests
 from bs4 import BeautifulSoup # html parsing
 from graia.ariadne.message.chain import MessageChain  # 信息链
 
@@ -9,7 +9,7 @@ def solidot_update():
     Update solidot news
     """
     solidot_url = 'https://www.solidot.org/'
-    res = requests.get(solidot_url)
+    res = requests.get(solidot_url, verify=False)
     soup = BeautifulSoup(res.content, 'html.parser')
 
     global solidot_titles_url
@@ -30,7 +30,7 @@ def solidot_update():
     for i, x in enumerate(solidot_titles_url, 1):
         solidot_article = []
         full_url = solidot_url + x[1:]
-        res_full = requests.get(full_url)
+        res_full = requests.get(full_url, verify=False)
         soup_full = BeautifulSoup(res_full.content, 'html.parser')
 
         f_content = soup_full.find('div', class_='p_mainnew')
@@ -76,7 +76,4 @@ def is_solidot_update_required() -> bool:
     current_time = int(time.time())
     if (not 'solidot_contents' in globals()) or (len(solidot_contents) == 0):
         return True
-    if (current_time - solidot_contents[0]) > 60 * 60 * 2:
-        return True
-    else:
-        return False
+    return (current_time - solidot_contents[0]) > 60 * 60 * 2
