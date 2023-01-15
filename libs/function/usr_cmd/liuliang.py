@@ -3,9 +3,9 @@ import requests
 import datetime
 import json
 import re
-from lxml import etree
 from loguru import logger
 from bisect import bisect_left
+from bs4 import BeautifulSoup
 from graia.saya import Channel
 from graia.scheduler import timers
 from graia.scheduler.saya import SchedulerSchema
@@ -57,13 +57,28 @@ async def main(app: Ariadne, member: Member, group: Group):
         MessageChain(f"这次真的在查了...")
     )
     try:
-        traffic_info, refresh_date = liuliang()
+        traffic_max, traffic_remaining, refresh_date = liuliang()
         current_time = datetime.datetime.now()
         time_difference = refresh_date - current_time
-        await app.send_group_message(
-            group,
-            MessageChain(f"目前剩余流量: {traffic_info[1]}GB, \n还有 {time_difference.days}天{time_difference.seconds // 3600 % 24}小时{time_difference.seconds // 60 % 60}分{time_difference.seconds % 60}秒 刷新流量")
-        )
+
+        last_refresh_time = refresh_date.replace(month=refresh_date.month - 1)
+        time_passed = current_time - last_refresh_time
+        time_percentage = time_passed / time_difference
+        expected_traffic_usage = time_percentage * traffic_max
+        traffic_usage = traffic_max - traffic_remaining
+
+        traffic_usage_delta = expected_traffic_usage - traffic_usage
+
+        if traffic_usage_delta < 0:
+            await app.send_group_message(
+                group,
+                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n警惕！！还需要节省{abs(int(traffic_usage_delta))}G\n还有{time_difference.days}天刷新流量")
+            )
+        else:
+            await app.send_group_message(
+                group,
+                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n还行哦，还有{abs(int(traffic_usage_delta))}G可以浪\n还有{time_difference.days}天刷新流量")
+            )
     except:
         await app.send_group_message(
             group,
@@ -105,57 +120,102 @@ async def remaining_traffic_warning(app: Ariadne):
     with open('data/yecao/userdata.json', 'w') as f:
         f.write(json.dumps(yecao_config_data, indent = 4))
 
-def liuliang():
-    # current_ip = socket.getaddrinfo("www.yecao100.org", 80, 0, 0, socket.SOL_TCP)[0][4][0]
-    current_ip = '47.244.30.150'
-    login_address = 'https://' + current_ip + '/dologin.php'
-    info_address = 'https://' + current_ip + '/clientarea.php'
+class SoupParser:
+    def parse_token_and_login_addr(sp: BeautifulSoup):
+        token = ""
+        login_address = ""
+        try:
+            result = sp.find('input', attrs={'name': 'token'})
+            token = result.attrs['value']
+        except:
+            print(f"unable to get token")
 
-    headers = {'User-Agent': 'Mozilla/5.0'}
+        try:
+            result = sp.find_all('form')
+            for x in result:
+                if 'action' in x.attrs and x.attrs['action'].startswith('https'):
+                    login_address = x.attrs['action']
+        except:
+            print(f"unable to get login address")
 
-    session = requests.Session()
-    session.trust_env = False
-    first_res = session.post(login_address, headers=headers)
-    r_html = etree.HTML(first_res.text, etree.HTMLParser())
-    r1 = r_html.xpath('//*[@name="token"]')
-    token = r1[0].values()[2]
+        return token, login_address
 
-    with open('data/yecao/userdata.json', 'r') as f:
+    def parse_html_table(table) -> list[list]:
+        table_data = []
+        table_body = table.find('tbody')
+        for row in table_body.find_all('tr'):
+            cols = row.find_all('td')
+            cols = [ele.text.strip() for ele in cols]
+            table_data.append([ele for ele in cols if ele])
+        return table_data
+
+    @classmethod
+    def parse_traffic_info(cls, sp: BeautifulSoup):
+        [html_traffic_info_table] = [x for x in sp.find_all('table') if '流量详情' in x.text]
+        traffic_info_table = cls.parse_html_table(html_traffic_info_table)
+
+        logger.info(f"Searching: {traffic_info_table[1][0]}")
+        traffic_info_match_result = re.findall(r'：(\d*) \(GB\)', traffic_info_table[1][0])
+        [traffic_max, traffic_current] = [int(x) for x in traffic_info_match_result]
+
+        logger.info(f"Searching: {traffic_info_table[3][1]}")
+        refresh_time_match_result = re.match(r'(\d\d\d\d-\d\d-\d\d) (\d*):(\d*)', traffic_info_table[3][1])
+        refresh_date_day = refresh_time_match_result.group(1).split('-')
+        refresh_date_day = [int(x) for x in refresh_date_day]
+        refresh_date_hour = int(refresh_time_match_result.group(2))
+        refresh_date_min = int(refresh_time_match_result.group(3))
+
+        reset_time = datetime.datetime(*refresh_date_day, refresh_date_hour, refresh_date_min)
+
+        return traffic_max, traffic_current, reset_time
+
+def obtain_token_and_login_addr(ses : requests.Session, add, header):
+    with ses.post(add, headers=header) as res:
+        soup = BeautifulSoup(res.text, 'html.parser')
+        token, login_address = SoupParser.parse_token_and_login_addr(soup)
+    return token, login_address
+
+def load_config_yecao(path, token):
+    payload = {}
+    params = {}
+    with open(path, 'r') as f:
         yecao_config_data = json.load(f)
         payload = {
             'username': yecao_config_data["username"],
             'password': yecao_config_data["password"],
             'token': token
         }
-        my_params = {
+        params = {
             'action': 'productdetails',
             'id': yecao_config_data["id"]
         }
-        previous_traffic = yecao_config_data["previous_traffic"]
+    return payload, params
 
+def liuliang():
+    domain_yecao = 'https://yecao100.org'
+    address_obtain_token = domain_yecao + '/dologin.php'
+    address_client_info = domain_yecao + '/clientarea.php'
+
+    headers = {
+        'User-Agent': 'Mozilla/5.1'
+    }
+    session = requests.Session()
+    session.trust_env = False
+
+    token, login_address = obtain_token_and_login_addr(session, address_obtain_token, headers)
+    if token and login_address:
+        logger.info(f"[Success] Get token and login address")
+    payload, my_params = load_config_yecao('data/yecao/userdata.json', token)
+    if payload and my_params:
+        logger.info(f"[Success] Get payload and parameters")
+
+    # Logging in
     session.post(login_address, headers=headers, data=payload)
 
-    my_params = {'action': 'productdetails', 'id': '19731'}
-    res = session.get(info_address, params = my_params)
+    # Obtain traffic info for certain ID
+    with session.get(address_client_info, params = my_params) as res:
+        soup = BeautifulSoup(res.text, 'html.parser')
+        traffic_max, traffic_current, reset_time = SoupParser.parse_traffic_info(soup)
+        logger.info(f"max: {traffic_max}, remain: {traffic_current}, refresh: {reset_time}")
 
-    r_html = etree.HTML(res.text, etree.HTMLParser())
-    r1 = r_html.xpath('//*[@class="panel-body"]')
-    r11 = r1[1].xpath('string(.)').strip()
-    r_1 = r11.strip()
-    r_2 = r_1.split('\n')
-    r_3 = [re.sub('\s+', '', x) for x in r_2]
-    traffic_info = [x for x in r_3 if '总共' in x]
-    refresh_date = r_3[20]
-    traffic_info_match_result = re.findall(r'：(\d*)\(GB\)', traffic_info[0])
-    traffic_info_match_result = [int(x) for x in traffic_info_match_result]
-    refresh_data_match_result = re.match(r'(\d\d\d\d-\d\d-\d\d)(\d*):(\d*)', refresh_date)
-    refresh_date_day = refresh_data_match_result.group(1).split('-')
-    refresh_date_day = [int(x) for x in refresh_date_day]
-    refresh_date_hour = int(refresh_data_match_result.group(2))
-    refresh_date_min = int(refresh_data_match_result.group(3))
-
-    refresh_date_accurate_time = datetime.datetime(*refresh_date_day, refresh_date_hour, refresh_date_min)
-
-    logger.info(f"previous_traffic: {previous_traffic}")
-
-    return traffic_info_match_result, refresh_date_accurate_time
+    return traffic_max, traffic_current, reset_time
