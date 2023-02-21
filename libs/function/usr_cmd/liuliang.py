@@ -1,6 +1,7 @@
 import requests
 # import socket
 import datetime
+import dateutil.relativedelta
 import json
 import re
 from loguru import logger
@@ -61,9 +62,9 @@ async def main(app: Ariadne, member: Member, group: Group):
         current_time = datetime.datetime.now()
         time_difference = refresh_date - current_time
 
-        last_refresh_time = refresh_date.replace(month=refresh_date.month - 1)
+        last_refresh_time = refresh_date + dateutil.relativedelta.relativedelta(months=-1)
         time_passed = current_time - last_refresh_time
-        time_percentage = time_passed / time_difference
+        time_percentage = time_passed / (refresh_date - last_refresh_time)
         expected_traffic_usage = time_percentage * traffic_max
         traffic_usage = traffic_max - traffic_remaining
 
@@ -87,10 +88,10 @@ async def main(app: Ariadne, member: Member, group: Group):
 
 @channel.use(SchedulerSchema(timers.every_hours())) # Check every HOUR
 async def remaining_traffic_warning(app: Ariadne):
-    traffic_info, refresh_date = liuliang()
+    traffic_max, traffic_current, refresh_date = liuliang()
     my_group_info = QQInfoConfig.load_file(714870727, 0)
 
-    if previous_traffic > 0 and traffic_info[1] > previous_traffic:
+    if previous_traffic > 0 and traffic_current > previous_traffic:
         # Need Reset
         my_group_info.traffic_threshold_state = 0
 
@@ -99,17 +100,17 @@ async def remaining_traffic_warning(app: Ariadne):
         logger.error(f"Bad threshold state again, {my_group_info.traffic_threshold_state}")
         my_group_info.traffic_threshold_state = 0
 
-    if traffic_info[1] < TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]:
+    if traffic_current < TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]:
         # 超了超了
         current_time = datetime.datetime.now()
         time_difference = refresh_date - current_time
         await app.send_group_message(
             714870727,
-            MessageChain(f"流量只剩: {traffic_info[1]}GB了！！！, \n还有 {time_difference.days}天{time_difference.seconds // 3600 % 24}小时{time_difference.seconds // 60 % 60}分{time_difference.seconds % 60}秒 刷新流量")
+            MessageChain(f"流量只剩: {traffic_current}GB了！！！, \n还有 {time_difference.days}天{time_difference.seconds // 3600 % 24}小时{time_difference.seconds // 60 % 60}分{time_difference.seconds % 60}秒 刷新流量")
         )
         # update traffic_threshold_state
         rev_thres = list(reversed(TRAFFIC_THRESHOLD))
-        my_group_info.traffic_threshold_state = len(rev_thres) - bisect_left(rev_thres, traffic_info[1])
+        my_group_info.traffic_threshold_state = len(rev_thres) - bisect_left(rev_thres, traffic_current)
 
     logger.info(f"Current threshold for group 714870727 is {TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]}")
     QQInfoConfig.update_file(my_group_info)
