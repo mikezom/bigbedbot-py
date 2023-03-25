@@ -1,0 +1,6197 @@
+﻿city_ID,city_CN,city_EN
+2,北京市,Beijing
+3,北京市朝阳区,Chaoyang District
+4,北京市通州区,"Tongzhou District, Beijing"
+5,昌平区,Changping District
+6,顺义区,Shunyi District
+7,怀柔区,Huairou District
+8,大兴区,Daxing District
+9,平谷区,Pinggu District
+10,密云区,Miyun District
+11,延庆区,Yanqing District
+12,丰台区,Fengtai District
+13,石景山区,Shijingshan District
+14,房山区,Fangshan District
+15,门头沟区,Mentougou District
+16,八达岭,Badaling
+17,佛爷顶,Foyeding
+18,汤河口,Tanghekou
+20,斋堂,Zhaitang
+21,霞云岭,Xiayunling
+22,海淀区,Haidian District
+24,天津市,Tianjin
+25,宝坻区,Baodi District
+26,武清区,Wuqing District
+27,宁河区,Ninghe District
+28,静海区,Jinghai District
+29,蓟州区,Jizhou district
+30,东丽区,Dongli District
+31,西青区,Xiqing District
+32,北辰区,Beichen District
+33,汉沽,Hangu District
+34,津南区,Jinnan District
+35,塘沽,Tanggu District
+36,大港,Dagang District
+37,滨海新区,Binhai New District
+39,上海市,Shanghai
+40,嘉定区,Jiading District
+41,浦东新区,Pudong New District
+42,金山区,Jinshan District
+43,松江区,Songjiang District
+44,青浦区,"Qingpu District, Shanghai"
+45,南汇,Nanhui District
+46,奉贤区,Fengxian District
+47,崇明区,Chongming district
+48,上海市宝山区,"Baoshan District, Shanghai"
+49,徐汇区,Xuhui District
+50,闵行区,Minhang District
+52,重庆市,Chongqing
+53,黔江区,Qianjiang District
+54,北碚区,Beibei District
+57,巴南区,Banan District
+59,长寿区,Changshou District
+60,合川区,Hechuan District
+61,永川区,Yongchuan District
+62,江津区,Jiangjin District
+63,南川区,Nanchuan District
+64,綦江区,Qijiang District
+65,潼南区,Tongnan District
+66,铜梁区,Tongliang District
+67,大足区,Dazu District
+68,荣昌区,Rongchang District
+69,璧山区,Bishan District
+70,垫江县,Dianjiang County
+71,武隆区,Wulong District
+72,丰都县,Fengdu County
+73,城口县,Chengkou County
+74,梁平区,Liangping District
+75,开州区,Kai County
+76,巫溪县,Wuxi County
+77,巫山县,"Wushan County, Chongqing"
+78,奉节县,Fengjie County
+79,云阳县,Yunyang County
+80,忠县,Zhong County
+81,石柱土家族自治县,Shizhu Tujia Autonomous County
+82,秀山土家族苗族自治县,Xiushan Tujia and Miao Autonomous County
+83,酉阳土家族苗族自治县,Youyang Tujia and Miao Autonomous County
+84,彭水苗族土家族自治县,Pengshui Miao and Tujia Autonomous County
+85,万盛经济技术开发区,Wansheng Economic and Technological Development Zone
+86,渝北区,Yubei District
+87,涪陵区,Fuling District
+89,万州区,Wanzhou District
+94,沈阳市,Shenyang
+96,苏家屯区,Sujiatun District
+97,新民市,Xinmin
+98,辽中区,Liaozhong district
+99,法库县,Faku County
+100,康平县,Kangping County
+101,沈北新区,Shenbei New District
+102,弓长岭区,Gongchangling District
+104,大连市,Dalian
+105,旅顺口区,Lushunkou District
+106,金州区,Jinzhou District
+107,瓦房店市,Wafangdian
+108,普兰店区,Pulandian District
+109,庄河市,Zhuanghe
+110,长海县,Changhai County
+111,皮口镇,Pikou Town
+113,鞍山市,Anshan
+114,海城市,Haicheng
+115,台安县,Taian County
+116,岫岩满族自治县,Xiuyan Manchu Autonomous County
+118,抚顺市,Fushun
+120,清原满族自治县,Qingyuan Manchu Autonomous County
+121,新宾满族自治县,Xinbin Manchu Autonomous County
+122,章党镇,Zhangdang Town
+124,本溪市,Benxi
+125,本溪满族自治县,Benxi Manchu Autonomous County
+126,桓仁满族自治县,Huanren Manchu Autonomous County
+127,草河口镇,Caohekou Town
+129,丹东市,Dandong
+130,东港市,Donggang
+131,凤城市,"Fengcheng, Dandong"
+132,宽甸满族自治县,Kuandian Manchu Autonomous County
+135,锦州市,"Jinzhou, Liaoning"
+136,凌海市,Linghai
+137,北镇市,Beizhen
+138,黑山县,Heishan County
+139,义县,"Yi County, Jinzhou"
+142,营口市,Yingkou
+143,盖州市,Gaizhou
+144,大石桥市,Dashiqiao
+146,阜新市,Fuxin
+147,彰武县,Zhangwu County
+150,辽阳市,Liaoyang
+151,灯塔市,Dengta
+152,辽阳县,Liaoyang County
+154,盘锦市,Panjin
+155,大洼区,Dawa District
+156,盘山县,Panshan County
+158,铁岭市,Tieling
+160,开原市,"Kaiyuan, Tieling"
+162,西丰县,"Xifeng County, Tieling"
+163,昌图县,Changtu County
+164,调兵山市,Diaobingshan
+165,铁法,Tiefa
+167,朝阳市,Chaoyang
+168,北票市,Beipiao
+169,凌源市,Lingyuan
+171,建平镇,Jianping Town
+172,喀喇沁左翼蒙古族自治县,Harqin Left Wing Mongolian Autonomous County
+173,调兵山市羊山镇,"Yangshan Town, Diaobingshan"
+174,建平县,Jianping County
+176,葫芦岛市,Huludao
+177,兴城市,Xingcheng
+178,绥中县,Suizhong County
+179,建昌县,Jianchang County
+182,长春市,Changchun
+183,双阳区,Shuangyang District
+184,九台区,Jiutai District
+185,榆树市,"Yushu, Changchun"
+186,德惠市,Dehui
+187,农安县,Nongan County
+189,吉林市,Jilin
+190,舒兰市,Shulan
+191,桦甸市,Huadian
+192,蛟河市,Jiaohe
+193,磐石市,Panshi
+194,永吉县,Yongji County
+195,烟筒山,Yantongshan
+197,四平市,Siping
+198,公主岭市,Gongzhuling
+199,双辽市,Shuangliao
+200,梨树县,Lishu County
+201,伊通满族自治县,Yitong Manchu Autonomous County
+204,辽源市,Liaoyuan
+205,东辽县,Dongliao County
+206,东丰县,Dongfeng County
+208,通化市,Tonghua
+209,梅河口市,Meihekou
+210,集安市,Ji'an
+211,辉南县,Huinan County
+212,通化县,Tonghua County
+213,柳河县,Liuhe County
+215,白山市,Baishan
+216,靖宇县,Jingyu County
+217,抚松县,Fusong County
+218,长白朝鲜族自治县,Changbai Korean Autonomous County
+219,东岗镇,Donggang Town
+220,临江市,Linjiang
+221,江源区,Jiangyuan District
+223,白城市,Baicheng
+224,洮南市,Taonan
+225,大安市,Daan
+226,镇赉县,Zhenlai County
+227,通榆县,Tongyu County
+229,松原市,Songyuan
+231,扶余市,Fuyu
+232,长岭县,Changling County
+233,乾安县,Qian'an County
+234,前郭尔罗斯蒙古族自治县,Qian Gorlos Mongolian Autonomous County
+236,延边朝鲜族自治州,Yanbian Korean Autonomous Prefecture
+237,延吉市,Yanji
+238,图们市,Tumen
+239,敦化市,Dunhua
+240,龙井市,Longjing
+241,珲春市,Hunchun
+242,和龙市,Helong
+243,安图县,Antu County
+244,汪清县,Wangqing County
+245,二道白河镇,Erdao Baihe Town
+246,安图县松江镇,"Songjiang Town, Antu County"
+247,罗子沟镇,Luozigou Town
+250,哈尔滨市,Harbin
+252,呼兰区,Hulan District
+253,双城区,Shuangcheng District
+254,尚志市,Shangzhi
+255,五常市,Wuchang
+256,阿城区,Acheng District
+259,依兰县,Yilan County
+260,方正县,Fangzheng County
+261,宾县,"Bin County, Harbin"
+262,巴彦县,Bayan County
+263,木兰县,Mulan County
+264,通河县,Tonghe County
+265,延寿县,Yanshou County
+267,齐齐哈尔市,Qiqihar
+271,讷河市,Nehe
+272,龙江县,Longjiang County
+273,依安县,Yian County
+274,泰来县,Taylor County
+275,甘南县,Gannan County
+276,富裕县,Fuyu County
+277,克山县,Keshan County
+278,克东县,Kedong County
+279,拜泉县,Baiquan County
+281,鸡西市,Jixi
+287,虎林市,Hulin
+288,密山市,Mishan
+289,鸡东县,Jidong County
+291,鹤岗市,Hegang
+292,萝北县,Luobei County
+293,绥滨县,Suibin County
+295,双鸭山市,Shuangyashan
+299,集贤县,Jixian County
+300,宝清县,Baoqing County
+301,饶河县,Raohe County
+303,友谊县,Youyi County
+305,大庆市,Daqing
+310,肇源县,"Zhaoyuan, Daqing"
+311,肇州县,Zhaozhou
+312,林甸县,Lindian County
+314,杜尔伯特蒙古族自治县,Dorbod Mongol Autonomous County
+316,伊春市,"Yichun, Heilongjiang"
+326,铁力市,Tieli
+327,嘉荫县,Jiayin County
+331,佳木斯市,Jiamusi
+332,同江市,River City with
+333,富锦市,Fujin
+334,桦南县,Huanan County
+335,桦川县,Huachuan County
+336,汤原县,Tangyuan County
+337,抚远市,Fuyuan
+339,七台河市,Qitaihe
+340,勃利县,Boli County
+342,牡丹江市,Mudanjiang
+343,穆棱市,Muling
+344,绥芬河市,Suifenhe
+345,海林市,Hailin
+346,宁安市,Ning'an
+347,东宁县,Dongning
+348,林口县,Linkou County
+351,黑河市,Heihe
+353,北安市,Beian
+354,五大连池市,Wudalianchi
+355,嫩江市,Nenjiang City
+356,逊克县,Xunke County
+357,孙吴县,Sunwu County
+359,绥化市,Suihua
+360,安达市,Anda
+361,肇东市,Zhaodong
+362,海伦市,Hailun
+363,望奎县,Wangkui County
+364,兰西县,Lanxi County
+365,青冈县,Qinggang County
+366,庆安县,Qing'an County
+367,明水县,Mingshui County
+368,绥棱县,Suileng County
+370,大兴安岭地区,Daxinganling
+371,加格达奇区,Jiagedaqi District
+372,呼玛县,Huma County
+373,塔河县,Tahe County
+374,漠河市,Mohe
+375,呼中区,Huzhong District
+376,新林区,Xinlin District
+379,郑州市,Zhengzhou
+380,上街区,Shangjie District
+381,新郑市,Xinzheng
+382,荥阳市,Xingyang
+383,新密市,Xinmi
+384,巩义市,Gongyi
+385,登封市,Dengfeng
+386,中牟县,Zhongmou County
+388,开封市,Kaifeng
+389,杞县,"Qi County, Kaifeng"
+390,通许县,Tongxu County
+391,尉氏县,Weishi County
+392,兰考县,Lankao County
+394,洛阳市,Luoyang
+397,偃师区,YanShi
+398,孟津县,Mengjin District
+399,新安县,Xin'an County
+400,栾川县,Luanchuan County
+401,嵩县,Song County
+402,汝阳县,Ruyang County
+403,宜阳县,"Yiyang County, Luoyang"
+404,洛宁县,Luoning County
+405,伊川县,"Yichuan County, Luoyang"
+407,平顶山市,Pingdingshan
+408,舞钢市,"Wugang, Pingdingshan"
+409,汝州市,Ruzhou
+410,宝丰县,Baofeng County
+411,叶县,Ye County
+412,鲁山县,"Lushan County, Pingdingshan"
+413,郏县,"Jia County, Pingdingshan"
+414,石龙区,Shilong District
+416,焦作市,Jiaozuo
+419,沁阳市,Qinyang
+420,孟州市,Mengzhou
+421,修武县,Xiuwu County
+422,博爱县,Boai County
+423,武陟县,Wuzhi County
+424,温县,"Wen County, Jiaozuo"
+426,鹤壁市,Hebi
+430,浚县,Xun County
+431,淇县,"Qi County, Hebi"
+433,新乡市,Xinxiang
+435,卫辉市,Weihui
+436,辉县市,Huixian
+437,获嘉县,Huojia County
+438,原阳县,"Yuanyang County, Xinxiang"
+439,延津县,"Yanjin County, Xinxiang"
+440,长垣市,ChangyuanCity
+441,封丘县,Fengqiu County
+443,安阳市,Anyang
+444,林州市,Linzhou
+445,汤阴县,Tangyin County
+446,内黄县,Neihuang County
+447,滑县,"Hua County, Henan"
+449,濮阳市,Puyang
+450,清丰县,Qingfeng County
+451,南乐县,Nanle County
+452,范县,Fan County
+453,台前县,Taiqian County
+456,许昌市,Xuchang
+458,禹州市,Yuzhou
+459,长葛市,Changge
+461,鄢陵县,"Yanling County, Xuchang"
+462,襄城县,Xiangcheng County
+464,漯河市,Luohe
+466,舞阳县,Wuyang County
+467,临颍县,Linying County
+469,三门峡市,Sanmenxia
+470,义马市,Yima
+471,灵宝市,Lingbao
+472,陕州区,Shanzhou District
+473,渑池县,Mianchi County
+474,卢氏县,Lushi County
+476,南阳市,Nanyang
+477,邓州市,Dengzhou
+478,南召县,Nanzhao County
+479,方城县,Fangcheng County
+480,镇平县,"Zhenping County, Nanyang"
+481,社旗县,Sheqi County
+482,唐河县,Tanghe County
+483,新野县,Xinye County
+484,内乡县,Neixiang County
+485,西峡县,Xixia County
+486,淅川县,Xichuan County
+487,桐柏县,Tongbai County
+489,商丘市,Shangqiu
+492,永城市,Yongcheng
+493,民权县,Minquan County
+494,睢县,"Sui County, Shangqiu"
+495,宁陵县,Ningling County
+496,柘城县,Zhecheng County
+497,虞城县,Yucheng County
+498,夏邑县,Xiayi County
+500,信阳市,Xinyang
+502,罗山县,Luoshan County
+503,光山县,Guangshan County
+504,新县,Xin County
+505,商城县,Shangcheng County
+506,固始县,Gushi County
+507,潢川县,Huangchuan County
+508,淮滨县,Huaibin County
+509,息县,"Xi County, Xinyang"
+511,周口市,Zhoukou
+513,项城市,Xiangcheng
+514,扶沟县,Fugou County
+515,西华县,Xihua County
+516,商水县,Shangshui County
+517,沈丘县,Shenqiu County
+518,郸城县,Dancheng County
+519,淮阳区,HuaiyangDistrict
+520,太康县,Taikang County
+521,鹿邑县,Luyi County
+523,驻马店市,Zhumadian
+524,西平县,Xiping County
+525,上蔡县,Shangcai County
+526,平舆县,Pingyu County
+527,正阳县,Zhengyang County
+528,确山县,Queshan County
+529,泌阳县,Biyang County
+530,汝南县,Runan County
+531,遂平县,Suiping County
+532,新蔡县,Xincai County
+534,济源市,Jiyuan
+537,武汉市,Wuhan
+540,黄陂区,Huangpi District
+541,新洲区,"Xinzhou District, Wuhan"
+542,江夏区,Jiangxia District
+543,蔡甸区,Caidian District
+544,东西湖区,Dongxihu District
+546,黄石市,Huangshi
+547,大冶市,Daye
+548,阳新县,Yangxin County
+549,西塞山区,Xisaishan District
+550,铁山区,Tieshan District
+551,下陆区,Xialu District
+553,襄阳市,Xiangyang
+554,襄州区,"Xiangzhou District, Xiangyang"
+555,枣阳市,Zaoyang
+556,老河口市,Laohekou
+557,宜城市,Yicheng
+558,谷城县,"Gucheng County, Xiangyang"
+559,保康县,Baokang County
+560,南漳县,Nanzhang County
+562,鄂州市,Ezhou
+563,梁子湖区,Liangzihu District
+565,十堰市,Shiyan
+566,郧阳区,Yunyang District
+567,郧西县,Yunxi County
+568,竹山县,Zhushan County
+569,竹溪县,Zhuxi County
+570,房县,Fang County
+571,丹江口市,Danjiangkou
+572,张湾区,Zhangwan District
+573,茅箭区,Maojian District
+575,沙市区,Shashi District
+576,石首市,Shishou
+577,洪湖市,Honghu
+578,松滋市,Songzi
+579,公安县,Gongan County
+580,监利市,Jianli City
+581,江陵县,Jiangling County
+582,荆州市,Jingzhou
+584,宜昌市,Yichang
+585,宜都市,Yidu
+586,当阳市,Dangyang
+587,枝江市,Zhijiang
+588,远安县,Yuanan County
+589,兴山县,Xingshan County
+590,秭归县,Zigui County
+591,长阳土家族自治县,Changyang Tujia Autonomous County
+592,五峰土家族自治县,Wufeng Tujia Autonomous County
+593,三峡大坝风景区,Three Gorges Scenic Area
+595,夷陵区,Yiling District
+597,荆门市,Jingmen
+598,京山市,Jingshan
+599,钟祥市,Zhongxiang
+600,沙洋县,Shayang County
+601,掇刀区,Duodao District
+603,孝感市,Xiaogan
+604,汉川市,Hanchuan
+605,安陆市,Anlu
+606,应城市,Yingcheng
+607,大悟县,Dawu County
+608,孝昌县,Xiaochang County
+609,云梦县,Yunmeng County
+611,黄冈市,Huanggang
+612,麻城市,Macheng
+613,武穴市,Wuxue
+614,团风县,Tuanfeng County
+615,红安县,Hongan County
+616,罗田县,Luotian County
+617,英山县,"Yingshan County, Huanggang"
+618,浠水县,"Xishui County, Huanggang"
+619,蕲春县,Qichun County
+620,黄梅县,Huangmei County
+622,咸宁市,Xianning
+623,赤壁市,Chibi County
+624,嘉鱼县,Jiayu County
+625,通城县,Tongcheng County
+626,崇阳县,Chongyang County
+627,通山县,Tongshan County
+629,随州市,Suizhou
+630,广水市,Guangshui
+632,恩施土家族苗族自治州,Enshi Tujia and Miao Autonomous Prefecture
+633,利川市,Lichuan
+634,建始县,Jianshi County
+635,巴东县,Badong County
+636,宣恩县,Xuan'en County
+637,咸丰县,Xianfeng County
+638,来凤县,LaifengCounty
+639,鹤峰县,Hefeng County
+641,仙桃市,Xiantao
+643,潜江市,Qianjiang
+645,天门市,Tianmen
+647,神农架林区,Shennongjia 
+650,长沙市,Changsha
+651,浏阳市,Liuyang
+653,望城区,Wangcheng District
+654,宁乡市,Ningxiang
+655,马坡岭街道,Mapoling Subdistrict
+657,株洲市,Zhuzhou
+658,醴陵市,Liling
+660,攸县,You County
+661,茶陵县,Chaling County
+662,炎陵县,"Yanling County, Zhuzhou"
+664,湘潭市,Xiangtan
+665,湘乡市,Xiangxiang
+667,韶山市,Shaoshan City
+669,衡阳市,Hengyang
+670,南岳区,Nanyue District
+671,耒阳市,Leiyang
+672,常宁市,Changning
+673,衡阳县,Hengyang County
+674,衡南县,Hengnan County
+675,衡山县,Hengshan County
+676,衡东县,Hengdong County
+677,祁东县,Qidong County
+679,邵阳市,Shaoyang
+680,武冈市,"Wugang, Shaoyang"
+681,邵东市,ShaodongCity
+682,新邵县,Xinshao County
+683,邵阳县,Shaoyang County
+684,隆回县,Longhui County
+685,洞口县,Dongkou County
+686,绥宁县,"Suining County, Shaoyang"
+687,新宁县,Xinning County
+688,城步苗族自治县,Chengbu Miao Autonomous County
+690,岳阳市,Yueyang
+691,汨罗市,Miluo
+692,临湘市,Linxiang
+694,华容县,Huarong County
+695,湘阴县,Xiangyin County
+696,平江县,Pingjiang County
+699,常德市,Changde
+700,津市市,Jinshi
+701,安乡县,Anxiang County
+702,汉寿县,Hanshou County
+703,临澧县,Linli County
+704,澧县,"Li County, Changde"
+705,桃源县,Taoyuan County
+706,石门县,Shimen County
+708,张家界市,Zhangjiajie
+709,慈利县,Cili County
+710,桑植县,Sangzhi County
+711,武陵源区,Wulingyuan District
+713,益阳市,Yiyang
+714,沅江市,Yuanjiang
+715,南县,Nan County
+716,桃江县,Taojiang County
+717,安化县,Anhua County
+718,赫山区,"Heshan District, Yiyang"
+720,郴州市,Chenzhou
+721,资兴市,Zixing
+722,桂阳县,Guiyang County
+723,宜章县,Yizhang County
+724,永兴县,Yongxing County
+725,嘉禾县,Jiahe County
+726,临武县,Linwu County
+727,汝城县,Rucheng County
+728,桂东县,Guidong County
+729,安仁县,Anren County
+730,苏仙区,Suxian District
+732,永州市,Yongzhou
+734,祁阳市,Qiyang
+735,东安县,Dongan County
+736,双牌县,Shuangpai County
+737,道县,Dao County
+738,江永县,Jiangyong County
+739,宁远县,Ningyuan County
+740,蓝山县,Lanshan County
+741,新田县,Xintian County
+742,江华瑶族自治县,Jianghua Yao Autonomous County
+744,怀化市,Huaihua
+745,沅陵县,Yuanling County
+746,辰溪县,Chenxi County
+747,溆浦县,Xupu County
+748,中方县,Zhongfang County
+749,会同县,Huitong County
+750,麻阳苗族自治县,Mayang Miao Autonomous County
+751,新晃侗族自治县,Sinko Dong Autonomous County
+752,芷江侗族自治县,Zhijiang Dong Autonomous County
+753,靖州苗族侗族自治县,Jingzhou Miao and Dong Autonomous County
+754,通道侗族自治县,Tongdao Dong Autonomous County
+756,娄底市,Loudi
+757,冷水江市,Lengshuijiang
+758,涟源市,Lianyuan
+759,双峰县,Shuangfeng County
+760,新化县,Xinhua County
+761,冷水滩区,Lengshuitan District
+763,吉首市,Jishou
+764,泸溪县,Luxi County
+765,凤凰县,Fenghuang County
+766,花垣县,Huayuan County
+767,保靖县,Baojing County
+768,古丈县,Guzhang County
+769,永顺县,Yongshun County
+770,龙山县,Longshan County
+772,黔阳,Qianyang County
+773,洪江市,Hongjiang
+776,南宁市,Nanning
+777,邕宁区,Yongning District
+778,武鸣区,Wuming District
+779,隆安县,Longan County
+780,马山县,Mashan County
+781,上林县,Shanglin County
+782,宾阳县,Binyang County
+783,横州市,HengZhou
+784,南宁城区,Nanning
+785,江南区,Jiangnan District
+787,柳州市,Liuzhou
+788,柳江区,Liujiang District
+789,柳城县,Liucheng County
+790,鹿寨县,Luzhai County
+791,融安县,Rongan County
+792,融水苗族自治县,Rongshui Miao Autonomous County
+793,三江侗族自治县,Sanjiang Dong Autonomous County
+795,桂林市,Guilin
+796,阳朔县,Yangshuo County
+797,临桂区,Lingui District
+798,灵川县,"Lingchuan County, Guilin"
+799,平乐县,Pingle County
+800,兴安县,Xing'an County
+801,灌阳县,Guanyang County
+802,荔浦市,Lipu
+803,资源县,Ziyuan County
+804,永福县,Yongfu County
+805,龙胜各族自治县,Longsheng Various Nationalities Autonomous County
+806,恭城瑶族自治县,Gongcheng Yao Autonomous County
+807,全州县,Quanzhou County
+809,梧州市,Wuzhou
+810,岑溪市,Cenxi
+811,苍梧县,Cangwu County
+812,藤县,Teng County
+813,蒙山县,Mengshan County
+814,长洲区,Changzhou District
+816,北海市,Beihai
+817,合浦县,Hepu County
+818,涠洲岛风景区,Weizhou Scenic Area
+820,防城区,Fangcheng District
+821,上思县,Shangsi County
+822,防城港市,Fangchenggang
+823,东兴市,Dongxing
+825,贺州市,Hezhou
+826,钟山县,Zhongshan County
+827,昭平县,Zhaoping County
+828,富川瑶族自治县,Fuchuan Yao Autonomous County
+830,来宾市,Laibin
+831,合山市,"Heshan, Laibin"
+832,象州县,Xiangzhou County
+833,武宣县,Wuxuan County
+834,忻城县,Xincheng County
+835,金秀瑶族自治县,Jinxiu Yao Autonomous County
+837,贵港市,Guigang
+838,桂平市,Guiping
+839,平南县,"Pingnan County, Guigang"
+841,玉林市,Yulin
+842,北流市,Beiliu
+843,容县,Rong County
+844,陆川县,Luchuan County
+845,博白县,Bobai County
+846,兴业县,Xingye County
+848,百色市,Baise
+849,凌云县,Lingyun County
+850,平果市,Pingguo City
+851,西林县,Xilin County
+852,乐业县,Leye County
+853,德保县,Debao County
+854,田林县,Tianlin County
+855,田阳区,TianyangDistrict
+856,靖西市,Jingxi
+857,田东县,Tiandong County
+858,那坡县,Napo County
+859,隆林各族自治县,Longlin Various Nationalities Autonomous County
+861,河池市,Hechi
+862,宜州区,YizhouDistrict
+863,天峨县,Tian'e County
+864,凤山县,Fengshan County
+865,南丹县,Nandan County
+866,东兰县,Donglan County
+867,都安瑶族自治县,Duan Yao Autonomous County
+868,罗城仫佬族自治县,Luocheng Mulao Autonomous County
+869,巴马瑶族自治县,Bama Yao Autonomous County
+870,环江毛南族自治县,Huanjiang Maonan Autonomous County
+871,大化瑶族自治县,Dahua Yao Autonomous County
+873,钦州市,Qinzhou
+874,灵山县,Lingshan County
+875,浦北县,Pubei County
+877,崇左市,Chongzuo
+878,宁明县,Ningming County
+879,扶绥县,Fusui County
+880,龙州县,Longzhou County
+881,大新县,Daxin County
+882,天等县,Tiandeng County
+883,凭祥市,"Pingxiang, Chongzuo"
+886,广州市,Guangzhou
+887,番禺区,Panyu District
+888,花都区,Huadu District
+889,增城区,Zengcheng District
+890,从化区,Conghua District
+892,深圳市,Shenzhen
+895,珠海市,Zhuhai
+896,斗门区,Doumen District
+897,黄茅洲镇,Huangmaozhou Town
+898,金湾区,Jinan District
+900,汕头市,Shantou
+901,潮阳区,"Chaoyang District, Shantou"
+902,澄海区,Chenghai District
+903,南澳县,Nan'ao County
+905,韶关市,Shaoguan
+906,曲江区,"Qujiang District, Shaoguan"
+907,乐昌市,Lechang
+908,南雄市,Nanxiong
+909,始兴县,Shixing County
+910,仁化县,Renhua County
+911,翁源县,Wengyuan County
+912,新丰县,"Xinfeng County, Shaoguan"
+913,乳源瑶族自治县,Ruyuan Yao Autonomous County
+914,浈江区,Zhenjiang District
+915,武江区,"Wujiang District, Shaoguan"
+917,佛山市,Foshan
+918,顺德区,Shunde District
+919,三水区,Sanshui District
+920,高明区,Gaoming District
+921,南海区,Nanhai District
+923,江门市,Jiangmen
+924,新会区,Xinhui District
+925,台山市,Taishan
+926,开平市,Kaiping
+927,鹤山市,"Heshan, Jiangmen"
+928,恩平市,Enping
+929,上川岛风景区,Shangchuan Island Scenic Area
+930,蓬江区,Pengjiang District
+931,江海区,Jianghai District
+933,茂名市,Maoming
+934,高州市,Gaozhou
+935,化州市,Huazhou
+936,信宜市,"Xinyi, Maoming"
+937,电白县（现电白区）,Dianbai County
+938,电白区,Dianbai District
+940,湛江市,Zhanjiang
+941,廉江市,Lianjiang
+942,雷州市,Leizhou
+943,吴川市,Wuchuan
+944,遂溪县,"Suixi County, Zhanjiang"
+945,徐闻县,Xuwen County
+946,麻章区,Mazhang District
+947,坡头区,Potou District
+948,赤坎区,Chikan District
+949,霞山区,Xiashan District
+951,肇庆市,Zhaoqing
+952,高要区,Gaoyao District
+953,四会市,Sihui
+954,广宁县,Guangning County
+955,怀集县,Huaiji County
+956,封开县,Fengkai County
+957,德庆县,Deqing County
+959,惠州市,Huizhou
+960,惠阳区,Huiyang District
+961,博罗县,Boluo County
+962,惠东县,"Huidong County, Huizhou"
+963,龙门县,Longmen County
+965,梅州市,Meizhou
+966,兴宁市,Xingning
+967,梅县区,Meixian District
+968,大埔县,Dabu County
+969,丰顺县,Fengshun County
+970,五华县,Wuhua County
+971,平远县,"Pingyuan County, Meizhou"
+972,蕉岭县,Jiaoling County
+974,汕尾市,Shanwei
+975,陆丰市,Lufeng
+976,海丰县,Haifeng County
+977,陆河县,Luhe County
+979,河源市,Heyuan
+980,紫金县,Zijin County
+981,龙川县,"Longchuan County, Heyuan"
+982,连平县,Lianping County
+983,和平县,Heping County
+984,东源县,Dongyuan County
+986,阳江市,Yangjiang
+987,阳春市,Yangchun
+988,阳西县,Yangxi County
+989,阳东区,Yangdong District
+991,清远市,Qingyuan
+992,英德市,Yingde
+993,连州市,Lianzhou
+994,佛冈县,Fogang County
+995,阳山县,Yangshan County
+996,连山壮族瑶族自治县,Lianshan Zhuang and Yao Autonomous County
+997,连南瑶族自治县,Liannan Yao Autonomous County
+998,清新区,Qingxin District
+1000,东莞市,Dongguan
+1002,中山市,Zhongshan
+1004,潮州市,Chaozhou
+1005,饶平县,Raoping County
+1006,潮安区,Chao District
+1008,揭阳市,Jieyang
+1009,普宁市,Puning
+1010,揭西县,Jiexi County
+1011,惠来县,Huilai County
+1012,揭东区,Jiedong District
+1014,云浮市,Yunfu
+1015,罗定市,Luoding
+1016,新兴县,Xinxing County
+1017,郁南县,Yu'nan County
+1018,云安区,Yun'an District
+1020,海口市,Haikou
+1022,三亚市,Sanya
+1023,文昌市,Wenchang
+1024,琼海市,Qionghai
+1025,万宁市,Wanning
+1026,东方市,Dongfang
+1027,五指山市,Wuzhishan
+1028,儋州市,Danzhou
+1029,临高县,Lingao County
+1030,澄迈县,Chengmai County
+1031,定安县,Ding'an County
+1032,屯昌县,Tunchang County
+1033,昌江黎族自治县,Changjiang Li Autonomous County
+1034,白沙黎族自治县,Baisha Li Autonomous County
+1035,琼中黎族苗族自治县,Qiongzhong Li and Miao Autonomous County
+1036,陵水黎族自治县,Lingshui Li Autonomous County
+1037,保亭黎族苗族自治县,Baoting Li and Miao Autonomous County
+1038,乐东黎族自治县,Ledong Li Autonomous County
+1039,西沙群岛,Xisha District (Paracel Islands)
+1040,南沙群岛,Nanette District (Spratly Islands)
+1041,三沙市,Sansha
+1045,南京市,Nanjing
+1052,浦口区,Pukou District
+1055,江宁区,Jiangning District
+1056,六合区,Liuhe District
+1057,溧水区,Lishui District
+1058,高淳区,Gaochun District
+1059,江浦,Jiangpu County
+1061,无锡市,Wuxi
+1066,锡山区,"Xishan District, Wuxi"
+1068,江阴市,Jiangyin
+1069,宜兴市,Yixing
+1071,徐州市,Xuzhou
+1077,新沂市,"Xinyi, Xuzhou"
+1078,邳州市,Pizhou
+1079,丰县,Feng County
+1080,沛县,Pei County
+1081,铜山区,Tongshan District
+1082,睢宁县,"Suining County, Xuzhou"
+1084,常州市,Changzhou
+1089,武进区,Wujin District
+1090,金坛市,Jintan District
+1091,溧阳市,Liyang
+1093,苏州市,"Suzhou, Jiangsu"
+1098,吴中区,Wuzhong District
+1100,常熟市,Changshu
+1101,张家港市,Zhangjiagang
+1102,昆山市,Kunshan
+1103,吴江区,"Wujiang District, Suzhou"
+1104,太仓市,Taicang
+1105,东山镇,Dongshan Town
+1106,吴县市（现吴中区、相城区）,Wuxian
+1108,南通市,Nantong
+1111,启东市,Qidong
+1112,如皋市,Rugao
+1113,南通市通州区,"Tongzhou District, Nantong"
+1114,海门区,Haimen District
+1115,海安市,Haian
+1116,如东县,Rudong County
+1119,连云港市,Lianyungang
+1123,赣榆区,Ganyu District
+1124,东海县,Donghai County
+1125,灌云县,Guanyun County
+1126,灌南县,Guannan County
+1127,燕尾港,Yanweigang
+1130,淮安市,Huaian
+1133,楚州区（现淮安区）,Chuzhou District
+1134,淮安区,Huaianqu
+1135,涟水县,Lianshui County
+1136,洪泽区,Hongze District
+1137,盱眙县,Xuyi County
+1138,金湖县,Jinhu County
+1139,淮阴区,"Huaiyin District, Huaian"
+1141,盐城市,Yancheng
+1143,盐都区,Yandu District
+1144,东台市,Dongtai
+1145,大丰区,Dafeng District
+1146,响水县,Xiangshui County
+1147,滨海县,Binhai County
+1148,阜宁县,"Funing County, Yancheng"
+1149,射阳县,Sheyang County
+1150,建湖县,Jianhu County
+1152,扬州市,Yangzhou
+1154,邗江区,"Hanjiang District, Yangzhou"
+1156,仪征市,Yizheng
+1157,高邮市,Gaoyou
+1158,江都区,Jiangdu District
+1159,宝应县,Baoying County
+1161,镇江市,Zhenjiang
+1164,丹徒区,Dantu
+1165,丹阳市,Danyang
+1166,扬中市,Yangzhong
+1167,句容市,Jurong
+1169,泰州市,"Taizhou, Jiangsu"
+1172,兴化市,Xinghua
+1173,靖江市,Jingjiang
+1174,泰兴市,Taixing
+1175,姜堰区,Jiangyan District
+1177,宿迁市,Suqian
+1179,宿豫区,Suyu District
+1180,沭阳县,Shuyang County
+1181,泗阳县,Siyang County
+1182,泗洪县,Sihong County
+1185,杭州市,Hangzhou
+1186,萧山区,Xiaoshan District
+1187,余杭区,Yuhang District
+1188,建德市,Jiande
+1189,富阳区,Fuyang District
+1190,临安区,linanqu
+1191,桐庐县,Tonglu County
+1192,淳安县,Chunan County
+1194,台州市,"Taizhou, Zhejiang"
+1195,椒江区,Jiaojiang District
+1196,黄岩区,Huangyan District
+1197,路桥区,Luqiao District
+1198,临海市,Linhai
+1199,温岭市,Wenling
+1200,玉环市,Yuhuan County
+1201,天台县,Tiantai County
+1202,仙居县,Xianju County
+1204,三门县,Sanmen County
+1205,大陈镇,Dachen Town
+1206,洪家街道,Hongjia Subdistrict
+1208,宁波市,Ningbo
+1209,鄞州区,"Yinzhou District, Ningbo"
+1210,镇海区,Zhenhai District
+1211,余姚市,Yuyao
+1212,慈溪市,Cixi
+1213,奉化区,Fenghua District
+1214,宁海县,Ninghai County
+1215,象山县,Xiangshan County
+1216,北仑区,Beilun District
+1217,石浦镇,Shipu Town
+1218,鄞县,Yin County
+1220,温州市,Wenzhou
+1222,瑞安市,Rui'an
+1223,乐清市,Yueqing
+1224,永嘉县,Yongjia County
+1225,文成县,Wencheng County
+1226,平阳县,Pingyang County
+1227,泰顺县,Taishun County
+1228,洞头县,Dongtou District
+1229,苍南县,Cangnan County
+1233,嘉兴市,Jiaxing
+1235,海宁市,Haining
+1236,平湖市,Pinghu
+1237,桐乡市,Tongxiang
+1238,嘉善县,Jiashan County
+1239,海盐县,"Haiyan County, Jiaxing"
+1241,湖州市,Huzhou
+1242,德清县,Deqing County
+1243,安吉县,Anji County
+1244,长兴县,Changxing County
+1246,绍兴市,Shaoxing
+1248,诸暨市,Zhuji
+1249,上虞区,Shangyu District
+1250,嵊州市,Shengzhou
+1251,新昌县,Xinchang County
+1253,金华市,Jinhua
+1254,兰溪市,Lanxi
+1255,义乌市,Yiwu
+1256,东阳市,Dongyang
+1257,永康市,Yongkang
+1258,武义县,"Wuyi County, Jinhua"
+1259,浦江县,"Pujiang County, Jinhua"
+1260,磐安县,Pan'an County
+1262,衢州市,Quzhou
+1263,江山市,Jiangshan City
+1264,常山县,Changshan County
+1265,开化县,Kaihua County
+1266,龙游县,Longyou County
+1267,衢江区,"Qujiang District, Quzhou"
+1269,舟山市,Zhoushan
+1270,定海区,Dinghai District
+1271,舟山市普陀区,"Putuo District, Zhoushan"
+1272,岱山县,Daishan County
+1273,嵊泗县,Shengsi County
+1275,丽水市,Lishui
+1276,龙泉市,Longquan
+1277,青田县,Qingtian County
+1278,缙云县,Jinyun County
+1279,遂昌县,Suichang County
+1280,松阳县,Songyang County
+1281,云和县,Yunhe County
+1282,庆元县,"Qingyuan County, Lishui"
+1283,景宁畲族自治县,Jingning She Autonomous County
+1286,南昌市,Nanchang
+1287,南昌县,Nanchang County
+1288,新建区,Xinjian District
+1289,安义县,Anyi County
+1290,进贤县,Jinxian County
+1291,莲塘镇,Liantang Town
+1293,乐平市,Leping
+1294,浮梁县,Fuliang County
+1295,景德镇市,Jingdezhen
+1297,萍乡市,"Pingxiang, Jiangxi"
+1298,莲花县,Lianhua County
+1299,上栗县,Shangli County
+1300,芦溪县,Luxi County
+1303,湘东区,Xiangdong District
+1304,安源区,Anyuan District
+1306,九江市,Jiujiang
+1307,武宁县,Wuning County
+1308,修水县,Xiushui County
+1309,永修县,Yongxiu County
+1310,德安县,Dean County
+1311,庐山市,Lushan
+1312,都昌县,Duchang County
+1313,湖口县,Hukou County
+1314,彭泽县,Pengze County
+1315,濂溪区,Lianxi District
+1316,瑞昌市,Ruichang
+1318,新余市,Xinyu
+1319,分宜县,Fenyi County
+1321,鹰潭市,Yingtan
+1322,贵溪市,Guixi
+1323,余江区,Yujiang District
+1325,赣州市,Ganzhou
+1326,瑞金市,Ruijin
+1327,南康区,Nankang District
+1328,赣县区,Ganxian District
+1329,信丰县,"Xinfeng County, Ganzhou"
+1330,大余县,Dayu County
+1331,上犹县,Shangyou County
+1332,崇义县,Chongyi County
+1333,安远县,Anyuan County
+1334,龙南市,Longnan City
+1335,定南县,Dingnan County
+1336,全南县,Quannan County
+1337,宁都县,Ningdu County
+1338,于都县,Yudu County
+1339,兴国县,Xingguo County
+1340,会昌县,Huichang County
+1341,寻乌县,Xunwu County
+1342,石城县,Shicheng County
+1346,吉安市,Ji'an
+1347,吉水县,Jishui County
+1348,峡江县,Xiajiang County
+1349,新干县,Xingan County
+1350,永丰县,Yongfeng County
+1351,遂川县,Suichuan County
+1352,泰和县,"Taihe County, Ji'an"
+1353,万安县,Wanan County
+1354,安福县,Anfu County
+1355,永新县,Yongxin County
+1356,宁冈,Ninggang
+1357,井冈山市,Jinggangshan
+1358,吉安县,Jianxian
+1360,宜春市,"Yichun, Jiangxi"
+1361,丰城市,"Fengcheng, Jiangxi"
+1362,樟树市,Zhangshu
+1363,高安市,Gaoan
+1364,奉新县,Fengxin County
+1365,万载县,Wanzai County
+1366,上高县,Shanggao County
+1367,宜丰县,Yifeng County
+1368,靖安县,Jingan County
+1369,铜鼓县,Tonggu County
+1372,南城县,Nancheng County
+1373,黎川县,Lichuan County
+1374,南丰县,Nanfeng County
+1375,崇仁县,Chongren County
+1376,乐安县,Lean County
+1377,宜黄县,Yihuang County
+1378,金溪县,Jinxi County
+1379,资溪县,Zixi County
+1380,东乡区,DongCounty
+1381,广昌县,Guangchang County
+1382,抚州市,Fuzhou
+1384,上饶市,Shangrao
+1385,德兴市,Dexing
+1386,广信区,GuangxinDistrict
+1387,广丰区,Guangfeng District
+1388,玉山县,Yushan County
+1389,铅山县,"Yanshan County, Shangrao"
+1390,横峰县,Hengfeng County
+1391,弋阳县,"Yiyang County, Shangrao"
+1392,余干县,Yugan County
+1393,波阳,Poyang
+1394,万年县,Wannian County
+1395,婺源县,"Wuyuan County, Shangrao"
+1396,鄱阳县,Poyang County
+1399,济南市,Jinan
+1400,长清区,Changqing District
+1401,章丘区,Zhangqiu District
+1402,平阴县,Pingyin County
+1403,济阳区,jiyangqu
+1404,商河县,ShangheCounty
+1405,天桥区,Tianqiao District
+1407,青岛市,Qingdao
+1408,胶州市,Jiaozhou
+1409,即墨区,Jimo
+1410,平度市,Pingdu
+1411,胶南市（现黄岛区）,Jiaonan
+1412,莱西市,Laixi
+1413,崂山区,Laoshan District
+1415,淄博市,Zibo
+1416,周村区,Zhoucun District
+1417,博山区,Boshan District
+1418,淄川区,Zichuan District
+1420,桓台县,Huantai County
+1421,高青县,Gaoqing County
+1422,沂源县,Yiyuan County
+1423,临淄区,Linzi District
+1425,枣庄市,Zaozhuang
+1426,薛城区,Xuecheng District
+1427,峄城区,"Yicheng District, Zaozhuang"
+1429,台儿庄区,Taierzhuang District
+1430,滕州市,Tengzhou
+1433,东营市,Dongying
+1434,利津县,Lijin County
+1435,垦利区,Kenli District
+1436,广饶县,Guangrao County
+1437,河口区,Estuary District
+1439,烟台市,Yantai
+1441,福山区,Fushan District
+1442,牟平区,Muping District
+1443,龙口市,Longkou
+1444,莱阳市,Laiyang
+1445,莱州市,Laizhou
+1446,蓬莱区,Penglai
+1447,招远市,"Zhaoyuan, Yantai"
+1448,栖霞市,Qixia
+1449,海阳市,Haiyang
+1450,长岛县,Changdao County
+1452,潍坊市,Weifang
+1454,青州市,Qingzhou
+1455,诸城市,Zhucheng
+1456,寿光市,Shouguang
+1457,安丘市,Anqiu
+1458,高密市,Gaomi
+1459,昌邑市,Changyi
+1460,昌乐县,Changle County
+1461,临朐县,Linqu County
+1463,威海市,Weihai
+1464,文登区,Wendeng District
+1465,乳山市,Rushan
+1466,荣成市,Rongcheng
+1467,石岛管理区,Shidao Management District
+1468,成山头风景区（成山镇）,Chengshantou Scenic Area (Chengshan Town)
+1470,济宁市,Jining
+1471,曲阜市,Qufu
+1472,兖州区,Yanzhou District
+1473,邹城市,Zoucheng
+1474,鱼台县,Yutai County
+1475,金乡县,Jinxiang County
+1476,嘉祥县,Jiaxiang County
+1477,微山县,Weishan County
+1478,汶上县,Wenshang County
+1479,泗水县,Sishui County
+1480,梁山县,Liangshan County
+1482,泰安市,Taian
+1483,新泰市,Xintai
+1484,肥城市,Feicheng
+1485,宁阳县,Ningyang County
+1486,东平县,Dongping County
+1489,日照市,Rizhao
+1490,五莲县,Wulian County
+1491,莒县,Ju County
+1493,莱芜区,Laiwu
+1495,临沂市,Linyi
+1496,沂南县,Yinan County
+1497,郯城县,Tancheng County
+1498,沂水县,Yishui County
+1499,兰陵县,Lanling County
+1500,费县,Fei County
+1501,平邑县,Pingyi County
+1502,莒南县,Junan County
+1503,蒙阴县,Mengyin County
+1504,临沭县,Linshu County
+1506,德州市,Dezhou
+1507,乐陵市,Laoling
+1508,禹城市,Yucheng City
+1509,陵城区,Lingcheng District
+1510,宁津县,"Ningjin County, Dezhou"
+1511,庆云县,Qingyun County
+1512,临邑县,"Linyi County, Dezhou"
+1513,齐河县,Qihe County
+1514,平原县,"Pingyuan County, Dezhou"
+1515,夏津县,XiajinCounty
+1516,武城县,Wucheng County
+1518,聊城市,Liaocheng
+1519,临清市,Linqing
+1520,阳谷县,Yanggu County
+1521,莘县,Shen County
+1522,茌平区,ChipingDistrict
+1523,东阿县,Donge County
+1524,冠县,Guan County
+1525,高唐县,Gaotang County
+1526,朝城镇,Chaocheng Town
+1528,滨州市,Binzhou
+1529,惠民县,Huimin County
+1530,阳信县,Yangxin County
+1531,无棣县,Wudi County
+1532,沾化区,Zhanhua District
+1533,博兴县,Boxing County
+1534,邹平市,Zouping
+1536,菏泽市,Heze
+1537,曹县,Cao County
+1538,单县,Shan County
+1539,成武县,Chengwu County
+1540,巨野县,Juye County
+1541,郓城县,Yuncheng County
+1542,鄄城县,Juancheng County
+1543,定陶区,Dingtao District
+1544,东明县,Dongming County
+1547,合肥市,Hefei
+1548,长丰县,Changfeng County
+1549,肥西县,Feixi County
+1550,肥东县,Feidong County
+1552,芜湖市,Wuhu
+1553,湾沚区,Wanzhi District
+1554,南陵县,Nanling County
+1555,繁昌区,Fanchang District
+1557,蚌埠市,Bengbu
+1558,怀远县,Huaiyuan County
+1559,固镇县,Guzhen County
+1560,五河县,Wuhe County
+1562,淮南市,Huainan
+1563,凤台县,Fengtai County
+1564,潘集区,Panji District
+1566,马鞍山市,Maanshan
+1567,当涂县,Dangtu County
+1569,淮北市,Huaibei
+1570,濉溪县,"Suixi County, Huaibei"
+1572,铜陵市,Tongling
+1574,安庆市,Anqing
+1575,桐城市,Tongcheng
+1576,宿松县,Susong County
+1577,枞阳县,Zongyang County
+1578,太湖县,Taihu County
+1579,怀宁县,Huaining County
+1580,岳西县,"Yuexi County, Anqing"
+1581,望江县,Wangjiang County
+1582,潜山市,Qianshan
+1584,黄山市,Huangshan
+1585,黄山区,Huangshan District
+1586,黄山风景区,Huangshan Scenic Area
+1587,屯溪区,Tunxi District
+1588,休宁县,Xiuning County
+1589,歙县,"She County, Huangshan"
+1590,祁门县,Qimen County
+1591,黟县,"Yi County, Huangshan"
+1593,滁州市,Chuzhou
+1594,天长市,Tianchang
+1595,明光市,Mingguang City
+1596,全椒县,Quanjiao County
+1597,来安县,Lai'an County
+1598,定远县,Dingyuan County
+1599,凤阳县,Fengyang County
+1601,阜阳市,Fuyang
+1602,界首市,Jieshou
+1603,临泉县,Linquan County
+1604,颍上县,Yingshang County
+1605,阜南县,Funan County
+1606,太和县,"Taihe County, Fuyang"
+1608,宿州市,"Suzhou, Anhui"
+1609,萧县,Xiao County
+1610,泗县,Si County
+1611,砀山县,Dangshan County
+1612,灵璧县,Lingbi County
+1618,巢湖市,Chaohu
+1619,和县,He County
+1620,含山县,Hanshan County
+1621,庐江县,Lujiang County
+1622,无为市,WuweiCity
+1624,六安市,Lu'an
+1625,寿县,Shou County
+1626,霍山县,Huoshan County
+1627,霍邱县,Huoqiu County
+1628,舒城县,Shucheng
+1629,金寨县,Jinzhai County
+1631,亳州市,Bozhou
+1633,利辛县,Lixin County
+1634,涡阳县,Guoyang County
+1635,蒙城县,Mengcheng County
+1637,池州市,Chizhou
+1639,东至县,Dongzhi County
+1640,石台县,Shitai County
+1641,青阳县,Qingyang County
+1642,九华山风景区,Mount Jiuhua Scenic Area
+1644,宣城市,Xuancheng
+1646,宁国市,Ningguo
+1647,广德市,GuangdeCity
+1648,郎溪县,Langxi County
+1649,泾县,"Jing County, Xuancheng"
+1650,旌德县,Jingde County
+1651,绩溪县,Jixi County
+1654,福州市,Fuzhou
+1655,福清市,Fuqing
+1656,长乐区,Changle District
+1657,闽侯县,Minhou County
+1658,连江县,Lianjiang County
+1659,罗源县,Luoyuan County
+1660,闽清县,Minqing County
+1661,永泰县,Yongtai County
+1662,平潭县,Pingtan County
+1663,福州市郊区,"Jiao District, Fuzhou"
+1665,厦门市,Xiamen
+1666,同安区,Tong'an District
+1668,莆田市,Putian
+1670,仙游县,Xianyou County
+1671,湄洲湾秀屿港,Xiuyu Port
+1672,城厢区,Chengxiang District
+1673,秀屿区,Xiuyu District
+1674,荔城区,"Licheng District, Putian"
+1675,涵江区,"Hanjiang District, Putian"
+1677,泉州市,Quanzhou
+1678,石狮市,Shishi
+1679,晋江市,Jinjiang
+1680,南安市,Nan'an
+1681,惠安县,Hui'an County
+1682,安溪县,Anxi County
+1683,永春县,Yongchun County
+1684,德化县,Dehua County
+1686,崇武古城风景区,Chongwu Ancient City Scenic Area
+1687,九仙山风景区（德化）,"Jiuxianshan Scenic Area, Dehua"
+1689,漳州市,Zhangzhou
+1690,龙海区,LongHai
+1691,云霄县,Yunxiao County
+1692,漳浦县,Zhangpu County
+1693,诏安县,Zhaoan County
+1694,长泰区,ChangTai
+1695,东山县,Dongshan County
+1696,南靖县,Nanjing County
+1697,平和县,Pinghe County
+1698,华安县,Hua'an County
+1700,南平市,Nanping
+1701,邵武市,Shaowu
+1702,武夷山市,Wuyishan
+1703,建瓯市,Jian'ou
+1704,建阳区,Jianyang District
+1705,顺昌县,Shunchang County
+1706,浦城县,"Pucheng County, Nanping"
+1707,光泽县,Guangze County
+1708,松溪县,Songxi County
+1709,政和县,Zhenghe County
+1711,龙岩市,Longyan
+1712,漳平市,Zhangping
+1713,武平县,Wuping County
+1714,长汀县,Changting County
+1715,永定区,Yongding District
+1716,连城县,Liancheng County
+1717,上杭县,Shanghang County
+1719,三明市,Sanming
+1720,永安市,Yong'an
+1721,明溪县,Mingxi County
+1722,清流县,Qingliu County
+1723,宁化县,Ninghua County
+1724,大田县,Datian County
+1725,尤溪县,Youxi County
+1726,沙县区,Shaxian District
+1727,将乐县,Jiangle County
+1728,泰宁县,Taining County
+1729,建宁县,Jianning County
+1731,宁德市,Ningde
+1732,福安市,Fu'an
+1733,福鼎市,Fuding
+1734,霞浦县,Xiapu County
+1735,古田县,Gutian County
+1736,屏南县,"Pingnan County, Ningde"
+1737,寿宁县,Shouning County
+1738,周宁县,Zhou County
+1739,柘荣县,Zherong County
+1742,石家庄市,Shijiazhuang
+1743,藁城区,Gaocheng District
+1744,辛集市,Xinji
+1745,晋州市,"Jinzhou, Shijiazhuang"
+1746,新乐市,Xinle
+1747,鹿泉区,Luquan District
+1748,平山县,"Pingshan County, Shijiazhuang"
+1749,井陉矿区,Jingxing Mining District
+1750,栾城区,Luancheng District
+1751,正定县,Zhengding County
+1752,行唐县,Xingtang County
+1753,灵寿县,Lingshou County
+1754,高邑县,Gaoyi County
+1755,赵县,Zhao County
+1756,赞皇县,Zanhuang County
+1757,深泽县,Shenze County
+1758,无极县,Wuji County
+1759,元氏县,Yuanshi County
+1761,唐山市,Tangshan
+1762,丰润区,Fengrun District
+1763,丰南区,Fengnan District
+1764,遵化市,Zunhua
+1765,迁安市,Qian'an
+1766,迁西县,"Qianxi County, Tangshan"
+1767,滦南县,Luannan County
+1768,玉田县,Yutian County
+1769,唐海,Tanghai County
+1770,乐亭县,Leting County
+1771,滦州市,Luanzhou
+1773,秦皇岛市,Qinhuangdao
+1774,昌黎县,Changli County
+1775,卢龙县,Lulong County
+1776,抚宁县,Funing District
+1777,青龙满族自治县,Qinglong Manchu Autonomous County
+1780,北戴河区,Beidaihe District
+1782,邯郸市,Handan
+1783,永年区,Yongnian District
+1784,曲周县,Quzhou County
+1785,馆陶县,Guantao County
+1786,魏县,"Wei County, Handan"
+1787,成安县,Cheng'an County
+1788,大名县,Daming County
+1789,涉县,"She County, Handan"
+1790,鸡泽县,Jize County
+1791,邱县,Qiu County
+1792,广平县,Guangping County
+1793,肥乡区,Feixiang District
+1794,临漳县,Linzhang County
+1795,磁县,Ci County
+1796,武安市,Wu'an
+1797,峰峰矿区,Fengfeng Mining District
+1799,邢台市,Xingtai
+1800,南宫市,Nangong
+1801,沙河市,Shahe
+1803,柏乡县,Baixiang County
+1804,任泽区,Renze District
+1805,清河县,Qinghe County
+1806,宁晋县,"Ningjin County, Xingtai"
+1807,威县,"Wei County, Xingtai"
+1808,隆尧县,Longyao County
+1809,临城县,Lincheng County
+1810,广宗县,Guangzong County
+1811,临西县,"Linxi County, Xingtai"
+1812,内邱县（现内丘县）,Neiqiu County
+1813,平乡县,Pingxiang County
+1814,巨鹿县,Julu County
+1815,新河县,Xinhe County
+1816,南和区,Nanhe District
+1817,内丘县,Neiqiu County
+1819,保定市,Baoding
+1820,涿州市,Zhuozhou
+1821,定州市,Dingzhou
+1822,安国市,Anguo
+1823,高碑店市,Gaobeidian
+1824,满城县,Mancheng District
+1825,清苑县,Qingyuan District
+1826,涞水县,Laishui County
+1827,阜平县,"Fuping County, Baoding"
+1828,徐水县,Xushui District
+1829,定兴县,Dingxing County
+1830,唐县,Tang County
+1831,高阳县,Gaoyang County
+1832,容城县,Rongcheng County
+1833,涞源县,Laiyuan County
+1834,望都县,Wangdu County
+1836,安新县,Anxin County
+1837,易县,"Yi County, Baoding"
+1838,曲阳县,Quyang County
+1839,蠡县,Li County
+1840,博野县,Boye County
+1841,雄县,Xiong County
+1842,顺平县,Shunping County
+1844,张家口市,Zhangjiakou
+1845,宣化县,Xuanhua County
+1846,康保县,Kangbao County
+1847,张北县,Zhangbei County
+1848,阳原县,Yangyuan County
+1849,赤城县,Chicheng County
+1850,沽源县,Guyuan County
+1851,怀安县,Huai County
+1852,怀来县,Huailai County
+1853,崇礼区,Chongli District
+1854,尚义县,Shangyi County
+1855,蔚县,"Yu County, Zhangjiakou"
+1856,涿鹿县,Zhuolu County
+1857,万全区,Wanquan District
+1859,承德市,Chengde
+1860,承德县,Chengde County
+1861,兴隆县,Xinglong County
+1862,隆化县,Longhua County
+1863,平泉市,Pingquan
+1864,滦平县,Luanping County
+1865,丰宁满族自治县,Fengning Manchu Autonomous County
+1866,围场满族蒙古族自治县,Weichang Manchu and Mongolian Autonomous County
+1867,宽城满族自治县,Kuancheng Manchu Autonomous County
+1869,沧州市,Cangzhou
+1870,泊头市,Botou
+1871,任丘市,Renqiu
+1872,黄骅市,Huanghua
+1873,河间市,Hejian
+1874,沧县,Cang County
+1875,青县,Qing County
+1876,献县,Xian County
+1877,东光县,Dongguang County
+1878,海兴县,Haixing County
+1879,盐山县,"Yanshan County, Cangzhou"
+1880,肃宁县,Suning County
+1881,南皮县,Nanpi County
+1882,吴桥县,Wuqiao County
+1883,孟村回族自治县,Mengcun Hui Autonomous County
+1884,曹妃甸区,Caofeidian District
+1886,廊坊市,Langfang
+1887,霸州市,Bazhou
+1888,三河市,Sanhe
+1889,固安县,Gu'an County
+1890,永清县,Yongqing County
+1891,香河县,Xianghe County
+1892,大城县,Dacheng County
+1893,文安县,Wen'an  County
+1894,大厂回族自治县,Dachang Hui Autonomous County
+1896,衡水市,Hengshui
+1897,冀州区,Jizhou District
+1898,深州市,Shenzhou
+1899,饶阳县,Raoyang County
+1900,枣强县,Zaoqiang County
+1901,故城县,"Gucheng County, Hengshui"
+1902,阜城县,Fucheng County
+1903,安平县,Anping County
+1904,武邑县,"Wuyi County, Hengshui"
+1905,景县,"Jing County, Hengshui"
+1906,武强县,Wuqiang County
+1909,太原市,Taiyuan
+1911,古交市,Gujiao
+1912,阳曲县,Yangqu County
+1913,清徐县,Qingxu County
+1914,娄烦县,Loufan County
+1915,小店区,Xiaodian District
+1916,尖草坪区,Jiancaoping District
+1918,大同市,Datong
+1919,云州区,Yunzhou District
+1920,天镇县,Tianzhen County
+1921,灵丘县,Lingqiu County
+1922,阳高县,Yanggao County
+1923,左云县,Zuoyun County
+1924,广灵县,Guangling County
+1925,浑源县,Hunyuan County
+1927,阳泉市,Yangquan
+1928,平定县,Pingding County
+1929,盂县,"Yu County, Yangquan"
+1933,长治市,Changzhi
+1934,襄垣县,Xiangyuan County
+1935,屯留区,TunliuDistrict
+1936,平顺县,Pingshun County
+1937,黎城县,Licheng County
+1938,壶关县,Huguan County
+1939,长子县,Zhangzi County
+1940,武乡县,Wuxiang County
+1941,沁县,Qin County
+1942,沁源县,Qinyuan County
+1943,潞城区,Lucheng District
+1945,晋城市,Jincheng
+1946,高平市,Gaoping
+1947,泽州县,Zezhou County
+1948,沁水县,Qinshui County
+1949,陵川县,"Lingchuan County, Jincheng"
+1950,阳城县,Yangcheng County
+1952,朔州市,Shuozhou
+1953,山阴县,Shanyin County
+1954,应县,Ying County
+1955,右玉县,Youyu County
+1956,怀仁市,Huairen
+1957,平鲁区,Pinglu District
+1959,晋中市,Jinzhong
+1960,榆次区,Yuci District
+1961,介休市,Jiexiu
+1962,榆社县,Yushe County
+1963,左权县,Zuoquan County
+1964,和顺县,Heshun County
+1965,昔阳县,Xiyang County
+1966,寿阳县,Shouyang County
+1967,太谷区,TaiguDistrict
+1968,祁县,"Qi County, Jinzhong"
+1969,平遥县,Pingyao County
+1970,灵石县,Lingshi County
+1972,运城市,Yuncheng
+1973,永济市,Yongji
+1974,河津市,Hejin
+1975,芮城县,Ruicheng County
+1976,临猗县,"Linyi County, Yuncheng"
+1977,万荣县,Wanrong County
+1978,新绛县,Xinjiang County
+1979,稷山县,Jishan County
+1980,闻喜县,Wenxi County
+1981,夏县,Xia County
+1982,绛县,Jiang County
+1983,平陆县,Pinglu County
+1984,垣曲县,Yuanqu County
+1986,忻州市,Xinzhou
+1987,原平市,Yuanping
+1988,定襄县,Dingxiang County
+1989,五台山,Wutaishan
+1990,代县,Dai County
+1991,繁峙县,Fanshi County
+1992,宁武县,Ningwu County
+1993,静乐县,Jingle County
+1994,神池县,Shenchi County
+1995,五寨县,Wuzhai County
+1996,岢岚县,Kelan County
+1997,河曲县,Hequ County
+1998,保德县,Baode County
+1999,偏关县,Pianguan County
+2000,五台县,Wutaixian County
+2002,临汾市,Linfen
+2003,侯马市,Houma
+2004,霍州市,Huozhou
+2005,曲沃县,Quwo County
+2006,翼城县,Yicheng County
+2007,襄汾县,Xiangfen County
+2008,洪洞县,Hongtong County
+2009,古县,Gu County
+2010,安泽县,Anze County
+2011,浮山县,Fushan County
+2012,吉县,"Ji County, Linfen"
+2013,乡宁县,Xiangning County
+2014,蒲县,Pu County
+2015,大宁县,Daning County
+2016,永和县,Yonghe County
+2017,隰县,"Xi County, Linfen"
+2018,汾西县,Fenxi County
+2020,吕梁市,Luliang
+2021,离石区,Lishi District
+2022,孝义市,Xiaoyi
+2023,汾阳市,Fenyang
+2024,文水县,Wenshui County
+2025,中阳县,Zhongyang County
+2026,兴县,Xing County
+2027,临县,Lin County
+2028,方山县,Fangshan County
+2029,柳林县,Liulin County
+2030,岚县,Lan County
+2031,交口县,Jiaokou County
+2032,交城县,Jiaocheng County
+2033,石楼县,Shilou County
+2036,呼和浩特市,Hohhot
+2037,托克托县,Tuoketuo County
+2038,武川县,Wuchuan County
+2039,和林格尔县,Horinger County
+2040,清水河县,Qingshuihe County
+2041,土默特左旗,Tumed Left Banner
+2042,呼市郊区,Hohhot Suburb
+2044,包头市,Baotou
+2045,固阳县,Guyang County
+2046,达尔罕茂明安联合旗,Darhan Muminggan United Banner
+2047,土默特右旗,Tumed Right Banner
+2048,白云鄂博矿区,Bayan Obo Mining District
+2049,满都拉镇,Mandula Town
+2051,乌海市,Wuhai
+2054,赤峰市,Chifeng
+2055,宁城县,Ningcheng County
+2056,林西县,"Linxi County, Chifeng"
+2057,喀喇沁旗,Harqin Banner
+2058,巴林右旗,Bairin Right Banner
+2059,敖汉旗,Aohan Banner
+2060,阿鲁科尔沁旗,Ar Horqin Banner
+2061,翁牛特旗,Ongniud Banner
+2062,克什克腾旗,Hexigten Banner
+2063,巴林左旗,Bairin Left Banner
+2064,浩尔吐乡,Haoertu Township
+2065,宝国吐乡,Baoguotu Township
+2066,岗子乡,Gangzi Township
+2067,八里罕镇,Balihan Town
+2068,平庄镇,Pingzhuang Town
+2069,天义镇,Tianyi Town
+2071,通辽市,Tongliao
+2073,开鲁县,Kailu County
+2074,科尔沁左翼中旗,Horqin Left Middle Banner
+2075,科尔沁左翼后旗,Horqin Left Back Banner
+2076,库伦旗,Hure Banner
+2077,奈曼旗,Naiman Banner
+2078,扎鲁特旗,Jarud Banner
+2079,青龙山镇,Qinglongshan Town
+2080,巴雅尔吐胡硕镇,Bayaertuhushuo Town
+2081,高力板镇,Gaoliban Town
+2082,舍伯吐镇,Shebotu Town
+2084,鄂尔多斯市,Ordos
+2085,东胜区,Dongsheng District
+2086,准格尔旗,Jungar Banner
+2087,乌审旗,Uxin Banner
+2088,伊金霍洛旗,Ejin Horo Banner
+2089,鄂托克旗,Otog Banner
+2090,鄂托克前旗,Otog Front Banner
+2091,杭锦旗,Hanggin Banner
+2092,达拉特旗,Dalad Banner
+2093,河南(内蒙),Henan (Inner Mongolia)
+2094,乌审召镇,Uxin Zhao Town
+2095,伊克乌素镇,Yikewusu Town
+2097,呼伦贝尔市,Hulunbuir
+2098,海拉尔区,Hailar District
+2099,满洲里市,Manzhouli
+2100,牙克石市,Yakeshi
+2101,扎兰屯市,Zhalantun
+2102,根河市,Genhe
+2103,额尔古纳市,Ergun
+2104,陈巴尔虎旗,Old Barag Banner
+2105,阿荣旗,Arun Banner
+2106,新巴尔虎左旗,New Barag Left Banner
+2107,新巴尔虎右旗,New Barag Right Banner
+2108,鄂伦春自治旗,Oroqin Autonomous Banner
+2109,莫力达瓦达斡尔族自治旗,Morin Dawa Daur Autonomous Banner
+2110,鄂温克族自治旗,Evenk Autonomous Banner
+2111,诺敏镇（小二沟）,Nowmin Town (Xiaoergou)
+2112,图里河镇,Tulihe Town
+2115,临河区,Linhe District
+2116,五原县,"Wuyuan County, Bayannur"
+2117,磴口县,Dengkou County
+2118,杭锦后旗,Hanggin Rear Banner
+2119,乌拉特中旗,Urat Middle Banner
+2120,乌拉特前旗,Urat Front Banner
+2121,乌拉特后旗,Urat Rear Banner
+2122,海力素,Hailisu
+2123,那仁宝力格,Narenbaolige
+2124,大佘太镇,Dashetai Town
+2127,集宁区,Jining District
+2128,丰镇市,Fengzhen
+2129,兴和县,Xinghe County
+2130,卓资县,Zhuozi County
+2131,商都县,Shangdu County
+2132,凉城县,Liangcheng County
+2133,化德县,Huade County
+2134,四子王旗,Siziwang Banner
+2135,察哈尔右翼前旗,Chahar Right Front Banner
+2136,察哈尔右翼中旗,Chahar Right Middle Banner
+2137,察哈尔右翼后旗,Chahar Right Back Banner
+2138,希拉穆仁镇,Xilamuren Town
+2140,锡林浩特市,Xilinhot
+2141,二连浩特市,Erenhot
+2142,多伦县,Duolun County
+2143,阿巴嘎旗,Abag Banner
+2144,西乌珠穆沁旗,West Ujimqin Banner
+2145,东乌珠穆沁旗,East Ujimqin Banner
+2146,苏尼特左旗,Sonid Left Banner
+2147,苏尼特右旗,Sonid Right Banner
+2148,太仆寺旗,Taibus Banner
+2149,正镶白旗,Plain and Bordered White Banner
+2150,正蓝旗,Plain Blue Banner
+2151,镶黄旗,Bordered Yellow Banner
+2152,朱日和镇,Zhurihe Town
+2153,博克图镇,Boketu Town
+2154,乌拉盖管理区,Wulagai Zone
+2157,乌兰浩特市,Ulanhot
+2158,阿尔山市,Arxan
+2159,突泉县,Tuquan County
+2160,扎赉特旗,Jalaid Banner
+2161,科尔沁右翼前旗,Horqin Right Front Banner
+2162,科尔沁右翼中旗,Horqin Right Middle Banner
+2163,霍林郭勒市,Holingol
+2164,索伦镇,Suolun Town
+2165,胡尔勒镇,Huerle Town
+2168,阿拉善左旗,Alxa Left Banner
+2169,阿拉善右旗,Alxa Right Banner
+2170,额济纳旗,Ejin Banner
+2171,拐子湖,Guaizihu
+2172,吉兰泰镇,Jilantai Town
+2173,孪井滩示范区,Luanjingtan
+2174,头道湖,Toudaohu
+2175,中泉子,Zhongquanzi
+2176,巴彦诺尔贡,Bayannuoergong
+2177,雅布赖镇,Abram Town
+2178,乌斯泰镇,Wusitai Town
+2179,锡林高勒,Xilingaole Town
+2182,西安市,Xian
+2183,临潼区,Lintong District
+2184,西安市长安区,"Chang'an District, Xi'an"
+2185,高陵区,Gaoling District
+2186,蓝田县,Lantian County
+2187,鄠邑区,Eyi district
+2188,周至县,Zhouzhi County
+2191,铜川市,Tongchuan
+2192,耀县,Yao County
+2193,宜君县,Yijun County
+2195,宝鸡市,Baoji
+2196,陈仓区,Chencang District
+2197,凤翔区,Fengxiang District
+2198,岐山县,Qishan County
+2199,扶风县,Fufeng County
+2200,眉县,Mei County
+2201,陇县,Long County
+2202,千阳县,Qianyang County
+2203,麟游县,Linyou County
+2204,凤县,Fengxian County
+2205,太白县,Taibai County
+2206,宝鸡县,Baoji County
+2207,耀州区,Yaozhou District
+2209,咸阳市,Xianyang
+2210,兴平市,Xingping
+2211,三原县,Sanyuan County
+2212,泾阳县,Jingyang
+2213,乾县,Qian County
+2214,礼泉县,Liquan County
+2215,永寿县,Yongshou County
+2216,彬县,Binzhou City
+2217,长武县,Changwu County
+2218,旬邑县,Xunyi County
+2219,淳化县,Chunhua County
+2220,武功县,Wugong County
+2221,杨凌农业高新技术产业示范区,Yangling Agricultural High-tech Industries Demonstration Zone
+2223,渭南市,Weinan
+2224,华阴市,Huayin
+2225,韩城市,Hancheng
+2226,华县,Huazhou District
+2227,潼关县,Tongguan County
+2228,大荔县,Dali County
+2229,蒲城县,"Pucheng County, Weinan"
+2230,澄城县,Chengcheng County
+2231,白水县,Baishui County
+2232,合阳县,Heyang County
+2233,富平县,"Fuping County, Weinan"
+2236,延安市,Yanan
+2237,延长县,Yanchang County
+2238,延川县,Yanchuan County
+2239,子长市,ZichangCity
+2240,安塞区,Ansai District
+2241,志丹县,Zhidan County
+2242,吴起县,Wuqi County
+2243,甘泉县,Ganquan County
+2244,富县,Fu County
+2245,洛川县,Luochuan County
+2246,宜川县,"Yichuan County, Yan'an"
+2247,黄龙县,Huanglong County
+2248,黄陵县,Huangling County
+2250,汉中市,Hanzhong
+2251,南郑区,Nanzheng District
+2252,城固县,Chenggu County
+2253,洋县,Yang County
+2254,西乡县,Xixiang County
+2255,勉县,Mian County
+2256,宁强县,Ningqiang County
+2257,略阳县,Lueyang County
+2258,镇巴县,Zhenba County
+2259,留坝县,Liuba County
+2260,佛坪县,Foping County
+2262,榆林市,"Yulin, Shaanxi"
+2263,神木市,Shenmu
+2264,府谷县,Fugu County
+2265,横山县,Hengshan District
+2266,靖边县,Jingbian County
+2267,定边县,Dingbian County
+2268,绥德县,Suide County
+2269,米脂县,Mizhi County
+2270,佳县,"Jia County, Yulin"
+2271,吴堡县,Wubu County
+2272,清涧县,Qingjian County
+2273,子洲县,Zizhou County
+2274,榆阳区,Yuyang District
+2276,安康市,Ankang
+2277,汉阴县,Hanyin County
+2278,石泉县,Shiquan County
+2279,宁陕县,Ningshan County
+2280,紫阳县,Ziyang County
+2281,岚皋县,Langao County
+2282,平利县,Pingli County
+2283,镇坪县,"Zhenping County, Ankang"
+2284,旬陽市,XunYang
+2285,白河县,Baihe County
+2287,商洛市,Shangluo
+2289,洛南县,Luonan County
+2290,丹凤县,Danfeng County
+2291,商南县,Shangnan County
+2292,山阳县,Shanyang County
+2293,镇安县,Zhen'an County
+2294,柞水县,Zhashui County
+2295,商县,Shang County
+2296,商州区,Shangzhou District
+2299,银川市,Yinchuan
+2300,灵武市,Lingwu
+2301,永宁县,Yongning County
+2302,贺兰县,Helan County
+2304,石嘴山市,Shizuishan
+2305,大武口区,Dawukou District
+2306,惠农区,Huinong District
+2307,平罗县,Pingluo County
+2308,陶乐县（现兴庆区、平罗县）,Taole County
+2309,石炭井街道,Shitanjing Subdistrict
+2311,吴忠市,Wuzhong
+2312,青铜峡市,Qingtongxia
+2313,同心县,Tongxin County
+2314,盐池县,Yanchi County
+2315,韦州镇,Weizhou Town
+2316,麻黄山乡,Mahuangshan Township
+2318,固原市,Guyuan
+2319,西吉县,Xiji County
+2320,彭阳县,Pengyang County
+2321,泾源县,"Jingyuan County, Guyuan"
+2322,隆德县,Longde County
+2323,六盘山镇,Liupanshan Town
+2325,中卫市,Zhongwei
+2326,海原县,Haiyuan County
+2327,中宁县,Zhongning County
+2328,沙头坡区兴仁堡,"Xingrenpu, Shapotou District"
+2331,兰州市,Lanzhou
+2332,永登县,Yongdeng County
+2333,榆中县,Yuzhong County
+2334,皋兰县,Gaolan County
+2336,金昌市,Jinchang
+2337,永昌县,Yongchang County
+2339,白银市,Baiyin
+2340,靖远县,"Jingyuan County, Baiyin"
+2341,景泰县,Jingtai County
+2342,会宁县,Huining County
+2343,平川区,Pingchuan District
+2345,天水市,Tianshui
+2346,武山县,"Wushan County, Tianshui"
+2347,甘谷县,Gangu County
+2348,清水县,Qingshui County
+2349,秦安县,Qin'an County
+2350,张家川回族自治县,Zhangjiachuan Hui Autonomous County
+2351,麦积区,Maiji District
+2352,北道区,Beidao District
+2354,嘉峪关市,Jiayuguan
+2356,武威市,Wuwei
+2357,民勤县,Minqin County
+2358,古浪县,Gulang County
+2359,天祝藏族自治县,Tianzhu Tibetan Autonomous County
+2360,乌鞘岭,Wushao Mountain
+2362,张掖市,Zhangye
+2363,民乐县,Minle County
+2364,山丹县,Shandan County
+2365,临泽县,Linze County
+2366,高台县,Gaotai County
+2367,肃南裕固族自治县,Sunan Yugu Autonomous County
+2369,平凉市,Pingliang
+2370,灵台县,Lingtai County
+2371,静宁县,Jingning County
+2372,崇信县,Chongxin County
+2373,华亭市,Huating
+2374,泾川县,Jingchuan County
+2375,庄浪县,Zhuanglang County
+2376,崆峒区,Kongtong District
+2378,酒泉市,Jiuquan
+2379,玉门市,Yumen
+2380,敦煌市,Dunhuang
+2382,金塔县,Jinta County
+2383,阿克塞哈萨克族自治县,Aksai (Aksay) Kazakh Autonomous County
+2384,肃北蒙古族自治县,Subei Mongolian Autonomous County
+2386,瓜州县,Guazhou County
+2387,鼎新镇,Dingxin Town
+2388,马鬃山,Mazongshan
+2390,庆阳市,Qingyang
+2391,西峰区,Xifeng District
+2392,庆城县,Qingcheng County
+2393,镇原县,"Zhenyuan County, Qingyang"
+2394,合水县,Heshui County
+2395,华池县,Huachi County
+2396,环县,Huan County
+2397,宁县,Ning County
+2398,正宁县,Zhengning County
+2400,定西市,Dingxi
+2401,安定区,Anding District
+2402,通渭县,Tongwei County
+2403,临洮县,Lintao County
+2404,漳县,Zhang County
+2405,岷县,Min County
+2406,渭源县,"Weiyuan County, Dingxi"
+2407,陇西县,Longxi County
+2410,武都区,Wudu
+2411,成县,Cheng County
+2412,宕昌县,Dangchang County
+2413,康县,Kang County
+2414,文县,"Wen County, Longnan"
+2415,西和县,Xihe County
+2416,礼县,"Li County, Longnan"
+2417,两当县,Liangdang County
+2418,徽县,Hui County
+2420,临夏回族自治州,Linxia Hui Autonomous Prefecture
+2422,康乐县,Kangle County
+2423,永靖县,Yongjing County
+2424,广河县,Guanghe County
+2425,和政县,Hezheng County
+2426,东乡族自治县,Dongxiang Autonomous County
+2427,积石山保安族东乡族撒拉族自治县,"Jishishan Bonan, Dongxiang and Salar Autonomous County"
+2430,合作市,Hezuo (Zoi) City
+2431,临潭县,Lintan
+2432,卓尼县,juoni-county
+2433,舟曲县,Zhouqu (Zhugqu) County
+2434,迭部县,diebu-county
+2435,玛曲县,Maqu County
+2436,碌曲县,Luqu County
+2437,夏河县,Xiahe County
+2440,西宁市,Xining
+2441,湟源县,Huangyuan County
+2442,湟中区,Huangzhong District
+2443,大通回族土族自治县,Datong Hui and Tu Autonomous County
+2445,平安区,Ping'an District
+2446,乐都区,Ledu District
+2447,民和回族土族自治县,Minhe Hui and Tu Autonomous County
+2448,互助土族自治县,Huzhu Tu Autonomous County
+2449,化隆回族自治县,Hualong Hui Autonomous County
+2450,循化撒拉族自治县,Xunhua Salar Autonomous County
+2451,海东市,Haidong
+2452,冷湖行政区,Lenghu Administrative Committee
+2454,海晏县,"Haiyan County, Haibei"
+2455,祁连县,Qilian County
+2456,刚察县,Gangcha County
+2457,门源回族自治县,Menyuan Hui Autonomous County
+2458,海北藏族自治州,Haibei Tibetan Autonomous Prefecture
+2459,托勒蒙古族乡,Tuole Mongolian Township
+2461,同仁县,Tongren County
+2462,尖扎县,Jianzha County
+2463,泽库县,Zeku County
+2464,河南蒙古族自治县,Henan Mongolian Autonomous County
+2465,黄南藏族自治州,Huangnan Tibetan Autonomous Prefecture
+2467,共和县,Gonghe County
+2468,同德县,Tongde County
+2469,贵德县,Guide County
+2470,兴海县,Xinghai County
+2471,贵南县,Guinan County
+2472,海南藏族自治州,Hainan Tibetan Autonomous Prefecture
+2474,玛沁县,maqin-county
+2475,班玛县,Baima County
+2476,甘德县,gande-county
+2477,达日县,Darlag County
+2478,久治县,Jigzhi County
+2479,玛多县,Madoi County
+2480,果洛藏族自治州,Golog Tibetan Autonomous Prefecture
+2483,玉树藏族自治州,Yushu Tibetan Autonomous Prefecture
+2484,杂多县,Zadoi County
+2485,治多县,Zhidoi County
+2486,囊谦县,nangqian-county
+2487,曲麻莱县,qumalai-county
+2488,称多县,Chindu County
+2490,格尔木市,Golmud
+2491,德令哈市,Delhi
+2492,乌兰县,Ulan County
+2493,都兰县,Dulan County
+2494,天峻县,Tianjun
+2495,海西蒙古族藏族自治州,Haixi Mongolian-Tibetan Autonomous Prefecture
+2496,野牛沟乡,Yeniugou Township
+2497,五道梁镇,Wudaoliang Town
+2498,小灶火（乌图美仁乡）,Xiaozaohuo (Wutumeiren Township)
+2499,诺木洪乡,Nuomuhong Township
+2500,茫崖市,Mangya City
+2501,大柴旦行政区,Da Qaidam Administrative Committee
+2502,茶卡镇,Chaka Town
+2505,乌鲁木齐市,Urumqi
+2506,小渠子风景区,Xiaoquzi Scenic Area
+2507,白杨沟镇,Baiyanggou Town
+2508,十三间房,Shisanjianfang
+2509,天山大西沟乡,"Daxigou Township, Tian Shan"
+2510,乌鲁木齐牧试站(新疆维吾尔自治区),Wumushizhan
+2511,天山天池风景区（瑶池）,Heaven Lake of Tian Shan (Tianchi Lake)
+2512,蔡家湖镇,Caijiahu Town
+2513,达坂城区,Dabancheng District
+2516,克拉玛依市,Karamay
+2517,白碱滩区,Baijiantan District
+2518,乌尔禾区,Urho District
+2520,石河子市,Shihezi
+2521,莫索湾市,Mosuowan
+2522,乌兰乌苏镇,Wulanwusu Town
+2523,炮台镇,Paotai Town
+2525,阿拉尔市,Alar
+2527,博乐市,Bortala County
+2528,精河县,Jinghe County
+2529,阿拉山口市,Alatavighizi
+2530,温泉县,Arixang (Arishang) County
+2532,吐鲁番地区,Turpan Prefecture
+2533,鄯善县,Piqan County
+2534,托克逊县,Toksun County
+2535,红柳河,Hongliuhe
+2536,克孜勒苏柯尔克孜自治州,Kizilsu Kirghiz Autonomous Prefecture
+2538,哈密地区,Hami Prefecture
+2539,伊吾县,yiwu-county
+2540,巴里坤哈萨克自治县,Barkol Kazakh Autonomous County
+2541,淖毛湖,Naomaohu
+2543,阿克苏地区,Aksu Prefecture
+2544,温宿县,Onsu County
+2545,沙雅县,Xayar County
+2546,拜城县,Bay County
+2547,阿瓦提县,Awat County
+2548,库车市,Kuche City
+2549,柯坪县,Kalpin County
+2550,新和县,Toksu (Toqsu) County
+2551,乌什县,Uqturpan County
+2553,和田地区,Hotan Prefecture
+2555,墨玉县,Karakax (Qaraqash) County
+2556,皮山县,Guma County
+2557,洛浦县,Lop County
+2558,策勒县,Qira County
+2559,于田县,Keriya County
+2560,民丰县,Niye County
+2562,喀什地区,Kashi Prefecture
+2563,巴楚县,Maralbexi County
+2564,泽普县,Poskam County
+2565,伽师县,Payzawat County
+2566,叶城县,Kargilik County
+2567,岳普湖县,Yopurga County
+2568,疏勒县,Kashgar Yengisheher County
+2569,麦盖提县,Makit County
+2570,英吉沙县,Yengisar County
+2571,莎车县,Yarkant (Yarkand) County
+2572,疏附县,Konasheher County
+2573,塔什库尔干塔吉克自治县,Tashkurgan (Taxkorgan) Tajik Autonomous County
+2575,阿图什市,Artux
+2576,阿克陶县,Akto County
+2577,阿合奇县,Akqi County
+2578,乌恰县,Ulugqat County
+2579,吐尔尕特口岸,Torugart Port
+2581,库尔勒市,Korla
+2582,轮台县,luntai-county
+2583,尉犁县,Lopnur County
+2584,若羌县,Qarkilik (Charkliq) County
+2585,且末县,Qarqan County
+2586,焉耆回族自治县,Yanqi Hui Autonomous County
+2587,和静县,Hejing County
+2588,和硕县,Hoxud (Hoshut) County
+2589,博湖县,bohu-county
+2590,塔中,Middle Taklimakan
+2591,库米什镇,Kumishi
+2592,巴音布鲁克,Bayanbulak Grassland
+2593,铁干里克,Tieganlike
+2595,昌吉回族自治州,Changji Hui Autonomous Prefecture
+2596,阜康市,Fukang
+2597,米泉,Miquan
+2598,呼图壁县,Qutubi County
+2599,玛纳斯县,Manas (Manass) County
+2600,奇台县,Qitai County
+2601,吉木萨尔县,Jimsar County
+2602,木垒哈萨克自治县,Mori Kazakh Autonomous County
+2603,北塔山,Baitag Bogd Mountain
+2605,伊宁市,Gulja (Qulja)
+2606,霍城县,Korgas County
+2607,巩留县,Tokkuztara County
+2608,新源县,xinyuan-county
+2609,昭苏县,zhaosu-county
+2610,特克斯县,Tekes County
+2611,尼勒克县,Nilka County
+2612,察布查尔锡伯自治县,Qapqal Xibe Autonomous County
+2613,伊宁县,Gulja County
+2614,霍尔果斯市,Khorgas
+2615,奎屯市,Kuytun County
+2617,塔城地区,Tacheng (Tarbagatay) Prefecture
+2618,乌苏市,Sixw
+2619,额敏县,Emin County
+2620,沙湾县,ShaWan
+2621,托里县,Toli County
+2622,裕民县,Chaghantoqay County
+2623,和布克赛尔蒙古自治县,Hoboksar Mongol Autonomous County
+2626,布尔津县,Burqin County
+2627,富蕴县,Koktokay County
+2628,福海县,Burultokay County
+2629,哈巴河县,Kaba County
+2630,青河县,Qinggil County
+2631,吉木乃县,Jeminay County
+2632,阿勒泰地区,Altay Prefecture
+2635,成都市,Chengdu
+2636,新都区,Xindu District
+2637,温江区,Wenjiang District
+2638,都江堰市,Dujiangyan
+2639,彭州市,Pengzhou
+2640,邛崃市,Qionglai
+2641,崇州市,Chongzhou
+2642,金堂县,Jintang
+2643,郫都区,Pidu District
+2644,新津区,Xinjin District
+2645,双流区,Shuangliu District
+2646,蒲江县,"Pujiang County, Chengdu"
+2647,大邑县,Dayi County
+2648,崇庆,Chongqing County
+2650,龙泉驿区,Longquanyi District
+2652,自贡市,Zigong
+2653,荣县,Rong County
+2654,富顺县,"Fushun County, Zigong"
+2656,攀枝花市,Panzhihua
+2657,米易县,Miyi County
+2658,盐边县,Yanbian County
+2659,仁和区,Renhe District
+2661,泸州市,Luzhou
+2662,纳溪区,Naxi District
+2663,泸县,Lu County
+2664,合江县,Hejiang County
+2665,叙永县,Xuyong County
+2666,古蔺县,Gulin County
+2668,德阳市,Deyang
+2669,广汉市,Guanghan
+2670,什邡市,Shifang
+2671,绵竹市,Mianzhu
+2672,中江县,Zhongjiang County
+2673,罗江区,Luojiang District
+2675,绵阳市,Mianyang
+2676,江油市,Jiangyou
+2677,盐亭县,Yanting County
+2678,三台县,Santai County
+2679,平武县,Pingwu County
+2680,安州区,Anzhou District
+2681,梓潼县,Zitong County
+2682,北川羌族自治县,Beichuan Qiang Autonomous County
+2684,广元市,Guangyuan
+2685,青川县,Qingchuan County
+2686,旺苍县,Wangcang County
+2687,剑阁县,Jiange County
+2688,苍溪县,Cangxi County
+2690,遂宁市,Suining
+2691,射洪市,ShehongCity
+2692,蓬溪县,Pengxi County
+2694,内江市,Neijiang
+2695,资中县,Zizhong County
+2696,隆昌市,Longchang
+2697,威远县,"Weiyuan County, Neijiang"
+2698,东兴区,Dongxing District
+2700,乐山市,Leshan
+2701,峨眉山风景区,Mount Emei Scenic Area
+2702,夹江县,Jiajiang County
+2703,井研县,Jingyan County
+2704,犍为县,Qianwei County
+2705,沐川县,Muchuan County
+2706,马边彝族自治县,Mabian Yi Autonomous County
+2707,峨边彝族自治县,Ebian Yi Autonomous County
+2708,峨眉山市,Emeishan
+2709,金口河区,Jinkouhe District
+2711,南充市,Nanchong
+2712,阆中市,Langzhong
+2713,营山县,"Yingshan County, Nanchong"
+2714,蓬安县,Pengan County
+2715,仪陇县,Yilong County
+2716,南部县,Nanbu County
+2717,西充县,Xichong County
+2719,眉山市,Meishan
+2720,仁寿县,Renshou County
+2721,彭山区,Pengshan District
+2722,洪雅县,Hongya County
+2723,丹棱县,Danleng County
+2724,青神县,Qingshen County
+2726,宜宾市,Yibin
+2727,叙州区,Xuzhou District
+2728,兴文县,Xingwen County
+2729,南溪区,Nanxi District
+2730,珙县,"Gong County, Yibin"
+2731,长宁县,"Changning County, Yibin"
+2732,高县,Gao County
+2733,江安县,Jiang'an County
+2734,筠连县,Junlian County
+2735,屏山县,"Pingshan County, Yibin"
+2737,广安市,Guangan
+2738,华蓥市,Huaying
+2739,岳池县,Yuechi County
+2740,邻水县,Linshui County
+2741,武胜县,Wusheng County
+2743,万源市,Wanyuan
+2744,达县,Da County
+2745,渠县,Qu County
+2746,宣汉县,Xuanhan County
+2747,开江县,Kaijiang County
+2748,大竹县,Dazhu County
+2749,达州市,Dazhou
+2750,通川区,Tongchuan District
+2751,达川区,Dachuan District
+2753,雅安市,Yaan
+2754,芦山县,"Lushan County, Yaan"
+2755,石棉县,Shimian County
+2756,名山区,"Mingshan District, Yaan"
+2757,天全县,Tianquan County
+2758,荥经县,Yingjing County
+2759,宝兴县,Baoxing County
+2760,汉源县,Hanyuan County
+2762,巴中市,Bazhong
+2763,南江县,Nanjiang County
+2764,平昌县,Pingchang County
+2765,通江县,Tongjiang County
+2767,资阳市,Ziyang
+2768,简阳市,"Jianyang, Sichuan"
+2769,安岳县,Anyue County
+2770,乐至县,Lezhi County
+2772,马尔康县,Maerkang (Barkam) 
+2773,九寨沟县,Jiuzhaigou County
+2774,红原县,Hongyuan County
+2775,汶川县,Wenchuan County
+2776,阿坝藏族羌族自治州,Aba (Ngawa) Tibetan and Qiang Autonomous Prefecture
+2777,理县,"Li County, Aba (Ngawa)"
+2778,小金县,Xiaojin County
+2779,若尔盖县,ruoergai-county
+2780,黑水县,Heishui County
+2781,金川县,Jinchuan County
+2782,松潘县,Songpan County
+2783,壤塘县,Rangtang (Zamtang) County
+2784,茂县,Mao County
+2786,南坪,Nanping County
+2788,康定市,Kangding (Dardo)
+2789,丹巴县,Danba (Rongzhag) County
+2790,炉霍县,Luhuo (Draggo) County
+2791,九龙县,jiulong-county
+2792,甘孜藏族自治州,ganzi
+2793,雅江县,Yajiang (Nyachukha) County
+2794,新龙县,Xinlong (Nyarong) County
+2795,道孚县,"Daofu (Dawu) County, Ganzi (Garzê)"
+2796,白玉县,baiyu-county
+2797,理塘县,Litang (Lithang) County
+2798,德格县,dege-county
+2799,乡城县,"Xiangcheng County, Ganzi (Garzê)"
+2800,石渠县,shiqu-county
+2801,稻城县,Daocheng (Dapba) County
+2802,色达县,seda-county
+2803,泸定县,Luding (Chagsam) County
+2804,巴塘县,Batang County
+2805,得荣县,derong-county
+2807,西昌市,Xichang
+2808,美姑县,Meigu County
+2809,昭觉县,Zhaojue County
+2810,金阳县,Jinyang County
+2811,甘洛县,Ganluo County
+2812,布拖县,Butuo County
+2813,雷波县,Leibo County
+2814,普格县,Puge County
+2815,宁南县,Ningnan County
+2816,喜德县,Xide County
+2817,会东县,"Huidong County, Liangshan"
+2818,越西县,"Yuexi County, Liangshan"
+2819,会理市,HuiLi
+2820,盐源县,Yanyuan County
+2821,德昌县,Dechang County
+2822,冕宁县,Mianning County
+2823,木里藏族自治县,Muli Tibetan Autonomous County
+2824,凉山彝族自治州,Liangshan Yi Autonomous Prefecture
+2827,昆明市,Kunming
+2828,东川区,Dongchuan District
+2829,安宁市,Anning District
+2830,呈贡区,Chenggong District
+2831,晋宁区,Jinning District
+2832,富民县,Fumin County
+2833,宜良县,"Yiliang County, Kunming"
+2834,嵩明县,Songming County
+2835,石林彝族自治县,Shilin Yi Autonomous County
+2836,禄劝彝族苗族自治县,Luquan Yi and Miao Autonomous County
+2837,寻甸回族彝族自治县,Xundian Hui and Yi Autonomous County
+2838,河口瑶族自治县,Hekou
+2839,云南昆明太华山,"Taihuashan, Kunming"
+2841,曲靖市,Qujing
+2842,宣威市,Xuanwei
+2843,马龙区,Malone District
+2844,陆良县,Luliang County
+2845,师宗县,Shizong County
+2846,罗平县,Luoping County
+2847,富源县,"Fuyuan County, Qujing"
+2848,会泽县,Huize County
+2849,沾益区,Zhanyi District
+2851,玉溪市,Yuxi
+2852,江川县,Jiangchuan District
+2853,澄江市,Chengjiang City
+2854,通海县,Tonghai County
+2855,华宁县,Huaning County
+2856,易门县,Yimen County
+2857,峨山彝族自治县,Eshan Yi Autonomous County
+2858,新平彝族傣族自治县,Xinping Yi and Dai Autonomous County
+2859,元江哈尼族彝族傣族自治县,"Yuanjiang Hani, Yi and Dai Autonomous County"
+2861,保山市,Baoshan
+2862,腾冲市,Tengchong
+2863,施甸县,Shidian County
+2864,龙陵县,Longling County
+2865,昌宁县,"Changning County, Baoshan"
+2866,富宁县,"Funing County, Wenshan"
+2868,昭通市,Zhaotong
+2869,鲁甸县,Ludian County
+2870,巧家县,Qiaojia County
+2871,盐津县,"Yanjin County, Zhaotong"
+2872,大关县,Daguan County
+2873,永善县,Yongshan County
+2874,绥江县,Suijiang County
+2875,镇雄县,Zhenxiong County
+2876,彝良县,"Yiliang County, Zhaotong"
+2877,威信县,Wilson County
+2878,水富市,Shuifu
+2880,永胜县,Yongsheng County
+2881,华坪县,Huaping County
+2883,宁蒗彝族自治县,Ninglang Yi Autonomous County
+2884,丽江市,Lijiang
+2887,普洱市,Puer
+2888,墨江哈尼族自治县,Mojiang Hani Autonomous County
+2889,景东彝族自治县,Jingdong Yi Autonomous County
+2890,景谷傣族彝族自治县,Jinggu Dai and Yi Autonomous County
+2891,镇沅彝族哈尼族拉祜族自治县,"Zhenyuan Yi, Hani and Lahu Autonomous County"
+2892,江城哈尼族彝族自治县,Jiangcheng Hani and Yi Autonomous  County
+2893,孟连傣族拉祜族佤族自治县,"Menglian Dai, Lahu and Va Autonomous County"
+2894,澜沧拉祜族自治县,Lancang Lahu Autonomous County
+2895,西盟佤族自治县,Ximeng Va Autonomous County
+2896,宁洱哈尼族彝族自治县,Ning'er Hani and Yi Autonomous County
+2899,临沧市,Lincang
+2900,凤庆县,Fengqing County
+2901,云县,Yun County
+2902,永德县,Yongde County
+2903,镇康县,Zhenkang County
+2904,双江拉祜族佤族布朗族傣族自治县,"Shuangjiang Lahu, Va, Blang and Dai Autonomous County"
+2905,耿马傣族佤族自治县,Gengma Dai and Va Autonomous County
+2906,沧源佤族自治县,Cangyuan Va Autonomous County
+2908,文山壮族苗族自治州,Wenshan Zhuang and Miao Autonomous Prefecture
+2910,砚山县,"Yanshan County, Wenshan"
+2911,西畴县,Xichou County
+2912,麻栗坡县,Malipo County
+2913,马关县,Maguan County
+2914,丘北县,Qiubei County
+2915,广南县,Guangnan County
+2918,蒙自市,Mengzi
+2919,个旧市,Gejiu
+2920,开远市,"Kaiyuan, Honghe"
+2921,绿春县,lvchun-county
+2922,建水县,Jianshui County
+2923,石屏县,Shiping County
+2924,弥勒市,Mile
+2925,泸西县,Luxi County
+2926,元阳县,"Yuanyang County, Honghe"
+2927,红河哈尼族彝族自治州,Honghe Hani and Yi Autonomous Prefecture
+2928,金平苗族瑶族傣族自治县,"Jinping Miao, Yao and Dai Autonomous County"
+2930,屏边苗族自治县,Pingbian Miao Autonomous County
+2932,楚雄彝族自治州,Chuxiong Yi Autonomous Prefecture
+2933,双柏县,Shuangbai County
+2934,牟定县,Mouding County
+2935,南华县,Nanhua County
+2936,姚安县,Yaoan County
+2937,大姚县,Dayao County
+2938,永仁县,Yongren County
+2939,元谋县,Yuanmou County
+2940,武定县,Wuding County
+2941,禄丰市,LuFeng
+2943,大理白族自治州,Dali Bai Autonomous Prefecture
+2944,祥云县,Xiangyun County
+2945,宾川县,Binchuan County
+2946,弥渡县,Midu County
+2947,永平县,Yongping County
+2948,云龙县,Yunlong County
+2949,洱源县,Eryuan County
+2950,剑川县,Jianchuan County
+2951,鹤庆县,Heqing County
+2952,漾濞彝族自治县,Yangbi Yi Autonomous County
+2953,南涧彝族自治县,Nanjian Yi Autonomous County
+2954,巍山彝族回族自治县,Weishan Yi and Hui Autonomous County
+2956,潞西（现芒市）,Luxi
+2957,瑞丽市,Ruili
+2958,梁河县,Lianghe County
+2959,盈江县,Yingjiang County
+2960,陇川县,"Longchuan County, Dehong"
+2961,德宏傣族景颇族自治州,Dehong Dai and Jingpo Autonomous Prefecture
+2963,兰坪白族普米族自治县,Lanping Bai and Pumi Autonomous County
+2964,泸水市,Lu shui
+2965,福贡县,Fugong County
+2966,贡山独龙族怒族自治县,Gongshan Dulong and Nu Autonomous County
+2967,怒江傈僳族自治州,Nujiang Lisu Autonomous Prefecture
+2968,六库镇,Liuku Town
+2970,德钦县,Deqin County
+2971,香格里拉市,Shangri-La
+2973,维西傈僳族自治县,Weixi Lisu Autonomous County
+2974,中甸,Zhongdian County
+2976,景洪市,Jinghong
+2977,勐海县,Menghai County
+2978,勐腊县,Mengla County
+2982,贵阳市,Guiyang
+2983,清镇市,Qingzhen
+2984,开阳县,Kaiyang County
+2985,修文县,Xiuwen County
+2986,息烽县,"Xifeng County, Guiyang"
+2987,花溪区,Huaxi District
+2988,贵阳市白云区,"Baiyun District, Guiyang"
+2989,乌当区,Wudang District
+2990,云岩区,Yunyan District
+2991,南明区,Nanming District
+2992,小河,Xiaohe District
+2994,六盘水市,Liupanshui
+2995,水城区,Shuicheng District
+2996,盘州市,Panzhou
+2997,六枝特区,Liuzhi Special District
+2998,观山湖区,Guanshanhu District
+3000,遵义市,Zunyi
+3001,赤水市,Chishui
+3002,仁怀市,Renhuai
+3003,播州区,Bozhou District
+3004,绥阳县,Suiyang County
+3005,桐梓县,Tongzi County
+3006,习水县,"Xishui County, Zunyi"
+3007,凤冈县,Fenggang County
+3008,正安县,Zhengan County
+3009,余庆县,Yuqing County
+3010,湄潭县,Meitan County
+3011,道真仡佬族苗族自治县,Daozhen Gelao and Miao Autonomous County
+3012,务川仡佬族苗族自治县,Wuchuan Gelao And Miao Autonomous County
+3013,汇川区,Huichuan District
+3014,红花岗区,Honghuagang District
+3016,安顺市,Anshun
+3017,普定县,Puding County
+3018,平坝区,Pingba District
+3019,镇宁布依族苗族自治县,Zhenning Buyi and Miao Autonomous County
+3020,紫云苗族布依族自治县,Ziyun Buyi and Miao Autonomous County
+3021,关岭布依族苗族自治县,Guanling Buyi and Miao Autonomous County
+3023,铜仁市,Tongren
+3024,德江县,Dejiang County
+3025,江口县,Eguchi County
+3026,思南县,Sinan County
+3027,石阡县,Shiqian County
+3028,玉屏侗族自治县,Yuping Dong Autonomous County
+3029,松桃苗族自治县,Songtao Miao Autonomous County
+3030,印江土家族苗族自治县,Yinjiang Tujia and Miao Autonomous County
+3031,沿河土家族自治县,Yanhe Tujia Autonomous County
+3032,万山区,Wanshan District
+3034,毕节市,Bijie
+3035,黔西市,"Qianxi, Bijie"
+3036,大方县,Dafang County
+3038,织金县,Zhijin County
+3039,金沙县,Jinsha County
+3040,赫章县,Hezhang County
+3041,纳雍县,Nayong County
+3042,威宁彝族回族苗族自治县,"Weining Yi, Hui and Miao Autonomous County"
+3044,兴义市,Xingyi
+3045,望谟县,Wangmo County
+3046,兴仁市,Xingren
+3047,普安县,Puan County
+3048,册亨县,Ceheng County
+3049,晴隆县,Qinglong County
+3050,贞丰县,Zhenfeng County
+3051,安龙县,Anlong County
+3053,凯里市,Kaili
+3054,施秉县,Shibing County
+3055,从江县,Congjiang County
+3056,锦屏县,Jinping County
+3057,镇远县,"Zhenyuan County, Qiandongnan"
+3058,麻江县,Majiang County
+3059,台江县,Taijiang County
+3060,天柱县,Tianzhu County
+3061,黄平县,Huangping County
+3062,榕江县,Rongjiang County
+3063,剑河县,Jianhe County
+3064,三穗县,Sansui County
+3065,雷山县,Leishan County
+3066,黎平县,Liping County
+3067,岑巩县,Cengong County
+3068,丹寨县,Danzhai County
+3070,都匀市,Duyun
+3071,福泉市,Fuquan
+3072,贵定县,Guiding County
+3073,惠水县,Huishui County
+3074,罗甸县,Luodian County
+3075,瓮安县,Wengan County
+3076,荔波县,Libo County
+3077,龙里县,Longli County
+3078,平塘县,Pingtang County
+3079,长顺县,Changshun County
+3080,独山县,Dushan County
+3081,三都水族自治县,Sandu Shui Autonomous County
+3084,拉萨市,Lhasa
+3085,林周县,linzhou-county
+3086,当雄县,Damxung County
+3087,尼木县,nimu-county
+3088,曲水县,qushui-county
+3089,达孜区,Dazi District
+3090,墨竹工卡县,Maizhokunggar County
+3091,堆龙德庆县,duilongdeqing-district
+3093,昌都市,Qamdo
+3095,江达县,Jomda County
+3096,贡觉县,Gonjo County
+3097,类乌齐县,leiwuqi-county
+3098,丁青县,dingqing-county
+3099,八宿县,Baxoi County
+3100,左贡县,Zogang County
+3101,芒康县,Markam County
+3102,洛隆县,Lhorong County
+3103,边坝县,Banbar County
+3104,察雅县,Zhag'yab County
+3106,山南市,Shannan
+3107,乃东区,Naidong District
+3108,扎囊县,Zhanang County
+3109,贡嘎县,Gonggar County
+3110,琼结县,Qonggyai County
+3111,曲松县,Qusum County
+3112,措美县,Comai County
+3113,洛扎县,Lhozhag County
+3114,加查县,Gyaca County
+3115,隆子县,longzi-county
+3116,错那县,Cona County
+3117,浪卡子县,langkazi-county
+3118,泽当镇,zedang-town
+3119,桑日县,Sangri County
+3121,日喀则市,Shigatse
+3122,南木林县,Namling County
+3123,江孜县,jiangzi-county
+3124,定日县,Tingri County
+3125,萨迦县,Sa'gya County
+3126,拉孜县,lhatse-county
+3127,昂仁县,Ngamring County
+3128,谢通门县,Xaitongmoin County
+3129,白朗县,Bainang County
+3130,仁布县,Rinbung County
+3131,康马县,Kangmar County
+3132,定结县,dingjie-county
+3133,仲巴县,Zhongba County
+3134,亚东县,Yadong County
+3135,吉隆县,Gyirong County
+3136,聂拉木县,Nyalam County
+3137,萨嘎县,Saga County
+3138,岗巴县,Gamba County
+3139,帕里镇,Pagri Town
+3141,那曲市,Naqu
+3143,嘉黎县,Lhari County
+3144,比如县,Biru County
+3145,聂荣县,Nyainrong County
+3146,安多县,Amdo County
+3148,索县,Sog County
+3149,班戈县,Baingoin County
+3150,巴青县,Baqen County
+3151,尼玛县,Nyinma County
+3153,阿里地区,Ngari Prefecture
+3154,噶尔县,Gar County
+3155,措勤县,cuoqin-county
+3156,普兰县,Burang County
+3157,札达县,Zanda County
+3158,日土县,Rutog County
+3159,革吉县,geji-county
+3160,改则县,gaize-county
+3161,狮泉河镇,shiquanhe-town
+3162,申扎县,Xainza County
+3164,林芝市,Nyingchi
+3165,朗县,Nang County
+3166,米林县,Mainling County
+3167,察隅县,chayu-county
+3168,波密县,bomi-county
+3169,工布江达县,Gongbo'gyamda County
+3170,墨脱县,motuo-county
+3173,香港特別行政區,Hong Kong
+3176,澳門特別行政區,Macau
+3179,台北市,Taipei City
+3180,新北市,New Taipei City
+3182,高雄市,Kaohsiung City
+3185,台中市,Taichung City
+3186,新竹市,Hsinchu City
+3187,嘉义市,Chiayi City
+3188,宜兰县,Ilan City
+3189,桃园市,Taoyuan City
+3190,苗栗县,Miaoli City
+3191,彰化县,Changhua
+3192,南投县,Nantou City
+3193,云林县,Yunlin CIty
+3194,台南市,Tainan City
+3195,屏东县,Pingtung City
+3196,台东县,Taitung City
+3197,花莲县,Hualien City
+3200,钓鱼岛,Tiao-yu Island
+4270,Kabul,Kabul
+4269,Kandahar,Kandahar
+4268,Herat,Herat
+4267,Islamabad,Islamabad
+4266,Karachi,Karachi
+4265,Pyongyang,Pyongyang
+4264,Moscow,Moscow
+4263,Petersburg,Petersburg
+4262,Manila,Manila
+4261,서울,Seoul
+4260,부산,Busan
+4259,안양,Anyang
+4258,인천,Incheon
+4257,수원,Suwon
+4256,Phnom Penh,Phnom Penh
+4255,Vientiane,Vientiane
+4254,Beirut,Beirut
+4253,Kuala Lumpur,Kuala Lumpur
+4252,Malacca,Malacca
+4251,Ulan Bator,Ulan Bator
+4250,Rangoon,Rangoon
+4249,Katmandu,Katmandu
+4248,Tokyo,Tokyo
+4247,osaka,osaka
+4246,Yokohama,Yokohama
+4245,Kobe,Kobe
+4244,Colombo,Colombo
+4243,Bangkok,Bangkok
+4242,Ankara,Ankara
+4241,Istanbul,Istanbul
+4240,Tashkent,Tashkent
+4239,Singapore,Singapore
+4238,Baghdad,Baghdad
+4237,Tehran,Tehran
+4236,Jerusalem,Jerusalem
+4235,Tel Aviv,Tel Aviv
+4234,New Delhi,New Delhi
+4233,Bombay,Bombay
+4232,Bangalore,Bangalore
+4231,Chennai,Chennai
+4230,Hyderabad,Hyderabad
+4229,Pune,Pune
+4228,Calcutta,Calcutta
+4227,Jakarta,Jakarta
+4226,Hanoi,Hanoi
+4225,Ottawa,Ottawa
+4224,Toronto,Toronto
+4223,Montreal,Montreal
+4222,Banff,Banff
+4221,Calgary,Calgary
+4220,Vancouver,Vancouver
+4219,Victoria,Victoria
+4218,Edmonton,Edmonton
+4217,Portland,Portland
+4216,Philadelphia,Philadelphia
+4215,Pittsburgh,Pittsburgh
+4214,Houston,Houston
+4213,Miami,Miami
+4212,Washington,Washington
+4211,Seattle,Seattle
+4210,Los Angeles,Los Angeles
+4209,San Francisco,San Francisco
+4208,Denver,Denver
+4207,Boston,Boston
+4206,Atlanta,Atlanta
+4205,Detroit,Detroit
+4204,Las Vegas,Las Vegas
+4203,New York,New York
+4202,Atlantic City,Atlantic City
+4201,Chicago,Chicago
+4200,Dallas,Dallas
+4199,Minneapolis,Minneapolis
+4198,SanDiego,SanDiego
+4197,Cincinnati,Cincinnati
+4196,Baltimore,Baltimore
+4195,San Jose,SanJose
+4194,Kansas,Kansas
+4193,Tampa,Tampa
+4192,Columbus,Columbus
+4191,Orlando,Orlando
+4190,Cleveland,Cleveland
+4189,Phoenix,Phoenix
+4188,Indianapolis,Indianapolis
+4187,Richmond,Richmond
+4186,Austin,Austin
+4185,Milwaukee,Milwaukee
+4184,Buenos Aires,Buenos Aires
+4183,Asuncion,Asuncion
+4182,Brasilia,Brasilia
+4181,Casablanca,Casablanca
+4180,Rio De Janeiro,Rio De Janeiro
+4179,Sao Paulo,Sao Paulo
+4178,Porto Alegre,Porto Alegre
+4177,Curitiba,Curitiba
+4176,Tarija,Tarija
+4175,Quito,Quito
+4174,Armenia,Armenia
+4173,Pereira,Pereira
+4172,Bogota,Bogota
+4171,Havana,Havana
+4170,Lima,Lima
+4169,Mexico City,Mexico City
+4168,Monterrey,Monterrey
+4167,Guadalajara,Guadalajara
+4166,Valencia,Valencia
+4165,Caracas,Caracas
+4164,Montevideo,Montevideo
+4163,Santiago,Santiago
+4162,Sydney,Sydney
+4161,Melbourne,Melbourne
+4160,Canberra,Canberra
+4159,Brisbane,Brisbane
+4158,Perth,Perth
+4157,Adelaide,Adelaide
+4156,Auckland,Auckland
+4155,Wellington,Wellington
+4154,Tirana,Tirana
+4153,Dublin,Dublin
+4152,Vienna,Vienna
+4151,Salzburg,Salzburg
+4150,Brest,Brest
+4149,Burgas,Burgas
+4148,Brussels,Brussels
+4147,Akureyri,Akureyri
+4146,Warsaw,Warsaw
+4145,Copenhagen,Copenhagen
+4144,Helsingor,Helsingor
+4143,Frankfurt,Frankfurt
+4142,Berlin,Berlin
+4141,Bonn,Bonn
+4140,Munich,Munich
+4139,Stuttgart,Stuttgart
+4138,Dusseldorf,Dusseldorf
+4137,Hamburg,Hamburg
+4136,Cologne,Cologne
+4135,Paris,Paris
+4134,Lyon,Lyon
+4133,Versailles,Versailles
+4132,Marseille,Marseille
+4131,Nice,Nice
+4130,Bordeaux,Bordeaux
+4129,Toulouse,Toulouse
+4128,Bastia,Bastia
+4127,Helsinki,Helsinki
+4126,Amsterdam,Amsterdam
+4125,Rotterdam,Rotterdam
+4124,Prague,Prague
+4123,Rijeka,Rijeka
+4122,Zagreb,Zagreb
+4121,Luxembourg,Luxembourg
+4120,Bucharest,Bucharest
+4119,Monte-Carlo,Monte-Carlo
+4118,Belgrade,Belgrade
+4117,Oslo,Oslo
+4116,Lisbon,Lisbon
+4115,Stockholm,Stockholm
+4114,Goteborg,Goteborg
+4113,Zurich,Zurich
+4112,Geneva,Geneva
+4111,Bern,Bern
+4110,Bratislava,Bratislava
+4109,Barcelona,Barcelona
+4108,Madrid,Madrid
+4107,Athens,Athens
+4106,Budapest,Budapest
+4105,Rome,Rome
+4104,Milan,Milan
+4103,Vatican,Vatican
+4102,Venice,Venice
+4101,Pisa,Pisa
+4100,Florence,Florence
+4099,Torino,Torino
+4098,London,London
+4097,Manchester,Manchester
+4096,Liverpool,Liverpool
+4095,Glasgow,Glasgow
+4094,Edinburgh,Edinburgh
+4093,Leeds,Leeds
+4092,Belfast,Belfast
+4091,Bristol,Bristol
+4090,Southampton,Southampton
+4089,Birmingham,Birmingham
+4088,Algiers,Algiers
+4087,Cairo,Cairo
+4086,Alexander,Alexander
+4085,Luanda,Luanda
+4084,Bujumbura,Bujumbura
+4083,Bata,Bata
+4082,Brazzaville,Brazzaville
+4081,Libreville,Libreville
+4080,Accra,Accra
+4079,Bulawayo,Bulawayo
+4078,Buea,Buea
+4077,Moroni,Moroni
+4076,Mombasa,Mombasa
+4075,Nairobi,Nairobi
+4074,Monrovia,Monrovia
+4073,Kigali,Kigali
+4072,Rabat,Rabat
+4071,Maputo,Maputo
+4070,Windhoek,Windhoek
+4069,Johannesburg,Johannesburg
+4068,Cape Town,Cape Town
+4067,Durban,Durban
+4066,Niamey,Niamey
+4065,Abuja,Abuja
+4064,Freetown,Freetown
+4063,Dakar,Dakar
+4062,Mogadishu,Mogadishu
+4061,Dar es Salaam,Dar es Salaam
+4060,Tunisia,Tunisia
+4059,Kampala,Kampala
+4058,Lusaka,Lusaka
+4057,Bangui,Bangui
+4272,Natal,Natal
+4273,Salvador,Salvador
+4274,Cuiaba,Cuiaba
+4275,Belo Horizonte,Belo Horizonte
+4276,Fortaleza,Fortaleza
+4277,Manaus,Manaus
+4278,Recife,Recife
+4279,Curitiba,Curitiba
+227869,Leikanger,Leikanger
+227776,Stavanger,Stavanger
+227619,Narvik,Narvik
+227420,Bergen,Bergen
+226730,راولپنڈی,Rawalpindi
+226702,لاہور,Lahore
+226458,Sinuiju,Sinuiju
+226453,개성,Kaesong
+226430,청진,Chongjin
+226394,희천,Huichon
+223934,Kazan',Kazan
+220955,Vladivostok,Vladivostok
+219046,Vladimirskaya,Vladimir
+213070,Yekaterinburg,Yekaterinburg
+209426,St. Petersburg,St. Petersburg
+208054,Puerto Princesa,Puerto Princesa
+207958,Cebu,Cebu
+207887,Tagbilaran City,Tagbilaran
+207658,Olongapo City,Olongapo
+207551,Angeles,Angeles
+207457,Pasig,Pasig
+206736,Kalibo,Kalibo
+206057,Laoag City,Laoag
+205590,대구광역시,Daegu
+205465,대전광역시,Daejeon
+204813,Siem Reap,Siem Reap
+204659,Sihanoukville,Sihanouk
+204382,Ivalo,Ivalo
+204372,Rovaniemi,Rovaniemi
+204350,Muonio,Muonio
+204246,Tampere,Tampere
+204203,Kuopio,Kuopio
+204164,Joensuu,Joensuu
+204114,Kajaani,Kajaani
+204109,Kuusamo,Kuusamo
+203970,Lappeenranta,Lappeenranta
+203948,Lahti,Lahti
+203881,Semporna,Semporna
+203867,Sabah,Sabah
+203711,Taunggyi,Taunggyi
+203660,Yangon,Yangon
+203499,Mandalay,Mandalay
+203371,भक्तपुर,Bhaktapur
+203370,काठमाडौं,Kathmandu
+203368,ललितपुर,Lalitpur
+202625,Nagoya,Nagoya
+202133,千葉県,
+201812,京都,Kyoto
+201230,福岡,Fukuoka
+201005,札幌市 中央区,Sapporo-Shi Chuo-Ku
+200949,Sapporo-Shi,Sapporo
+200797,北海道,
+200178,奈良,Nara
+200139,沖縄,Okinawa
+200121,ගාල්ල,Galle
+200116,මහනුවර,Kandy
+200077,අනුරාධපුරය,Anuradhapura
+200005,เมืองกระบี่,Mueang Krabi
+199383,หัวหิน,Hua Hin
+198869,เมืองเชียงใหม่,Mueang Chiang Mai
+198834,จังหวัดภูเก็ต,
+198628,Çanakkale,Canakkale
+198616,Edirne,Edirne
+198575,Bursa,Bursa
+198538,Balıkesir,Balikesir
+198434,Tekirdağ,Tekirdag
+198336,Hopa,Hopa
+198304,Kastamonu,Kastamonu
+198302,Safranbolu,Safranbolu
+198279,Bolu,Bolu
+198261,Gümüşhane,Gümüşhane
+198241,Tokat,Tokat
+198221,Trabzon,Trabzon
+198175,Sinop,Sinop
+198150,Giresun,Giresun
+198052,Diyarbakır,Diyarbakir
+198010,Şanlıurfa,Sanliurfa
+198001,Siirt,Siirt
+197895,Alanya,Alanya
+197893,Finike,Finike
+197886,Antalya,Antalya
+197840,Adana,Adana
+197822,Isparta,Isparta
+197805,Niğde,Niğde
+197670,Yozgat,Yozgat
+197297,Kayseri,Kayseri
+197230,Konya,Konya
+197219,Kırşehir,Kirsehir
+197166,Eskişehir,Eskişehir
+197145,Bingöl,Bingol
+197116,Erzincan,Erzincan
+197065,Erzurum,Erzurum
+197026,Kars,Kars
+197013,Elazığ,Elazig
+196997,Malatya,Malatya
+196931,İzmir,Izmir
+196894,Uşak,Usak
+196863,Denizli,Denizli
+196852,Bodrum,Bodrum
+196828,Dalaman,Dalaman
+196573,Samarkand,Samarkand
+196210,Leeuwarden,Leeuwarden
+196138,Utrecht,Utrecht
+195768,The Hague,The Hague
+195680,Maastricht,Maastricht
+195627,Basra,Basra
+195503,Shiraz,Shiraz
+195438,Tabriz,Tabriz
+195428,Mashhad,Mashhad
+193647,藏南,
+191654,Yogyakarta,Yogyakarta
+191595,Tanjung Pinang,Tanjung Pinang
+191550,Surabaya,Surabaya
+188527,Denpasar,Denpasar
+188383,Whitehorse,Whitehorse
+188377,Prince Albert,Prince Albert
+188373,Meadow Lake,Meadow Lake
+188369,Swift Current,Swift Current
+188332,Estevan,Estevan
+188329,Saskatoon,Saskatoon
+188292,Kenora,Kenora
+188248,Cartwright,Cartwright
+188243,Thompson,Thompson
+188218,Gretna,Gretna
+188150,Grand Rapids,Grand Rapids
+188138,Wawanesa,Wawa
+188130,Melita,Melita
+188124,Winnipeg,Winnipeg
+188079,Victoria,Victoria
+188065,Halifax,Halifax
+188014,Sydney,Sydney
+187984,Yarmouth,Yarmouth
+187886,Red Deer,Red Deer
+187820,St. Stephen,St. Stephen
+187810,Moncton,Moncton
+187717,Clyde River,Clyde River
+187679,Squamish,Squamish
+187673,Revelstoke,Revelstoke
+187626,Williams Lake,Williams Lake
+187611,Penticton,Penticton
+187603,Dawson Creek,Dawson
+187602,Peace River,Peace River
+187551,Cranbrook,Cranbrook
+187538,Comox,Comox
+187532,Smithers,Smithers
+187477,Port Hardy,Port Hardy
+187470,Prince George,Prince George
+187424,Inuvik,Inuvik
+187423,Yellowknife,Yellowknife
+187407,Chibougamau,Chibougamau
+187209,Sherbrooke,Sherbrooke
+187184,Québec,Quebec
+187134,St. John's,St. John's
+187000,North Bay,North Bay
+186957,Perth,Perth
+186939,Timmins,Timmins
+186938,Kapuskasing,Kapuskasing
+186923,Thunder Bay,Thunder Bay
+186769,Sudbury,Sudbury
+179823,Split,Split
+179805,Dubrovnik,Dubrovnik
+178934,Sibiu,Sibiu
+178713,Craiova,Craiova
+178099,Tulcea,Tulcea
+177184,Bacău,Bacau
+176493,Botoșani,Botosani
+174148,Buzău,Buzau
+174133,Monaco-Ville,Monaco-Ville
+174113,Sombor,Sombor
+173983,Zrenjanin,Zrenjanin
+173930,Nis,NIS
+173864,Vranje,Vranje
+173801,Cuprija,Cuprija
+173793,Valjevo,Valjevo
+173768,Krusevac,Krusevac
+173729,Santa Maria,Santa Maria
+173615,Funchal,Funchal
+173604,Ponta Delgada,Ponta Delgada
+173529,Porto,Porto
+173306,Bragança,Braganca
+173246,Évora,Evora
+173158,Coimbra,Coimbra
+173122,Sines,Sines
+173103,Karlstad,Karlstad
+172883,Visby,Visby
+172860,Umea,Umea
+172842,Gallivare,Gallivare
+172833,Kiruna,Kiruna
+172818,Lulea,Lulea
+172744,Gavle,Gavle
+172567,Norrkoping,Norrkoping
+172560,Linkoping,Linkoping
+172290,Helsingborg,Helsingborg
+172264,Malmo,Malmo
+171533,Basel,Basel
+171033,Interlaken,Interlaken
+170826,Zermatt,Zermatt
+170772,Altdorf (UR),Altdorf
+170706,St. Gallen,St. Gallen
+170490,Chur,Chur
+170453,Poschiavo,Poschiavo
+170437,Davos,Davos
+170431,Samedan,Samedan
+170337,Montreux,Montreux
+170242,Lausanne,Lausanne
+169715,Lugano,Lugano
+169577,Locarno,Locarno
+169515,Schaffhausen,Schaffhausen
+169375,Neuchâtel,Neuchatel
+169162,Poprad,Poprad
+167977,Ceuta,Ceuta
+167026,Alicante,Alicante
+166793,Mérida,Mérida
+166033,Salamanca,Salamanca
+164496,Valladolid,Valladolid
+163896,Bilbao,Bilbao
+162184,Albacete,Albacete
+161091,Comunidad Valenciana,Valencia
+160752,Córdoba,Cordoba
+160642,Sevilla,Sevilla
+160429,Almería,Almeria
+160260,North Granada,North Granada
+160076,Málaga,Málaga
+160041,Πάτρα,Patras
+159927,Ρόδος,Rhodes
+159859,Τρίπολη,Tripoli
+159777,Λάρισα,Larissa
+159667,Θεσσαλονίκη,Thessaloniki
+159211,Salamis,Salamis
+158476,Miskolc,Miskolc
+158311,Nagykanizsa,Nagykanizsa
+157255,Cegléd,Cegléd
+156885,Debrecen,Debrecen
+156799,Szeged,Szeged
+154257,Rosario,Rosario
+154046,Córdoba,Cordoba
+153733,Ushuaia,Ushuaia
+153027,La Plata,La Plata
+151553,Concepción,Concepcion
+151336,Capri,Capri
+151113,Palermo,Palermo
+150913,Messina,Messina
+150482,Turin,Turin
+148787,Trento,Trento
+148774,Trieste,Trieste
+147919,Bergamo,Bergamo
+147723,Pizzale,Pizza
+145526,Cappadocia,
+145465,Pescara,Pescara
+145200,Brindisi,Brindisi
+144645,Cervia,Cervia
+144273,Cagliari,Cagliari
+143651,Verona,Verona
+143315,Campobasso,Campobasso
+142570,Grosseto,Grosseto
+142292,Arezzo,Arezzo
+142277,Biskra - بسكرة,Biskra
+141901,Oran - وهران,Oran
+141841,Tlemcen - تلمسان,Tlemcen
+141505,Annaba - عنابة‎,Annaba
+141485,Constantine - قسنطينة,Constantine
+141481,Tiaret - تيارت,Tiaret
+141208,Aberdeen,Aberdeen
+140878,Kirkwall,Kirkwall
+140353,Lerwick,Lerwick
+140076,Stornoway,Stornoway
+140026,Campbeltown,Campbeltown
+139182,Oxford,Oxford
+139055,Windsor and Maidenhead,Windsor
+139017,Dartford,Dartford
+138974,Maidstone,Maidstone
+138741,Wandsworth Common,Wandsworth
+138632,Greenwich West,Greenwich
+138492,Wembley Central,Wembley
+137985,Bradford,Bradford
+137920,Sheffield,Sheffield
+137849,Hull Road,Hull
+137687,Bridlington,Bridlington
+137568,Yorkshire and the Humber,York
+137451,Hadley and Leegomery,Hadley
+137366,Shropshire,Shropshire
+137324,Coventry,Coventry
+137051,Weymouth,Weymouth
+137043,Dorchester,Dorchester
+136710,Burnham-On-Sea,Burnham
+136610,Camborne,Camborne
+136440,Nottingham,Nottingham
+136419,Waddington,Waddington
+136176,Leicester,Leicester
+135431,Hoylake and Meols,Hoylake and Meols
+134892,Chelmsford,Chelmsford
+134701,Cambridge,Cambridge
+134480,Cardiff,Cardiff
+133591,Wales,Wales
+133277,Cochabamba,Cochabamba
+133070,La Paz,La Paz
+133065,Malabo,Malabo
+132711,Guayaquil,Guayaquil
+132268,Cuenca,Cuenca
+131511,罗东镇,Luotung Town
+131510,觀音鄉,
+131509,卓溪鄉 (Zhuoxi),
+131508,大寮區 (Daliao),
+131507,桃園市,
+131506,嘉义县,Chiayi County
+131505,泰武鄉 (Taiwu),
+131504,埔心鄉,
+131503,口湖鄉 (Kouhu),
+131502,鳥松區 (Niaosong),
+131501,信義區 (Xìnyì),
+131500,義竹鄉 (Yijhu),
+131499,金峰鄉,
+131498,八里區 (Bālǐ),
+131497,山上區 (Shanshang),
+131496,阿里山鄉 (Alishan),
+131495,富里鄉 (Fuli),
+131494,香山區 (Xiāngshān),
+131492,虎尾鎮,
+131493,獅潭鄉,
+131491,二林鎮,
+131490,仁愛區 (Rén'ài),
+131489,南港區,
+131488,大湖鄉,
+131487,汐止區 (Xizhi),
+131486,中西區 (West Central District),
+131485,屏東縣 (Pingtung County),
+131484,玉里鎮 (Yuli),Yuli Township
+131483,北斗鎮,
+131482,北埔鄉,
+131481,學甲區 (Syuejia),
+131480,瑞芳區 (Ruifang),
+131479,楊梅市(Yangmei City),
+131478,蘆竹市(Luzhu),
+131477,平鎮市(Pingzhen City),
+131476,宜蘭市,
+131475,泰安鄉,
+131474,三地門鄉 (Sandimen),
+131473,大安區 (Da-an),
+131472,新屋鄉(Xinwu),
+131471,楠梓區 (Nanzih),
+131470,布袋鎮 (Budai),
+131469,鹿野鄉 (Luye),
+131468,左營區 (Zuoying),
+131467,冬山鄉 (Dongshan),
+131466,龍井區,
+131465,清水區,
+131463,東勢區,
+131464,東區,
+131462,永靖鄉,
+131461,中山區 (Zhōngshān),
+131460,官田區 (Guantian),
+131459,貢寮區 (Gòngliáo),
+131458,線西鄉,
+131457,綠島鄉,
+131456,西區,
+131455,中正區 (Jhongjheng),
+131454,三義鄉,
+131453,鹿谷鄉,
+131452,梧棲區,
+131451,長治鄉 (Changzhi),
+131449,峨眉鄉,
+131450,鼓山區 (Gushan),
+131448,中區,
+131447,瑪家鄉 (Majia),
+131446,泰山區 (Tàishān),
+131445,旗山區 (Cishan),
+131444,西屯區,
+131443,仁愛鄉,
+131442,仁武區 (Renwu),
+131441,深坑區 (Shenkeng),
+131440,四湖鄉 (Sìhú),
+131439,後龍鎮,
+131437,淡水區 (Danshui),
+131438,前鎮區 (Cianjhen),
+131436,青帆村,Qingfan Village
+131435,麥寮鄉 (Màiliáo),
+131434,龍潭鎮,
+131433,國姓鄉,
+131432,東莒島,
+131430,伸港鄉 (Shēngǎng),
+131431,烏日區,
+131429,小丘,Xiaoqiu Village
+131428,暖暖區 (Nuannuan Dist.),
+131427,新園鄉(Sinyuan),
+131426,埤頭鄉 (Pitou),
+131425,湖內區 (Hunei),
+131424,中埔鄉 (Jhongpu),Zhongpu Township
+131423,雙溪區 (Shuangxi),
+131422,澎湖县,Penghuxian
+131421,達仁鄉 (Daren),
+131420,溪口鄉 (Sikou),
+131419,大埤鄉 (Dapi),
+131418,尖石鄉,
+131417,旗津區 (Cijin),
+131416,莿桐鄉 (Cìtóng),
+131415,歸仁區 (Gueiren),
+131414,和平區,
+131413,頭屋鄉,
+131412,東港鎮(Dongang),
+131411,新埔鎮,
+131410,五峰鄉,
+131409,苗栗市,
+131408,潮州鎮 (Chaojhou),
+131407,鹽水區 (Yanshuei),
+131405,橋頭區 (Ciaotou),
+131404,安定區 (Anding),
+131403,北港鎮 (Beigang),
+131402,士林區 (Shìlín),
+131401,大丘,Daqiu Village
+131400,樹林區 (Shulin District),
+131399,石門區 (Shimen),
+131398,中山區 (Jhongshan),
+131397,大里區,
+131396,七美鄉 (Qīměi),
+131395,馬祖列島 (Lienchiang),
+131394,溪湖鎮,
+131393,霧臺鄉 (Wutai),
+131392,苗栗縣 (Miáolì),
+131391,新莊區 (Xīnzhuāng),
+131389,新興區 (Sinsing),
+131390,枋寮鄉 (Fangliao),
+131388,大甲區,
+131387,烏坵鄉,
+131386,竹崎鄉 (Jhuci),Zhuqi Township
+131385,橫山鄉,
+131384,大坪村,Daping Village
+131383,九如鄉 (Jiouru),
+131382,車城鄉 (Checheng),
+131380,北屯區,
+131381,東石鄉 (Dongshi),
+131379,寶山鄉,
+131378,馬公市 (Mǎgōng),
+131377,草屯鎮,
+131376,北竿鄉,Beigan Township
+131375,甲仙區 (Jiasian),
+131374,三民區 (Sanmin),
+131373,永康區 (Yongkang),
+131372,西嶼鄉 (Xiyǔ),
+131371,埔里鎮,
+131370,新北市,New Taipei City
+131369,芳苑鄉,
+131368,新竹市,Hsinchu
+131367,竹山鎮(Jhushan),
+131366,臺北市,
+131365,埔鹽鄉,
+131364,屏東市 (Pingdong City),
+131363,永和區(YongHo),
+131362,安南區 (Annan),
+131361,基隆市,Kee Long
+131360,中正區,
+131359,三星鄉 (Sansing),
+131358,萬巒鄉 (Wanluan),
+131357,大同區 (Datong),
+131356,新竹县,Hsinchu County
+131355,松山區,
+131354,卑南鄉 (Beinan),
+131353,湖口鄉 (Hukou),
+131352,東區 (Eastern District),
+131351,大安區,
+131350,林口區 (Línkǒu),
+131349,台南市 (Tainan),
+131348,莒光鄉,
+131347,西港區 (Sigang),
+131346,頭份鎮,
+131345,西區 (West District),
+131344,路竹區 (Lujhu),
+131342,萬華區 (Wanhua District),
+131341,名間鄉,
+131340,新化區 (Sinhua),
+131339,七股區 (Cigu),
+131338,大溪鎮,
+131337,太平區,Taiping District
+131336,南化區 (Nanhua),
+131335,水林鄉 (Shueilin),
+131334,七堵區 (Cidu),
+131333,新社區,
+131332,龍崎區 (Longci),
+131331,麻豆區 (Madou),
+131330,水里鄉,
+131329,南區 (South District),
+131328,東河鄉 (Donghe),
+131327,內湖區 (Nèihú),
+131326,光復鄉 (Guangfu),
+131325,桃園縣 (Táoyuán),Taoyuan District
+131324,壯圍鄉,
+131323,新市區 (Sinshih),
+131322,鹿草鄉 (Lucao),
+131321,Xiqiu Village,Xiqiu Village
+131320,新營區 (Sinying),
+131319,南竿鄉,
+131318,關山鎮 (Guanshan),
+131317,宜蘭縣 (Yílán),
+131316,竹南鎮 (Zhúnán),
+131315,里港鄉 (Ligang),
+131313,臺中市 (Taichung),
+131314,美濃區 (Meinong),
+131312,神岡區,
+131311,獅子鄉 (Shihzih),
+131310,六甲區 (Lioujia),
+131309,鶯歌區 (Yīnggē),
+131308,秀水鄉,
+131307,中寮鄉,
+131306,南州鄉 (Nanjhou),
+131305,嘉義市,
+131304,大社區 (Dashe),
+131303,安平區 (Anping),
+131302,琉球鄉 (Liúqiú),
+131301,池上鄉 (Chihshang),
+131300,三重區 (Sanchong),
+131298,蘭嶼鄉,
+131299,白河區 (Baihe),
+131297,雲林縣 (Yúnlín),
+131296,蘇澳鎮,
+131295,滿州鄉 (Manjhou),
+131294,大林鎮 (Dalin),
+131293,牡丹鄉 (Mudan),
+131292,杉林區 (Shānlín),
+131291,左鎮區 (Zuojhen),
+131290,大雅區,
+131288,龜山鄉,
+131289,芎林鄉,
+131287,員林鎮,
+131286,延平鄉 (Yanping),
+131284,南屯區,
+131285,柳營區 (Liouying),
+131283,佳冬鄉 (Jiadong),
+131282,彌陀區 (Mituo),
+131281,南庄鄉,
+131280,嘉義縣,Chiayi County
+131279,花壇鄉,
+131278,下營區 (Siaying),
+131277,梓官區 (Zihguan),
+131276,田寮區 (Tianliao),
+131275,集集鎮,
+131274,板橋區 (Banqiao District),
+131273,Tutan Village,Tutan Village
+131272,社頭鄉,
+131271,公館鄉,
+131270,關廟區 (Guanmiao),
+131269,Fuzheng Village,Fuzheng Village
+131268,田尾鄉,
+131267,安樂區 (Ānlè),
+131266,春日鄉 (Chunrih),
+131265,鹿港鎮,
+131264,芬園鄉,
+131262,溪州鄉,
+131263,鳳林鎮 (Fenglin),
+131261,礁溪鄉,
+131260,萬丹鄉 (Wandan),
+131259,竹田鄉 (Jhutian),
+131258,崙背鄉,
+131257,麟洛鄉 (Linluo),
+131256,小港區 (Siaogang),
+131254,桃源區 (Taoyuan),
+131255,東勢鄉 (Dōngshì),
+131253,番路鄉 (Fanlu),
+131252,岡山區 (Gangshan),
+131251,復興鄉,
+131250,通霄鎮,
+131249,大武鄉 (Dawu),
+131248,望安鄉 (Wang'an),
+131247,新城鄉 (Sincheng),
+131246,北門區 (Beimen),
+131245,三峽區 (Sanxia),
+131244,鹽埔鄉 (Yanpu),
+131243,永安區 (Yong-an),
+131242,大肚區,
+131241,萬里區 (Wanli),
+131240,壽豐鄉 (Shoufong),
+131239,北區,
+131238,朴子市 (Puzi City),
+131237,燕巢區 (Yanchao),
+131236,沙鹿區,
+131235,金山區 (Jinshan),
+131234,大埔鄉 (Dapu),
+131233,阿蓮區 (Alian),
+131232,新港鄉 (Singang),
+131230,林邊鄉 (Linbian),
+131229,秀林鄉 (Sioulin),
+131228,信義鄉,
+131227,台東縣 (Táidōng),
+131226,白沙鄉 (Báishā),
+131225,土城區 (Tucheng),
+131224,西湖鄉,
+131223,石岡區,
+131222,大樹區 (Dashu),
+131221,竹塘鄉,
+131220,大同鄉,"Datong, Yilan"
+131219,竹北市 (Zhubei City),
+131218,西螺鎮,
+131217,民雄鄉 (Minsyong),
+131216,Gangkou Village,Gangkou Village
+131215,水上鄉 (Shueishang),
+131214,萬榮鄉 (Wanrong),
+131213,三芝區 (Sanzhi),
+131212,花蓮市 (Hualien City),
+131210,和美鎮,
+131211,東區 (East District),
+131209,將軍區 (Jiangjyun),
+131208,中壢市 (Zhongli City),
+131207,茂林區 (Maolin),
+131206,高雄市,Kaohsiung
+131205,中和區 (Zhonghe),
+131204,太保市 (Taibao),
+131203,坪林區 (Pínglín),
+131202,新豐鄉,
+131201,銅鑼鄉,
+131200,南投縣 (Nántóu),
+131199,台西鄉 (Táixī),
+131198,楠西區 (Nansi),
+131197,吉安鄉 (Ji-an),
+131196,內門區 (Neimen),
+131195,后里區,
+131194,茄萣區 (Jiading),
+131193,南投市,
+131192,黃官嶼,
+131190,南澳鄉 (Nan-ao),
+131189,玉井區 (Yujing),
+131188,田中鎮,
+131186,台東市 (Taitung City),
+131185,來義鄉 (Laiyi),
+131184,苓雅區 (Lingya),
+131183,六龜區 (Liouguei),
+131182,大內區 (Danei),
+131181,烏來區 (Wulai),
+131180,外埔區,
+131179,北區,
+131178,福興鄉,
+131177,仁德區 (Rende),
+131176,造橋鄉,
+131175,新埤鄉 (Sinpi),
+131174,五股區 (Wǔgǔ),
+131173,豐濱鄉 (Fengbin),
+131172,瑞穗鄉 (Ruisui),
+131171,大村鄉,
+131170,鹽埕區 (Yancheng),
+131169,成功鎮 (Chenggong),
+131168,石碇區 (Shiding),
+131167,竹東鎮,
+131166,太麻里鄉 (Taimali),
+131165,六腳鄉 (Lioujiao),
+131164,三灣鄉,
+131163,卓蘭鎮,
+131162,長濱鄉 (Changbin),
+131161,北投區,
+131160,彰化縣 (Zhānghuà),
+131158,湖西鄉 (Húxi),
+131157,Hongtou Village,Hongtou Village
+131156,信義區,Xinyi District
+131155,魚池鄉,
+131154,八德市 (Bade City),
+131153,土庫鎮 (Tǔkù),
+131152,鳳山區 (Fongshan),
+131151,佳里區 (Jiali),
+131150,後壁區 (Houbi),
+131149,內埔鄉 (Neipu),
+131148,崁頂鄉 (Kanding),
+131147,五結鄉,
+131146,蘆洲區 (Luzhou),
+131145,枋山鄉 (Fangshan),
+131144,Daping Village,Daping Village
+131143,元長鄉 (Yuanchang),
+131142,關西鎮,
+131141,頭城鎮,
+131140,林園區 (Linyuan),
+131139,潭子區,
+131138,恆春鎮 (Hengchun),
+131137,古坑鄉,
+131136,文山區 (Wenshan),
+131135,连江县,Lienchiang
+131134,東引鄉,
+131133,東區,
+131132,梅山鄉 (Meishan),
+131131,善化區 (Shanhua),
+131130,二崙鄉 (Èrlún),
+131129,花蓮縣 (Hualien County),
+131128,豐原區,
+131127,那瑪夏區 (Namasia),
+131126,平溪區 (Pingxi),
+131125,東山區 (Dongshan),
+131124,前金區 (Cianjin),
+131123,北區 (North District),
+131122,林內鄉 (Línnèi),
+131121,彰化市,
+131119,烈嶼鄉,
+131118,金寧鄉,
+131117,金城鎮,
+131116,金沙鎮,Jinsha Township
+131115,金湖鎮,Jinhu Township
+131114,金门县,Kinmen County
+123064,Kumasi,Kumasi
+122629,Yaounde,Yaounde
+122493,Garoua,Garoua
+121011,Bayamo,Bayamo
+120996,San Diego,San Diego
+120945,Pinar del Río,Pinar del Rio
+120935,Varadero,Varadero
+120768,Nakuru,Nakuru
+116738,Tangier-Assilah,Tangier
+116374,Agadir,Agadir
+115964,Swakopmund,Swakopmund
+115295,Maracaibo,Maracaibo
+114280,Pretoria,Pretoria
+113894,Lagos,Lagos
+109725,Ho Chi Minh City,Ho Chi Minh City
+109672,Nha Trang,Nha Trang
+109510,Phan Thiet,Phan Thiet
+109491,Hue,Hue
+91250,Jinja,Jinja
+91021,Ndola,Ndola
+89896,Fremantle,Fremantle
+88879,Cairns,Cairns
+88812,Darwin,Darwin
+88483,Andorra la Vella,Andorra la Vella
+88274,Kaunas,Kaunas
+87929,Klaipėda,Klaipeda
+87548,Vilnius,Vilnius
+87468,Rīga,Riga
+87387,Liepāja,Liepaja
+87339,Daugavpils,Daugavpils
+87170,Tartu,Tartu
+87124,Kuressaare,Kuressaare
+86967,Tallinn,Tallinn
+86693,Chișinău,Chisinau
+86493,Majuro,Majuro
+86095,Christchurch,Christchurch
+86077,Malé,Male
+85822,Antananarivo,Antananarivo
+84628,Roseau,Roseau
+84601,Dubai,Dubai
+84462,Díli,Dili
+84181,Sanaa,Sanaa
+83913,Belmopan,Belmopan
+83895,Belize City,Belize City
+83773,Innsbruck Land,Innsbruck
+83748,Ramsau im Zillertal,Ramsau
+83652,Kufstein,Kufstein
+82976,Dornbirn,Dornbirn
+82908,Bregenz,Bregenz
+82844,Lienz,Lienz
+82617,Graz,Graz
+81544,Melk,Melk
+81183,Managua,Managua
+81054,Georgetown,Georgetown
+80309,Sofia,Sofia
+80263,Sandanski,Sandanski
+79906,Dushanbe,Dushanbe
+79733,Bandar Seri Begawan,Bandar Seri Begawan
+79063,Charleroi,Charleroi
+79013,Namur,Namur
+78886,Antwerpen,Antwerp
+78763,Leuven,Leuven
+78609,Lilongwe,Lilongwe
+78560,جيبوتي,Djibouti
+78258,Wad Madani,Wad Madani
+78224,Khartoum,Khartoum
+78125,Abomey,Abomey
+78104,Porto Novo,Porto Novo
+77982,Cotonou,Cotonou
+77941,Conakry,Conakry
+77798,Banjul,Banjul
+77291,Damascus,Damascus
+77004,Tegucigalpa,Tegucigalpa
+76894,Koper,Koper
+76849,Postojna,Postojna
+76814,Bled,Bled
+76787,Maribor,Maribor
+76727,Ljubljana,Ljubljana
+76265,Szczecin,Szczecin
+76075,Koszalin,Koszalin
+75929,Wroclaw,Wroclaw
+75895,Legnica,Legnica
+74835,Kalisz,Kalisz
+74395,Leszno,Leszno
+74300,Suwalki,Suwalki
+74263,Bialystok,Bialystok
+73836,Kętrzyn,Ketrzyn
+73293,Opole,Opole
+73177,Katowice,Katowice
+72807,Plock,Plock
+72761,Siedlce,Siedlce
+72534,Pilawa,Pila
+72200,Zakopane,Zakopane
+71313,Kielce,Kielce
+70838,Tripoli,Tripoli
+70831,Benghazi,Benghazi
+70654,Odense,Odense
+70587,Aalborg,Aalborg
+70531,Aarhus Kommune,Aarhus
+70487,Port Moresby,Port Moresby
+69058,Valletta,Valletta
+69037,Paramaribo,Paramaribo
+68791,Port Louis,Port Louis
+66459,Trier,Trier
+65279,Goldberg,Goldberg
+65099,Rostock,Rostock
+64934,Greifswald,Greifswald
+64807,Mannheim,Mannheim
+64744,Freudenstadt,Freudenstadt
+64414,Heidelberg,Heidelberg
+64123,Feldberg,Feldberg
+64093,Freiburg,Freiburg
+62589,Chemnitz,Chemnitz
+62552,Marienberg,Marienberg
+62381,Plauen,Plauen
+62082,Leipzig,Leipzig
+62043,Oschatz,Oschatz
+62022,Dresden,Dresden
+62019,Harburg,Harburg
+61790,Regensburg,Regensburg
+61107,Kempten,Kempten
+61083,Oberstdorf,Oberstdorf
+61007,Augsburg,Augsburg
+60339,Straubing,Straubing
+59337,Bamberg,Bamberg
+58563,Potsdam,Potsdam
+58531,Cottbus,Cottbus
+57449,Altenburg,Altenburg
+57314,Meiningen,Meiningen
+57109,Erfurt,Erfurt
+56569,Giessen,Giessen
+56447,Kassel,Kassel
+56100,Taunusstein,Taunus
+55770,Itzehoe,Itzehoe
+55729,Schleswig,Schleswig
+55446,Sylt,Sylt
+55183,Helgoland,Helgoland
+54960,Kiel,Kiel
+54766,Fehmarn,Fehmarn
+54300,Cuxhaven,Cuxhaven
+54116,Bremerhaven,Bremerhaven
+54089,Soltau,Soltau
+54057,Bremen,Bremen
+53852,Norderney,Norderney
+53558,Braunlage,Braunlage
+53479,Emden,Emden
+53318,Wunstorf,Wunstorf
+52106,Warburg,Warburg
+52077,Essen,Essen
+52071,Aachen,Aachen
+51866,Magdeburg,Magdeburg
+51818,Wernigerode,Wernigerode
+51811,Harzgerode,Harzgerode
+51771,Genthin,Genthin
+51495,Wittenberg,Wittenberg
+51349,Riyadh,Riyadh
+51328,Mecca,Mecca
+51190,N'Djamena,N'Djamena
+51184,Amman,Amman
+51001,San Jose,San Jose
+50580,Kingston and St. Andrew Corporation,Kingston
+47568,Nashville,Nashville
+47154,Augusta,Augusta
+47098,Lincoln,Lincoln
+46984,Concord,Concord
+46088,New Orleans,New Orleans
+44884,Wichita,Wichita
+44141,Olympia,Olympia
+40653,Columbus,Columbus
+40354,San Diego,San Diego
+39002,Charlotte,Charlotte
+38877,Lancaster,Lancaster
+36534,Oklahoma City,Oklahoma City
+35769,Tallahassee,Tallahassee
+35689,West Palm Beach,West Palm Beach
+30328,Providence,Providence
+28760,El Paso,El Paso
+26121,Los Angeles County,Los Angeles County
+25026,Salt Lake City,Salt Lake City
+23836,Yellowstone National Park,Yellowstone National Park
+17249,Nassau,Nassau
+7010,Dnipropetrovsk,Dnipropetrovsk
+6714,Vaduz,Vaduz
+6605,Minsk,Minsk
+6518,Mozyr,Mozyr
+6105,Punta Del Este,Punta del Este
+5662,Rocha,Rocha
+5570,Colonia,Colonia
+4737,Belmullet,Belmullet
+4447,Galway,Galway
+4377,Waterford,Waterford
+4348,Mullingar,Mullingar
+271192,坪洲,Peng Chau
+271190,南丫島,Lamma Island
+271191,大嶼山,Lantau Island
+271189,交椅洲,Kau Yi Chau
+271188,喜靈洲,Hei Ling Chau
+271186,石鼓洲,Shek Kwu Chau
+271187,長洲,Cheung Chau
+271185,小鴉洲,Siu Chau
+271184,大鴉洲,Tai A Chau
+271183,新界,New Territories
+271182,油尖旺區,Yau Tsim Mong District
+271181,深水埗區,Sham Shui Po District
+271173,香港島,Hong Kong Island 
+271174,中西區（香港）,"Central and Western District, Hong Kong"
+271175,東區（香港）,"Eastern District, Hong Kong"
+271176,西環,Western District
+271178,九龍半島,Kowloon Peninsula
+271179,九龍城區,Kowloon City District
+271180,觀塘區,Kwun Tong District
+284865,润州区,Runzhou District
+284770,松北区,Songbei District
+284771,香坊区,Xiangfang District
+284772,龙沙区,Lonza District
+284773,建华区,Jianhua District
+284774,铁锋区,Tiefeng District
+284775,昂昂溪区,Ang'angxi District
+284776,富拉尔基区,Fularji District
+284777,碾子山区,Nianzishan District
+284778,梅里斯达斡尔族区,Meilisi Daur District
+284779,鸡冠区,Jiguan District
+284780,恒山区,Hengshan District
+284781,滴道区,Didao district
+284782,梨树区,Lishu District
+284783,城子河区,Chengzihe District
+284784,麻山区,Mashan District
+284785,鹤岗市向阳区,"Xiangyang District, Hegang"
+284786,工农区,Workers and peasants
+284787,鹤岗市南山区,"Nanshan District, Hegang"
+284788,兴安区,Xing'an District
+284789,东山区,Dongshan District
+284790,兴山区,Xingshan District
+284791,尖山区,Jianshan District
+284792,岭东区,Lingdong District
+284793,四方台区,Sifangtai District
+284794,双鸭山市宝山区,"Baoshan District, Shuangyashan"
+284795,萨尔图区,Saertu District
+284796,龙凤区,Longfeng District
+284797,让胡路区,Ranghulu District
+284798,红岗区,Honggang District
+284799,大同区,"Datong District, Daqing"
+284801,南岔县,NanchaCounty
+284802,友好区,Youhao District
+284808,乌翠区,Wucui District
+284809,汤旺县,Tangwang County
+284813,佳木斯市向阳区,"Xiangyang District, Jiamusi "
+284814,前进区,Qianxin District
+284815,东风区,Dongfeng District
+284816,佳木斯市郊区,"Jiao DIstrict, Jiamusi"
+284817,新兴区,Xinxing District
+284818,桃山区,Taoshan District
+284819,茄子河区,Qiezihe District
+284820,东安区,Dongan District
+284821,阳明区,Yangming District
+284822,爱民区,Aimin District
+284823,牡丹江市西安区,"Xi'an District, Mudanjiang"
+284824,爱辉区,Aihui District
+284825,北林区,"Beilin District, Suihua"
+284826,黄浦区,"Huangpu District, Shanghai"
+284827,长宁区,Changning District
+284828,静安区,Jing'an District
+284829,上海市普陀区,"Putuo District, Shanghai"
+284831,虹口区,Hongkou District
+284832,杨浦区,Yangpu District
+284833,玄武区,Xuanwu District
+284834,秦淮区,Qinhuai District
+284835,建邺区,Jianye District
+284836,南京市鼓楼区,"Gulou District, Nanjing "
+284837,栖霞区,Qixia District
+284838,雨花台区,Yuhuatai District
+284839,新吴区,Xinwu District
+284841,梁溪区,Liangxi District
+284842,惠山区,Huishan District
+284843,滨湖区,Lake District
+284844,徐州市鼓楼区,"Gulou District, Xuzhou"
+284845,云龙区,Yunlong District
+284846,贾汪区,Jiawang District
+284847,泉山区,Quanshan District
+284848,天宁区,Tianning District
+284849,钟楼区,Zhonglou District
+284850,戚墅堰区,Qishuyan District
+284851,新北区,Xinbei District
+284852,虎丘区,Huqiu District
+284853,相城区,"Xiangcheng District, Suzhou"
+284854,姑苏区,Gusu District
+284855,崇川区,Chongchuan District
+284857,连云区,Lianyun District
+284858,新浦区（现海州区）,Xinpu District
+284859,连云港市海州区,"Haizhou District, Lianyungang"
+284860,清江浦区,Qingjiangpu District
+284861,清浦区,"Qingpu District, Huaian"
+284862,亭湖区,Tinghu District
+284863,广陵区,Guangling District
+284864,京口区,Jingkou District
+284866,海陵区,Hailing District
+284867,高港区,Gaogang District
+284868,宿城区,Sucheng District
+284869,上城区,Shangcheng District
+284872,拱墅区,Gongshu District
+284873,杭州市西湖区,"Xihu District, Hangzhou"
+284874,滨江区,Binjiang District
+284875,海曙区,Haishu District
+284876,江东区,Jiangdong district
+284877,宁波市江北区,"Jiangbei District, Ningbo"
+284878,鹿城区,Lucheng District
+284879,龙湾区,Longwan District
+284880,瓯海区,Ouhai District
+284881,南湖区,Nanhu District
+284882,秀洲区,Xiuzhou District
+284883,吴兴区,Wuxing District
+284884,南浔区,Nanxun District
+284885,越城区,Yuecheng District
+284886,柯桥区,Keqiao District
+284887,婺城区,WuchengDistrict
+284888,金东区,Jindong District
+284889,柯城区,Kecheng District
+284890,莲都区,Liandu District
+284891,瑶海区,Yaohai District
+284892,庐阳区,Luyang District
+284893,蜀山区,Shushan District
+284894,包河区,Pack River District
+284895,镜湖区,Mirror Lake District
+284896,弋江区,Yijiang District
+284897,鸠江区,Jiujiang District
+284898,三山区,Sanshan District
+284899,龙子湖区,Longzihu District
+284900,蚌山区,Bengshan District
+284901,禹会区,Yuhui District
+284902,淮上区,Huaishang District
+284903,大通区,"Datong District, Huainan"
+284904,田家庵区,Tianjia'an District
+284905,谢家集区,Xiejiaji District
+284906,八公山区,Bagongshan District
+284907,花山区,Huashan District
+284908,雨山区,Yushan District
+284909,博望区,Bowang District
+284910,杜集区,Duji District
+284911,相山区,"Xiangshan District, Huaibei"
+284912,烈山区,Lieshan District
+284913,铜官区,Tongguan District
+284914,铜官区,Tongguan District
+284915,铜陵市郊区,"Jiao District, Tongling"
+284916,义安区,Yian District
+284917,迎江区,Yingjiang District
+284918,大观区,Daguan District
+284919,宜秀区,Yixiu District
+284920,徽州区,Huizhou District
+284921,琅琊区,Langya District
+284922,南谯区,Nanqiao District
+284923,颍州区,Yingzhou District
+284924,颍东区,Yingdong District
+284925,颍泉区,Yingquan District
+284926,埇桥区,Yongqiao District
+284927,金安区,Jin'an District
+284928,裕安区,yuan-district
+284929,谯城区,Qiaocheng District
+284930,贵池区,Guichi District
+284931,宣州区,Xuanzhou District
+284932,福州市鼓楼区,"Gulou District, Fuzhou"
+284933,台江区,Taijiang District
+284934,仓山区,Cangshan District
+284935,马尾区,Mawei District
+284936,晋安区,jinan-district
+284937,思明区,Siming District
+284938,海沧区,Haicang District
+284939,湖里区,Huli District
+284940,集美区,Jimei District
+284941,翔安区,Xiang'an District
+284943,三元区,Sanyuan District
+284944,鲤城区,"Licheng District, Quanzhou"
+284945,丰泽区,Fengze District
+284946,洛江区,Luojiang District
+284947,泉港区,Quangang District
+284948,金门县,Kinmen County
+284949,芗城区,"Xiangcheng District, Zhangzhou"
+284950,龙文区,Longwen District
+284951,延平区,Yanping District
+284952,新罗区,Xinluo District
+284953,蕉城区,Jiaocheng District
+284954,东湖区,Donghu District
+284955,南昌市西湖区,"Xihu District, Nanchang"
+284956,青云谱区,Qingyunpu District
+284958,青山湖区,Qingshanhu District
+284959,昌江区,Changjiang District
+284960,珠山区,Zhushan District
+284961,浔阳区,Xunyang District
+284962,柴桑区,ChaisangDistrict
+284963,共青城市,Gongqingcheng
+284964,渝水区,Yushui District
+284965,月湖区,Yuehu District
+284966,章贡区,Zhanggong District
+284967,吉州区,Jizhou District
+284968,青原区,Qingyuan District
+284969,袁州区,"Yuanzhou District, Yichun"
+284970,临川区,Linchuan District
+284971,信州区,"Xinzhou District, Shangrao"
+284972,历下区,Lixia District
+284973,济南市市中区,"Shizhong District, Jinan"
+284974,槐荫区,"Huaiyin District, Jinan"
+284975,历城区,"Licheng District, Jinan"
+284976,市南区,Shinan District
+284977,市北区,Shibei District
+284978,黄岛区,Huangdao District
+284979,李沧区,Licang District
+284980,城阳区,Chengyang District
+284981,张店区,Zhangdian District
+284982,枣庄市市中区,"Shizhong District, Zaozhuang"
+284983,山亭区,Shanting District
+284984,东营区,Dongying District
+284985,芝罘区,Zhifu District
+284986,莱山区,Laishan District
+284987,潍城区,"Weicheng District, Weifang"
+284988,寒亭区,Hanting District
+284989,坊子区,Fangzi District
+284990,奎文区,Kuiwen District
+284991,济宁市市中区（现任城区）,"Shizhong District, Jining"
+284992,任城区,Rencheng District
+284993,泰山区,Taishan District
+284994,岱岳区,Daiyue District
+284995,环翠区,Huancui District
+284996,东港区,Donggang District
+284997,岚山区,"Lanshan District, Rizhao"
+284998,莱芜区,Laiwu
+284999,钢城区,Gangcheng District
+285000,兰山区,"Lanshan District, Linyi"
+285001,罗庄区,Luozhuang District
+285002,临沂市河东区,"Hedong District, Linyi"
+285003,德城区,Decheng District
+285004,东昌府区,Dongchangfu District
+285005,滨城区,Bincheng District
+285006,牡丹区,Mudan District
+285007,中原区,Zhongyuan District
+285008,二七区,ErqiDistrict
+285009,管城回族区,Guancheng Hui District
+285010,金水区,Jinshui District
+285011,惠济区,Huiji District
+285012,龙亭区,Longting District
+285013,顺河回族区,Shunhe Hui District
+285014,开封市鼓楼区,"Gulou District, Kaifeng"
+285015,禹王台区,Yuwangtai District
+285016,金明区（现龙亭区）,Jinming District
+285017,祥符区,Xiangfu District
+285018,老城区,Laocheng District
+285019,西工区,Xigong District
+285020,瀍河回族区,Chanhe Hui District
+285021,涧西区,Jianxi District
+285022,洛龙区,Luolong District
+285023,平顶山市新华区,"Xinhua District, Pingdingshan"
+285024,卫东区,Weidong District
+285025,湛河区,Zhanhe District
+285026,文峰区,Wenfeng District
+285027,北关区,Beiguan District
+285028,殷都区,Yindu District
+285029,龙安区,Longan District
+285030,安阳县,Anyang County
+285031,鹤山区,"Heshan District, Hebi"
+285032,山城区,Shancheng District
+285033,淇滨区,Qibin District
+285034,红旗区,Hongqi District
+285035,卫滨区,"Weibin District, Xinxiang"
+285036,凤泉区,Fengquan District
+285037,牧野区,Muye District
+285038,新乡县,Xinxiang County
+285039,解放区,Jiefang District
+285040,中站区,Zhongzhan District
+285041,马村区,Macun District
+285042,山阳区,Shanyang District
+285043,华龙区,Hualong District
+285044,濮阳县,Puyang County
+285045,魏都区,Weidu District
+285046,建安区,Jianan district
+285047,源汇区,Yuanhui District
+285048,郾城区,Yancheng District
+285049,召陵区,Shaoling District
+285050,湖滨区,Hubin District
+285051,宛城区,Wancheng District
+285052,卧龙区,Wolong District
+285053,梁园区,Liangyuan District
+285054,睢阳区,Suiyang District
+285055,浉河区,Shihe District
+285056,平桥区,Pingqiao District
+285057,川汇区,Chuanhui District
+285058,驿城区,"Yicheng District, Zhumadian"
+285059,江岸区,Jiang'an District
+285060,江汉区,Jianghan District
+285061,硚口区,Qiaokou District
+285062,汉阳区,Hanyang District
+285063,武昌区,Wuchang District
+285064,武汉市青山区,"Qingshan District, Wuhan"
+285065,洪山区,"Hongshan District, Wuhan"
+285066,汉南区,Hannan District
+285067,黄石港区,Huangshigang District
+285068,西陵区,Xiling District
+285069,伍家岗区,Wujiagang District
+285070,点军区,Dianjun District
+285071,猇亭区,Xiaoting District
+285072,襄城区,"Xiangcheng District, Xiangyang"
+285073,樊城区,Fancheng District
+285074,华容区,Huarong District
+285075,鄂城区,Echeng District
+285076,东宝区,Dongbao District
+285077,孝南区,Xiaonan District
+285078,荆州区,Jingzhou District
+285079,黄州区,Huangzhou District
+285080,咸安区,xianan-district
+285081,曾都区,Zengdu District
+285082,随县,"Sui County, Suizhou"
+285083,恩施市,Enshi
+285084,芙蓉区,Furong District
+285085,天心区,Tianxin District
+285086,岳麓区,Yuelu District
+285087,开福区,Kaifu District
+285088,雨花区,"Yuhua District, Changsha"
+285089,长沙县,Changsha County
+285090,荷塘区,Hetang District
+285091,芦淞区,Lusong District
+285092,石峰区,Shifeng District
+285093,天元区,Tianyuan District
+285094,渌口区,Lukou District
+285095,雨湖区,Yuhu District
+285096,岳塘区,Jingxing Mining District
+285097,湘潭县,Xiangtan County
+285098,珠晖区,Zhuhui District
+285099,雁峰区,Yanfeng District
+285100,石鼓区,Shigu District
+285101,蒸湘区,Zhengxiang District
+285102,双清区,Shuangqing District
+285103,大祥区,Daxiang District
+285104,北塔区,Beita District
+285105,岳阳楼区,Yueyanglou District
+285106,云溪区,Yunxi District
+285107,君山区,Junshan District
+285108,岳阳县,Yueyang County
+285109,武陵区,Wuling District
+285110,鼎城区,Dingcheng District
+285111,永定区,Yongding District
+285112,资阳区,Ziyang District
+285113,北湖区,Beihu District
+285114,零陵区,Lingling District
+285115,鹤城区,Hecheng District
+285116,娄星区,Louxing District
+285117,湘西土家族苗族自治州,Xiangxi Tujia and Miao Autonomous Prefecture
+285118,荔湾区,Liwan District
+285119,越秀区,Yuexiu District
+285120,海珠区,Haizhu District
+285121,天河区,Tianhe District
+285122,广州市白云区,"Baiyun District, Guangzhou"
+285123,黄埔区,"Huangpu District, Guangzhou"
+285124,南沙区,Nansha District
+285125,萝岗区（现黄埔区）,Luogang District
+285126,罗湖区,Luohu District
+285127,福田区,Futian District
+285128,深圳市南山区,"Nanshan District, Shenzhen"
+285129,宝安区,Bao'an District
+285130,龙岗区,"Longgang District, Shenzhen"
+285131,盐田区,Yantian District
+285132,香洲区,"Xiangzhou District, Zhuhai"
+285133,龙湖区,Longhu District
+285134,金平区,Jinping District
+285135,濠江区,Haojiang District
+285136,潮南区,Chaonan District
+285137,禅城区,Chancheng District
+285138,茂南区,Maonan District
+285139,端州区,Duanzhou District
+285140,鼎湖区,Dinghu District
+285141,惠城区,Huicheng District
+285142,梅江区,Meijiang District
+285143,汕尾市城区,"Cheng District, Shanwei"
+285144,源城区,Yuancheng District
+285145,江城区,Jiangcheng District
+285146,清城区,Qingcheng District
+285147,湘桥区,Xiangqiao District
+285148,榕城区,Rongcheng District
+285149,云城区,Yuncheng District
+285150,兴宁区,Xingning District
+285151,青秀区,Qingxiu District
+285152,西乡塘区,Xixiangtang District
+285153,良庆区,Liangqing District
+285154,柳州市城中区,"Chengzhong District, Liuzhou"
+285155,鱼峰区,Yufeng District
+285156,柳南区,Liunan District
+285157,柳北区,Liubei District
+285158,秀峰区,Xiufeng District
+285159,叠彩区,Diecai District
+285160,象山区,"Xiangshan District, Guilin"
+285161,七星区,Qixing District
+285162,雁山区,Yanshan District
+285163,万秀区,Wanxiu District
+285164,龙圩区,Longxu District
+285165,海城区,Haicheng District
+285166,银海区,Yinhai District
+285167,铁山港区,Tieshangang District
+285168,港口区,Gangkou District
+285169,钦南区,Qinnan District
+285170,钦北区,Qinbei District
+285171,港北区,Gangbei District
+285172,港南区,Gangnan District
+285173,覃塘区,Qintang District
+285174,玉州区,Yuzhou District
+285175,福绵区,Fumian District
+285176,右江区,Youjiang District
+285177,八步区,Babu District
+285178,金城江区,Jinchengjiang District
+285179,兴宾区,Xingbin District
+285180,江州区,Jiangzhou District
+285181,秀英区,Xiuying District
+285182,龙华区,Longhua District
+285183,琼山区,Qiongshan District
+285184,美兰区,Meilan District
+285185,中沙群岛的岛礁及其海域,Zhongsha District (Macclesfield Bank and Scarborough Shoal)
+285186,渝中区,Yuzhong District
+285187,大渡口区,Dadukou District
+285188,重庆市江北区,"Jiangbei District, Chongqing"
+285189,沙坪坝区,Shapingba District
+285190,九龙坡区,Jiulongpo District
+285191,南岸区,Nan'an District
+285192,锦江区,Jinjiang District
+285193,青羊区,Qingyang District
+285194,金牛区,Jinniu District
+285195,武侯区,Wuhou District
+285196,成华区,Chenghua District
+285197,青白江区,Qingbaijiang District
+285198,自流井区,Ziliujing District
+285199,贡井区,Gongjing District
+285200,大安区,Daan District
+285201,沿滩区,Yantan District
+285202,攀枝花市东区,"East District, Panzhihua"
+285203,攀枝花市西区,"West District, Panzhihua"
+285204,江阳区,jiangyang-district
+285205,龙马潭区,Longmatan District
+285206,旌阳区,Jingsheng District
+285207,涪城区,Fucheng District
+285208,游仙区,Youxian District
+285209,利州区,Lizhou District
+285210,昭化区,ZhaohuaDistrict
+285211,朝天区,Chaotian District
+285212,船山区,Chuanshan District
+285213,安居区,Anju District
+285214,大英县,Daying District
+285215,内江市市中区,"Shizhong District, Neijiang"
+285216,乐山市市中区,"Shizhong District, Leshan"
+285217,沙湾区,Shawan District
+285218,五通桥区,Wutongqiao District
+285219,顺庆区,Shunqing District
+285220,高坪区,Gaoping District
+285221,嘉陵区,Jialing District
+285222,东坡区,Dongcheng District
+285223,翠屏区,Cuiping District
+285224,广安区,Guang'an District
+285225,前锋区,Qianfeng District
+285226,雨城区,Yucheng District
+285227,巴州区,Nazhou District
+285228,恩阳区,Enyang District
+285229,雁江区,Yanjiang District
+285230,阿坝县,Aba (Ngawa) County
+285231,甘孜县,ganzi-county
+285232,钟山区,"Zhongshan District, Liupanshui"
+285233,西秀区,Xixiu District
+285234,七星关区,Qixingguan District
+285235,碧江区,Bijiang District
+285236,黔西南布依族苗族自治州,qianxinan
+285237,黔东南苗族侗族自治州,Qiandongnan Miao and Dong Autonomous Prefecture
+285238,黔南布依族苗族自治州,Qiannan Buyi and Miao Autonomous Prefecture
+285239,五华区,Wuhua District
+285240,盘龙区,Panlong District
+285241,官渡区,Guandu District
+285242,西山区,"Xishan District, Kunming"
+285243,麒麟区,Qilin District
+285244,红塔区,Hongta District
+285245,隆阳区,Longyang District
+285246,昭阳区,Zhaoyang District
+285247,古城区,Gucheng District
+285248,玉龙纳西族自治县,Yulong Naxi Autonomous County
+285249,思茅区,Simao District
+285250,临翔区,Linxiang District
+285251,楚雄市,Chuxiong
+285252,红河县,Honghe County
+285253,文山市,Wensha
+285254,西双版纳傣族自治州,Xishuangbanna Dai Autonomous Prefecture
+285255,大理市,Dali
+285256,芒市,Mang City
+285257,迪庆藏族自治州,Diqing Tibetan Autonomous Prefecture
+285258,拉萨市城关区,"Chengguan District, Lhasa"
+285259,卡若区,Karub District
+285260,扎囊县,Zhanang County
+285261,桑珠孜区,sangzhuzi-district
+285262,色尼区,Seni District
+285263,双湖县,Shuanghu County
+285264,巴宜区,Bayi District
+285265,西安市新城区,"Xincheng District, Xi’an"
+285266,碑林区,"Beilin District, Xi’an"
+285267,莲湖区,Lianhu District
+285268,灞桥区,Baqiao District
+285269,未央区,Weiyang District
+285270,雁塔区,Yanta District
+285271,阎良区,Yanliang District
+285272,王益区,Wangyi District
+285273,印台区,Yintai District
+285274,渭滨区,"Weibin District, Baoji"
+285275,金台区,Jintai District
+285276,秦都区,Qindu District
+285277,杨陵区,Yangling District
+285278,渭城区,"Weicheng District, Xianyang"
+285279,临渭区,Linwei District
+285280,宝塔区,Baota District
+285281,汉台区,Hantai District
+285282,汉滨区,Hanbin District
+285283,兰州市城关区,"Chengguan District, Lanzhou"
+285284,七里河区,QIlihe District
+285285,西固区,Xigu District
+285286,安宁区,Anning District
+285287,红古区,Honggu District
+285288,金川区,Jinchuan District
+285289,白银区,Baiyin District
+285290,秦州区,Qinchuan District
+285291,凉州区,Liangzhou District
+285292,甘州区,Ganzhou District
+285293,肃州区,Suzhou District
+285294,陇南市,Longnan
+285295,临夏市,Linxia
+285296,临夏县,Linxia County
+285297,甘南藏族自治州,Gannan Tibetan Autonomous Prefecture
+285298,城东区,Chengdong District
+285299,西宁市城中区,"Chengzhong District, Xining"
+285300,城西区,Chengxi District
+285301,城北区,Chengbei District
+285302,玉树市,"Yushu, Qinghai"
+285303,兴庆区,Xingqing District
+285304,西夏区,Xixia District
+285305,金凤区,Jinfeng District
+285306,利通区,Litong District
+285307,红寺堡区,Hongsipu District
+285308,原州区,"Yuanzhou District, Guyuan"
+285309,沙坡头区,Shapotou District
+285310,天山区,Tianshan District
+285311,沙依巴克区,Saybagh District
+285312,乌鲁木齐市新市区,"Xinshi District, Urumqi"
+285313,水磨沟区,Shuimogou District
+285314,头屯河区,Toutunhe District
+285315,米东区,Midong District
+285316,乌鲁木齐县,urumqi-county
+285317,独山子区,Dushanzi District
+285318,克拉玛依区,Karamay District
+285319,高昌区,GaochangDistrict
+285320,伊州区,YizhouDistrict
+285321,昌吉市,Changji
+285322,博尔塔拉蒙古自治州,Boertala Mongolian Autonomous Prefecture
+285323,巴音郭楞蒙古自治州,Bayingolin Mongol Autonomous Prefecture
+285324,阿克苏市,Aksu
+285325,喀什市,Kashgar
+285326,和田市,Hotan
+285327,和田县,Hotan County
+285328,伊犁哈萨克自治州,Ili Kazakh Autonomous Prefecture
+285329,塔城市,tacheng
+285330,阿勒泰市,Altay County
+285331,图木舒克市,Tumxuk
+285332,五家渠市,Wujiaqu
+284769,平房区,Pingfang District
+284768,道外区,Daowai District
+284767,南岗区,Nangang District
+284766,道里区,Daoli District
+284765,洮北区,Taobei District
+284764,宁江区,Ningjiang District
+284763,浑江区,Hunjiang District
+284762,二道江区,Erdaojiang District
+284761,东昌区,Dongchang District
+284760,辽源市西安区,xian-district
+284759,龙山区,Longshan District
+284758,四平市铁东区,"Tiedong District, Siping"
+284757,四平市铁西区,"Tiexi District, Siping"
+284756,丰满区,Fengman District
+284755,船营区,Chuanying District
+284754,龙潭区,Longtan District
+284753,昌邑区,Changyi District
+284752,绿园区,Lvyuan District
+284751,二道区,Erdao District
+284750,长春市朝阳区,"Chaoyang District, Changchun"
+284749,宽城区,Kuancheng District
+284748,南关区,Nanguan District
+284747,南票区,Nanpiao District
+284746,龙港区,Longgang District
+284745,连山区,Lianshan District
+284744,朝阳县,Chaoyang County
+284743,龙城区,Longcheng District
+284742,双塔区,Shuangta District
+284741,铁岭县,Tieling County
+284740,清河区,Qinghe District
+284739,银州区,"Yinzhou District, Tieling"
+284738,兴隆台区,Xinglongtai District
+284737,双台子区,Shuangtaizi District
+284736,太子河区,Taizihe District
+284735,宏伟区,Hongwei District
+284734,文圣区,Wensheng District
+284733,白塔区,Baita District
+284732,阜新蒙古族自治县,Fuxin Mongolian Autonomous County
+284730,清河门区,Qinghemen District
+284731,细河区,Xihe District
+284729,太平区,Taiping District
+284728,新邱区,Xinqiu District
+284727,阜新市海州区,"Haizhou District, Fuxin"
+284726,老边区,Laobian District
+284725,鲅鱼圈区,Bayuquan District
+284724,西市区,Xishi District
+284723,站前区,Zhanqian District
+284722,太和区,Taihe District
+284721,凌河区,Linghe District
+284720,古塔区,Guta District
+284719,振安区,zhenan-district
+284718,振兴区,Zhenxing District
+284717,元宝区,Yuanbao District
+284716,南芬区,Nanfen District
+284715,明山区,"Mingshan District, Benxi"
+284714,溪湖区,Xihu District
+284713,平山区,Pingshan District
+284712,抚顺县,"Fushun County, Fushun"
+284711,顺城区,Shuncheng District
+284710,望花区,Wanghua District
+284709,东洲区,Dongzhou District
+284708,新抚区,Xinfu District
+284707,千山区,Qianshan District
+284706,立山区,Lishan District
+284705,鞍山市铁西区,"Tiexi District, Anshan"
+284704,鞍山市铁东区,"Tiedong District, Anshan"
+284703,甘井子区,Ganjingzi District
+284702,沙河口区,Shahekou District
+284701,西岗区,Xigang District
+284700,中山区,"Zhongshan District, Dalian"
+284699,于洪区,Yuhong District
+284698,浑南区,Hunnan District
+284697,沈阳市铁西区,"Tiexi District, Shenyang"
+284696,皇姑区,Huanggu District
+284695,大东区,Dadong District
+284694,沈河区,Shenhe District
+284693,沈阳市和平区,"Heping District, Shenyang"
+284692,阿拉善盟,Alxa League
+284691,锡林郭勒盟,Xilingol League
+284690,兴安盟,Hinggan League
+284688,巴彦淖尔市,Bayannur
+284689,乌兰察布市,Wulanchabu
+284687,扎赉诺尔区,Jalainur District
+284686,科尔沁区,Horqin District
+284685,松山区,Songshan District
+284684,元宝山区,Yuanbaoshan District
+284683,红山区,"Hongshan District, Chifeng"
+284682,乌达区,Wuda District
+284681,海南区,Hainan District
+284680,海勃湾区,Haibowan District
+284679,九原区,Jiuyuan District
+284678,石拐区,Shiguai District
+284677,包头市青山区,"Qingshan District, Baotou"
+284676,昆都仑区,Hondlon District
+284675,东河区,Donghe District
+284674,赛罕区,Saihan District
+284673,玉泉区,Yuquan District
+284672,回民区,Huimin District
+284671,呼和浩特市新城区,"Xincheng District, Hohhot"
+284670,尧都区,Yaodu District
+284669,忻府区,Yifu District
+284668,盐湖区,Yanhu District
+284667,朔城区,Shuocheng District
+284666,晋城市城区,"Cheng District, Jincheng"
+284665,上党区,Shangdang District
+284664,潞州区,Luzhou District
+284663,潞州区,Luzhou District
+284662,阳泉市郊区,"Jiao District, Yangquan"
+284661,阳泉市矿区,"Mining DIstrict, Yangquan"
+284660,阳泉市城区,"Cheng District, Yangquan"
+284659,新荣区,Xinrong District
+284655,晋源区,Jinyuan District
+284654,万柏林区,Wanbailin District
+284653,杏花岭区,Xinghualing District
+284652,迎泽区,Yingze District
+284651,桃城区,Taocheng District
+284650,广阳区,Guangyang District
+284649,安次区,Anci District
+284648,运河区,Yunhe District
+284647,沧州市新华区,"Xinhua District, Cangzhou"
+284646,鹰手营子矿区,Yingshouyingzi Mining District
+284645,双滦区,Shuangluan District
+284644,双桥区,Shuangqiao District
+284643,下花园区,Xiahuayuan District
+284642,宣化区,Xuanhua District
+284641,张家口市桥西区,"Qiaoxi District, Zhangjiakou"
+284640,张家口市桥东区,"Qiaodong District, Zhangjiakou"
+284639,莲池区,Lianchi
+284638,莲池区,Lianchi District
+284637,保定市新市区,Jingxiu District
+284635,信都区,Xindu District
+3216,龙聚山庄,Longjushanzhuang
+284634,襄都区,Xiangdou  District
+284633,邯郸县,Handan County
+284632,复兴区,Fuxing District
+284631,丛台区,Congtai District
+284630,邯山区,Hanshan District
+284628,海港区,Haigang District
+284629,山海关区,Shanhaiguan District
+284627,开平区,Kaiping District
+284626,古冶区,Guye District
+284625,路北区,Lubei District
+284624,路南区,Lunan District
+284623,井陉县,Jingxing County
+284622,裕华区,"Yuhua District, Shijiazhuang"
+284621,井陉城区,Yuetang District
+284620,石家庄市新华区,"Xinhua District, Shijiazhuang"
+284619,石家庄市桥西区,"Qiaoxi District, Shijiazhuang"
+284617,石家庄市长安区,changan-District
+284616,红桥区,Hongqiao District
+284615,河北区,Hebei District
+284614,南开区,Nankai District
+284613,河西区,Hexi District
+284612,天津市河东区,"Hedong District, Tianjin"
+284611,天津市和平区,"Heping District, Tianjin"
+284609,东城区,Dongcheng District
+284610,西城区,Xicheng District
+285371,南區（香港）,"Southern District, Hong Kong"
+285370,灣仔區,Wan Chai District
+285369,黃大仙區,Wong Tai Sin District
+285368,離島區,Islands District
+285367,葵青區,Kwai Tsing District
+285366,元朗區,Yuen Long District
+285365,屯門區,Tuen Mun District
+285364,荃灣區,Tsuen Wan District
+285363,西貢區,Sai Kung District
+285362,沙田區,Sha Tin District
+285361,大埔區,Tai Po District
+285360,北區（香港）,"North District, Hong Kong"
+285359,双河市,Shuanghe
+285357,崖州区,Yazhou District
+285356,天涯区,Tianya District
+285355,吉阳区,Jiyang District
+285354,海棠区,Haitang District
+285372,天坛公园,Temple of Heaven
+285373,恭王府,Prince Gong Mansion
+285374,故宫博物院,Collections of the Palace Museum
+285375,北京明城墙遗址公园,Ming Dynasty City Wall Relics Park(Beijing)
+285376,北京市规划展览馆,Beijing Planning Exhibition Hall
+285377,明城墙遗址公园,Ming  Dynasty City Wall Relics Park
+285378,北京国子监,Beijing Imperial Academy
+285379,北京孔庙,Beijing Temple of Confucius
+285380,北海公园,Beihai Park
+285381,北京海洋馆,Beijing Ocean Park
+285382,景山公园,Jingshan Park
+285383,什刹海,Shichahai
+285384,白鹤梁水下博物馆,Baiheliang Underwater Museum 
+285385,石夹沟,Shijia Ravine
+285386,武陵山森林公园,Wuling Mountain Forest Park
+285387,青龙瀑布,Qinglong Waterfall
+285388,潭獐峡,Tanzhang Gorge
+285389,沈阳市植物园,Shenyang Botanical Park
+285390,新民文化博览园,Xinmin Culture Expo Park
+285391,北陵公园,Beiling Park
+285392,福陵森林公园,Fuling Tomb
+285393,辽宁省博物馆,Liaoning Proviencial Museum
+285394,棋盘山风景区,Qipan Mountain Scenic Spot
+285395,沈飞航空博览园,Shenyang airplane museum park
+285396,沈阳故宫,Shenyang Palace Museum
+285397,沈阳怪坡风景区,Shenyang Guaipo Scenic Spot
+285398,沈阳九·一八历史博物馆,Shenyang Mukden Incident Museum
+285399,沈阳科学宫,Shenyang Science Centrum
+285400,张氏帅府,Marshal Zhang's Mansion
+285401,白溪漂流,Baixi Rafting
+285402,露水河国家森林公园,Lushui River National Forest Park
+285403,望天鹅风景区,Wangtian'e Moutain Scenic Spot
+285404,长白果园朝鲜族民俗村,Guoyuan Korean Folk Village Of Changbai Korean Autonomous County
+285405,白山湖风景区,Baishan Lake Scenic Spot
+285406,杨靖宇将军殉国地,Martyring Spot of General Yang Jingyu
+285407,白山市龙山湖景区,Longshan Lake Scenic Spot of Baishan City
+285408,长白山迷宫,Changbai Moutain Maze
+285409,太阳岛风景区,Sun Island Scenic Spot
+285410,镜泊湖,Jingpo Lake
+285411,五大连池风景区,Wudalianchi Scenic Spot
+285412,二龙山风景区,Erlong Mountain Scenic Spot
+285413,北大荒集团北大荒现代农业园,Modern Agricultural Sightseeing Spot Of Nen River Farm
+285414,北方森林动物园,Northern Forest Zoo
+285415,哈尔滨游乐园,Harbin Amusement Park
+285416,黑龙江省科学技术馆,Heilongjiang Science and Technology Museum
+285417,金源文化旅游开发区,Jinyuan Cultural Tourism Spot
+285418,龙塔,Dragon Tower
+285419,圣·索菲亚教堂,Saint Sophia Cathedral
+285420,亚布力滑雪旅游度假区,Yabuli Ski Resort
+285421,卧龙岗,Wolong Gang
+285422,宝天曼峡谷漂流,Baotianman Valley rafting
+285423,鹳河漂流风景区,The stork river rafting Scenic Spot
+285424,中国西峡恐龙遗迹园,Xixia dinosaur Relics Park
+285425,五朵山风景区,Wuduo Mountain Scenic Spot
+285426,汉画馆,Painting Museum of Han Dynasty
+285427,医圣祠,Medical Sage Ancestral Temple
+285428,龙潭沟,Longtan Valley
+285429,南阳云华蝙蝠洞景区,Nanyang Yunhua Scenic Spot of Bats Cave
+285430,石门湖,Shimen Lake
+285431,南阳社旗山陕会馆,Shanxi and Shaanxi Guild Hall of Sheqi
+285432,香严寺,Xiangyan Temple
+285433,三峡工程,Three Gorge Dam
+285434,宜昌三峡人家风景区,Yichang Three Gorges Tribe Scenic Spot
+285435,清江画廊,Qingjiang Gallery
+285436,快乐谷景区,Happy Valley Scenic Spot
+285437,三峡大瀑布,Three Gorge Waterfall
+285438,三游洞,Sanyou Cave
+285439,坛子岭,Tanzi Ridge
+285440,宜昌车溪民俗风景区,Yichang Chexi Folk Custom Scenic Spot
+285441,宜昌市柴埠溪峡谷风景区,Yichang Chaibuxi Grand Canyon Scenic Spot
+285442,九畹溪,Jiuwan Steam
+285443,当阳玉泉风景区,Dangyang Yuquan Scenic Spot
+285444,宜昌市当阳百宝寨风景区,Yichang Dangyang Baibaozhai Scenic Spot
+285445,桃花源风景区,Taohuayuan Scenic Spot
+285446,柳叶湖旅游度假区,Liuye Lake Tourism Resort
+285447,花岩溪国家森林公园,Huayanxi National Forest Park
+285448,西洞庭湖湿地生态旅游风景区,Western Dongting Lake Wetland Ecotourism Scenic Spot
+285449,夹山国家森林公园,Jia Mountain National Forest Park
+285450,天门山国家森林公园,Tianmen Mountain National Forest Park
+285451,武陵源风景名胜区,Wulingyuan Scenic and Historic Interest Spot
+285452,茅岩河九天洞风景区,Jiutian Cave-Maoyan River Scenic Spot
+285453,宝峰湖风景区,Baofeng Lake Scenic Spot
+285454,黄龙洞旅游区,Huanglong Cave Tourism Spot
+285455,张家界土家风情园,Zhangjiajie Tujia Folk Customs Park
+285456,江垭温泉度假村,Zhangjiajie Jiangya Hot Springs Resort
+285457,龙王洞,Dragon King‘s cave
+285458,万福温泉,Wanfu Hot Spring Resort
+285459,绿色大地生态园,Green land Ecological Park
+285460,秀华山馆,Xiuhua mountain Museum
+285461,紫霞观,Zixia Temple
+285462,百色起义纪念馆,Baise Uprising Memorial Hall
+285463,大王岭风景区,Dawang Ridge Scenic Spot
+285464,大石围天坑群景区,Dashiwei Tiankeng Group Scenic Spot
+285465,古龙山峡谷风景区,Gulongshan Canyon Scenic Spot
+285466,通灵大峡谷,Tongling Grand Canyon
+285467,百色澄碧湖风景区,Baise Chengbi Lake Scenic Spot
+285468,梅县雁南飞茶田景区,Mei County Yannanfei Tea Graden Scenic Spot
+285469,华银雁鸣湖旅游度假村,Huayin Yanming Lake Tourism Resort
+285470,灵光寺,Lingguang Temple
+285471,叶剑英故居,Ye Jianying Former Residence
+285472,五指石,Five-finger Stone
+285473,汤湖热矿泥山庄,Tang Lake Rekuangni Villa
+285474,东山景区,Dong Mountain Scenic Spot
+285475,虎丘山风景名胜区,Huqiu Mountain Scenic Spot
+285476,金鸡湖景区,Jinji Lake Scenic Spot
+285477,留园,The Lingering Garden
+285478,穹窿山景区,Qionku Mountain Scenic Spot
+285479,天平山风景名胜区,Tianping Mountain Scenic Spot
+285480,旺山景区,Wang Mountain Scenic Spot
+285481,拙政园,The Humble Administrator's Garden
+285482,古镇同里,Tongli Ancient Town
+285483,周庄古镇游览区,Zhouzhuang Ancient TownTourism Spot
+285484,锦溪古镇,Jinxi Ancient Town
+285485,千灯古镇,Qiandeng Ancient Town
+285486,濠河风景名胜区,Hao River Scenic Spot
+285487,红十四军公园,14th Red Army Park
+285488,水绘园,Shuihui Park
+285489,南通博物苑,Nantong Museum
+285490,南通狼山风景名胜区,Nantong Lang Mountain Scenic Spot
+285491,中国珠算博物馆,China Abacuses Museum
+285492,黄金海滩风景区,Golden Beach Scenic Spot
+285493,南通小洋口风景区,Nantong Xiaoyangkou Scenic Spot
+285494,定慧禅寺,Dinghui Temple
+285495,东方大寿星园,Oriental Longevity Garden
+285496,法宝禅寺,Fabao Temple
+285497,广福禅寺,Guangfu Temple
+285498,大丰麋鹿国家级自然保护区,Dafeng elk National Nature Reserve
+285499,大纵湖旅游度假区,Dazong Lack Tourism Spot
+285500,新四军纪念馆,New Fourth Army Memorial Hall
+285501,息心寺,Xixin Temple
+285502,西湖,West Lake
+285503,西溪国家湿地公园,Xixi national wetland park
+285504,淳安县千岛湖风景区,Chun'an county Qiaodao Lake Scenic Spot
+285505,千岛湖龙川湾,Qiandao Lake Longchuan Bay
+285506,天目山风景区,Tianmu Mountain Natural Reserve
+285507,浙西大峡谷,Zhexi Grand Canyon
+285508,东方文化园,Oriental Culture Garden
+285509,杭州极地海洋公园,Hangzhou Polar Ocean Park
+285510,雷峰塔,Leifeng Tower
+285511,清河坊,Qinghe Lane
+285512,双溪漂流接待中心,Shuangxi Drifting Reception Centre
+285513,宋城,Song Dynasty Town
+285514,台州海洋世界,Taizhou Ocean World
+285515,大鹿岛风景区,Deer Island Scenic Spot
+285516,临海市江南长城景区,Linhai Jiangnan Great Wall Scenic Spot
+285517,天台山天湖景区,Tiantai Mountain Tian Lake Scenic Spot
+285518,仙居风景名胜区,Xianju Palces of Interest
+285519,温岭长屿硐天,Chang Yudongtian
+285520,横店电影城,Hengdian Film City
+285521,义乌国际商贸城购物旅游区,Yiwu  International Trade Town Shopping and Touring Spot
+285522,横店.红军长征博览城,Hengdian Red Army Long March Expo Center
+285523,横店明清民居博览城,Hengdian Ming and Qing Dynasties Residential Expo City
+285524,仙华山景区,Xianhua Mountain Scenic Spot
+285525,诸葛八卦村,Chu-keh  Bagua Village
+285526,双龙洞景区,Double Dragon Cave Scenic Spot
+285527,六洞山风景名胜区,Six-cave Mountain Scenic Spot
+285528,郭洞景区,Guo Cave Scenic Spot
+285529,寿仙谷,Shouxian Valley
+285530,宁波滕头生态旅游示范区,Ningbo Tengtou Ecological Tourism Spot
+285531,溪口风景区,Xikou Scenic Spot
+285532,大桥生态农庄,Daqiao Ecological Farm
+285533,雅戈尔达蓬山旅游度假区,Youngor Dapeng Mountain Tourism Resort
+285534,丹山赤水风景名胜区,Dan Mountain Chishui Scenic Spot
+285535,绿野山庄,Green Field Villa
+285536,天下玉苑,Tianxia Jade Garden
+285537,保国寺,Baoguo Temple
+285538,慈城古县城,Cicheng Ancient Town
+285539,凤凰谷休闲旅游区,Phoenix Valley Tourism Spot
+285540,凤凰山海港乐园,Phoenix Mountain Seaport Park
+285541,九峰山旅游区,Jiufengshan Tourism Spot
+285542,仙溪漂流,Xianxi Adrift Spot
+285543,显胜门景区,Xianshengmen Scenic Spot
+285544,雁荡山风景名胜区,Yandang Mountain Tourism Spot
+285545,寨寮溪风景区,Zhailiao Stream Scenic Spot
+285546,南雁荡山国家重点风景名胜区,Yandang Mountain national Scenic Spot of China
+285547,中雁荡山,Yandang Mountain
+285548,江心屿,Jiangxin Island
+285549,百丈飞瀑,Baizhang WaterFall
+285550,铜铃山国家森林公园,Tonglingshan National Forest Park
+285551,楠溪江风景名胜区,Nanxi River Scenic Spot
+285552,玉海楼,Yuhai hall
+285553,温州动物园,Wenzhou Zoo
+285554,南湖景区,South Lake Scenic Spot
+285555,枫泾古镇,Fengjing Ancient Town
+285556,西塘古镇,Xitang Ancient Town
+285557,海宁盐官观潮景区,YanGuan bore the scenic spot 
+285558,海宁中国皮革城A座,China Haining Leather City Building A
+285559,南北湖,Nanbei Lake
+285560,九龙山国家森林公园,Jiulong  Moutain National Forest Park
+285561,莫氏庄园,Mo's Manor
+285562,乌镇,Wuzhen ancient town
+285563,安吉竹博园,Anji Bamboo Expo Garden
+285564,中南百草园,Zhongnan Baicao Garden
+285565,南浔古镇景区,Nanxun Ancient Town
+285566,扬子鳄保护区,Yangzi Ecun Nature Reserve
+285567,鲁迅故里,Lu Xun's Hometown
+285568,沈园,Shen Garden
+285569,华东国际珠宝城南大门,East China Pearls and Jewellery International City South Gate
+285570,西施故里,xishiguli
+285571,诸暨五泄风景区,Zhuji wuxie Scenic Spot
+285572,大佛寺风景区,Dafo Temple Scenic Spot
+285573,东湖景区,Dong Lake Scenic Spot
+285574,会稽山旅游度假区,Kuaiji Mountain Tourism Holiday Resort
+285575,大香林乡村休闲旅游区,Daxianglin Village Tourism Resort
+285576,兰亭,Lan Pavilion
+285577,绍兴柯岩风景区,Shaoxing Keyan Scenic Spot
+285578,西施故里风景区,xishigulifengjingqu
+285579,九龙湖风景区,Jiulong Lake Scenic Spot
+285580,龙门峡谷风景区,Longmen Canyon Scenic Spot
+285581,江郎山风景区,Jianglang Mountain Scenic Spot
+285582,龙游石窟,Longyou Grottoes
+285583,井冈山风景区,Jinggang Mountain Scenic Spot
+285584,渼陂古村,Meibei Ancient Village
+285585,燕坊古村,Yanfang Ancient Village
+285586,钓源景区,Diaoyuan Scenic Spot
+285587,南山旅游景区,South Mountain Tourism Spot
+285588,八仙过海口旅游景区,Eight Immortals Crossing the Sea Scenic Spot
+285589,蓬莱阁旅游景区,Penglai Pavilion scenic Spot
+285590,三仙山,Sanxian Mountain
+285591,海洋极地世界,Ocean Polar Aquarium 
+285592,艾山温泉国际旅游度假村,Ai Mountain International Tourism Resort
+285593,牟氏庄园,Mou's Manor
+285594,烟台金沙滩海滨公园,Jinshatan Beach Park
+285595,烟台山景区,Yantai Mountain Scenic Spot
+285596,养马岛旅游度假区,Yangma Island Travel Resort
+285597,张裕国际葡萄酒城,Changyu International Wine City
+285598,海阳旅游度假区,Haiyang Travel Resort
+285599,白浪绿洲湿地公园,Bailanglbzhou Wetland Park
+285600,金宝乐园,Jinbao Park
+285601,中国杨家埠民间艺术大观园,China Yangjiabu Folk Arts Garden
+285602,青州仰天山国家森林公园,Qingzhou Yangtian Mountain National Forest Park
+285603,青州云门山风景区,Wingzhou Yunmen Mountain Scenic Spot
+285604,泰和山风景区,Taihe Mountain Scenic Spot
+285605,寿光林海生态博览园,Shouguang Linhai Ecology Expo Garden
+285606,寿光市蔬菜高科技示范园,Shouguang Vegetable Hi-tech Demonstration Garden
+285607,潍河公园,Weihe Park
+285608,诸城市恐龙博物馆,Zhucheng Dinosaur Museum
+285609,酒之城,Wine City
+285610,潍坊安丘青云山民俗游乐园,Weifang Anqiu Qingyun Mountain Folk Customs Park
+285611,焦岗湖旅游区,Jiaogang Lake Tourism Spot
+285612,茅仙洞风景区,Maoxian Cave Scenic Spot
+285613,上窑森林公园,Shangjiao Forest Park
+285614,湄洲岛国家旅游度假区,Meizhou Island National Holiday Resort
+285615,莆田工艺美术城,Putian Arts & Crafts City
+285616,清源山风景名胜区,Qingyuan mountain Palces of Interest
+285617,四王府锦溪庙,Siwang mansion Jinxi Temple
+285618,永春牛姆林生态旅游区,Yongchun Niumu Forest Geological Tourism Resort
+285619,安溪清水岩,Anxi Qingshui Rock
+285620,开元寺,Kaiyuan Temple
+285621,凤山游览区,Fengshan Tourism Spot
+285622,南安市灵应风景旅游区,Nan'an Lingying Scenic Tourism Region
+285623,东溪大峡谷,Dongxi Grand Canyon
+285624,魁星岩风景区,Kuixing Rock Scenic Spot
+285625,乌髻岩,Wuji Rock
+285626,永春蓬壶百丈岩风景区,Yongchun Penghu Baizhangyan Scenic Spot
+285627,青山关,Qingshanguan
+285628,李大钊纪念馆,Li Dazhao Memorial Hall
+285629,唐山湾国际旅游岛,Tangshan Bay International Tourism Island
+285630,开滦国家矿山公园,Kailuan National Coal Mine Park
+285631,南湖生态风景区,South Lake Geological Scenic Spot
+285632,唐津运河生态旅游度假景区,Tangjin Canal Geological Tourism Scenic Spot
+285633,运河唐人街,Canal Chinatown
+285634,山叶口景区,Shanyekou Scenic Spot
+285635,曹妃甸湿地,Caofeidian Wetland
+285636,清东陵,Eastern Royal Tombs of the Qing Dynasty
+285637,遵化万佛园景区,Zunhua Wanfo Garden Scenic Spot
+285638,南湖城市中央生态公园,South Lake City Central Ecological Park
+285639,吴桥杂技大世界,Wuqiao Acrobatics World
+285640,铁佛寺,Tiefo Temple
+285641,常家庄园,Chang‘s Mansion
+285642,城隍庙,The God Town Temple
+285643,平遥古城,Pingyao Ancient City
+285644,双林寺彩塑艺术馆,Shuanglin Temple Painted Sculpture Museum
+285645,文庙学宫博物院,Wenmiao Xuegong Meseum
+285646,镇国寺,Zhenguo Temple
+285647,中国票号博物馆,China Pchk Museum
+285648,中国钱庄博物馆,China Ancient Bank Museum
+285649,王家大院,wangjiadayuan
+285650,乔家大院,Qiao‘s Courtyard
+285651,翠枫山自然风景区,Cuifeng Mountain Nature Scenic Spot
+285652,绵山风景区,Mian Mountain Scenic Spot
+285653,中国·克什克腾世界地质公园,China Heshigten Global Geopark
+285654,喀喇沁亲王府,Kelaqin Prince Mansion
+285655,阿拉善盟腾格里达来月亮湖沙漠生态探险旅游区,Alxa Tengeri Monn Lake Desert Geological Exploration Tourism Spot
+285656,贺兰山南寺旅游区,Helan Mountain South Temple Tourism Spot
+285657,南宫山森林公园,Nangong Mountain Forest Park
+285658,香溪洞风景区,Xiangxidong Scenic Spot
+285659,瀛湖风景区,Yinghu Scenic Spot
+285660,岚河漂流,Lanhe Rafting
+285661,千家坪森林公园,Qianjiaping Forest Park
+285662,崆峒山,Kongtong Mountain 
+285663,田家沟生态风景区,Tianjia Ditch Geological Scenic Spot
+285664,王母宫石窖,Wangmu Palace Rock Cave
+285665,古灵台荆山森林公园,Gulingtai Jing Mountain Forest Park
+285666,龙泉寺,Longquan Temple
+285667,柳湖,Liu Lake
+285668,太统山庄,Taitong Villa
+285669,王母宫,Wangmu Palace
+285670,米家沟,Mijia Ditch
+285671,西汉酒泉胜迹,West Han Dynasty Jiuquan Scenic Spot
+285672,敦煌鸣沙山月牙泉风景名胜区,Dunhuang Mingsha Mountain YueYa Spring Palces of interest
+285673,雅丹国家地质公园,Yadan National Geological Park
+285674,阳关,Yangguan
+285675,敦煌古城,Dunhuang Ancient City
+285676,茶卡盐湖,Chakayan Lake
+285677,达坂城·盐湖浮乐园,Dabancheng  Salt lake  Water World
+285678,红山公园,Hong Moutain Park
+285679,九龙生态园,Jiulong Ecological Park
+285680,神木园,Shenmu Park
+285681,水磨沟风景区,Jiumo Ditch Scenic Spot
+285682,西山老君庙,Xishan Laojun Temple
+285683,新疆民街民俗博物馆,Xinjiang Street&Folk-Custom Museum
+285684,盐湖,Salt Lake
+285685,盐湖城景区,Salt Lake Scenic Spot
+285686,中国彩棉科技园,China colour-cotton Scenic Garden
+285687,南山风景区苜蓿台,Nanshan Scenic Spot Muxutai
+285688,青格达湖旅游风景区,Qinggeda Lake Tourism Scenic Spot
+285689,锡伯民俗风情园,Xibo Folk-Customs Garden
+285690,野核桃沟自然保护区,Wild Walnut Natural Reserve Spot
+285691,城市海景,City Seaview
+285692,喀赞其民俗旅游区,Gezanqi Folk-Customs Tourism Spot
+285693,八卦公园,Bagua Park
+285694,科桑溶洞国家森林公园,Kesang Karst Cave National Forest Park
+285695,可克达拉旅游草原之夜风情园,Kekedala Grassland's night Toursim Park
+285696,蜀南竹海东门,Shunan Bamboo Sea East Gate
+285697,宜宾蜀南竹海风景名胜区,Yibin Shunan Bamboo Sea scenic spot
+285698,李庄古镇,Lizhuang Ancient City
+285699,兴文石海洞乡旅游区,Xingwen karst cave Tourism Spot
+285700,珠江源风景区,Zhujiangyuan Scenic Spot
+285701,彩色沙林,Corlouful Sand Forest
+285702,九龙瀑布群风景区,Jiulong Waterfalls Scenic Spot
+285703,凤凰谷,Phoenix Valley
+285704,多依河,Duoyi River
+285705,彝人古镇,Yi People ancient Town
+285706,元谋物茂土林风景区,Yuanmou Wumaotulin Scenic Spot
+285707,狮子山风景区,Lions Mountain Scenic Spot
+285708,世界恐龙谷,World Dinosaurs Valley
+285709,九洞天风景区,Jiudongtian Scenic Spot
+285710,贵州百里杜鹃风景名胜区,Guizhou Bailidujuan Scenic Spot
+285711,织金洞,Zhijin Cave
+285712,布达拉宫,Potala Palace
+285713,大昭寺,Jokhang Temple
+285714,罗布林卡,Norblingka
+285715,西藏博物馆,Tibet Museum
+285716,扎什伦布寺,Tashihunpo Monastery
+285717,珠穆朗玛峰国家级自然保护区,Qomolangma National Nature Reserve
+285718,桑耶寺,Samye Monastery
+285719,雅鲁藏布大峡谷,Brahmaputra Grand Canyon
+285720,鲁朗景区,Lulang Scenic Spot
+285721,巴松措风景区,Basongcuo Scenic Spot
+285722,东北虎园,Manchurian Tiger Park
+285723,净月潭国家森林公园,Jingyuetan National Forest Park
+285724,伪满皇宫博物院,The Museum of the Imperial Palace of Manchukuo
+285725,长春世界雕塑公园,Changchun World Sculpture Park
+285726,长影世纪城,Changchun Movie Wonderland
+285727,莲花山滑雪场,Lianhuashan Ski Resort
+285728,长春动植物公园,Changchun Zoo&Plant Garden
+285729,吉林省自然村,Jilin Natural Village
+285730,庙香山风景区,Miaoxiang Mountain Scenic Spot
+285731,西柏坡旅游区,Xibaipo Tourism Spot
+285732,华北明珠白洋淀,North China Pearl Baiyangdian
+285733,野三坡,Yesan Hill
+285734,承德避暑山庄,Chengde Mountain Resort
+285735,城关门,Chengguan Men
+285736,德汇门,Dehuimen
+285737,山海关古城,Shanhaiguan Ancient City
+285738,天下第一关景区,Tianxia Diyiguan scenic Spot
+285739,五岳寨风景区,Wuyuezhai Scenic Spot
+285740,天山海世界,Tianshan Sea resort
+285741,正定隆兴寺,Zhengding Longxing Temple
+285742,苍岩山风景区,Cangyan Mountain Scenic Spot
+285743,淮海战役烈士纪念塔,Memorial Tower For Martyrs In Huaihai Battle
+285744,彭祖园,Pengzu Garden
+285745,狮子山西汉楚王墓(陪葬兵马俑坑,Shizi Mountain Chuwang tombs of Western Han Dynasty
+285746,徐州汉画像石艺术馆北馆,Xuzhou Han Dynasty Stone Gravings Museum
+285747,徐州汉文化景区,Xuzhou Han Dynasty Cultural Garden
+285748,云龙湖,Yunlong Lake
+285749,艾山九龙风景区,Ai Moutain Jiulong Scenic Spot
+285750,马陵山风景名胜区,Maling Mountain Scenic Spot
+285751,滨湖公园,Binhu Park
+285752,大洞山风景区,Dadong Mountain Scenic Spot
+285753,龟山汉墓,Gui Mountain Han Dynasty Tombs 
+285754,戏马台,Horse-training Terrace
+285755,八里河省级自然保护区,Bali River Provincial-Level Nature Reserve
+285756,迪沟生态园,Di Ditch Geological Park
+285757,阜阳生态乐园,Fuyang Geological Park
+285758,颖州西湖风景名胜区,Yingzhou West Lake Places of Interest
+285759,日照海滨国家森林公园,Rizhao Coastal National Forest Park
+285760,万平口海滨风景区,Wanpingkou Coastal Scenic Spot
+285761,竹洞天风景区,Zhudongtian Scenic Spot
+285762,五莲山风景区,Wulian Mountain Scenic Spot 
+285763,房干生态旅游区,Fanggan Ecological Tourism Scenic Spot
+285764,莱芜战役纪念馆,Laiwu Campaign Memorial Hall
+285765,莲花圣境,Lotus Sacred Ground
+285766,吕祖泉旅游区,Lvzu Spring Tourism Spot
+285767,山东省政府八路军115师司令部旧址,Shandong Government Balujun 115 Division Headquarters Site
+285768,新四军军部旧址纪念馆,New Fourth Army Headquarters Site
+285769,蒙山,Meng Mountain
+285770,蒙山蒙阴云蒙景区,Mengshan Mengyin Yunmeng Scenic Area 
+285771,孟良崮景区,Menglianggu Scenic Spot
+285772,地下大峡谷,Underground Grand Canyon
+285773,天然地下画廊旅游区,Natural Underground Gallery Tourism Spot
+285774,天上王城,The sky city scenic spot
+285775,雪山彩虹谷,Snow Mountain Rainbow Valley 
+285776,沂水地下莹光湖旅游区,Yishui Underground fluor Gallery
+285777,天宇自然博物馆,Tianyu Natural Museum
+285778,天佛风景名胜区,Tianfo Places of Interest
+285779,白龙池玉龙温泉欢乐谷,Yulong Hot Spring Happy Valley
+285780,大洪山风景名胜区,Dahong Mountain Scenic Spot
+285781,炎帝神农故里,The hometown of Yan Emperor
+285782,神农溪,Shennong Stream
+285783,野三河风景区,Yesan River Scenic Spot
+285784,恩施土司城,Enshi Tusi City
+285785,佛宝山大峡谷漂流,Fobao Mountain Grand Canyon Rafting
+285786,腾龙洞大峡谷地质公园,Tenglong Cave Grand Canyon Geological Park
+285787,坪坝营原生态休闲旅游区,Ping Dam YIngyuan Eco-travel Resort
+285788,恩施州龙麟宫景区,Enshi Longlin Palace Scenic Spot
+285789,梭布垭风景区,Suobuya Scenic Spot
+285790,橘子洲头,Juzi Island Park
+285791,岳麓山风景名胜区,Yuelu Mountain Palces of Interest
+285792,靖港古镇,Jingxiang Ancient Town
+285793,雷锋纪念馆,Leifeng Memorial Hall
+285794,大围山国家森林公园,Dawei Mountain National Forest Park
+285795,刘少奇同志纪念馆,Comrade Liu Shaoqi Memorial Hall
+285796,长沙海底世界,Changsha Underwater World
+285797,湖南省博物馆,Hunan province Museum
+285798,世界之窗,Window of the World
+285799,天心阁,Tianxin Pavilion
+285800,岳麓书院,Yuelu Academy
+285801,杨开慧故居,Yang Kaihui Former Residence
+285802,海南热带野生动植物园,Hainan Tropical Wild Fauna and Flora Garden
+285803,假日海滩旅游区,Holiday Beach Tourism Center
+285804,中国雷琼世界地质公园海口园区,Hainan Haikou Shishan Volcanic Cluster National Geopark
+285805,五公祠,Wugong Temple
+285806,大唐芙蓉园,Datang Lotus Garden
+285807,大雁塔,Great Wild Goose Pagoda
+285808,华清池,Huaqing Hot Spring
+285809,秦始皇陵,Mausoleum of the First Qin Emperor
+285810,西安世园会,Xi'an China Expo
+285811,翠华山,Cuihua Mountain 
+285812,大唐西市文化景区,Datang Xishi Cultural Scenic Spot
+285813,骊山国家森林公园,Li Mountain National Forest Park
+285814,曲江海洋公园,Qujiang Ocean World
+285815,陕西历史博物馆,Shanxi History Museum
+285816,西安半坡博物馆,Xi'an Banpo Museum
+285817,西安秦岭野生动物园,Xi'an Qinling Wildlife Park
+285818,武侯墓,Wuhou Tomb
+285819,石门风景区西门,Shimen Scenic Spot West Gate
+285820,武侯祠,Wu Hou Temple
+285821,张良庙,Zhangliang Temple
+285822,汉中博物馆东门,Hanzhong Museum East Gate
+285823,南沙湖,Nansha Lake
+285824,南湖风景区,Nanhu Scenic Spot
+285825,蔡伦文化博物馆,Cailun Cultural Museum
+285826,朱鹮生态园,Crested ibis Geological Park
+285827,东方明珠塔,Oriental Pearl TV Tower
+285828,陆家嘴中心绿地,Lujiazui Central Green Space
+285829,上海自然博物馆(上海科技馆分馆),Shanghai Nature Museum
+285830,上海科技馆,Shanghai Technology Park
+285831,上海野生动物园,Shanghai Wild Animal Park
+285832,兰心戏院旧址,Lanxin Theater Former Site
+285833,上海城市规划展示馆,Shanghai Urban Planning Exhibition Center
+285834,豫园,Yu Garden
+285835,上海博物馆,Shanghai Museum
+285836,共青国家森林公园,Gongqing National Forest Park
+285837,上海动物园,Shanghai Zoo
+285838,锦江乐园,Jinjiang Park
+285839,锦州笔架山风景区,Jinzhou Bijia Mountain Scenic Spot
+285840,锦州北普陀山旅游区,Jinzhou Beiputuo Mountain Scenic Spot
+285841,锦州市博物馆,Jinzhou Museum
+285842,辽沈战役纪念馆,Liaoshen Campaign Memorial Hall
+285843,医巫闾山国家重点风景名胜区,Yiwulv Mountain Palces of Interest
+285844,奉国寺,Fengguo Temple
+285845,凌河公园,Ling River Park
+285846,长白山国家级自然保护区,Changbaishan National Nature Reserve
+285847,雁鸣湖旅游度假区,Yanming Lake Resort
+285848,嵩山国家风景名胜区,Song Mountain National Places of Interest
+285849,嵩山少林风景区,Song Mountain Shaolin Scenic Spot
+285850,黄帝故里,Yellow Emperor's Hometown
+285851,世纪欢乐园,Century Amusement Park
+285852,郑州黄河风景名胜区,Zhengzhou Yellow River Scenic Spot
+285853,康百万庄园,Kangbaiwan's Mansions
+285854,嵩阳书院,Songyang Academy
+285855,中岳庙,Zhongyue Temple
+285856,始祖山(具茨山景区,Shizu Mountain
+285857,丰乐葵园,Fengle Sunflower Garden
+285858,黄河富景生态世界,Yellow River Fujing Geological World
+285859,金鹭鸵鸟游乐园,Golden Egret&Ostrich Amusement Park
+285860,石表山休闲旅游风景区,Shibiao Mountain Tourism Scenic Spot
+285861,龙母庙,Longmu Temple
+285862,川岛风情,Chuan Island Customs Trousim Spot
+285863,富都温泉度假邨,Fudu Hot Spring Holiday Resort
+285864,金山温泉度假村,Jinshan Hot Spring Tourism Resort
+285865,锦江温泉,Jinjiang Hot Spring
+285866,立园,Li Garden
+285867,自力村碉楼群,Zili Town Diao Halls
+285868,古兜温泉综合度假区,Gudou Hot Spring Holiday Resort
+285869,圭峰山风景区,Guifeng Mountain Scenic Spot
+285870,南京夫子庙,Nanjing Confucius Temple
+285871,中山陵,Dr. Sun Yat-sen's Mausoleum
+285872,钟山风景名胜区,Zhongshan Scenic Spot
+285873,朝天宫,Chaotian Palace
+285874,静海寺,Jinghai Temple
+285875,览胜楼,Lansheng Hall
+285876,南京明文化村·阳山碑材,nanjingmingwenhuacun
+285877,栖霞山风景名胜区,Qixia Mountain Scenic Spot
+285878,侵华日军南京大屠杀遇难同胞纪念馆,Memorial Hall of the Victims in Nanjing Massacre by Japanese Invaders
+285879,玄武湖公园,Xuanwu Lake Park
+285880,雨花台风景名胜区,Yuhuatai Places of Interest
+285881,阅江楼,Yuejiang Hall
+285882,仙女湖景区,Xiannv Lake Scenic Spot
+285883,台儿庄古城,Tai'erzhuang Ancient Town
+285884,抱犊崮国家森林公园,Baodugu national Forest Park
+285885,冠世榴园风景区,Guanshiliu Park Scenic Spot
+285886,汉诺庄园,Hannuo Manor
+285887,台儿庄大战纪念馆,Taierzhuang Battle Memorial Hall
+285888,微山湖湿地公园东门,Weishan Lake Wetland Park East Gate
+285889,莲青山省级地质公园,Lianqing Mountain Provincial Geology Park
+285890,滕州汉画像石馆,Tengzhou Han Dynasty Pictorial Stones Museum
+285891,淮河蚌埠闸水利风景区,Huai River Bengbu Dam Scenic Spot
+285892,龙子湖公园,Longzi lake Park
+285893,张公山公园,Zhanggong Mountain Park
+285894,禾泉农庄,Hequan Farm
+285895,白乳泉公园,Bairu Spring Park
+285896,普宁寺,Puning Temple
+285897,普陀宗乘之庙,Putuo Zongcheng Temple
+285898,磬锤峰,Qingchui Mountain
+285899,董存瑞烈士陵园,Dong Cunrui Martyrs Cemetery
+285900,京北第一草原,Jingbei First Grassland Resort
+285901,金山岭长城旅游区,Jinshan Ridge Great Wall Toursim Spot
+285902,塞罕坝国家森林公园,Saihan Dam National Forest park
+285903,御道口风景区,Yudaokou Scenic Spot
+285904,九龙潭自然风景区,Jiulongtan Nature Scenic Spot
+285905,解州关帝庙,Haizhou Guandi Temple
+285906,永乐宫,Yongle Palace
+285907,普救寺,Pujiu Temple
+285908,历山风景区,Li Mountain Scenic Spot
+285909,孤峰山,Gufeng Mountain
+285910,阿尔山海神圣泉旅游度假区,Arxan Shengquan Tourism Resort
+285911,成吉思汗庙,Genghis Khan Temple
+285912,万豪蒙古大营,Wanhao Mongolian Yurt
+285913,年保玉则景区,Nianbao Yuze Scenic Spot
+285914,金沙滩,Golden Sandy Beach
+285915,巴州相思湖游旅度假区,Bazhou Xiangsi Lake Tourism Resort
+285916,新疆库尔勒莲花湖旅游区,Xinjiang Ku'erle Lotus Lake Tourism Spot
+285917,罗布人村寨,Luoburen Village
+285918,阿洪口,Ahongkou
+285919,农二师天格尔岛(银沙滩旅游区,Nong'ershi Tian Ge'er Island Scenic Spot
+285920,天格尔岛,Tian Ge'er Island
+285921,白桦园风景区,White Birch Garden Scenic Spot
+285922,五彩滩,Wucai Beach
+285923,桦林公园,Hualin Park
+285924,金山葡萄风景区,Jinshan Grape Scenic Spot
+285925,金山森林公园,Jinshan Forest Park
+285926,五指泉风景区,Wuzhi Spring Scenic Spot
+285927,黄金海岸,Golden Coast
+285928,石林风景区,Shilin Scenic Spot
+285929,九乡风景区,Jiuxiang Scenic Spot
+285930,大观公园,Daguangong Garden
+285931,官渡古镇,Guandu AncientTown
+285932,金殿风景名胜区,Jindian Places of Interest
+285933,世界园艺博览园,World Horticulture Exposition Garden
+285934,西山森林公园,Xishan Forest Park
+285935,云南民族村,Yunnan Nationalities Village
+285936,中豪·螺蛳湾国际商贸城,Zhonghao Luosiwan International Business & Trade Mansion
+285937,云南人家民间博物馆,Yunnan Home Museo Civico
+285938,崇圣寺三塔文化旅游区,Chongsheng Temple Santa Culture Tourism Spot
+285939,普达措国家公园,Pudacuo National Park
+285940,丽江古城,Lijiang AncientTown
+285941,玉龙雪山国家风景名胜区,Yulong Snow Mountain National Scenic Spot
+285942,西双版纳热带植物园,Xishuangbanna Tropical Botanical Garden Chinese Academy of Sciences
+285943,中国科学院西双版纳热带植物园西门,China Academy of Sciences Xishuangbanna Redai Botanical Garden Kunming Branch West Gate
+285944,建水文庙,Jianshuiwen Temple
+285945,燕子洞,Swallow Cave
+285946,泸西阿庐古洞景区,Huxi Alu Ancient Cave Toursim Spot
+285947,朱家花园,Zhu's Garden
+285948,黄果树瀑布景区,Huangguoshu Waterfall
+285949,龙宫风景名胜区,Long Palace Places of Interest
+285950,夜郎洞景区,Yelang Cave Scenic Spot
+285951,格凸河风景区,Getu River Scenic Spot
+285952,梵净山国家级自然保护区南门,Fanjing Mountain National Natural Reserve Spot South Gate
+285953,九龙洞,Jiulong Cave
+285954,梵净山国家级自然保护区,Fanjing Mountain National Natural Reserve Spot
+285955,农垦当壁镇旅游区,Nongken Dangbi Town Tourism Spot
+285956,麒麟山风景区,Qilin Mountain Scenic Spot
+285957,侵华日军虎头要塞遗址博物馆,The Japanese invasion of China Hutou Fortress Site Museum
+285958,龙沙公园,Longsha Park
+285959,明月岛,Mingyue Island
+285960,扎龙自然保护区,Zhalong Nature Reserve
+285961,溪水森林公园,Xishui Forest Park
+285962,海拉尔农业发展园区,Hailar Agriculture Development Garden
+285963,世界反法西斯战争海拉尔纪念园,World Anti-Fascist War Hailar Memorial Hall
+285964,吊桥公园,Diaoqiao Park
+285965,国门景区,Guomen Scenic Spot
+285966,满洲里中俄互市贸易旅游区,Manzhouli Sino-Russian Inter-Trade Tourism Spot
+285967,呼和诺尔旅游景区,Huhenuoer Tourism Spot
+285968,中国达斡尔民族园,China Daur National Garden
+285969,海拉尔国家森林公园,Haila'er National Forest Park
+285970,莫尔道嘎国家森林公园,Moerdaoga National Forest Park
+285971,大亮子河国家森林公园,Daliangzi River National Forest Park
+285972,水源山公园,Shuiyuan Mountain Park
+285973,三江口,Sanjiang Kou
+285974,松花江碑林,Songhua River Graves
+285975,曲阜明故城,Qufu Minggu City
+285976,滕州微山湖湿地红荷旅游风景区,Tengzhou Weishanhu Wetland Red Lotus Tourism Scenic Spot
+285977,孟庙,Meng Temple
+285978,邹城市峄山风景名胜区,Zoucheng Yishan Scenic Spot
+285979,孔林旅游区,Konglin Tourism Spot
+285980,孔子六艺城,Confucius Six Art City
+285981,曲阜孔庙孔府旅游区,Qufu Confucius Temple Places of Interest
+285982,水泊梁山风景名胜区,The Marshes of Mount Liang Scenic Spots
+285983,安山寺,Anshan Temple
+285984,国际农科奇观,International Agricultural Science Wonder
+285985,兖州博物馆,Yanzhou Museum
+285986,济宁东大寺,Jining East Temple
+285987,莲花山,Lotus Mountain
+285988,东平湖湿地公园,Dongping Wetland Park
+285989,水浒古镇,Shuihu Ancient Town
+285990,和圣园,Hesheng Garden
+285991,徂徕山国家森林公园,Culai Mountain National Forest Park
+285992,泰山蓄能科普水城,Tai Mountain Energy Storage Scientific Water City
+285993,腊山国家森林公园,La Mountain National Forest Park
+285994,桃花冲风景区,Taohuachong Scenic Spot
+285995,三角山国家森林公园,Sanjiao Mountain National Forest Park
+285996,龟峰山风景区,Guifeng Mountain Scenic Spot
+285997,麻城烈士陵园,Macheng Martyrs Cemetery
+285998,黄麻起义和鄂豫皖苏区纪念园,Huangma Uprising Memorial Hall
+285999,薄刀峰风景区东门,Bodao Mountain Scenic Spot East Gate
+286000,罗田大别山薄刀峰风景区,Luotian Dabie Mountain Bodaofeng Scenic Spot
+286001,东坡赤壁,Dongpo Red Cliffs
+286002,金水台温泉,Jinshuitai Hot Spring
+286003,六祖惠能故居,Sixth Patriarch  Huineng Former Residence
+286004,云浮市金水台温泉景区,Yunfu Jinshuitai Hot Spring Scenic Spot
+286005,和顺古镇,Heshun Ancient Town
+286006,热海景区,Rehai Toursim Spot
+286007,总兵府,Zongbing mansion
+286008,腾冲火山地热国家地质公园,Tengchong Volcanic Geothermal National Geological Park
+286009,东湖醋园,Donghucu Garden
+286010,汾河湿地公园,Fen River  Wetland Scenic Spot
+286011,晋祠公园,Jin Dynasty Temple park
+286012,森林公园西门,Forest Park West Gate
+286013,太原动物园,Taiyuan Zoo
+286014,中国煤炭博物馆,China Coal Museum
+286015,尧庙,Yao Temple
+286016,大槐树寻根祭祖园,Dahuaishu Ancestor Memorial Garden
+286017,北武当山风景区,North Wudang Mountain Scenic Spot
+286018,五台山风景名胜区,Wutai Mountain Scenery Spot
+286019,芦芽山风景区,Luya Mountain Scenic Spot
+286020,万年冰洞,Wannian Ice Cave
+286021,云冈石窟,Yungang Grottoes
+286022,皇城相府,Huangchengxiang Mansion
+286023,青天河风景区,Qingtian River Scenic Spot
+286024,大同火山群,Datong Valcanos
+286025,北岳恒山,Beiyue Heng Mountain
+286026,悬空寺,Xuankong Temple
+286027,奥林匹克森林公园,Olympic Forest Park
+286028,北京奥林匹克公园,Beijing Olympic Forest Park
+286029,国家体育场,National Stadium
+286030,北京欢乐谷,Beijing Happy Valley
+286031,北京中华民族博物院,Beijing Chinese Nation Museum
+286032,朝阳公园,Chaoyang Park
+286033,蟹岛绿色生态度假村,Crab Island ecological Resort
+286034,中国紫檀博物馆,China Red Sandalwood Museum
+286035,中华民族园,China Nationalities Garden
+286036,红领巾公园,Red Scarf Park
+286037,日坛公园,Ritan Park 
+286038,团结湖公园,Tuanjie Lake Park
+286039,韩美林艺术馆,Hanmeilin Art Museum
+286040,中国民兵武器装备陈列馆,China Folk Weapon & Equip Museum
+286041,明十三陵,Ming Tombs
+286042,居庸关长城,Juyongguan Great Wall
+286043,龙脉温泉度假村,Longmai Hot Spring Resort
+286044,天龙源温泉家园,Tianlongyuan hot Spring resort
+286045,温都水城,Wendu water city
+286046,小汤山科技农业示范园,Xiaotangshan Agricultural & Science Demonstration Garden
+286047,银山塔林风景区,Yinshan Talin Scenic Spot
+286048,中国航空博物馆,China Aviation Museum
+286049,沟崖自然风景区, Ditchya Natural Scenic Spot
+286050,蟒山国家森林公园,Mang Mountain National Forest Park
+286051,棋盘山景区,Qipan Mountain Scenic Spot
+286052,十三陵明皇蜡像宫,Ming Tombs Wax Statue Palace
+286053,汉石桥湿地自然保护区,Han Dynasty Stone-bridge Wetland Nature Reserve
+286054,慕田峪长城,Mutianyu Great Wall
+286055,红螺寺,Hongluo Temple
+286056,青龙峡,Qinglong Canyon
+286057,雁栖湖,Yanqi Lake
+286058,北京生存岛实践基地,Beijing Survival Island Practice Base
+286059,黄花城水长城,Huanghua Chengshui Great Wall
+286060,响水湖长城自然风景区,Xiangshui Lake Greatwall Scenic Spot
+286061,幽谷神潭,Peaceful Valley Sacred Pool
+286062,云蒙山国家森林公园,Yunmeng Mountain National Forest Park
+286063,北京野生动物园,Beijing Wild Animal Park
+286064,北京南海子麋鹿苑博物馆,Beijing Nanhaizi Elk Museum
+286065,中华文化园,Beijing Chinese Culture Park
+286066,金海湖,Jinhai Lake
+286067,京东大溶洞旅游区,Jingdong Karst Cave Tourism Spot
+286068,京东大峡谷,Jingdong Grand Valley
+286069,京东石林峡风景区,Jingdong Shilinx Valley Scenic Spot
+286070,青龙山旅游区,Qinglongshan Tourisim Spot
+286071,丫髻山景区,Yaji Mountain  Scenic Spot
+286072,北京张裕爱斐堡国际酒庄,Beijing Changyu Aifeibao International Winery
+286073,黑龙潭自然风景区,Heilong Pool Natural Scenic Spot
+286074,司马台长城游览区,Simatai Great Wall Tourism Spot
+286075,桃源仙谷,Peach-Flower-Fairy Valley
+286076,张裕爱斐堡国际酒庄,Changyu Aifeibao International Winery
+286077,白龙潭风景区,Bailong Pool Scenic Spot
+286078,清凉谷风景区,Qingliang Valley Scenic Spot
+286079,首云国家矿山公园,Shouyun National Mining Park
+286080,云峰山自然风景区,Yunfeng Mountain Nature Scenic Spot
+286081,八达岭长城,Badaling Great Wall
+286082,八达岭古长城景区,Badaling ancient Great Wall  Scenic Spot 
+286083,八达岭水关长城,Badaling Shuiguan Great Wall
+286084,龙庆峡风景区,Longqing Valley Scenic Spot
+286085,延庆硅化木国家地质公园,Yanqing Siliciffied Wood National Geological Park
+286086,八达岭温泉度假村,Badaling Hot Spring Resort
+286087,八达岭野生动物世界,Badaling Wildlife World
+286088,北京八达岭国家森林公园,Baijing Badaling National Forest Park
+286089,北京市古崖居风景名胜区,Beijing Guyaju Place of Interest
+286090,松山森林景区,Song Mountain Forest Scenic Spot
+286091,北宫森林公园,Beigong Forest Park
+286092,北京南宫旅游景区,Beijing Nangong Tourism Scenic Spot
+286093,戒台寺,Jietai Temple
+286094,龙潭公园,Longtan Park
+286095,世界公园,World Park
+286096,陶然亭公园,Taoran Pavillion Park
+286097,中国人民抗日战争纪念馆,Chinese People's Anti-Japanese War Memorial Hall
+286098,大观园,Grandeur Garden
+286099,青龙湖公园,Qinglong Lake Park
+286100,中国人民抗日战争纪念雕塑园,Chinese People's Anti-Japanese War Memorial Sculpture Garden
+286101,八大处公园,Badachu Park
+286102,北京石景山游乐园,Beijing Shijing Mountain Amusement Park
+286103,圣莲山风景区,Shenglian Mountain Scenic Spot
+286104,十渡自然风景区,Shidu Nature Scenic Spot
+286105,石花洞风景区,Shihua Cave Scenic Spot
+286106,云居寺,Yunju Temple
+286107,周口店遗址,Zhoukoudian Site
+286108,韩村河旅游景村,Hancun River Tourism Town
+286109,京辉高尔夫俱乐部,Jinghui Golf Club
+286110,上方山国家森林公园,Shangfang Mountain National Forest Park
+286111,仙栖洞,Xianqi Cave
+286112,潭柘寺,Tanzhe Temple
+286113,黄芩仙谷,Huangqin Sacred Valley
+286114,京西十八潭,Jingxi Eighteen Pools
+286115,妙峰山风景名胜区,Miaofeng Mountain Scenic Spot
+286116,颐和园,Summer Palace
+286117,北京动物园,Beijing Zoo
+286118,北京植物园,Beijing Botanical Garden
+286119,凤凰岭自然风景区公园,Phoenix Hill Nature Scenic spot
+286120,香山公园,Xiang Mountain Park
+286121,玉渊潭公园,Yuyuan Pool Park
+286122,圆明园遗址公园,The Old Summer Palace 
+286123,中国科学院植物研究所北京植物园,Beijing Botanical Garden of Chinese Academy of Sciences
+286124,中央电视塔,Central Television Tower
+286125,紫竹院公园,Zhizhu Courtryard Park
+286126,百望山森林公园,Baiwang Mountain Forest Park
+286127,北京鹫峰国家森林公园,Beijing Jiu Mountain National Forest Park
+286128,古文化街旅游区南门,Ancient Culture Street Tourism Spot South Gate
+286129,天津市古文化街旅游区,Tianjin Ancient Culture Street Tourism Spot
+286130,海河意式风情区工业园A区,Haihe Italian Customs Industrial Darden Zone A
+286131,天塔湖景区,Tianta Lake Scenic Spot
+286132,大悲禅院,Dabei Temple
+286133,天津之眼摩天轮,Ferris Wheel of Tianjin‘s eye 
+286134,天津水上公园,Tianjin Water Park
+286135,海河历史建筑保护展览馆,Haihe History Building Protection Exhibition Hall
+286136,华蕴博物馆,Huayun Museum
+286137,利顺德大饭店,Lishunde Hotel
+286138,梁启超纪念馆,Liang Qichao Memorial Hall
+286139,天津意大利风情旅游区,Tianjin Italian Customs Tourism Spot
+286140,盘山风景名胜区,Pan Mountain Scenery Spot
+286141,天津热带植物观光园,Tianjin Tropical Botanic Touring Garden
+286142,天津杨柳青博物馆,Tianjin Yangliuqing Museum
+286143,天津滨海航母主题公园,Tianjin Binhai Aircraft Theme Park
+286144,奇石园,Rare Stone Garden
+286145,七里海景区,Qili Sea National Wetland Park
+286146,义聚永酒文化博物馆,Yijuyong Wine Culture Museum
+286147,黄崖关长城,Huangyaguan Great Wall
+286148,蓟州区独乐寺,Ji town Dule Temple
+286149,八仙山国家级自然保护区,Baxian Mountain National Natural Reserve
+286150,东丽湖,Dongli Lake
+286151,朗钜温泉谷,Langju Hot Spring Valley
+286152,世博华明馆,Shibo Huaming Pavillion
+286153,应大皮衣博物馆,Yingda Leather Clothing Museum
+286154,峰山药王古寺,Feng Mountain Medicine King Ancient Temple
+286155,希乐城少儿职业探索乐园,Xile City Children Occupation Explore Garden
+286156,玉佛禅寺,Yufo Temple
+286157,天津万源龙顺度假庄园,Tianjin Wanyuan Longshun Holiday Manor
+286158,天津宝成博物苑景区,Tianjin Baocheng Museum Spot
+286159,津南国家农业科技园区,Jinnan National Agriculture Technology Garden
+286160,星耀五洲,Xingyao Wuzhou
+286161,和平公园,Peace Park
+286162,鲁迅公园,Luxun Park
+286163,上海犹太难民纪念馆,Shanghai Jewish Refugees Memorial Hall
+286164,古猗园,Guyi Garden
+286165,嘉定州桥,Jiadingzhou Bridge
+286166,东方假日田园,Oriental Holiday Countryside
+286167,马陆葡萄主题公园,Malu Grape Theme Park
+286168,安亭老街,Anting Ancient Street
+286169,金山城市沙滩,Jinshan City Beach
+286170,中国农民画村,China Peasant Painting Village
+286171,方塔,Square Town
+286172,佘山国家森林公园,Sheshan National Forest Park
+286173,陈云故居暨青浦革命历史纪念馆,Chen Yun Former Residence  And Qingpu Revolutionary History Memorial Hall
+286174,东方绿舟,Oriental Land
+286175,上海大观园,Shanghai Grand View Garden
+286176,上海太阳岛旅游度假区,Shanghai Sun Island Tourism Resort
+286177,朱家角古镇旅游区,Zhujiajiao Ancient Town Tourism Devlopment
+286178,广佑寺,Tianyou Temple
+286179,大连老虎滩海洋公园,Dalian Laohu Beach Ocean Park
+286180,金石滩国家旅游度假区,Jinshi Beach National Tourism Spot
+286181,白玉山风景名胜区,Baiyu Mountain Scenery Spot
+286182,大连棒棰岛宾馆景区,Dalian Bangchui Island Hotel Scenic Spot
+286183,大连森林动物园,Dalian Forest Zoo
+286184,大连现代博物馆,Dalian Modern Museum
+286185,大连自然博物馆,Dalian Natural Museum
+286186,东鸡冠山景区,East Jiguan Mountain Scenic Spot
+286187,关向应纪念馆,Guanxiangying Memorial Hall
+286188,旅顺日俄监狱旧址博物馆,Lushun Russo-Japanese Prison Site
+286189,圣亚海洋世界,Shengya Ocean World
+286190,世界和平公园,World Peace Park
+286191,北大壶滑雪场,Beidahu Ski Resort
+286192,松花湖国家风景名胜区,Songhua Lake National Scenic Spot
+286193,拉法山国家森林公园,Lafa Mountain National Forest Park
+286194,北极村旅游风景区,North Pole Village Tourism Scenic Spot
+286195,清明上河园,Millennium City Park 
+286196,包公祠,Baogong Temple
+286197,大相国寺,Daxiangguo Temple
+286198,开封府,Great with Temple
+286199,龙亭景区,Dragon Pavillion Scenic Spot
+286200,铁塔公园,Iron Tower Park 
+286201,中国翰园,China Han Garden
+286202,焦裕禄纪念园,Jiaoyulu Memorial Hall
+286203,白云山,Baiyun Mountain 
+286204,白云山旅游区,Baiyun Mountain Tourism Spot
+286205,龙门石窟景区,Longmen Grottoes
+286206,龙潭大峡谷,Longtan Grand Canyon Scenic Spot
+286207,鸡冠洞,Jiguan Cave
+286208,老君山,Laojun Mountain
+286209,木札岭,Muzhaling Scenic Hill
+286210,天池山,Tianchi Mountain
+286211,关林景区,Guanlin Scenic Spot
+286212,洛阳白马寺,Luoyang White Horse Temple
+286213,神灵寨,Shenling Camp
+286214,抱犊寨景区,Baodu Camp Village Tourism Spot
+286215,尧山,Yao Mountain
+286216,中原大佛,Zhongyuan Great Buddha
+286217,画眉谷,Huamei valley
+286218,昭平湖,Zhaoping Lake
+286219,三苏园,Sansu Garden
+286220,神农坛,Shennong Garden
+286221,云台山,Yuntai Mountain
+286222,敕建嘉应观,Laijian Jiaying Temple
+286223,圆融寺,Yuanrong Temple
+286224,函谷关,Hanguguan
+286225,孟州市韩愈陵园,Mengzhou Hanyu Cemetery
+286226,云梦山风景区,Yunmeng Mountain Scenic Spot
+286227,大伾山风景名胜区,Dapi Mountain Scenic Spot
+286228,京华园,Jinghua Garden
+286229,关山国家地质公园八里沟园区,Bali Ditch Garden of Guanshan National Geopark Park
+286230,河南·关山国家地质公园,Henan Guanshan National Geopark Park
+286231,万仙山景区,Wanxian Mountain Scenic Spot
+286232,比干庙,Bigan Temple
+286233,潞王陵,Luwang Tomb
+286234,百泉风景区,Baiquan Scenic Spot
+286235,回龙景区,Huilong Scenic Spot
+286236,殷墟王陵遗址,Yinxu Royal Tomb Historic Site
+286237,羑里城,Jiangli City
+286238,岳飞庙,Yuefei Temple
+286239,马氏庄园,Ma's Manor
+286240,林州红旗渠游览区,Linzhou Red Flag Canal  Tourism Spot
+286241,太行大峡谷风景区,Taihang Grand Canyon Scenic Spot
+286242,天平山风景区,Taiping Mountain Scenic Spot
+286243,颛顼帝喾陵,Zhuanxu and Diku Cemetery
+286244,戚城文物景区,Qicheng Heritage Spot
+286245,中原绿色庄园景区,Zhongyuan Green Manor Scenic Spot
+286246,濮阳毛楼生态旅游区,Puyang Maolou Ecological Tourism Spot
+286247,濮阳世锦园,Puyang Shijin Garden
+286248,天鹅湖景区,Swan Lake Scenic Spot
+286249,豫西大峡谷,Yuxi Grand Canyon
+286250,三门峡函谷关古文化旅游区,Sanmen Valley Hanguguan Ancient Culture Tourism Spot
+286251,甘山国家森林公园南门,Gan Mountain National Forest Park South Gate
+286252,三门峡甘山森林公园,Sanmen Valley Ganshan Forest Park
+286253,三门峡大坝风景区,Sanmen Valley Dam Scenic Spot
+286254,黄鹤楼,Yellow Crane Tower
+286255,东湖风景区,East Lake Scenic Spot
+286256,归元禅寺,Guiyuan Temple
+286257,湖北省博物馆,Hubei Musemu
+286258,李先念故居纪念园,Li Xiannian Former Residence Memorial Garden
+286259,磨山景区,Mo Mountain Scenic Spot
+286260,木兰天池,Mulan Great Lake
+286261,清凉寨风景区,Qingliang Camp Scenic Spot
+286262,武汉科技馆,Wuhan Science and Technology Museum
+286263,辛亥革命武昌起义纪念馆,Memorial Hall of Wuchang Uprising in 1911 Revolution
+286264,中国地质大学逸夫博物馆,Shaw Museum of China University of Geosciences
+286265,中科院武汉植物园,Wuhan Botanical Garden of Chinese Academy of Sciences
+286266,黄石国家矿山公园,Huangshi National Mine Park
+286267,雷山风景名胜区,Lei Mountain Scenic Spot
+286268,东方山风景区,East Mountain Mountain Scenic Spot
+286269,雷山风景名胜区东门,Lei Mountain Scenic Spot East Gate
+286270,湘鄂赣边区鄂东南革命烈士陵园,Southeast Hubei Revolutionary Martyrs Cemetery
+286271,龙佑赤壁温泉度假区,Longyou Red Cliff Hot Spring Holiday Resort
+286272,陆水湖风景区,Lushui Lake Scenic Spot
+286273,三国赤壁,Red Cliff Ancient Battlefield
+286274,九宫山风景名胜区,Jiugong Mountain Scenic Spot
+286275,隐水洞地质公园,Yinshui Cave Geological Park
+286276,中华水浒城,Chinese city of three Kingdoms 
+286277,咸宁市131(澄水洞旅游区,Xianning 131 Chengshui Cave Tourism Spot
+286278,岳阳楼,Yueyang Hall
+286279,任弼时故里,Renbishi Hometown
+286280,大云山国家森林公园,Dayun Mountain National Forest Park
+286281,五尖山森林公园,Wujian Mountain Forest Park
+286282,平江起义纪念馆,Pingjiang Uprising Memorial Museum
+286283,凤凰古城景区,Phoenix Ancient City Scenic Spot
+286284,乾州古城北城门,Qianzhou Ancient Ciry North Gate
+286285,奇梁洞,Jiliang Cave
+286286,南方长城,Southern Great Wall
+286287,花垣边城旅游景区,Huayuan Biancheng Toutism Scenic Spot
+286288,怀化中国人民抗日战争胜利受降纪念馆,
+286289,向警予同志纪念馆,Comrade Xiang Jingyu Memorial Hall
+286290,滕代远纪念馆,Teng Daiyuan Memorial Hall
+286291,龙底漂流,Longdi Drift Spot
+286292,南都侗族文化村,Nandu Dongzu Culture Town
+286293,高椅古村,Gaoyi Ancient Town
+286294,西山国家重点风景名胜区,Xishan National Key Scenic Spots
+286295,龙潭国家森林公园,Longtan National Forest park
+286296,鹿峰山风景区,Lufeng Mountain Scenic Spot
+286297,谢鲁山庄,Xielu Mountain Villa
+286298,勾漏洞天,Goulou Cave
+286299,天马山生态旅游景区,Tianma Mountain Ecological Tourism Scenic Spot
+286300,龙珠湖风景区,Longzhu Lake Scenic Spot
+286301,南澳海岛国家森林公园,Nan'ao Island National Forest Park
+286302,汕头南澳岛旅游区,Shantou Nan'ao Island Ecological Tourism Spot
+286303,方特欢乐世界·蓝水星,Fangte Happy World Blue Mercury
+286304,礐石风景名胜区,Queshi Scenic Spot
+286305,中信高尔夫海滨度假村,Zhongxin Golf Seaside Resort
+286306,丹霞山风景名胜区,Danxia mountain World Geopark Park
+286307,广东大峡谷,Guangdong Great Canyon
+286308,曹溪温泉-假日度假村,Caoxi Hot Spring Holiday Resort
+286309,古佛洞天,Ancient Buddha Cave
+286310,龙湖度假山庄,Long Lake Holiday Villa
+286311,云门峡漂流,Yunmen Canyon Drift Spot
+286312,玄武山,Basaltic Mountian
+286313,连州地下河,Lianzhou Underground River
+286314,宝晶宫,Baijing Palace
+286315,观音山风景区,Guanyin Mountain Scenic Spot
+286316,聚龙湾天然温泉度假村,Julong Bay Natural Hot Spring Holiday Resort
+286317,故乡里,Hometown Park
+286318,黄腾峡,Huangteng Canyon
+286319,飞来峡水利枢纽风景区,Feilai Canyon Water Conservancy Pivotal Scenic Spot
+286320,清新温矿泉旅游渡假区,Qingxin Mining Hot Spring Tourism Holiday Resort
+286321,玄真古洞生态旅游度假区,Xuanzhen Ancient Cave Ecotourism Holiday Resort
+286322,东莞市科学技术博物馆,Dongguan Science & Technology Museum
+286323,观音山森林公园,Guanyin Mountain Forest Park
+286324,鸦片战争博物馆,The Opium War Museum
+286325,梦幻百花洲,Dreamland of Flowers
+286326,京明温泉度假村,Jingming Hot spring Holiday Resort
+286327,灵山大佛,Lingshan Grand Buddha
+286328,灵山胜境,Lingshan Sacred Scenic Spot
+286329,三国城,Three Kingdoms City
+286330,水浒城,Shuihu City
+286331,太湖鼋头渚风景区,Taihu Turtle-head Peninsula Scenic Spot
+286332,龙背山森林公园,Longbeishan Forest Park
+286333,陶祖圣境风景区,Taozu Sacred Scenic Spot
+286334,宜兴市团氿风景区,Yixing Tuanjiu Scenic Spot
+286335,宜兴竹海风景区,Yixing Bamboo sea Scenic Spot
+286336,江苏江阴学政文化旅游区,Jiangsu Jiangyin Xuezheng Cultural Tourism Spot
+286337,江阴滨江要塞旅游区,Jiangyin Binjiang Fort Tourism Spot
+286338,崇安阁,Chong'an Pavilion
+286339,瘦西湖风景区,Slender West Lake  Scenic Spot
+286340,东关历史文化旅游区,Guandong History Culture Tourism Spot
+286341,个园,Ge Garden
+286342,何园,He Garden
+286343,扬州博物馆,Yangzhou Museum
+286344,扬州大明寺,Yangzhou Daming Temple
+286345,扬州东关街,Yangzhou Dong Guan Street
+286346,扬州京华城,Yangzhou Jinghua City
+286347,扬州中国雕版印刷博物馆,Yangzhou China Block Printing Museum
+286348,仪征博物馆,Yizheng Museum
+286349,纵棹园,Zongzhao Garden
+286350,汉陵苑,Hanling Garden
+286351,丽水神龙谷,Lishui shenlong Valley
+286352,南尖岩风景区,Nanjian Rock Scenic Spot
+286353,遂昌金矿国家矿山公园,Suichang Gold Mine National Mine Park
+286354,东西岩,East-west Rock
+286355,仙都国家级风景名胜区,Xiandu National Scenic Spot
+286356,大漈,Daji
+286357,畲乡之窗,Window of Shexiang
+286358,云和湖景区,Yunhe Lake Scenic Spot
+286359,石门洞风景区,Shimen Cave Scenic Spot
+286360,飞石岭风景区,Feishi Ling Scenic Spot
+286361,箬寮原始林,Ruoliao Primeval Forest
+286362,青田县石门洞森林公园,Qingtian Shimen Cave Forest Park
+286363,八一南昌起义纪念塔,The August 1st Nanchang Uprising Memorial Tower
+286364,南昌八一起义纪念馆,Nanchang  August 1st Uprising Memorial Tower
+286365,狮子峰,Shizi Mountain
+286366,滕王阁,Teng Prince Pavillion
+286367,天香园,Tianxiang Garden
+286368,八大山人梅湖景区,Bada Mountain Renmei Lake Scenic Spot
+286369,凤凰沟风景区,Phoenix gullies Scenic Spot
+286370,得雨生态园,Deyu Geological Garden
+286371,景德镇古窑民俗博览区,Jingde Town Ancient Kiln Folk-Custom Expo Spot
+286372,中国瓷园,China Ceramics Garden
+286373,浮梁古县衙,Fuliang Ancient Government Office
+286374,瑶里古镇风景区,Yaoli Ancient Town Scenic Spot
+286375,洪岩仙境,Hongyan Sacred Scenic Spot
+286376,景德镇陶瓷馆,Jingde Town China Pavillion
+286377,趵突泉公园,Baotu Spring Park
+286378,大明湖公园,Daming Lake Park
+286379,红叶谷,Red Leaves Valley
+286380,济南国际园博园,Jinan International Expo
+286381,济南灵岩寺旅游区,Jinan Lingyan Temple Tourism Spot
+286382,济南野生动物世界,Jinan Wildlife animal World
+286383,九顶塔中华民俗欢乐园,JIuding Town Chinese Folk Customs Park
+286384,千佛山风景名胜区,Qianfo Mountain Scenic Spot
+286385,五龙潭公园,Wulong Pool Park
+286386,百脉泉公园,Baimai Spring Park
+286387,济南百里黄河风景区东区,Jinan Baili Yellow River Scenic Spot East Spot
+286388,水帘峡风景区,Shuilian Canyon Scenic Spot
+286389,北九水,Beijiushui
+286390,崂山风景区,Lao Mountain Scenic Spot
+286391,仰口游览区,Yangkou Tourism Spot
+286392,宝龙乐园金银岛海盗王国,Baolong Park Jinyin Island Pirate Kingdom
+286393,海滨风景区,Seaside Scenic Spot
+286394,华东酒庄,East China Winery
+286395,金沙滩景区,Golden Beach Scenic Spot
+286396,琅琊台,Langyatai Scenic Spot
+286397,青岛国际工艺品城,Qingdao International Arts & Crafts City
+286398,青岛海昌极地海洋世界,Qingdao Haichang Polar Ocean World
+286399,青岛海底世界,Qingdao Underwater World
+286400,刘公岛风景名胜区,Liugong Island Palces of Interest
+286401,成山头国家重点风景名胜区,Chengshantou National Key Scenery Spot
+286402,赤山风景名胜区,Chi Mountain Places of interest
+286403,摩天岭生态旅游风景区,Motian Hill Ecological Tourism Scenic Spot
+286404,大乳山滨海旅游度假区,Daru Mountain Seaside Tourism Resort
+286405,多福山·养生文化城,Duofu Mountain Health Culrure City
+286406,银滩滨海旅游度假区,Yin Beach Seaside Tourism Resort
+286407,仙姑顶风景区,Xianguding Scenic Spot
+286408,幸福门,Happiness Gate
+286409,天沐温泉,Tianmu Hot Spring
+286410,威海汤泊温泉度假村,Weihai Tangbo Hotspring Holiday Resort
+286411,荣成博物馆,Rongcheng Museum
+286412,黄河故道地质森林公园,Yellow River Old Course  geology Forest Park
+286413,天沐江北水城温泉度假村,Tianmu North River Water City Hot Spring Holiday Resort
+286414,东昌湖风景区,Dongchang Lake Scenic Spot
+286415,阳谷景阳冈旅游区,Yanggu Jingyang Hill Tourism Spot
+286416,冠州梨园,Guanzhou Pear Garden
+286417,姜堤乐园,Jiangti Paradise
+286418,聊城植物园,Liaocheng Botanical Garden
+286419,铜陵天井湖景区,Tongling Tianjing Lake Scenic Spot
+286420,铜陵永泉农庄,Tongling Yongquan Farm
+286421,天柱山旅游区,Tianzhu Mountain Tourism Spot
+286422,花亭湖风景区,Huating Lake Scenic Spot
+286423,明堂山风景名胜区,Mingtang Mountain Scenery Spot
+286424,红军中央独立第二师司令部旧址,The Red Army Central Independent No.2 Division Headquarters Site
+286425,司空山风景区,Sikong Mountain Scenic Spot
+286426,桐城县文庙,Tongcheng Wen Temple
+286427,天龙关,Tianlongguan
+286428,天柱山大峡谷北门入口,Tianzhu Mountain Grand Canyon North Entrance
+286429,皖光苑,Wanguang Garden
+286430,白崖寨,Baiya Camp
+286431,小孤山风景区,Xiaogu Mountain Scenic Spot
+286432,船政文化景区,Chuanzheng Culture Theme Park
+286433,第一山景区,The first Mountain Scenic Spot
+286434,福州国家森林公园,Fuzhou National Forest Park
+286435,福州国家森林公园南门,Fuzhou National Forest Park South Gate
+286436,福州三坊七巷,Fuzhou Three Lanes and Seven Alleys
+286437,鼓山,Gu Mountain
+286438,于山风景区,Yu Mountain Scenic Spot
+286439,青云山景区,Qingyun Mountain Scenic Spot
+286440,石竹山风景旅游区,Shizhu Mountain Tourism Spot
+286441,乐峰赤壁景区,Le Mountain red Cliff Scenic Spot
+286442,长乐旅游馆,Changle Tourism Hall
+286443,福建省冰心文学馆,Fujian Bingxin Literature Museum
+286444,白水洋风景区,Baishui Ocean Scenic Spot
+286445,鸳鸯溪,Yuanyang Stream
+286446,太姥山,Taimu Mountain
+286447,中国赵州桥,China Zhaozhou Bridge
+286448,白鹿温泉,White Deer Hot Spring
+286449,东方巨龟苑,Oriental Turtle Park
+286450,黑山大峡谷景区,Heishan Grand Canyon Scenic Spot
+286451,淴淴水生态风景区,Wuwushui Ecological Scenic Spot
+286452,藤龙山,Tenglong Mountain
+286453,天桂山,Tiangui Mountain
+286454,前南峪生态旅游区,Qiannanyu Ecological Tourism Spot
+286455,邢台峡谷群地质公园大峡谷景区,Xingtai Gorges Geopark Park Grand Canyon Spot
+286456,崆山白云洞,Kongshan White Cloud Cave
+286457,邢台丰乐园,Xingtai Fengle Garden
+286458,秦王湖旅游区,Qinwang Lake Tourism Spot
+286459,蟒河景区,Mang Rive Scenic Spot
+286460,珏山景区,Jue Mountain Scenic Spot
+286461,青莲寺,Qinglian Temple
+286462,陵川王莽岭景区,Lingchuan Wangmang Tomb Scenic Spot
+286463,通辽大青沟国家级自然保护区,Tongliao Daqing Ditch National Reserve Spot
+286464,格根塔拉草原旅游中心,Gegentala Grassland Tourism Spot
+286465,岱海旅游中心,Daihai Tourism Spot
+286466,法门寺旅游区,Famen Templev Tourism Spot
+286467,法门寺文化景区,Famen Temple Cultural Scenic Spot
+286468,周公庙,Zhougong Temple
+286469,太白山国家森林公园,Taibai Mountain National Forest Park
+286470,大唐秦王陵,Tang Qin Mausoleum 
+286471,钓鱼台风景名胜区,Diaoyu Island Palces of Interest
+286472,嘉陵江源头景区,Jialing River Source Scenic Spot
+286473,龙门洞森林公园,Longmen Cave Forest Park
+286474,红石峡生态公园,Red Stone Valley Geological Park
+286475,镇北台,Zhenbeitai
+286476,二郎山,Erlang Mountain
+286477,法泉寺,Faquan Temple
+286478,麦积山风景区,Maiji Mountain Scenic Spot
+286479,伏羲庙,Fuxi temple
+286480,南郭寺,Nanguo Temple
+286481,玉泉观,Yuquan Temple
+286482,水帘洞,Shuilian Cave
+286483,大像山,Daxiang Mountain
+286484,松鸣岩风景名胜区,Songming Cliff Scenic Spot
+286485,塔尔寺,Ta'er Monastery
+286486,藏文化馆,Zang Cultural Pavillion
+286487,马步芳公馆,Ma Bufang Residence
+286488,青藏高原野生动物园,Tibetan Plateau Wildlife Zoo
+286489,青海省博物馆,Qinghai Museum
+286490,中国藏医药文化博物馆,Tibetan Medicine Museum of China
+286491,老爷山,Laoye Mountain
+286492,彩虹部落,Rainbow Village
+286493,互助土族故土园旅游区,Cooperation Tuzu Homeland Park Tourism Spot
+286494,昆仑文化旅游景区,Kunlun Culeure Tourism Spot
+286495,赞普林卡,Zanpu Linka
+286496,库木塔格沙漠,Kumtag Desert Scenic Spot
+286497,葡萄沟游乐园,Grape ditch Amusement Park
+286498,吐峪沟景区,Tuyu ditch Scenic Spot
+286499,火焰山景区,Huoyan Mountain Scenic Spot
+286500,坎儿井乐园,Kanerjing Paradise
+286501,沙漠植物风情园,Desert Plants Garden
+286502,新疆大漠土艺馆,Xinjiang Desert Soil Art Museum
+286503,杜氏旅游村,Du's Tourism Town
+286504,江布拉克景区,Jiang BuLake Scenic Spot
+286505,一万泉风景区,Yiwan Spring Scenic Spot
+286506,驼铃梦坡沙漠生态景区,Tuolingmengpo Desert Ecological Scenic Spot
+286507,黑马生态科技园,Heima Ecological Technology Park
+286508,呼图壁县世纪园西门,Hutubi Century Garden West gate
+286509,世纪园,Century Garden
+286510,格萨拉生态旅游区,Desala Ecology Tourism Spot
+286511,龙潭溶洞,Longtan Karst Cave
+286512,金沙滩国际长江漂流基地,Golden Beach International Yangtze River Rafting Base
+286513,朱德故里琳琅山景区,Zhu De's Hometown Linlang Mountain Scenic Spot 
+286514,阆中古城,Langzhong Ancient City
+286515,天宫院,Tiangong Hall
+286516,凌云山景区,Lingyun Mountain Scenic Spot
+286517,南充西山风景区南门,Nanchong West mountain scenic Spot South Gate
+286518,西山风景区,West Mountain Scenic Spot
+286519,升钟湖风景区,Shengzhong Lake Scenic Spot
+286520,阆中古城景区锦屏山,Langzhong Ancient City Scenic Spot Jinping Mountain
+286521,罗瑞卿故居,Luo Ruiqing Hometown
+286522,张澜纪念馆,Zhanglan Memorial Hall
+286523,泸定海螺沟冰川森林公园,Luding Conch Ditch Clacier Forest Park
+286524,康定情歌风景区,Kangding Love Song Scenic Spot
+286525,木格措,Mugecuo
+286526,稻城亚丁,Daocheng Yading
+286527,南甸宣抚司署,Nandian Xuanfu Government Office
+286528,瑞丽独树成林,Ruili One Tree Forest
+286529,下舞阳河景区,Xiawuyang River Scenic Spot
+286530,西江千户苗寨景区,West River Qianhu Miao Camp Tourism Spot
+286531,牧情谷旅游风景区,Muqing Valley Tourism Scenic Spot
+286532,伊通满族博物馆,Yitong  Manzu Museum
+286533,叶赫那拉城,Yehe Nara Ancient City
+286534,伊通县南山保雍寺,Yitong Nanshan Baoyong Temple
+286535,本溪水洞,Benxi Water Cave
+286536,关门山国家森林公园,Guanmen Mountain National Forest park
+286537,大雅河漂流,Daya River Rafting Spot
+286538,五女山山城风景区,Wunv Mountain Mountain City Scenic Spot
+286539,望天洞,Wangtian Cave
+286540,红河峡谷漂流,Honghe Valley Rafting Spot
+286541,和睦国家森林公园,Hemu National Forest Park
+286542,赫图阿拉城,Hetu ala City
+286543,猴石国家森林公园,houshi National Forest Park
+286544,抚顺战犯管理所旧址,Fushun War Criminals Management Center site
+286545,萨尔浒风景名胜区,Saerhu Palces of Interest
+286546,元帅林,Yuanshuai Forest
+286547,鞍山玉佛苑,Anshan Yufo Temple
+286548,千山风景名胜区,Qianshan Places of Interest
+286549,玉佛山风景区,Yufo Mountain Scenic Spot
+286550,玉佛苑,Yufo Temple
+286551,汤岗子温泉旅游度假区,Tanggangzi Hot Spring Tourism Resort
+286552,响沙湾,Xiangsha bay
+286553,成吉思汗陵旅游区,Genghis Khan's Mausoleum Toursit Spot
+286554,蒙牛工业旅游景区,Mengniu Industry Tourism Spot
+286555,昭君博物院,Zhaojun Museum
+286556,北方兵器城,North Weapon City
+286557,南海湿地景区,Nanhai Wetland Scenic Spot
+286558,五当召,Wudang Lamasery
+286559,梅力更自然生态风景区,Meiligeng Natural Geological Scenic Spot
+286560,石门风景区,Shimen Scenic Spot
+286561,新世纪青年生态园,New Century youth Geological Park
+286562,美岱召,Maitreya Lamasery 
+286563,呼和浩特乌素图国家森林公园,Hohhot Wusutu National Forest Park
+286564,乌兰夫同志纪念馆,Wulanfu Mermorial Hall
+286565,哈素海,Hasu Sea  
+286566,八路军太行纪念馆,Eight Route Army Taihang Mermorial Hall
+286567,太行龙洞,Taihang Dragon Cave
+286568,天脊山,Tianji Mountain 
+286569,绿野漂流,Lvye Rafting Spot
+286570,太行水乡第一漂,Taihang water town Rafting spot
+286571,太行山大峡谷国家森林公园王莽峡风景区阁老陵,Taihangshan Grand Canyon National Forest Park Wangmang Canyon Spot
+286572,藏山旅游风景区,Zang Mountain Tourism Scenic Spot
+286573,小河古村评梅景区,Xiaohe Ancient Village Pingmei Scenic Spot
+286574,廊坊市文化公园南门,Langfang Cultural Park South Gate
+286575,自然公园,Nature Park
+286576,第一城,City One
+286577,茗汤温泉度假村,Mingtang Hot Spring Resort
+286578,国际会展中心,International Expo Center
+286579,沽水福源,Gushui Fuyuan
+286580,塞外庄园,Saiwai Manor
+286581,中都原始草原度假村,Zhongdu Original Grassland Holiday Resort
+286582,大境门景区,Dajingmen Scenic Spot
+286583,万龙滑雪场,Wanlong Ski Resort
+286584,黄龙山庄旅游风景区,Huanglong Mountain resort Scenic Spot
+286585,天鹅湖度假村,Swan Lake Holiday Resort
+286586,安固里草原度假村,Anguli Grassland Holiday Resort
+286587,张家口鸡鸣山风景区,Zhangjiakou Jiming Mountain Scenic Spot
+286588,安家沟生态区,Anjia Ditch Ecology Spot
+286589,翠云山森林度假景区,Cuiyun Mountain Forest Resort
+286590,晋察冀边区革命纪念馆,Jinchaji Border Area Revolutionary Memorial Hall
+286591,天生桥国家地质公园,Tianshengqiao National Geological Park
+286592,天生桥瀑布群自然风景区,Tianshengqiao Waterfall Natural Scenic Spot
+286593,保定直隶总督署博物馆,Baoding Province Governor office Museum
+286594,满城汉墓,Mancheng Han DynastyTombs
+286595,狼牙山景区,Langya Mountain Scenic Attraction
+286596,清西陵,Qingxi Mausoleum
+286597,涞源白石山国家地质公园,Laiyuan Baishi Mounatin National Geopark
+286598,野三坡白草畔景区,Yesanpo Baicao Beach Scenic Spot
+286599,野三坡百里峡景区,Yesanpo Baili Valley Scenic Spot
+286600,丛台公园,Congtai PArk
+286601,赵苑公园,Zhaoyuan Park
+286602,响堂山风景区,Xiangtang Mountain Scenic Spot
+286603,娲皇宫景区,Nuwa Palace Scenic Spot
+286604,一二九师司令部旧址,129th Division Headquarters Former Site
+286605,扁鹊庙,Bianque Temple
+286606,朝阳沟风景区,Chaoyang Ditch Scenic Spot
+286607,东山文化公园,East Mountain Culture Park
+286608,京娘湖景区,Jingniang Lake Scenic Spot
+286609,元宝山风景区,Yuanbao Mountain Scenic Spot
+286610,中国磁州窑博物馆,China Cizhou Kiln Museum
+286611,长寿村旅游风景区,Longevity Village Tourism Scenic Spot
+286612,北戴河集发观光园,Beidaihe Jifa tourism Garden
+286613,南戴河国际娱乐中心,Nandai River Internatioal Entertainment Center
+286614,华夏酒庄,Huaxia Winery
+286615,鸽子窝公园,Dove Nest Park
+286616,乐岛海洋公园,Ledao Ocean Park
+286617,秦皇求仙入海处,The First Emperor Qin dynasty sailed for Gods' Blessing Startpoint Scenic Spot
+286618,万寿山景区,Wanshou Moutain Scenic Spot
+286619,新澳海底世界,Nw aohai water World
+286620,燕塞湖,Yansai Lake
+286621,野生动物园,Wildlife park
+286622,福建土楼(南靖)景区,Fujian Earth halls (Nanjing) Scenic Spot
+286623,河坑土楼群,Hekeng Earth halls Spot
+286624,南欧土楼群,Nan'ou Earth halls Spot
+286625,塔下土楼群,Taxia Earth halls Spot
+286626,田螺坑土楼群,Tianluokeng Earth halls
+286627,金汤湾南中国·海水温泉度假地,jintangwan
+286628,大地土楼群,Dadi Earth halls
+286629,云洞岩风景区,Yundong Rock Scenic Spot
+286630,福建省南靖土楼博物馆,Fujian Nanjing Earth halls Museum
+286631,东山风动石景区,East Mountain Fengdong Rock Scenic Spot
+286632,平和县三平风景区,Pinghe Sanping Scenic Spot
+286633,滨海火山自然生态风景旅游区,Coastal Volcano National Geological Scenic Spot
+286634,武夷山风景区,Wuyi Mountain Scenic Spot
+286635,大觉山漂流,Dajue Mountain rafting Spot
+286636,华阳山风景区,Huayang Mountain Scenic Spot
+286637,溪源大峡谷,Xiyuan Grand Canyon
+286638,高北土楼群,Gaobei Earth halls Spot
+286639,洪坑土楼群,Hongkeng Earth halls Spot
+286640,汀州历史文化名城,Jiangzhou Historical Ancient City
+286641,连城冠豸山风景区,Liancheng Guanzhi Mountain Scenic Spot
+286642,古田会议会址,Gutian Congress Site
+286643,龙硿洞,Longkong Cave
+286644,天台国家森林公园水上茶乡九鹏溪,Overwater Tea Village of Tiantai National Forest Park ---Jiupeng Stream
+286645,西樵山,Xiqiao Mountain 
+286646,长鹿休闲度假农庄,Changlu Tourism Resort
+286647,南风古灶,Nanfeng Ancient Kiln
+286648,清晖园,Qinghui Garden
+286649,三水荷花世界,Sanshui Lotus World
+286650,西樵山国家森林公园,Xiqiao Mountain National Forest Park
+286651,中国第一滩,China No.1 Beach
+286652,西江温泉度假邨,West River Hot Spring Hiliday Resort
+286653,七星岩风景区,Qixing Rock Scenic Spot
+286654,肇庆星湖风景名胜区,Zhaoqing Star Lake Palces of Interest
+286655,观音桥,Guanyin Bridge
+286656,重庆科技馆,Chongqing Science&Technology Museum
+286657,贝迪颐园温泉旅游度假区,Beidiyi Garden  Hot Spring Tourism Resort
+286658,华岩风景区,Huayan Scenic Spot
+286659,重庆动物园,Chongqing Zoo
+286660,重庆海兰云天温泉度假区,Chongqing Hailan Yuntian Hot Spring Tourism Resort
+286661,加勒比海水世界,Caribbean Seawater Park
+286662,重庆南山植物园,Chongqing South Mountain Botanical Park
+286663,重庆市南山植物园,Chongqing South Moutain Botanical Park
+286664,磁器口,Ciqikou
+286665,歌乐山森林公园,Gele Mountain Forest Park
+286666,重庆歌乐山烈士陵园,Chongqing Gele Mountain Martyrs Cemetery
+286667,都江堰景区,Dujiang Weir Scenic Spot
+286668,青城山旅游区,Qingcheng Mountain Tourism Spot
+286669,宝光桂湖文化旅游区,Baoguang Gui Lake Cultural Tourism Spot
+286670,成都大熊猫繁育研究基地,Chengdu  Panda Breeding Reseach Base
+286671,成都武侯祠博物馆南门,Chengdu Wuhou Temple Museum South Gate
+286672,杜甫草堂,Dufu Former Residence 
+286673,桂湖公园南门,Gui Lake Park South Gate
+286674,国色天乡乐园,Beauty Paralise
+286675,欢乐谷,Happy Valley
+286676,金沙遗址博物馆,Jinsha Site Museum
+286677,洛带古镇,Luodai Ancient Town
+286678,三圣花乡,Sansheng Flower Village
+286679,黑山谷生态旅游区北门,Black Mountain Valley Natural Tourism Spot North Gate
+286680,重庆万盛黑山谷生态旅游区,Chongqing Wansheng Black Mountain Valley Natural Toutism Spot
+286681,巫山小三峡,Wu Mountain little Three Gorge
+286682,小小三峡,Mini Three Gorge
+286683,重庆大足石刻艺术博物馆,Chongqing Dazu Rock Carvings Art Museum
+286684,天生三桥,Tiansheng Three Bridges
+286685,仙女山国家森林公园,Xiannv Mountain National Forest Park
+286686,重庆武隆芙蓉洞,Chongqing Wulong Lotus Hole
+286687,桃花源,Peach Garden
+286688,花洲书院,Huazhou College
+286689,玉泉寺,Yuquan Temple
+286690,宜昌市情人泉旅游区,Yichang Lover Spring Tourism Spot
+286691,宜昌市野人谷旅游区,Yichang Savage Valley Tourism Spot
+286692,中华鲟园,Chinese Sturfeon Garden
+286693,灵山风景区,Ling Mountain Scenic Spot
+286694,湘湖旅游度假区,Xiang Lake Tourism Resort
+286695,垂云通天河,Yunchui Tongtian River
+286696,安溪凤山风景旅游区,Anxi Feng Mountain Scenic Spot
+286697,虎邱洪恩岩,Huqiu hong'en Rock
+286698,人民公园北门,People's Park North Gate
+286699,乌鲁木齐儿童公园北门,Urumqi Children's Park North Gate
+286700,乌鲁木齐市植物园,Urumqi Botanical Garden
+286701,雅玛里克山,Yamalike Mountain
+286702,中国国际滑沙活动中心,China International Huasha Activity Center
+286703,怪楼奇园,Fancy hall Park
+286704,祖山风景区,Zu Mountain Scenic Spot
+286705,邳州博物馆,Pizhou Museum
+286706,无名山公园,Wuming Mountain Park
+286707,徐州环城森林公园,Xuzhou Huancheng Forest park
+286708,水陆庵,Shuilu Nunnery
+286709,阿房宫遗址,Epang Palace Site
+286710,常宁宫休闲山庄,Changning Palace Holioday villa
+286711,大兴善寺,Daxingshan Temple
+286712,沣峪荘园,Fengyu hacienda
+286713,广仁寺,Guangren Temple
+286714,临潼博物馆,Lintong Museum
+286715,陕西自然博物馆,Shanxi Natutal History Museum
+286716,高淳老街西门,Gaochun Ancient Street West Gate
+286717,大金山风景区,Dajin Mountain Scenic Spot
+286718,傅家边农业科技园,Fujiabian Agriculture Science&Technology Garden
+286719,南京天生桥风景名胜区,Nanjing Tianshengqiao Scenic Spot
+286720,无想山旅游休闲度假区,Wuxiang Mountain Tourism Resort
+286721,甘泉湖旅游度假区,Ganquan Lack Tourism Resort
+286722,将军山旅游风景区,General Mountain Scenic Spot
+286723,南京金牛湖风景区,Nanjing Jinniu Lake Scenic Spot
+286724,南京石头城遗址公园,Nanjing Stone Ciry Site Park
+286725,南山湖旅游度假区,Nanshan Lake Scenic Spot
+286726,求雨山文化名人纪念馆,Qiuyu Mountain Culture&Celebrities Memorial Hall
+286727,郑和宝船遗址公园,Zhenghe's Treasure Ship  Relics Park
+286790,峨眉山旅游风景区万年寺入口,Entrance Wannian Temple of Emei Mountain Tourism Scenic Spot
+286789,峨眉山旅游风景区清音阁入口,Entrance Qingyin Hall of Emei Mountain Tourism Scenic Spot
+286788,峨眉山旅游风景区零公里入口,Entrance Zero Kilometre of Emei Mountain Tourism Scenic Spot
+286787,峨眉山旅游风景区,Emei Mountain Tourism Scenic Spot
+286786,乐山大佛景区,Leshan Giant Buddha Scenic Spot
+286785,龙宫洞,Longgong Cave
+286784,富华山景区,Fuhua Mountain Scenic Spot
+286783,石钟山,Shizhong Mountain
+286782,浴花园特色温泉,Yuhua Garden Peculiarly Hot Spring
+286781,天沐·江西庐山温泉度假村,tianmu
+286780,龙湾温泉度假村,Longwan Hot Spring Holiday Village
+286779,西海温泉,West Sea Hot Spring
+286778,庐山西海风景区,Lushan West Sea Scenic Spot
+286777,庐山风景区,Lushan Scenic Spot
+286776,庐山东门,Lushan Scenic Spot East Gate
+286775,厦门园林植物园,Xiamen Garden Arboretum
+286774,厦门海沧大桥旅游区,Xiamen Haicang Great Bridge Toursim Spot
+286773,厦门北辰山,Xiamen Beichen Mountain
+286772,天竺山森林公园,Tianzhu Mountain Forest Park
+286771,日月谷温泉公园,Riyue Valley Hot Spring Park
+286770,嘉庚公园,Jiageng Park
+286769,胡里山炮台,Huli Mountain Gun Emplacement
+286768,翠丰SPA温泉度假村,Cuifeng Spa Hot Spring Holliday Village
+286767,日光岩,Sunshine Rock
+286766,黄荣远堂,Huang Rongyuan Hall
+286765,海天堂构,Haitiantang Hall
+286764,鼓浪屿,Kulangsu
+286791,大佛禅院,Giant Buddha Temple
+286792,犍为文庙,Jian Weiwen Temple
+286793,东方佛都,Oriental Buddha City
+286794,金鹰山庄,Golden Eagle Mountain Villa
+286795,乌木博物苑,Ebony Museum
+286796,峨眉山竹叶青生态茗园,Emei Mountain Bamboo-leaf-green  Ecological Tea Garden
+286799,Yosemite National Park,Yosemite National Park
+280000,龙华区,Longhua District
+280001,坪山区,Pingshan District
+280002,光明区,Guangming District
+280003,叶集区,Yeji District
+4271,康巴什区,Kangbashi District
+280005,北屯市,Beitun
+280006,云冈区,Yungang District
+280007,平城区,Pingcheng
+287026,洱海,Bohai
+287027,苍山,Cangshan
+287028,青海湖,Qinghai Lake
+287029,桃花冲风景区,Yinghua County Taohuachong Scenic Area
+287030,泸沽湖,Penghu Scenic Area
+287031,鼓楼,Zhongwei Drum Tower
+287032,三清山,Sanqingshan Scenic Area
+287033,华山,Huashan Scenic Area
+287034,碧峰峡,Bifengxia
+287035,广西科技馆,Guangxi Science and Technology Museum
+287036,海洋之窗,Beihai Ocean Window
+287037,德天瀑布,Detian Waterfall
+287038,东山岭,Dongshanling Scenic Area
+287039,国家森林公园,China Snow Country National Forest Park
+287040,明月山,Mingyue Mountain
+287041,东江湖,Dongjiang Lake Scenic Area
+287042,天鹅堡森林公园,Swan Fort Forest Park
+287043,温州乐园,Wenzhou Amusement Park
+287044,元阳梯田,Yuenyang Hani Terrace
+287045,雷公山国家森林公园,Leigong Mountain National Forest Park
+287046,猫儿山,Maoer Mountain National Forest Park
+287047,西岭雪山,Serdang snow mountain
+287048,抚仙湖,Fuxian Lake
+287049,司徒小镇,Situ Town
+287050,普陀山,Putuo Mountain Scenic Area
+287051,雾凇岛,Haze Island
+287052,横店影视城,Hengdian Studios
+280008,雄安新区,Xiong an
+287054,金湾机场,Zhuhai Jinwan Airport
+280009,เมืองพัทยา,Pattaya
+287055,เกาะเสม็ด,Koh Samet
+287056,อำเภอเกาะสมุย,SuMei Island
+280010,艾奥瓦,Iowa
+280011,Омская область,Omsk Oblast
+280012,أبو ظبي,Abu Dhabi
+280013, Đà Nẵng,Da Nang
+287057, 富士山,Mount Fuj
+280014, قطر,Qatar
+280015, Saipan,Saipan
+287058, 제주도,Jeju Island
+280016,Иркутск,Irkutsk
+280017,Тараз,Taraz
+280018,Luzern,Lucerne
+280019,Hawaii,Hawaii
+280020,Padova,Padova
+280021,Gaborone,Gaborone
+287059,武当山景区,Wudang Mountain Scenic Area
+287060,Đảo Phú Quốc,PhuQuoc Island
+3201,龙港市,LonggangCity
+3202,平桂区,PingguiDistrict
+3204,铁门关市,TiemenguanCity
+3206,可克达拉市,KekedalaCity
+3208,昆玉市,KunyuCity
+3210,Bakı,baku
+3212,จังหวัดบุรีรัมย์,Buriram
+3214,Suva,Suva
+3215,古北水镇,Beijing WTown
+3217,伊美区,YimeiDistrict
+3218,丰林县,FenglinCounty
+3219,大箐山县,DaqingshanCounty
+3220,金林区,JinlinDistrict
+3221,红谷滩区,HonggutanDistrict
+3222,胡杨河市,HuyangheCity
+3223,四姑娘山景区,Siguniang Mountain Scenic Area
+3224,上海迪士尼度假区,Shanghai Disney Resort
+3226,秦始皇帝陵博物院,The Mausoleum Museum of the First Emperor Qin
+3227,亚龙湾热带天堂森林公园,Yalong Bay Tropical Paradise Forest Park
+3228,亚特兰蒂斯失落的空间水族馆,The Lost Space Aquarium of Atlantis
+3229,珠海长隆海洋王国,Zhuhai Chimelong Ocean Kingdom
+3230,东方明珠广播电视塔,Oriental Pearl TV Tower
+3231,亚特兰蒂斯水世界,Atlantis Water World
+3232,大唐不夜城,Datang Everbright City
+3233,总统府,Ministry of the Presidency
+3235,上海欢乐谷,Happy Valley Shanghai
+3236,莫干山风景名胜区,Mogan Mountain Scenic Area
+3237,朱家角古镇,Zhujiajiao Ancient Town
+3238,鸣沙山月牙泉,Mingsha Mountain Crescent Spring
+3239,老君山风景名胜区,Laojun Mountain Scenic Area
+3240,中华恐龙园,China Dinosaurs Park
+3242,长隆水上乐园,Chimelong Water Park
+3243,千岛湖风景区,Qiandao Lake Scenic Area
+3244,呼伦贝尔大草原,Hulunbuir Prairie
+3245,莫高窟景区,Mogao Grottoes Scenic Area
+3246,广州塔,Guangzhou Tower
+3247,南山文化旅游区,Nanshan Cultural Tourism Zone
+3248,青岛·海昌极地海洋公园,Qingdao Haichang Polar Ocean Park
+3249,东部华侨城,Eastern Chinatown
+3250,天涯海角游览区,Tianya Haijiao Tourist Area
+3251,上海海洋水族馆,Shanghai Ocean Aquarium
+3252,重庆武隆天生三桥风景区,Chongqing Wulong Tianshengsanqiao Scenic Area
+3253,阿那亚·黄金海岸社区,Anaya Gold Coast Community
+3254,九寨沟,Jiuzhaigou Valley
+3255,海南三亚亚龙湾国家旅游度假区,"Yalong Bay National Tourism Resort, Sanya, Hainan"
+3256,中山陵园,Zhongshan Cemetery
+3257,张家界国家森林公园,Zhangjiajie National Forest Park
+3258,无锡融创乐园,Wuxi Sunac Paradise
+3259,海陵岛风景区,Hailing Island Scenic Area
+3260,上海海昌海洋公园,Shanghai Haichang Ocean Park
+3261,泰山风景名胜区,Mount Tai Scenic Area
+3262,广州番禺长隆野生动物世界,Guangzhou Panyu Chimelong Wildlife World
+3263,滇池海埂公园,Dianchi Haigeng Park
+3264,枸杞岛,Wolfberry Island
+3265,西安城墙,Xi&#39;an City Wall
+3266,拈花湾景区,Nianhuawan Scenic Area
+3267,橘子洲景区,Juzizhou Scenic Area
+3268,上海玛雅海滩水公园,Shanghai Maya Beach Water Park
+3269,长隆欢乐世界,Chime-Long Paradise
+3270,南山竹海,Nanshan Bamboo Sea
+3271,武汉海昌极地海洋公园,Wuhan Haichang Polar Ocean Park
+3272,上新街索道站,Shangxin Street Ropeway Station
+3273,外伶仃岛风景区,Wailingding Island Scenic Area
+3274,灵隐寺-飞来峰,Lingyin Temple-Feilai Peak
+3275,云上草原,Clouds on the Grassland
+3276,杭州HELLO KITTY乐园,Hangzhou HELLO KITTY Paradise
+3277,芜湖方特梦幻王国,Wuhu Fantawild Kingdom
+3278,圆明园,Old Summer Palace
+3279,巽寮湾沙滩,Xunliao Bay Beach
+3280,华谊兄弟电影世界,Huayi Brothers Movie World
+3281,欢乐谷,Happy Valley
+3282,双月湾沙滩,Double Moon Bay Beach
+3283,南浔古镇,Nanxun Ancient Town
+3284,天津海昌极地海洋公园,Tianjin Haichang Polar Ocean Park
+3285,方特梦幻王国,Fantawild Kingdom
+3286,杭州开元森泊度假乐园,Hangzhou Kaiyuan Senbo Holiday Park
+3287,发现王国主题公园,Discovery Kingdom Theme Park
+3288,龙门古镇,Longmen Ancient Town
+3289,张家界大峡谷,Zhangjiajie Grand Canyon
+3292,庐山国家级旅游风景名胜区,Lushan National Tourist Scenic Spot
+3294,张掖七彩丹霞景区,Zhangye Colorful Danxia Scenic Area
+3295,武汉木兰草原,Wuhan Mulan Grassland
+3296,小七孔景区,Xiaoqikong Scenic Area
+3298,罗蒙环球乐园,Romon Universal Park
+3299,古龙峡玻璃大峡谷云天玻霸,Gulongxia Glass Grand Canyon Yuntian Boba
+3300,张北草原,Zhangbei Grassland
+3301,高椅岭,Gaoyiling
+3302,南京海底世界,Nanjing Underwater World
+3303,成都海昌极地海洋公园,Chengdu Haichang Polar Ocean Park
+3304,正佳极地海洋世界,Zhengjia Polar Ocean World
+3305,趵突泉,Baotu springs
+3306,锦里,Jing Li
+3307,焦作云台山风景名胜区,Jiaozuo Yuntai Mountain Scenic Area
+3308,青岩古镇,Qingyan Ancient Town
+3309,中国国家博物馆,National Museum of China
+3310,上海杜莎夫人蜡像馆,Madame Tussauds Shanghai
+3311,莫干山开元森泊度假乐园,Moganshan Kaiyuan Senbo Holiday Park
+3312,翡翠湖,Emerald Lake
+3313,玉龙雪山国家级风景名胜区-蓝月谷,Jade Dragon Snow Mountain National Scenic Area-Blue Moon Valley
+3314,碧海银沙景区,Bihai Yinsha Scenic Area
+3315,杭州西湖风景名胜区-九溪烟树,Hangzhou West Lake Scenic Area-Jiuxi Yanshu
+3316,马仁奇峰风景区,Marenqifeng Scenic Area
+3317,三清山国家级旅游风景区,Sanqingshan National Tourism Scenic Area
+3318,回民街,Muslim Street
+3319,武隆天坑地缝国家地质公园,Wulong Tiankeng Geological Park
+3320,重阳成道宫-活死人墓,Chongyang Chengdao Palace-Tomb of the Living Dead
+3321,长隆国际海洋度假区,Changlong International Ocean Resort
+3322,天目湖御水温泉景区,Tianmu Lake Yushui Hot Spring Scenic Area
+3323,顺德华侨城·欢乐海岸PLUS,Shunde Overseas Chinese Town·Happy Coast PLUS
+3324,建业·华谊兄弟电影小镇,Jianye·Huayi Brothers Film Town
+3325,恩施大峡谷,Enshi Grand Canyon
+3326,四行仓库,Four Line Warehouse
+3327,浙东小九寨景区,"Small Jiuzhai Scenic Area, East Zhejiang"
+3328,银杏湖旅游度假区,Ginkgo Lake Tourist Resort
+3329,Club Med桂林度假村,Club Med Guilin Resort
+3330,武功山国家级风景名胜区,Wugong Mountain National Scenic Area
+3331,长鹿旅游休博园,Changlu Tourism Holiday Expo Park
+3332,龙脊梯田风景名胜区,Longji Terraces Scenic Area
+3333,象山景区,Xiangshan Scenic Area
+3334,天津方特欢乐世界,Tianjin Fantawild World
+3335,喀纳斯景区,Kanas Scenic Area
+3336,裸心堡裸心味餐厅,Naked Castle Naked Heart Restaurant
+3337,钟山风景区-明孝陵景区,Zhongshan Scenic Area-Ming Xiaoling Scenic Area
+3339,上海环球金融中心,Shanghai World Financial Center
+3340,方特梦幻王国,Fantawild Kingdom
+3341,仙螺岛,Xianluo Island
+3342,方特东方神画,Fangte Oriental Painting
+3343,上海长风海洋世界,Shanghai Changfeng Ocean World
+3345,南京博物院,Nanjing Museum
+3346,世外桃源,Xanadu
+3347,南京牛首山文化旅游区,Nanjing Niushou Mountain Cultural Tourism Zone
+3348,环球动漫嬉戏谷,Universal Animation Play Valley
+3351,安徒生童话乐园,Andersen&#39;s Fairy Tale Park
+3353,丽江千古情景区,Lijiang Eternal Scenery Area
+3354,东平国家森林公园,Dongping National Forest Park
+3356,漳浦火山岛度假村,Zhangpu Volcanic Island Resort
+3357,方特欢乐世界,Fantawild World
+3358,广州融创乐园,Guangzhou Sunac Park
+3359,清河坊历史文化特色街区,Qinghefang historical and cultural characteristic block
+3360,栈桥景区,Zhanqiao Scenic Area
+3361,张家界大峡谷玻璃桥,Zhangjiajie Grand Canyon Glass Bridge
+3362,张北草原天路,Zhangbei Grassland Tianlu
+3363,天堂岛海洋乐园,Paradise Island Ocean Park
+3364,杭州长乔极地海洋公园,Hangzhou Changqiao Polar Ocean Park
+3365,十里画廊,Ten Mile Gallery
+3366,深圳野生动物园,Shenzhen Wildlife Park
+3367,三亚千古情景区,Sanya Eternal Scenery Area
+3368,中国科学院西双版纳热带植物园,"Xishuangbanna Tropical Botanical Garden, Chinese Academy of Sciences"
+3369,上海影视乐园,Shanghai Film Park
+3370,胡杨林景区,Huyanglin Scenic Area
+3371,大鹏半岛,Dapeng Peninsula
+3372,少林寺,Shaolin
+3373,南通森林野生动物园,Nantong Forest Wildlife Park
+3374,纳木措国家公园,Namtso National Park
+3375,黄河壶口瀑布风景名胜区,Yellow River Hukou Waterfall Scenic Area
+3376,鹿回头风景区,Luhuitou Scenic Area
+3377,东澳岛,Dongao Island
+3378,千岛湖中心湖区游船码头,Thousand Island Lake Central Lake District Cruise Terminal
+3379,长江三峡大坝旅游区,Yangtze River Three Gorges Dam Tourist Area
+3380,海螺沟,Hailuogou
+3381,杭州野生动物世界,Hangzhou Wildlife World
+3382,济南方特东方神画,Jinan Special Oriental Painting
+3383,大明湖景区,Daming Lake Scenic Area
+3384,分界洲岛景区,Fenjiezhou Island Scenic Area
+3385,茅山宝盛园,Maoshan Baosheng Garden
+3386,乐华恒业欢乐世界,Lehua Hengye Happy World
+3387,红山森林动物园,Red Mountain Forest Zoo
+3388,沙家浜风景区,Shajiabang Scenic Area
+3390,北海银滩,Beihai Silver Beach
+3391,蜈支洲岛,Wuzhizhou Island
+3392,东极岛景区,Dongji Island Scenic Area
+3393,武汉欢乐谷,Happy Valley Wuhan
+3395,宽窄巷子景区,Kuanzhai Alley Scenic Area
+3396,方特欢乐世界,Fantawild World
+3397,武汉东湖海洋乐园,Wuhan East Lake Ocean Park
+3398,田子坊,Tianzifang
+3399,上海之巅观光厅,Top of Shanghai Tourism Hall
+3400,木兰围场,Mulan Paddock
+3401,重庆欢乐谷,Chongqing Happy Valley
+3402,嵊山岛箱子岙码头,"Xiang&#39;ao Wharf, Shengshan Island"
+3403,广州融创雪世界,Guangzhou Sunac Snow World
+3405,拉市海,Lashihai
+3406,朱家尖景区,Zhujiajian Scenic Area
+3407,长白山魔界风景区,Changbai Mountain Devil Scenic Area
+3408,渣滓洞,Zhazidong
+3409,郑氏十七房景区,Zheng&#39;s Seventeen Rooms Scenic Area
+3413,终南山,Zhongnanshan
+3414,珠穆朗玛峰国家公园,Mount Everest National Park
+3415,玉龙雪山国家级风景名胜区,Yulong Snow Mountain National Scenic Area
+3416,密云水库,Miyun Reservoir
+3417,金沙城中心,Sands City Center
+3418,钱塘江,Qiantang River
+3420,港珠澳大桥,Hong Kong-Zhuhai-Macao Bridge
+3421,班公湖,Bangong Lake
+3422,天安门广场毛主席纪念堂,Chairman Mao Memorial Hall in Tiananmen Square
+3423,北京798艺术区,798 Art Zone
+3425,独库公路,Duku Highway
+3426,深圳罗湖口岸,Shenzhen Luohu Port
+3427,祁连山,Qilian Mountains
+3429,边境·金三角景区,Border·Golden Triangle Scenic Area
+3430,安河桥北,Anheqiao North
+3431,广汉三星堆博物馆,Guanghan Sanxingdui Museum
+3432,二沙岛,Ersha Island
+3434,龙门石窟,Longmen Grottoes
+3435,南京万达乐园,Nanjing Wanda Park
+3436,八里沟,Baligou
+3437,大角湾-海陵岛国家海洋公园,Dajiao Bay-Hailing Island National Marine Park
+3438,上海中心大厦,Shanghai Center Tower
+3440,五角大楼,pentagon
+3441,当代卡梅尔小镇,Contemporary Carmel Town
+3442,泸定桥,Luding Bridge
+3443,乾陵,Qianling
+3444,爱情天梯,Love ladder
+3446,云南普者黑喀斯特地貌国家湿地公园,Yunnan Puzhehei Karst National Wetland Park
+3447,洞庭湖,Dongting Lake
+3448,大别山石窟风景区,Dabieshan Grottoes Scenic Area
+3449,喜马拉雅·冈仁波齐酒店,Himalaya Gang Rinpoche
+3451,长寿山,Changshou Mountain
+3452,黄龙洞景区,Huanglong Cave Scenic Area
+3453,西湖音乐喷泉表演,West Lake Musical Fountain Show
+3454,洛邑古城,Luoyi Ancient City
+3456,毛泽东同志故居,Former Residence of Comrade Mao Zedong
+3457,沣峪口村,Fengyukou Village
+3458,松山湖风景区,Songshan Lake Scenic Area
+3460,京杭大运河杭州景区,Hangzhou Scenic Area of Beijing-Hangzhou Grand Canal
+3461,洪崖洞民俗风貌区,Hongyadong Folk Customs Area
+3463,上环,Sheung Wan
+3464,微山湖,Weishan Lake
+3465,环亚凯瑟琳广场,Catherine Plaza
+3466,黄山-猴子观海,Huangshan-Monkey Watching the Sea
+3467,中国丹霞山世界地质公园,"Danxia Mountain Global Geopark, China"
+3468,沙溪古镇,Shaxi Ancient Town
+3469,玉门关,Yumen Pass
+3470,人民英雄纪念碑,People&#39;s Heroes Monument
+3471,窑湾古镇,Yaowan Ancient Town
+3472,梵净山风景区,Fanjing Mountain Scenic Area
+3473,青州古城,Qingzhou Ancient City
+3475,钟山风景名胜区-美龄宫,Zhongshan Scenic Area-Meiling Palace
+3476,天安门广场,Tiananmen Square
+3477,荡口古镇,Dangkou Ancient Town
+3478,长江三峡,Three Gorges
+3479,孜珠寺,Zizhu Temple
+3480,珠海国际航展中心,Zhuhai International Airshow Center
+3481,花鸟岛,Flower and Bird Island
+3482,应县木塔,Yingxian Wooden Tower
+3484,雍和宫,Lama Temple
+3485,平乐古镇,Pingle Ancient Town
+3486,纽约纽约雅轩,Yaxuan New York
+3488,南京长江大桥,Nanjing Yangtze River Bridge
+3489,中海·瓦尔登湖,Zhonghai Walden
+3490,杭州湾跨海大桥,Hangzhou Bay Bridge
+3491,长白山天池,Heaven Lake
+3492,Upline上野咖啡,Upline Ueno Coffee
+3493,金马花园,Golden Horse Garden
+3494,郭亮村,Guo Liangcun
+3495,杭州西湖风景名胜区-断桥残雪,Hangzhou West Lake Scenic Area-Remnant Snow on the Broken Bridge
+3497,红旗渠风景区,Hongqi Canal Scenic Area
+3498,黄山-迎客松,Huangshan-Welcome Pine
+3499,十三陵-定陵,Ming Tombs-Ding Tombs
+3500,青岛港,Qingdao Port
+3501,悬空村景点,Hanging Village Attractions
+3502,天柱山风景区停车场,Tianzhu Mountain Scenic Area Parking Lot
+3503,观复博物馆,Guanfu Museum
+3504,龙门大桥,Longmen Bridge
+3506,平潭岛,Pingtan Island
+3507,铁刹山,Tiechashan
+3508,天堂寨风景区,Tiantangzhai Scenic Area
+3509,南街村景区,Nanjie Village Scenic Area
+3510,紫马岭公园,Zimaling Park
+3511,鹳雀楼,Crane Tower
+3514,中美合作所集中营旧址渣滓洞监狱,"Zhazidong Prison, site of the former concentration camp of the China-US Cooperation Institute"
+3515,永兴岛,Yongxing Island
+287062,临平区,LinpingDistrict
+287063,钱塘区,QiantangDistrict

@@ -117,7 +117,7 @@ async def remaining_traffic_warning(app: Ariadne):
 
     with open('data/yecao/userdata.json', 'r') as f:
         yecao_config_data = json.load(f)
-    yecao_config_data["previous_traffic"] = traffic_info[1]
+    yecao_config_data["previous_traffic"] = traffic_current
     with open('data/yecao/userdata.json', 'w') as f:
         f.write(json.dumps(yecao_config_data, indent = 4))
 
@@ -156,7 +156,8 @@ class SoupParser:
         traffic_info_table = cls.parse_html_table(html_traffic_info_table)
 
         logger.info(f"Searching: {traffic_info_table[1][0]}")
-        traffic_info_match_result = re.findall(r'：(\d*) \(GB\)', traffic_info_table[1][0])
+        # traffic_info_match_result = re.findall(r'：(\d*)\(GB\)', remove_lineswap_and_spaces(traffic_info_table[1][0]))
+        traffic_info_match_result = re.findall(r'：(\d*).*', traffic_info_table[1][0])
         [traffic_max, traffic_current] = [int(x) for x in traffic_info_match_result]
 
         logger.info(f"Searching: {traffic_info_table[3][1]}")
@@ -169,6 +170,9 @@ class SoupParser:
         reset_time = datetime.datetime(*refresh_date_day, refresh_date_hour, refresh_date_min)
 
         return traffic_max, traffic_current, reset_time
+
+def remove_lineswap_and_spaces(s: str):
+    return s.replace("\n", "").replace(" ", "")
 
 def obtain_token_and_login_addr(ses : requests.Session, add, header):
     with ses.post(add, headers=header) as res:

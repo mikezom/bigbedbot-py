@@ -88,5 +88,5 @@ async def main(app: Ariadne, member: Member, group: Group, message: MessageChain
             MessageChain([Voice(path = audio_file_path)])
         )
 
-    time.sleep(10)
+    time.sleep(60)
     os.remove(audio_file_path)

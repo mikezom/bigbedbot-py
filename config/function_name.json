@@ -90,5 +90,9 @@
     "random4chan": {
         "name": "random_4chan_pic",
         "description": "随机4chan梗图"
+    },
+    "weather": {
+        "name": "天气",
+        "description": "查查天气(墨迹API)"
     }
 }
