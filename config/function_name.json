@@ -94,5 +94,9 @@
     "weather": {
         "name": "天气",
         "description": "查查天气(墨迹API)"
+    },
+    "chatGPT": {
+        "name": "chatGPT",
+        "description": "chatGPT-3.5-turbo-0301 from openAI"
     }
 }

@@ -14,6 +14,7 @@ data/avatar/result.png
 data/smzdm/
 data/group/group_info.json
 data/weather/userdata.json
+data/openAI/
 libs/helper/vits/
 libs/helper/MoeGoe/
 libs/helper/VITS_Paimon/

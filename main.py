@@ -93,6 +93,8 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.aminer_search")
 
     saya.require("libs.function.usr_cmd.weather")
+    
+    saya.require("libs.function.usr_cmd.openai")
 
     saya.require("libs.function.schedule.wake_up")
 
