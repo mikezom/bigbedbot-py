@@ -13,6 +13,7 @@ from graia.ariadne.entry import config, HttpClientConfig, WebsocketClientConfig
 
 import asyncio
 import contextlib
+import pkgutil
 
 from libs.config import BotConfig
 

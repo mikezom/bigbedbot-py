@@ -4,6 +4,14 @@ import random
 
 fname = "data/fashenme/fashenme.xml"
 
+def is_surrunded(s: str):
+    if s[0] == "'" and s[-1] == "'":
+        return True
+    elif s[0] == '"' and s[-1] == '"':
+        return True
+    else:
+        return False
+
 def get_fashenme(fsm_code: int):
     """返回编号对应内容"""
     res_string = f"{fsm_code}. {fashenme[fsm_code]}"
@@ -11,7 +19,9 @@ def get_fashenme(fsm_code: int):
 
 def find_fashenme(content: str):
     """在发什么里找内容"""
-    content = content[:4]
+    content = content.strip()
+    if is_surrunded(content):
+        content = content[1:-1]
     res = []
     for i,x in enumerate(fashenme):
         if content in x:
@@ -21,6 +31,14 @@ def find_fashenme(content: str):
     else:
         res_string = random.choice(res)
         return res_string
+
+def find_fashenme_how_many(prompt: str):
+    prompt = prompt.strip()
+    res = []
+    for i,x in enumerate(fashenme):
+        if prompt in x:
+            res.append(f"{i}. {x}")
+    return len(res)
 
 def get_fashenme_size():
     """返回列表大小"""

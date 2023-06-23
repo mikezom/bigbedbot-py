@@ -16,7 +16,7 @@ import random
 
 from libs.control import Permission
 
-from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme, find_fashenme
+from libs.helper.fashenme import get_fashenme, get_fashenme_size, read_fashenme, find_fashenme, find_fashenme_how_many
 
 channel = Channel.current()
 
@@ -74,6 +74,11 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
             await app.send_group_message(
                 group,
                 MessageChain(f"{get_fashenme(int(to_search))}")
+            )
+        elif to_search.startswith("多少"):
+            await app.send_group_message(
+                group,
+                MessageChain(f"{find_fashenme_how_many(to_search[2:])}")
             )
         else:
             await app.send_group_message(
