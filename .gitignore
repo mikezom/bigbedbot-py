@@ -15,6 +15,7 @@ data/smzdm/
 data/group/group_info.json
 data/weather/userdata.json
 data/openAI/
+data/bilibili_live_monitor/
 libs/helper/vits/
 libs/helper/MoeGoe/
 libs/helper/VITS_Paimon/

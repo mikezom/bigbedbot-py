@@ -15,3 +15,10 @@ async def main(app: Ariadne):
         714870727,
         MessageChain(f"起床上班了！！！！")
     )
+
+@channel.use(SchedulerSchema(timers.crontabify("0 20 * * * 0")))
+async def main(app: Ariadne):
+    await app.send_group_message(
+        714870727,
+        MessageChain(f"下班记得打卡")
+    )

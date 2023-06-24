@@ -97,6 +97,8 @@ with saya.module_context():
     
     saya.require("libs.function.usr_cmd.openai")
 
+    saya.require("libs.function.usr_cmd.bilibili_live_monitor")
+
     saya.require("libs.function.schedule.wake_up")
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
