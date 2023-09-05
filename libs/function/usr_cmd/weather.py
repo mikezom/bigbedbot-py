@@ -119,11 +119,17 @@ async def weather_global(app: Ariadne, member: Member, group: Group, anything: R
                 MessageChain(f"找不到城市：{city}")
             )
         else:
-            img = await asyncio.to_thread(render_open_weather_data, city, local_names, weather_data)
+            logger.info(f"rendering images for {city}")
+            img = await asyncio.to_thread(
+                render_open_weather_data, city, local_names, weather_data
+            )
             imgByteArr = image_to_byte_array(img)
+            logger.info("Finished rendering")
             await app.send_group_message(
                 group,
-                MessageChain([ImageElement(data_bytes=imgByteArr)])
+                MessageChain(
+                    ImageElement(data_bytes=imgByteArr)
+                )
             )
 
 

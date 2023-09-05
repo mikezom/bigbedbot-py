@@ -10,9 +10,12 @@ from dateutil import parser
 from thefuzz import process
 from loguru import logger
 
+
+SMZDM_UPDATE_INTERVAL = 60*60*2
+
 class SMZDM:
     buffer: dict
-    
+
     def get_target_index(l: list) -> int:
         if len(l) < 30:
             return len(l)
@@ -82,7 +85,7 @@ class SMZDM:
         cls.load_buffer()
         
         current_epoch_time = int(time.time())
-        if current_epoch_time - cls.buffer['update_time'] > 60 * 60 * 2:
+        if current_epoch_time - cls.buffer['update_time'] > SMZDM_UPDATE_INTERVAL:
             cls.update_smzdm()
     
     @classmethod

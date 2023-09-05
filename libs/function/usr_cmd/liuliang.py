@@ -22,7 +22,7 @@ from graia.ariadne.message.parser.twilight import (
 )
 
 from libs.control import Permission
-from libs.helper.info import QQInfoConfig
+from libs.helper.info import QQInfoConfig, Type_QQ
 
 channel = Channel.current()
 fname = "data/yecao/cookie.txt"
@@ -89,7 +89,7 @@ async def main(app: Ariadne, member: Member, group: Group):
 @channel.use(SchedulerSchema(timers.every_hours())) # Check every HOUR
 async def remaining_traffic_warning(app: Ariadne):
     traffic_max, traffic_current, refresh_date = liuliang()
-    my_group_info = QQInfoConfig.load_file(714870727, 0)
+    my_group_info = QQInfoConfig.load_file(714870727, Type_QQ.GROUP)
 
     if previous_traffic > 0 and traffic_current > previous_traffic:
         # Need Reset

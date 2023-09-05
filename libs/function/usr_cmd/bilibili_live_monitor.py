@@ -1,30 +1,25 @@
-from graia.saya import Channel
+import json
+import re
+
+from bilibili_api import live
 from graia.ariadne.app import Ariadne
-from graia.ariadne.model import Group, Member
-from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.event.message import GroupMessage
-from graia.ariadne.util.interrupt import FunctionWaiter
-from graia.broadcast.exceptions import ExecutionStop
-from graia.saya.builtins.broadcast.schema import ListenerSchema
+from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.message.parser.twilight import (
-    Twilight,
     FullMatch,
     RegexResult,
-    WildcardMatch
+    Twilight,
+    WildcardMatch,
 )
+from graia.ariadne.model import Group, Member
+from graia.broadcast.exceptions import ExecutionStop
+from graia.saya import Channel
+from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.scheduler import timers
 from graia.scheduler.saya import SchedulerSchema
+from loguru import logger
 
 from libs.control import Permission
-from libs.helper.info import QQInfoConfig
-
-import openai
-import json
-import asyncio
-import time
-import re
-from loguru import logger
-from bilibili_api import live
 
 LIVEDATA_PATH = "data/bilibili_live_monitor/livedata.json"
 
@@ -73,7 +68,7 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     if not anything.matched or anything.result is None:
         await app.send_group_message(
             group,
-            MessageChain(f"你要干啥")
+            MessageChain("你要干啥")
         )
     else:
         cmd = anything.result.display.strip()

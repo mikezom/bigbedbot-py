@@ -16,14 +16,14 @@ channel = Channel.current()
 )
 async def main(recall_event: GroupRecallEvent | FriendRecallEvent, app: Ariadne):
 
-    if type(recall_event) is GroupRecallEvent:
+    if isinstance(recall_event, GroupRecallEvent):
         msg = await app.get_message_from_id(recall_event.message_id, recall_event.group)
         mem = await app.get_member(recall_event.group.id, recall_event.author_id)
         await app.send_friend_message(
             BotConfig.master,
             [MessageChain(f"{mem.name}({mem.id})刚刚在{recall_event.group.name}({recall_event.group.id})撤回了："),msg.message_chain]
         )
-    elif type(recall_event) is FriendRecallEvent:
+    elif isinstance(recall_event, FriendRecallEvent):
         mem = await app.get_friend(recall_event.author_id)
         if mem is None:
             await app.send_friend_message(

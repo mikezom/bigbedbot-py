@@ -4,20 +4,43 @@ from loguru import logger
 # from xmlrpc.client import Boolean
 # from graia.saya import Channel
 # from collections import defaultdict
-from typing import DefaultDict, Set, Tuple, Union
+from typing import Union
 # from graia.ariadne.model import Member, MemberPerm, Group
 # from graia.broadcast.exceptions import ExecutionStop
 # from graia.ariadne.event.message import GroupMessage
 # from graia.broadcast.builtin.decorators import Depend
-from dataclasses import dataclass
+from dataclasses import dataclass, field, is_dataclass, asdict
 import json
 from enum import Enum
 
 # TRAFFIC_THRESHOLD = [1024, 800, 600, 400, 200, 100, 10]
+GROUP_INFO_PATH = 'data/info/group_info.json'
+USER_INFO_PATH = 'data/info/user_info.json'
+
+class EnhancedJSONEncoder(json.JSONEncoder):
+    def default(self, o):
+        if is_dataclass(o):
+            return asdict(o)
+        return super().default(o)
 
 class Type_QQ(Enum):
     GROUP = 0
     MEMBER = 1
+
+@dataclass
+class Item:
+    id: int
+    name: str
+    type: str
+    description: str = ""
+    effect_description: str = ""
+    quantity: int = 0
+    growth_time: int = 0
+    growth_stage: int = 0
+    reward_min: int = 0
+    reward_max: int = 0
+    price: int = 0
+    corresponding_crop_id: int = 0
 
 @dataclass
 class QQInfo:
@@ -26,31 +49,46 @@ class QQInfo:
 
     def update_nickname(self, new_nickname: str): self.nickname = new_nickname
 
-
 @dataclass
 class QQGroup(QQInfo):
     repeater_count: int = 0
     traffic_threshold_state: int = 0
 
-    def update_repeater_count(self, new_repeater_count: int): self.repeater_count = new_repeater_count
+    def update_repeater_count(self, new_repeater_count: int):
+        self.repeater_count = new_repeater_count
     def increment_repeater_count(self): self.repeater_count += 1
 
 @dataclass()
 class QQUser(QQInfo):
     fsm_count: int = 0
+    p_count: int = 0
+    has_received_daily_p: bool = False
+    rasin: int = 160
+    farm_exp: int = 0
+    backpack: list[Item] = field(default_factory=lambda: [])
+
+    def format_backpack(self):
+        new_backpack = []
+        for i in self.backpack:
+            if isinstance(i, Item):
+                continue
+            else:
+                logger.info(f"formating one item {i}")
+                new_item = Item(**i)
+                new_backpack.append(new_item)
+        self.backpack = new_backpack
 
 class QQInfoConfig:
 
     @classmethod
-    def load_file(cls, id, content_type):
-        if content_type == 0:
-            # group
+    def load_file(cls, id: int, content_type):
+        if content_type == Type_QQ.GROUP:
             group_id_string = str(id)
-            with open('data/info/group_info.json', 'r') as f:
+            with open(GROUP_INFO_PATH, 'r') as f:
                 group_info = json.load(f)
             group_info = cls.refresh_variables_for_groups(group_info)
 
-            with open('data/info/group_info.json', 'w') as f:
+            with open(GROUP_INFO_PATH, 'w') as f:
                 f.write(json.dumps(group_info, indent = 4))
 
             if group_id_string not in group_info:
@@ -60,20 +98,34 @@ class QQInfoConfig:
 
             return my_group_info
 
-        elif content_type == 1:
-            # user
+        elif content_type == Type_QQ.MEMBER:
             user_id_string = str(id)
-            with open('data/info/user_info.json', 'r') as f:
+            with open(USER_INFO_PATH, 'r') as f:
                 user_info = json.load(f)
+
+            # 对齐变量
+            user_info = cls.refresh_variables_for_users(user_info)
+
+            with open(USER_INFO_PATH, 'w') as f:
+                f.write(json.dumps(user_info, indent=4, cls=EnhancedJSONEncoder))
 
             if user_id_string not in user_info:
                 my_user_info = QQUser(id)
             else:
-                my_user_info = QQUser(id,
-                                      user_info[user_id_string]["nickname"],
-                                      user_info[user_id_string]["fsm_count"])
+                my_user_info = QQUser(*user_info[user_id_string].values())
+
+            my_user_info.format_backpack()
 
             return my_user_info
+
+    @classmethod
+    def load_user_list(cls) -> list[int]:
+        lst = []
+        with open(USER_INFO_PATH, 'r') as f:
+            user_info = json.load(f)
+        for usr in user_info.keys():
+            lst.append(int(usr))
+        return lst
 
     @classmethod
     def refresh_variables_for_groups(cls, group_dict: dict[str, dict]):
@@ -86,9 +138,19 @@ class QQInfoConfig:
         return group_dict
 
     @classmethod
+    def refresh_variables_for_users(cls, user_dict: dict[str, dict]):
+        dummy_user = QQUser(0)
+        current_qquser_variables = dummy_user.__dict__
+        for user_id, user_info in user_dict.items():
+            for variable_name, variable_default_value in current_qquser_variables.items():
+                if variable_name not in user_info:
+                    user_dict[user_id][variable_name] = variable_default_value
+        return user_dict
+
+    @classmethod
     def update_file(cls, content: Union[QQGroup, QQUser]):
-        if type(content) is QQGroup:
-            with open('data/info/group_info.json', 'r') as f:
+        if isinstance(content, QQGroup):
+            with open(GROUP_INFO_PATH, 'r') as f:
                 group_info = json.load(f)
 
             content_id_string = str(content.id)
@@ -97,22 +159,20 @@ class QQInfoConfig:
 
             group_info[content_id_string] = content.__dict__
 
-            with open('data/info/group_info.json', 'w') as f:
+            with open(GROUP_INFO_PATH, 'w') as f:
                 f.write(json.dumps(group_info, indent = 4))
 
-
-        elif type(content) is QQUser:
-            with open('data/info/user_info.json', 'r+') as f:
+        elif isinstance(content, QQUser):
+            with open(USER_INFO_PATH, 'r') as f:
                 user_info = json.load(f)
 
             user_id_string = str(content.id)
             if user_id_string not in user_info:
                 user_info[user_id_string] = {}
 
-            user_info[user_id_string]["nickname"] = content.nickname
-            user_info[user_id_string]["fsm_count"] = content.fsm_count
+            user_info[user_id_string] = content.__dict__
 
-            with open('data/info/user_info.json', 'w') as f:
-                f.write(json.dumps(user_info, indent = 4))
+            with open(USER_INFO_PATH, 'w') as f:
+                f.write(json.dumps(user_info, indent=4, cls=EnhancedJSONEncoder))
         else:
             logger.error(f"info.py: QQInfoConfig: update_file({type(content)}): no such content type")

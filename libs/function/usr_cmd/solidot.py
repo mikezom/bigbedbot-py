@@ -13,6 +13,7 @@ from graia.ariadne.message.parser.twilight import (
 )
 
 from libs.control import Permission
+from loguru import logger
 
 from libs.helper.solidot import solidot_update, solidot_list, solidot_news, is_solidot_update_required
 
@@ -47,9 +48,11 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
     if not anything.matched:
         if (is_solidot_update_required()):
             solidot_update()
+        msg = solidot_list()
+        logger.info(msg)
         await app.send_group_message(
             group,
-            MessageChain(solidot_list())
+            MessageChain(msg)
         )
     else:
         news_code = int(anything.result.display)

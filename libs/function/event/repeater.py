@@ -21,7 +21,7 @@ channel = Channel.current()
 )
 async def main(app: Ariadne, message: MessageChain, group: Group):
 
-    my_group_info = QQInfoConfig.load_file(group.id, 0) # 0 for group
+    my_group_info = QQInfoConfig.load_file(group.id, Type_QQ.GROUP)
     # logger.info(f"导入群信息完成，在群：{group.id} 的复读计数器为 {my_group_info.repeater_count}")
 
     if my_group_info.repeater_count > 1000:

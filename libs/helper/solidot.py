@@ -1,6 +1,7 @@
 import re # Regex
 import time # for cache timing
 import requests # for html requests
+import certifi
 from bs4 import BeautifulSoup # html parsing
 from graia.ariadne.message.chain import MessageChain  # 信息链
 
@@ -9,7 +10,7 @@ def solidot_update():
     Update solidot news
     """
     solidot_url = 'https://www.solidot.org/'
-    res = requests.get(solidot_url, verify=False)
+    res = requests.get(solidot_url, verify=True)
     soup = BeautifulSoup(res.content, 'html.parser')
 
     global solidot_titles_url
@@ -30,7 +31,7 @@ def solidot_update():
     for i, x in enumerate(solidot_titles_url, 1):
         solidot_article = []
         full_url = solidot_url + x[1:]
-        res_full = requests.get(full_url, verify=False)
+        res_full = requests.get(full_url, verify=True)
         soup_full = BeautifulSoup(res_full.content, 'html.parser')
 
         f_content = soup_full.find('div', class_='p_mainnew')

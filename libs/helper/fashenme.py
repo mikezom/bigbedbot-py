@@ -1,6 +1,7 @@
+import random
 import xml.etree.ElementTree as ET
 from loguru import logger
-import random
+from fuzzywuzzy import fuzz
 
 fname = "data/fashenme/fashenme.xml"
 
@@ -24,7 +25,7 @@ def find_fashenme(content: str):
         content = content[1:-1]
     res = []
     for i,x in enumerate(fashenme):
-        if content in x:
+        if content.lower() in x.lower():
             res.append(f"{i}. {x}")
     if len(res) == 0:
         return "么得么得么，么么得"
@@ -36,7 +37,7 @@ def find_fashenme_how_many(prompt: str):
     prompt = prompt.strip()
     res = []
     for i,x in enumerate(fashenme):
-        if prompt in x:
+        if prompt.lower() in x.lower():
             res.append(f"{i}. {x}")
     return len(res)
 

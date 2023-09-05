@@ -3,22 +3,19 @@ from graia.ariadne.app import Ariadne
 from graia.ariadne.message.chain import MessageChain
 from graia.scheduler import timers
 from graia.scheduler.saya import SchedulerSchema
-from graia.ariadne.message.element import Face
-
-from libs.control import Permission
 
 channel = Channel.current()
 
-@channel.use(SchedulerSchema(timers.crontabify("0 9 * * * 0")))
-async def main(app: Ariadne):
+@channel.use(SchedulerSchema(timers.crontabify("0 9 * * 1-5 0")))
+async def wake_up(app: Ariadne):
     await app.send_group_message(
         714870727,
-        MessageChain(f"起床上班了！！！！")
+        MessageChain("起床上班了！！！！")
     )
 
-@channel.use(SchedulerSchema(timers.crontabify("0 20 * * * 0")))
-async def main(app: Ariadne):
+@channel.use(SchedulerSchema(timers.crontabify("0 20 * * 1-5 0")))
+async def wake_down(app: Ariadne):
     await app.send_group_message(
         714870727,
-        MessageChain(f"下班记得打卡")
+        MessageChain("下班记得打卡")
     )

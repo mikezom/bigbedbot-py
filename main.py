@@ -13,9 +13,11 @@ from graia.ariadne.entry import config, HttpClientConfig, WebsocketClientConfig
 
 import asyncio
 import contextlib
-import pkgutil
 
 from libs.config import BotConfig
+from libs.helper.backpack import reload_all_items
+from libs.helper.shop import reload_shop_item_list
+from libs.helper.random_chest import reload_all_chest_rewards
 
 # Initializing bot
 host = BotConfig.Mirai.mirai_host
@@ -73,7 +75,7 @@ with saya.module_context():
     saya.require("libs.function.usr_cmd.play.play_chinese_number_notation")
     saya.require("libs.function.usr_cmd.play.play_abc_notation")
     saya.require("libs.function.usr_cmd.play.random_taffy")
-    saya.require("libs.function.usr_cmd.play.paimon_says")
+    # saya.require("libs.function.usr_cmd.play.paimon_says")
 
     saya.require("libs.function.usr_cmd.solidot")
 
@@ -99,7 +101,19 @@ with saya.module_context():
 
     saya.require("libs.function.usr_cmd.bilibili_live_monitor")
 
+    saya.require("libs.function.usr_cmd.p_cmd")
+    saya.require("libs.function.usr_cmd.rasin_cmd")
+    saya.require("libs.function.usr_cmd.backpack_cmd")
+    saya.require("libs.function.usr_cmd.shop_cmd")
+    saya.require("libs.function.usr_cmd.random_chest")
+
     saya.require("libs.function.schedule.wake_up")
+    saya.require("libs.function.schedule.p_schedule")
+    saya.require("libs.function.schedule.rasin")
+
+    reload_all_items()
+    reload_shop_item_list()
+    reload_all_chest_rewards()
 
 with contextlib.suppress(KeyboardInterrupt, asyncio.exceptions.CancelledError):
     app.launch_blocking()

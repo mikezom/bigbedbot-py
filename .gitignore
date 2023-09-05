@@ -15,6 +15,8 @@ data/smzdm/
 data/group/group_info.json
 data/weather/userdata.json
 data/openAI/
+data/farm_rpg/
+data/google/
 data/bilibili_live_monitor/
 libs/helper/vits/
 libs/helper/MoeGoe/
