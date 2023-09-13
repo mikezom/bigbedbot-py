@@ -1,17 +1,24 @@
-from graia.saya import Channel
 from graia.ariadne.app import Ariadne
-from graia.ariadne.model import Group, Member
-from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.event.message import GroupMessage
+from graia.ariadne.message.chain import MessageChain
+from graia.ariadne.message.element import At
+from graia.ariadne.message.parser.twilight import RegexMatch, Twilight
+from graia.ariadne.model import Group, Member
 from graia.broadcast.exceptions import ExecutionStop
+from graia.saya import Channel
 from graia.saya.builtins.broadcast.schema import ListenerSchema
-from graia.ariadne.message.parser.twilight import (
-    Twilight,
-    RegexMatch
-)
 
 from libs.control import Permission
-from libs.helper.p import get_p, is_received_daily_p, generate_daily_p, change_p, change_daily_p_to_received, reset_has_received_daily_p, get_user_list
+from libs.helper.p import (
+    change_daily_p_to_received,
+    change_p,
+    generate_daily_p,
+    get_p,
+    get_user_list,
+    is_received_daily_p,
+    reset_has_received_daily_p,
+)
+from libs.helper.rasin import change_rasin, get_rasin
 
 channel = Channel.current()
 
@@ -39,9 +46,12 @@ async def cmd_find_p(app: Ariadne, member: Member, group: Group):
             group,
             MessageChain(f"你不配用批：{e}")
         )
+    
+    my_rasin = get_rasin(member.id)
+    my_p = get_p(member.id)
     await app.send_group_message(
         group,
-        MessageChain(f"你现在有 {get_p(member.id)} 批。")
+        MessageChain(At(member), f" 你现在有 {my_p} 批, {my_rasin}/160 体力。")
     )
 
 # 领批
@@ -78,10 +88,11 @@ async def cmd_receive_daily_p(app: Ariadne, member: Member, group: Group):
         daily_p = generate_daily_p(member.id)
         change_p(member.id, daily_p)
         change_daily_p_to_received(member.id)
+        my_rasin = get_rasin(member.id)
 
         await app.send_group_message(
             group,
-            MessageChain(f"你成功领取了 {daily_p} 批！\n你现在有 {get_p(member.id)} 批。")
+            MessageChain(At(member), f" 你现在有 {get_p(member.id)}(+{daily_p}) 批, {my_rasin}/160 体力。")
         )
 
 # [Debug]重启每日领批

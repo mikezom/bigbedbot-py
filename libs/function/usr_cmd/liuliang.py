@@ -55,7 +55,7 @@ async def main(app: Ariadne, member: Member, group: Group):
         )
     await app.send_group_message(
         group,
-        MessageChain(f"这次真的在查了...")
+        MessageChain("这次真的在查了...")
     )
     try:
         traffic_max, traffic_remaining, refresh_date = liuliang()
@@ -70,56 +70,81 @@ async def main(app: Ariadne, member: Member, group: Group):
 
         traffic_usage_delta = expected_traffic_usage - traffic_usage
 
-        if traffic_usage_delta < 0:
+        if traffic_usage_delta < -10:
             await app.send_group_message(
                 group,
-                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n警惕！！还需要节省{abs(int(traffic_usage_delta))}G\n还有{time_difference.days}天刷新流量")
+                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n警惕！！还需要节省{abs(int(traffic_usage_delta))}G\n还有{time_difference.days}天{time_difference.seconds%(60*60*24)//(60*60)}时{time_difference.seconds%(60*60)//(60)}分{time_difference.seconds%60}秒刷新流量")
+            )
+        elif traffic_usage_delta > 10:
+            await app.send_group_message(
+                group,
+                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n还行哦，还有{abs(int(traffic_usage_delta))}G可以浪\n还有{time_difference.days}天{time_difference.seconds%(60*60*24)//(60*60)}时{time_difference.seconds%(60*60)//(60)}分{time_difference.seconds%60}秒刷新流量")
             )
         else:
             await app.send_group_message(
                 group,
-                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n还行哦，还有{abs(int(traffic_usage_delta))}G可以浪\n还有{time_difference.days}天刷新流量")
+                MessageChain(f"目前剩余流量: {traffic_remaining}GB, \n还有{time_difference.days}天{time_difference.seconds%(60*60*24)//(60*60)}时{time_difference.seconds%(60*60)//(60)}分{time_difference.seconds%60}秒刷新流量")
             )
     except:
         await app.send_group_message(
             group,
-            MessageChain(f"我靠，又翻车了！")
+            MessageChain("我靠，又翻车了！")
         )
 
-@channel.use(SchedulerSchema(timers.every_hours())) # Check every HOUR
+# Check traffic every 10 minutes
+@channel.use(SchedulerSchema(timers.every_custom_minutes(10)))
 async def remaining_traffic_warning(app: Ariadne):
+    logger.info("Checking traffic threshold")
     traffic_max, traffic_current, refresh_date = liuliang()
     my_group_info = QQInfoConfig.load_file(714870727, Type_QQ.GROUP)
+    global previous_traffic
+    logger.info(f"previous traffic: {previous_traffic}")
+    logger.info(f"current traffic: {traffic_current}")
 
-    if previous_traffic > 0 and traffic_current > previous_traffic:
-        # Need Reset
+    # Reset Logic
+    if (previous_traffic > 0 and traffic_current > previous_traffic):
+        # 流量比之前多了，说明流量重置/购买流量包了
+        logger.info("Traffic threshold resetting...")
         my_group_info.traffic_threshold_state = 0
+    elif (traffic_current > 800 and my_group_info.traffic_threshold_state != 1):
+        # 或者流量比较多的时候可以无脑reset
+        logger.info("Traffic threshold resetting...")
+        my_group_info.traffic_threshold_state = 1
 
-    if my_group_info.traffic_threshold_state >= len(TRAFFIC_THRESHOLD):
-        # Invalid Save
+    # Invalid Save Number
+    if (my_group_info.traffic_threshold_state >= len(TRAFFIC_THRESHOLD) or
+        my_group_info.traffic_threshold_state < 0):
         logger.error(f"Bad threshold state again, {my_group_info.traffic_threshold_state}")
         my_group_info.traffic_threshold_state = 0
 
+    # 触发说话的逻辑1: 超过了设定的流量线
     if traffic_current < TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]:
-        # 超了超了
+        # 超过了一条现在的线
+        # TRAFFIC_THRESHOLD = [1024, 800, 600, 400, 200, 100, 10, 0]
+        #                         0    1    2    3    4    5   6  7
+        logger.info("Exceeded current traffic threshold")
         current_time = datetime.datetime.now()
         time_difference = refresh_date - current_time
         await app.send_group_message(
             714870727,
-            MessageChain(f"流量只剩: {traffic_current}GB了！！！, \n还有 {time_difference.days}天{time_difference.seconds // 3600 % 24}小时{time_difference.seconds // 60 % 60}分{time_difference.seconds % 60}秒 刷新流量")
+            MessageChain(f"流量只剩: {traffic_current}GB了！！！, \n还有 {time_difference.days}天{time_difference.seconds%(60*60*24)//(60*60)}时{time_difference.seconds%(60*60)//(60)}分{time_difference.seconds%60}秒刷新流量")
         )
         # update traffic_threshold_state
         rev_thres = list(reversed(TRAFFIC_THRESHOLD))
         my_group_info.traffic_threshold_state = len(rev_thres) - bisect_left(rev_thres, traffic_current)
 
+    # 触发说话的逻辑2: 短时间内使用过多流量
+    if (previous_traffic > 0 and
+        previous_traffic - traffic_current >= 4):
+        await app.send_group_message(
+            714870727,
+            MessageChain(f"有人在用流量下东西！")
+        )
+
+    # Update Variables
     logger.info(f"Current threshold for group 714870727 is {TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]}")
     QQInfoConfig.update_file(my_group_info)
-
-    with open('data/yecao/userdata.json', 'r') as f:
-        yecao_config_data = json.load(f)
-    yecao_config_data["previous_traffic"] = traffic_current
-    with open('data/yecao/userdata.json', 'w') as f:
-        f.write(json.dumps(yecao_config_data, indent = 4))
+    previous_traffic = traffic_current
 
 class SoupParser:
     def parse_token_and_login_addr(sp: BeautifulSoup):
@@ -223,4 +248,6 @@ def liuliang():
         traffic_max, traffic_current, reset_time = SoupParser.parse_traffic_info(soup)
         logger.info(f"max: {traffic_max}, remain: {traffic_current}, refresh: {reset_time}")
 
+    traffic_max = int(traffic_max)
+    traffic_current = int(traffic_current)
     return traffic_max, traffic_current, reset_time

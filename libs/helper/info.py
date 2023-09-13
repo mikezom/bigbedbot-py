@@ -12,6 +12,8 @@ from typing import Union
 from dataclasses import dataclass, field, is_dataclass, asdict
 import json
 from enum import Enum
+from numpy.random import randint
+# from libs.helper.farm import Farm
 
 # TRAFFIC_THRESHOLD = [1024, 800, 600, 400, 200, 100, 10]
 GROUP_INFO_PATH = 'data/info/group_info.json'
@@ -21,6 +23,8 @@ class EnhancedJSONEncoder(json.JSONEncoder):
     def default(self, o):
         if is_dataclass(o):
             return asdict(o)
+        # elif isinstance(o, Farm):
+        #     return Farm.todict(o)
         return super().default(o)
 
 class Type_QQ(Enum):
@@ -35,12 +39,27 @@ class Item:
     description: str = ""
     effect_description: str = ""
     quantity: int = 0
-    growth_time: int = 0
-    growth_stage: int = 0
+    growth_time: list = field(default_factory=lambda: []) # growth time required
+    growth_stage: int = 0 # total stages
     reward_min: int = 0
     reward_max: int = 0
     price: int = 0
     corresponding_crop_id: int = 0
+
+    def format_crop(self):
+        if isinstance(self.growth_time, str) and len(self.growth_time)>0:
+            new_growth_time = [int(x) for x in self.growth_time.split(',')]
+            self.growth_time = new_growth_time
+        if isinstance(self.growth_stage, str) and len(self.growth_stage)>0:
+            self.growth_stage = int(self.growth_stage)
+        if isinstance(self.reward_min, str) and len(self.reward_min)>0:
+            self.reward_min = int(self.reward_min)
+        if isinstance(self.reward_max, str) and len(self.reward_max)>0:
+            self.reward_max = int(self.reward_max)
+    
+    def generate_reward(self):
+        rwd = randint(self.reward_min, self.reward_max)
+        return rwd
 
 @dataclass
 class QQInfo:
@@ -66,6 +85,7 @@ class QQUser(QQInfo):
     rasin: int = 160
     farm_exp: int = 0
     backpack: list[Item] = field(default_factory=lambda: [])
+    chest_opened_today: int = 0
 
     def format_backpack(self):
         new_backpack = []
@@ -73,8 +93,10 @@ class QQUser(QQInfo):
             if isinstance(i, Item):
                 continue
             else:
-                logger.info(f"formating one item {i}")
+                # logger.info(f"formating one item {i}")
                 new_item = Item(**i)
+                if new_item.type == 'crop':
+                    new_item.format_crop()
                 new_backpack.append(new_item)
         self.backpack = new_backpack
 
@@ -96,6 +118,7 @@ class QQInfoConfig:
             else:
                 my_group_info = QQGroup(*group_info[group_id_string].values())
 
+            my_group_info.traffic_threshold_state = int(my_group_info.traffic_threshold_state)
             return my_group_info
 
         elif content_type == Type_QQ.MEMBER:
