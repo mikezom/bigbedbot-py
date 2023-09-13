@@ -14,13 +14,9 @@ from libs.helper.info import *
 
 channel = Channel.current()
 
-@channel.use(
-    ListenerSchema(
-        listening_events=[GroupMessage]
-    )
-)
-async def main(app: Ariadne, message: MessageChain, group: Group):
 
+@channel.use(ListenerSchema(listening_events=[GroupMessage]))
+async def main(app: Ariadne, message: MessageChain, group: Group):
     my_group_info = QQInfoConfig.load_file(group.id, Type_QQ.GROUP)
     # logger.info(f"导入群信息完成，在群：{group.id} 的复读计数器为 {my_group_info.repeater_count}")
 
@@ -33,7 +29,7 @@ async def main(app: Ariadne, message: MessageChain, group: Group):
     if 100 <= my_group_info.repeater_count <= 200:
         threshold += (my_group_info.repeater_count - 100) * 0.001
     elif 200 < my_group_info.repeater_count:
-        threshold += (0.1 + (my_group_info.repeater_count - 200) * 0.002)
+        threshold += 0.1 + (my_group_info.repeater_count - 200) * 0.002
 
     if rand_result <= threshold:
         my_group_info.update_repeater_count(0)
@@ -43,10 +39,7 @@ async def main(app: Ariadne, message: MessageChain, group: Group):
         except Exception as e:
             raise ExecutionStop(e)
 
-        await app.send_group_message(
-            group,
-            message.as_sendable()
-        )
+        await app.send_group_message(group, message.as_sendable())
     else:
         my_group_info.increment_repeater_count()
 

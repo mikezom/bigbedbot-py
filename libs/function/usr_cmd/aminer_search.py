@@ -9,7 +9,13 @@ from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.message.parser.twilight import Twilight
 from graia.ariadne.event.message import Group, GroupMessage
 from graia.saya.builtins.broadcast.schema import ListenerSchema
-from graia.ariadne.message.element import Source, Forward, ForwardNode, Plain, Image
+from graia.ariadne.message.element import (
+    Source,
+    Forward,
+    ForwardNode,
+    Plain,
+    Image,
+)
 from graia.ariadne.message.parser.twilight import (
     RegexResult,
     ArgumentMatch,
@@ -28,20 +34,29 @@ channel.name("Aminer")
 channel.author("SAGIRI-kawaii")
 channel.description("一个搜索导师信息的插件")
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[
             Twilight(
                 [
-                    UnionMatch('aminer'),
-                    ArgumentMatch("-person", action="store_true", optional=True)
+                    UnionMatch("aminer"),
+                    ArgumentMatch(
+                        "-person", action="store_true", optional=True
+                    )
                     @ "person",
                     ArgumentMatch(
-                        "-article", "-a", "-paper", action="store_true", optional=True
+                        "-article",
+                        "-a",
+                        "-paper",
+                        action="store_true",
+                        optional=True,
                     )
                     @ "article",
-                    ArgumentMatch("-patent", action="store_true", optional=True)
+                    ArgumentMatch(
+                        "-patent", action="store_true", optional=True
+                    )
                     @ "patent",
                     WildcardMatch() @ "keyword",
                 ]
@@ -123,11 +138,19 @@ async def aminer(
                                         GraiaAdapter(
                                             MessageChain(
                                                 [
-                                                    Image(url=person.get("avatar"))
-                                                    if person.get("avatar")
+                                                    Image(
+                                                        url=person.get(
+                                                            "avatar"
+                                                        )
+                                                    )
+                                                    if person.get(
+                                                        "avatar"
+                                                    )
                                                     else Plain(""),
                                                     Plain("\n")
-                                                    if person.get("avatar")
+                                                    if person.get(
+                                                        "avatar"
+                                                    )
                                                     else Plain(""),
                                                     Plain(
                                                         f"英文名：{person.get('name', '无数据')}\n"
@@ -135,7 +158,9 @@ async def aminer(
                                                     Plain(
                                                         f"中文名：{person.get('nameZh', '无数据')}\n"
                                                     ),
-                                                    Plain(f"所属机构：{institution}\n"),
+                                                    Plain(
+                                                        f"所属机构：{institution}\n"
+                                                    ),
                                                     Plain(
                                                         f"g-index：{person.get('gindex', '无数据')}\n"
                                                     ),
@@ -149,14 +174,25 @@ async def aminer(
                                                         f"被引用数：{person.get('ncitation', '无数据')}\n"
                                                     ),
                                                     Plain(bio),
-                                                    Plain(f"\n教育经历：\n{edu}"),
-                                                    Plain("\n工作（经历/职位）：\n"),
+                                                    Plain(
+                                                        f"\n教育经历：\n{edu}"
+                                                    ),
+                                                    Plain(
+                                                        "\n工作（经历/职位）：\n"
+                                                    ),
                                                     Plain(work),
                                                     Plain("\n邮箱：\n"),
                                                     Plain(
-                                                        person["contact"]
-                                                        .get("email", "无数据")
-                                                        .replace(";", "\n")
+                                                        person[
+                                                            "contact"
+                                                        ]
+                                                        .get(
+                                                            "email",
+                                                            "无数据",
+                                                        )
+                                                        .replace(
+                                                            ";", "\n"
+                                                        )
                                                     ),
                                                 ]
                                             )
@@ -174,16 +210,24 @@ async def aminer(
         pubs = res["data"]["hitList"]
         time_count = -len(pubs)
         for pub in pubs:
-            title = pub["titleZh"] if pub.get("titleZh") else pub.get("title", "无数据")
+            title = (
+                pub["titleZh"]
+                if pub.get("titleZh")
+                else pub.get("title", "无数据")
+            )
             authors = ", ".join(
                 [
-                    i["nameZh"] if i.get("nameZh") else i.get("name", "无数据")
+                    i["nameZh"]
+                    if i.get("nameZh")
+                    else i.get("name", "无数据")
                     for i in pub.get("authors", [])
                 ]
             )
             create_data = pub.get("createDate", "无数据")
             keywords = ", ".join(
-                pub["keywordsZh"] if pub.get("keywordsZh") else pub.get("keywords", [])
+                pub["keywordsZh"]
+                if pub.get("keywordsZh")
+                else pub.get("keywords", [])
             )
             abstract = (
                 pub["pubAbstractZh"]
@@ -203,13 +247,21 @@ async def aminer(
                                         GraiaAdapter(
                                             MessageChain(
                                                 [
-                                                    Plain(f"标题：{title[0]}\n"),
-                                                    Plain(f"作者：{authors}\n"),
-                                                    Plain(f"创建时间：{create_data}\n"),
+                                                    Plain(
+                                                        f"标题：{title[0]}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"作者：{authors}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"创建时间：{create_data}\n"
+                                                    ),
                                                     Plain(
                                                         f"关键词：{keywords if keyword else '无数据'}\n"
                                                     ),
-                                                    Plain(f"论文摘要：\n{abstract}"),
+                                                    Plain(
+                                                        f"论文摘要：\n{abstract}"
+                                                    ),
                                                 ]
                                             )
                                         )
@@ -226,12 +278,20 @@ async def aminer(
         patents = res["data"]["hitList"]
         time_count = -len(patents)
         for patent in patents:
-            title = patent["title"].get("zh", patent["title"].get("en", "无数据"))
+            title = patent["title"].get(
+                "zh", patent["title"].get("en", "无数据")
+            )
             inventors = ", ".join(
-                [i.get("name", "无数据") for i in patent.get("inventor", [])]
+                [
+                    i.get("name", "无数据")
+                    for i in patent.get("inventor", [])
+                ]
             )
             assignees = ", ".join(
-                [i.get("name", "无数据") for i in patent.get("assignees", [])]
+                [
+                    i.get("name", "无数据")
+                    for i in patent.get("assignees", [])
+                ]
             )
             abstract = patent.get("abstract", {})
             abstract = abstract.get("zh", abstract.get("en", "无数据"))
@@ -256,11 +316,21 @@ async def aminer(
                                         GraiaAdapter(
                                             MessageChain(
                                                 [
-                                                    Plain(f"标题：{title}\n"),
-                                                    Plain(f"专利号：{pub_auth}\n"),
-                                                    Plain(f"发明人：{inventors}\n"),
-                                                    Plain(f"专利受让人：{assignees}\n"),
-                                                    Plain(f"专利摘要：\n{abstract}"),
+                                                    Plain(
+                                                        f"标题：{title}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"专利号：{pub_auth}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"发明人：{inventors}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"专利受让人：{assignees}\n"
+                                                    ),
+                                                    Plain(
+                                                        f"专利摘要：\n{abstract}"
+                                                    ),
                                                 ]
                                             )
                                         )
@@ -275,5 +345,7 @@ async def aminer(
             time_count += 1
 
     await app.send_group_message(
-        group, MessageChain([Forward(node_list=forward_nodes)]), quote=source
+        group,
+        MessageChain([Forward(node_list=forward_nodes)]),
+        quote=source,
     )

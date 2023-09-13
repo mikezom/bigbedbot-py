@@ -8,6 +8,7 @@ from prompt_toolkit.styles import Style
 
 channel = Channel.current()
 
+
 @channel.use(ConsoleSchema([MatchContent("stop")]))
 async def stop(app: Ariadne, console: Console):
     res: str = await console.prompt(

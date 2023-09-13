@@ -19,11 +19,14 @@ channel = Channel.current()
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("公告"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[
+            Twilight([FullMatch("公告"), "anything" @ WildcardMatch()])
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-
+async def main(
+    app: Ariadne, member: Member, group: Group, anything: RegexResult
+):
     if anything.matched:
         msg = anything.result.display
         sended = []

@@ -9,7 +9,7 @@ from graia.ariadne.message.parser.twilight import (
     Twilight,
     FullMatch,
     RegexResult,
-    WildcardMatch
+    WildcardMatch,
 )
 
 from libs.control import Permission
@@ -18,47 +18,42 @@ from libs.helper.jijin import jj_search
 
 channel = Channel.current()
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("基金"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[
+            Twilight([FullMatch("基金"), "anything" @ WildcardMatch()])
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-    
+async def main(
+    app: Ariadne, member: Member, group: Group, anything: RegexResult
+):
     try:
         Permission.group_permission_check(group, "jijin")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"基金: 不配：{e}")
-        )
-    
+    except Exception as e:
+        await app.send_group_message(group, MessageChain(f"基金: 不配：{e}"))
+
     if not anything.matched:
         await app.send_group_message(
-            group,
-            MessageChain(f"保存基金信息开发中...")
+            group, MessageChain(f"保存基金信息开发中...")
         )
     else:
         jjcode = anything.result.display.strip()
         message_chain = jj_search(jjcode)
-        
+
         if message_chain is not None:
-            await app.send_group_message(
-                group,
-                message_chain
-            )
+            await app.send_group_message(group, message_chain)
         else:
             await app.send_group_message(
-                group,
-                MessageChain(f"找不到基金：{jjcode}")
+                group, MessageChain(f"找不到基金：{jjcode}")
             )

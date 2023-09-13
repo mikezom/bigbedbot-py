@@ -9,7 +9,6 @@ from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
     FullMatch,
-    RegexMatch,
     RegexResult,
     ParamMatch,
 )
@@ -20,42 +19,39 @@ from libs.helper.smzdm import SMZDM
 
 channel = Channel.current()
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([
-            FullMatch("smzdm"),
-            "arg" @ ParamMatch(optional = True)
-            ])]
+        inline_dispatchers=[
+            Twilight(
+                [FullMatch("smzdm"), "arg" @ ParamMatch(optional=True)]
+            )
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, arg: RegexResult):
-    
+async def main(
+    app: Ariadne, member: Member, group: Group, arg: RegexResult
+):
     try:
         Permission.group_permission_check(group, "smzdm")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
+    except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"smzdm: 不配：{e}")
+            group, MessageChain(f"smzdm: 不配：{e}")
         )
-    
+
     if not arg.matched:
-        await app.send_group_message(
-            group,
-            SMZDM.parse_smzdm()
-        )
+        await app.send_group_message(group, SMZDM.parse_smzdm())
     elif arg.matched:
         smzdm_str = arg.result.display
         await app.send_group_message(
-            group,
-            SMZDM.search_smzdm(smzdm_str)
+            group, SMZDM.search_smzdm(smzdm_str)
         )

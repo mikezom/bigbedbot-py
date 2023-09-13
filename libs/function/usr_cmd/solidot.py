@@ -9,56 +9,61 @@ from graia.ariadne.message.parser.twilight import (
     Twilight,
     FullMatch,
     RegexResult,
-    WildcardMatch
+    WildcardMatch,
 )
 
 from libs.control import Permission
 from loguru import logger
 
-from libs.helper.solidot import solidot_update, solidot_list, solidot_news, is_solidot_update_required
+from libs.helper.solidot import (
+    solidot_update,
+    solidot_list,
+    solidot_news,
+    is_solidot_update_required,
+)
 
 channel = Channel.current()
+
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("solidot"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[
+            Twilight(
+                [FullMatch("solidot"), "anything" @ WildcardMatch()]
+            )
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-    
+async def main(
+    app: Ariadne, member: Member, group: Group, anything: RegexResult
+):
     try:
         Permission.group_permission_check(group, "solidot")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
+    except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"solidot: 不配：{e}")
+            group, MessageChain(f"solidot: 不配：{e}")
         )
         raise ExecutionStop()
-    
+
     if not anything.matched:
-        if (is_solidot_update_required()):
+        if is_solidot_update_required():
             solidot_update()
         msg = solidot_list()
         logger.info(msg)
-        await app.send_group_message(
-            group,
-            MessageChain(msg)
-        )
+        await app.send_group_message(group, MessageChain(msg))
     else:
         news_code = int(anything.result.display)
-        if (is_solidot_update_required()):
+        if is_solidot_update_required():
             solidot_update()
         await app.send_group_message(
-            group,
-            MessageChain(solidot_news(news_code))
+            group, MessageChain(solidot_news(news_code))
         )

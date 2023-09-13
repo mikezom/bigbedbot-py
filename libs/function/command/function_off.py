@@ -22,11 +22,14 @@ channel = Channel.current()
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("关闭"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[
+            Twilight([FullMatch("关闭"), "anything" @ WildcardMatch()])
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-
+async def main(
+    app: Ariadne, member: Member, group: Group, anything: RegexResult
+):
     if anything.matched:
         msg = anything.result.display
         try:
@@ -34,17 +37,15 @@ async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult
         except:
             raise ExecutionStop()
 
-        try: 
+        try:
             Permission.user_permission_check(member, Permission.MASTER)
-        except Exception as e :
+        except Exception as e:
             await app.send_group_message(
-                group,
-                MessageChain(f"只有bot拥有者才能开关功能哦。{e}")
+                group, MessageChain(f"只有bot拥有者才能开关功能哦。{e}")
             )
             raise ExecutionStop()
 
         Permission.change_group_permission(group, cmd, False)
         await app.send_group_message(
-            group,
-            MessageChain(f"成功在群{group.id}关闭：{msg}")
+            group, MessageChain(f"成功在群{group.id}关闭：{msg}")
         )

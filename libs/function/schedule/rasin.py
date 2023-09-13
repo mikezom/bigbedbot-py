@@ -10,9 +10,9 @@ from libs.helper.rasin import increment_rasin_globally
 
 channel = Channel.current()
 
+
 @channel.use(SchedulerSchema(timers.every_custom_minutes(8)))
 async def recover_rasin(app: Ariadne):
-
     increment_rasin_globally()
     logger.info("体力恢复中")
     # 需要增加回满体力订阅

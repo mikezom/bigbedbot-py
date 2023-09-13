@@ -23,43 +23,43 @@ from libs.control import Permission
 
 channel = Channel.current()
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("9播放"), "anything" @ WildcardMatch()])]
+        inline_dispatchers=[
+            Twilight([FullMatch("9播放"), "anything" @ WildcardMatch()])
+        ],
     )
 )
-async def main(app: Ariadne, member: Member, group: Group, anything: RegexResult):
-
+async def main(
+    app: Ariadne, member: Member, group: Group, anything: RegexResult
+):
     try:
         Permission.group_permission_check(group, "play_abc_notation")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
 
     try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"9播放：不配：{e}")
-        )
+    except Exception as e:
+        await app.send_group_message(group, MessageChain(f"9播放：不配：{e}"))
 
     if anything.matched:
         speed_and_score = anything.result.display
-        score_info = speed_and_score.split(';')
+        score_info = speed_and_score.split(";")
         speed = int(score_info[0])
         if speed > 1000 or speed < 1:
             await app.send_group_message(
-                group,
-                MessageChain(f"Bad Speed")
+                group, MessageChain(f"Bad Speed")
             )
         else:
-            abc_to_sound.save(abc_to_sound.gen_wav(score_info[1], speed, 2000))
+            abc_to_sound.save(
+                abc_to_sound.gen_wav(score_info[1], speed, 2000)
+            )
             await app.send_group_message(
-                group,
-                MessageChain([Voice(path = 'data/play/sine.silk')])
+                group, MessageChain([Voice(path="data/play/sine.silk")])
             )

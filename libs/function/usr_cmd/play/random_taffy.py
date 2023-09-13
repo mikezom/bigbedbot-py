@@ -18,35 +18,31 @@ from random import choice
 
 channel = Channel.current()
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("随机塔菲")])]
+        inline_dispatchers=[Twilight([FullMatch("随机塔菲")])],
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):
-    
     try:
         Permission.group_permission_check(group, "random_taffy")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
+    except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"随机塔菲：不配：{e}")
+            group, MessageChain(f"随机塔菲：不配：{e}")
         )
-    
-    random_sample = choice(listdir('data/play/taffy'))
+
+    random_sample = choice(listdir("data/play/taffy"))
     my_path = "data/play/taffy/" + random_sample
     await app.send_group_message(
-        group,
-        MessageChain([Voice(path = my_path)])
+        group, MessageChain([Voice(path=my_path)])
     )
-        

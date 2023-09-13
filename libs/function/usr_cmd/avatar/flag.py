@@ -17,37 +17,30 @@ from libs.helper.avatar import generate_avatar_with_flag, get_qq_avatar
 
 channel = Channel.current()
 
+
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[
-            Twilight([FullMatch("/国旗")])
-        ]
+        inline_dispatchers=[Twilight([FullMatch("/国旗")])],
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):
-    
     try:
         Permission.group_permission_check(group, "avatar_flag")
     except Exception as e:
         await app.send_group_message(
-            group,
-            MessageChain(f"本群不开放此功能，错误信息：{e}")
+            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
         )
         raise ExecutionStop()
-    
-    try: 
+
+    try:
         Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e :
-        await app.send_group_message(
-            group,
-            MessageChain(f"国旗：不配：{e}")
-        )
-    
+    except Exception as e:
+        await app.send_group_message(group, MessageChain(f"国旗：不配：{e}"))
+
     avatar = await get_qq_avatar(member.id)
-    
+
     await app.send_group_message(
         group,
-        MessageChain([Image(path = generate_avatar_with_flag(avatar))])
+        MessageChain([Image(path=generate_avatar_with_flag(avatar))]),
     )
-        

@@ -11,6 +11,7 @@ from libs.config import BotConfig
 
 channel = Channel.current()
 
+
 @channel.use(ListenerSchema(listening_events=[ApplicationLaunched]))
 async def main(app: Ariadne):
     """
