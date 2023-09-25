@@ -21,7 +21,10 @@ def get_p(id: int) -> int:
         logger.info(f"找不到这人的批")
         return -1
     else:
+        if my_user_info.p_count < 0:
+            my_user_info.p_count = 200
         logger.info(f"导入批消息完成，群友{id}的批数量为{my_user_info.p_count}")
+        QQInfoConfig.update_file(my_user_info)
         return my_user_info.p_count
 
 def is_received_daily_p(id: int) -> bool:

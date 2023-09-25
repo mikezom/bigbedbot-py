@@ -7,6 +7,7 @@ from graia.ariadne.event.message import GroupMessage
 from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.message.parser.twilight import RegexMatch, Twilight
 from graia.ariadne.model import Group, Member
+from graia.ariadne.message.element import At
 from graia.broadcast.exceptions import ExecutionStop
 from graia.broadcast.interrupt import InterruptControl
 from graia.saya import Channel
@@ -42,7 +43,7 @@ BONUS_THRESHOLD = 30
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([RegexMatch("开箱")])],
+        inline_dispatchers=[Twilight([RegexMatch("开箱|抽卡")])],
     )
 )
 async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
@@ -68,7 +69,7 @@ async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
     else:
         user_price = DEFAULT_PRICE
 
-    if user_p <= user_price:
+    if user_p < user_price:
         await app.send_group_message(group, MessageChain("你没批啦！"))
     elif user_rasin < 5:
         await app.send_group_message(group, MessageChain("你没体力啦！"))
@@ -84,6 +85,7 @@ async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
         await app.send_message(
             group,
             MessageChain(
+                At(member),
                 f"你开到了{COLOR_TO_CN[item_color]}箱, {item_name},"
                 f" 价值{item_value}批"
             ),
@@ -94,7 +96,7 @@ async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([RegexMatch("开箱十连")])],
+        inline_dispatchers=[Twilight([RegexMatch("抽卡十连|开箱十连")])],
     )
 )
 async def cmd_random_chest_times_ten(
@@ -118,7 +120,7 @@ async def cmd_random_chest_times_ten(
     user_total_p_required = total_p_requirement(
         member.id, 10, DEFAULT_PRICE, BONUS_THRESHOLD
     )
-    if user_p <= user_total_p_required:
+    if user_p < user_total_p_required:
         await app.send_group_message(group, MessageChain("你没批啦！"))
     elif user_rasin < 50:
         await app.send_group_message(group, MessageChain("你没有足够多的体力！"))
@@ -130,14 +132,16 @@ async def cmd_random_chest_times_ten(
 
         total_value = sum([int(x[2]) for x in items])
 
-        change_p(member.id, int(total_value) - 200)
+        change_p(member.id, int(total_value) - user_total_p_required)
         change_rasin(member.id, -50)
         increment_chest_opened_today(member.id, 10)
 
         color_count = Counter([x[1] for x in items])
         if color_count["blue"] == 10:
             await app.send_message(
-                group, MessageChain(f"你抽到了10个垃圾, 一共就{total_value}p")
+                group, MessageChain(
+                    At(member),
+                    f"你抽到了10个垃圾, 一共就{total_value}p")
             )
         elif color_count["gold"] > 0:
             for _item_ in items:
@@ -146,6 +150,7 @@ async def cmd_random_chest_times_ten(
             await app.send_message(
                 group,
                 MessageChain(
+                    At(member),
                     f"歪哟，发了！\n你开出了{gold_item[0]},"
                     f" 价值{gold_item[2]}批。一共你获得{total_value}批"
                 ),
@@ -163,6 +168,7 @@ async def cmd_random_chest_times_ten(
             await app.send_message(
                 group,
                 MessageChain(
+                    At(member),
                     f"你抽到了{color_stats_string} \n最贵的是{best_item[0]},"
                     f" 价值{best_item[2]}批。一共获得{total_value}批"
                 ),

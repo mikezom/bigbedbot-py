@@ -90,7 +90,7 @@ async def main(app: Ariadne, member: Member, group: Group):
                     f" \n还有{time_difference.days}天{time_difference.seconds%(60*60*24)//(60*60)}时{time_difference.seconds%(60*60)//(60)}分{time_difference.seconds%60}秒刷新流量"
                 ),
             )
-    except:
+    except Exception as _:
         await app.send_group_message(group, MessageChain("我靠，又翻车了！"))
 
 
@@ -276,12 +276,12 @@ def liuliang():
         session, address_obtain_token, headers
     )
     if token and login_address:
-        logger.info(f"[Success] Get token and login address")
+        logger.info("[Success] Get token and login address")
     payload, my_params = load_config_yecao(
         "data/yecao/userdata.json", token
     )
     if payload and my_params:
-        logger.info(f"[Success] Get payload and parameters")
+        logger.info("[Success] Get payload and parameters")
 
     # Logging in
     session.post(login_address, headers=headers, data=payload)
