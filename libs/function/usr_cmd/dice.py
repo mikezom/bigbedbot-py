@@ -16,6 +16,9 @@ import random
 
 channel = Channel.current()
 
+channel.name("dice")
+channel.description("A simple dice plugin")
+channel.author("Mikezom")
 
 @channel.use(
     ListenerSchema(
@@ -23,27 +26,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight(RegexMatch(r"\d+(d|D)\d+$")),
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, message: MessageChain
 ):
-    try:
-        Permission.group_permission_check(group, "dice")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"dice: 不配：{e}")
-        )
-        raise ExecutionStop()
-
     msg = message.display.strip().lower()
     msg_res = msg.split("d")
 
@@ -52,21 +43,21 @@ async def main(
 
     if n >= 256 or faces >= 1000:
         await app.send_group_message(
-            group, MessageChain(f"要不你自己搓个骰子耍耍")
+            group, MessageChain("要不你自己搓个骰子耍耍")
         )
         raise ExecutionStop()
     elif n <= 0:
         await app.send_group_message(
-            group, MessageChain(f"结果是...1! 没想到吧")
+            group, MessageChain("结果是...1! 没想到吧")
         )
         raise ExecutionStop()
     elif faces == 1:
         await app.send_group_message(
-            group, MessageChain(f"111111111111111111111111")
+            group, MessageChain("111111111111111111111111")
         )
         raise ExecutionStop()
     elif faces <= 0:
-        await app.send_group_message(group, MessageChain(f"他有脸吗？他没有！"))
+        await app.send_group_message(group, MessageChain("他有脸吗？他没有！"))
         raise ExecutionStop()
 
     rand_result = []

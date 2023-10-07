@@ -22,28 +22,23 @@ from libs.helper.rasin import get_rasin
 
 channel = Channel.current()
 
+channel.name("p_cmd")
+channel.description("Coin System for QQ Groups")
+channel.author("Mikezom")
+
 
 # 我的批
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("我的批|余额")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def cmd_find_p(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "p_cmd")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用批：{e}"))
-
     my_rasin = get_rasin(member.id)
     my_p = get_p(member.id)
     await app.send_group_message(
@@ -57,24 +52,15 @@ async def cmd_find_p(app: Ariadne, member: Member, group: Group):
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("领批")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def cmd_receive_daily_p(
     app: Ariadne, member: Member, group: Group
 ):
-    try:
-        Permission.group_permission_check(group, "p_cmd")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配领批：{e}"))
-
     if is_received_daily_p(member.id):
         await app.send_group_message(group, MessageChain("你今天已经领过批啦！"))
     else:
@@ -87,10 +73,8 @@ async def cmd_receive_daily_p(
             group,
             MessageChain(
                 At(member),
-                (
-                    f" 你现在有 {get_p(member.id)}(+{daily_p}) 批,"
-                    f" {my_rasin}/160 体力。"
-                ),
+                f" 你现在有 {get_p(member.id)}(+{daily_p}) 批,"
+                f" {my_rasin}/160 体力。",
             ),
         )
 
@@ -100,16 +84,15 @@ async def cmd_receive_daily_p(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("刷新每日批池")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.MASTER),
+        ],
     )
 )
 async def cmd_reset_has_received_daily_p(
     app: Ariadne, member: Member, group: Group
 ):
-    try:
-        Permission.user_permission_check(member, Permission.MASTER)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配：{e}"))
-
     reset_has_received_daily_p()
     await app.send_group_message(group, MessageChain("重启！"))
 
@@ -119,22 +102,13 @@ async def cmd_reset_has_received_daily_p(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("批榜")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def cmd_p_ranking(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "p_cmd")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用批：{e}"))
-
     user_list = get_user_list()
     member_list = await app.get_member_list(group)
     user_ranking = []

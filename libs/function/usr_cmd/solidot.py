@@ -24,6 +24,10 @@ from libs.helper.solidot import (
 
 channel = Channel.current()
 
+channel.name("solidot")
+channel.description("News push for solidot")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
@@ -33,27 +37,15 @@ channel = Channel.current()
                 [FullMatch("solidot"), "anything" @ WildcardMatch()]
             )
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "solidot")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"solidot: 不配：{e}")
-        )
-        raise ExecutionStop()
-
     if not anything.matched:
         if is_solidot_update_required():
             solidot_update()

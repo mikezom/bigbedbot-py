@@ -18,6 +18,10 @@ from libs.helper.jijin import jj_search
 
 channel = Channel.current()
 
+channel.name("jijin")
+channel.description("查询基金信息")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
@@ -25,24 +29,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight([FullMatch("基金"), "anything" @ WildcardMatch()])
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "jijin")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"基金: 不配：{e}"))
-
     if not anything.matched:
         await app.send_group_message(
             group, MessageChain(f"保存基金信息开发中...")

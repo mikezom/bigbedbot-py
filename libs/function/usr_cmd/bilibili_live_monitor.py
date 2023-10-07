@@ -25,6 +25,10 @@ LIVEDATA_PATH = "data/bilibili_live_monitor/livedata.json"
 
 channel = Channel.current()
 
+channel.name("bilibili-live-monitor")
+channel.description("Monitoring bilibili lives")
+channel.author("Mikezom")
+
 
 ########################################################
 # Update bilibili live info per minute
@@ -57,22 +61,15 @@ async def update_bili_monitor(app: Ariadne):
         inline_dispatchers=[
             Twilight([FullMatch("直播监控"), "anything" @ WildcardMatch()])
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    # Permission
-    try:
-        Permission.group_permission_check(
-            group, "bilibili_live_monitor"
-        )
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
     # Router
     if not anything.matched or anything.result is None:
         await app.send_group_message(group, MessageChain("你要干啥"))

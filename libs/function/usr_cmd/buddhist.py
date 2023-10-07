@@ -18,6 +18,9 @@ import requests
 
 channel = Channel.current()
 
+channel.name("buddhist-says")
+channel.description("Translator for 佛曰")
+channel.author("Mikezom")
 
 @channel.use(
     ListenerSchema(
@@ -25,25 +28,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight(FullMatch("佛曰："), "anything" @ WildcardMatch()),
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def decoding(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "buddhist")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"佛曰：不配：{e}"))
-        raise ExecutionStop()
-
     msg = anything.result.display.strip()
     if len(msg) == 0:
         await app.send_group_message(group, MessageChain(f"看我脸色行事"))
@@ -70,25 +63,15 @@ async def decoding(
         inline_dispatchers=[
             Twilight(FullMatch("听佛说："), "anything" @ WildcardMatch()),
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def encoding(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "buddhist")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"不配：{e}"))
-        raise ExecutionStop()
-
     path = "https://www.keyfc.net/bbs/tools/tudou.aspx"
     encoding_msg = anything.result.display.strip()
     my_params = {"action": "Encode", "orignalMsg": encoding_msg}

@@ -3,7 +3,6 @@ from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
 from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.event.message import GroupMessage
-from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
@@ -22,28 +21,22 @@ from libs.helper.backpack import (
 
 channel = Channel.current()
 
+channel.name("backpack")
+channel.description("[group RPG]backpack-related features")
+channel.author("Mikezom")
 
 # 查看背包(Brief)
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("背包")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name'], reply=True),
+            Permission.require_user_perm(Permission.USER),
+        ]
     )
 )
 async def cmd_find_p(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "p_cmd")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用：{e}"))
-
     backpack_brief = get_backpack_brief(member.id)
     if len(backpack_brief) > 0:
         await app.send_group_message(
@@ -61,6 +54,9 @@ async def cmd_find_p(app: Ariadne, member: Member, group: Group):
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight.from_command("!给 {pid} {itemid}")],
+        decorators=[
+            Permission.require_user_perm(Permission.MASTER, reply=True),
+        ]
     )
 )
 async def cmd_grant_player_item(
@@ -70,11 +66,6 @@ async def cmd_grant_player_item(
     pid: MessageChain = ResultValue(),
     itemid: MessageChain = ResultValue(),
 ):
-    try:
-        Permission.user_permission_check(member, Permission.MASTER)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用：{e}"))
-
     target_pid = int(pid.display)
     target_itemid = int(itemid.display)
 
@@ -91,6 +82,9 @@ async def cmd_grant_player_item(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight.from_command("!删 {pid} {itemid}")],
+        decorators=[
+            Permission.require_user_perm(Permission.MASTER, reply=True),
+        ]
     )
 )
 async def cmd_delete_player_item(
@@ -100,11 +94,6 @@ async def cmd_delete_player_item(
     pid: MessageChain = ResultValue(),
     itemid: MessageChain = ResultValue(),
 ):
-    try:
-        Permission.user_permission_check(member, Permission.MASTER)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用：{e}"))
-
     target_pid = int(pid.display)
     target_itemid = int(itemid.display)
 

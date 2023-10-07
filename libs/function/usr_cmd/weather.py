@@ -26,6 +26,9 @@ from loguru import logger
 
 channel = Channel.current()
 
+channel.name("weather")
+channel.description("check real-time weather")
+channel.author("Mikezom")
 
 # Twilight([FullMatch("实时"), "anything" @ WildcardMatch()]),
 # Twilight([FullMatch("實時"), "anything" @ WildcardMatch()]),
@@ -39,24 +42,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight(["anything" @ WildcardMatch(), FullMatch("实时")])
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def weather_CN(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "weather")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"天气: 不配：{e}"))
-
     if not anything.matched or anything.result is None:
         await app.send_group_message(group, MessageChain(f"你查啥呢"))
     else:
@@ -80,24 +74,15 @@ async def weather_CN(
                 [FullMatch("weather"), "anything" @ WildcardMatch()]
             )
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def weather_global(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "weather")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"天气: 不配：{e}"))
-
     if not anything.matched or anything.result is None:
         await app.send_group_message(group, MessageChain(f"你查啥呢"))
     else:

@@ -26,7 +26,7 @@ channel = Channel.current()
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
-        inline_dispatchers=[Twilight([FullMatch("测试2")])],
+        inline_dispatchers=[Twilight([FullMatch("测试3")])],
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):

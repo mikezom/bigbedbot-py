@@ -15,7 +15,6 @@ from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
 from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.event.message import GroupMessage
-from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import Twilight, RegexMatch
 
@@ -27,26 +26,22 @@ fname = "data/yecao/cookie.txt"
 TRAFFIC_THRESHOLD = [1024, 800, 600, 400, 200, 100, 10, 0]
 previous_traffic = -1
 
+channel.name("liuliang")
+channel.description("查询流量剩余")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("查询流量|流量查询")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "liuliang")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"流量：不配：{e}"))
     await app.send_group_message(group, MessageChain("这次真的在查了..."))
     try:
         traffic_max, traffic_remaining, refresh_date = liuliang()
@@ -99,6 +94,19 @@ async def main(app: Ariadne, member: Member, group: Group):
 async def remaining_traffic_warning(app: Ariadne):
     logger.info("Checking traffic threshold")
     traffic_max, traffic_current, refresh_date = liuliang()
+    current_time = datetime.datetime.now()
+    time_difference = refresh_date - current_time
+
+    last_refresh_time = (
+        refresh_date + dateutil.relativedelta.relativedelta(months=-1)
+    )
+    time_passed = current_time - last_refresh_time
+    time_percentage = time_passed / (refresh_date - last_refresh_time)
+    expected_traffic_usage = time_percentage * traffic_max
+    traffic_usage = traffic_max - traffic_current
+
+    traffic_usage_delta = expected_traffic_usage - traffic_usage
+
     my_group_info = QQInfoConfig.load_file(714870727, Type_QQ.GROUP)
     global previous_traffic
     logger.info(f"previous traffic: {previous_traffic}")
@@ -154,9 +162,10 @@ async def remaining_traffic_warning(app: Ariadne):
 
     # 触发说话的逻辑2: 短时间内使用过多流量
     if previous_traffic > 0 and previous_traffic - traffic_current >= 4:
-        await app.send_group_message(
-            714870727, MessageChain(f"有人在用流量下东西！")
-        )
+        if traffic_usage_delta < 25:
+            await app.send_group_message(
+                714870727, MessageChain(f"有人在用流量下东西！")
+            )
 
     # Update Variables
     logger.info(

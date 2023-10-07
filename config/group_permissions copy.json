@@ -1,0 +1,27 @@
+{
+    "263571637": {
+        "sample_player": true,
+        "repeater": false,
+        "no_du": false,
+        "test": true
+    },
+    "714870727": {
+        "sample_player": true,
+        "no_du": true
+    },
+    "666816524": {
+        "sample_player": true,
+        "repeater": false,
+        "no_du": false
+    },
+    "769317237": {
+        "sample_player": true,
+        "repeater": false,
+        "no_du": false
+    },
+    "821947845": {
+        "sample_player": true,
+        "repeater": false,
+        "no_du": false
+    }
+}

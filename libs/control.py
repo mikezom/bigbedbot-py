@@ -6,7 +6,9 @@ from xmlrpc.client import Boolean
 from graia.saya import Channel
 from collections import defaultdict
 from typing import DefaultDict, Set, Tuple, Union
+from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Member, MemberPerm, Group
+from graia.ariadne.message.chain import MessageChain
 from graia.broadcast.exceptions import ExecutionStop
 from graia.ariadne.event.message import GroupMessage
 from graia.broadcast.builtin.decorators import Depend
@@ -23,6 +25,7 @@ class Permission:
     用于管理权限的类，不应被实例化
     """
 
+    GOD = 999
     MASTER = 30
     GROUP_ADMIN = 20
     USER = 10
@@ -113,27 +116,26 @@ class Permission:
             f.write(json.dumps(group_config_data, indent=4))
 
     @classmethod
-    def require(cls, level: int = DEFAULT) -> Depend:
-        """
-        指示需要 `level` 以上等级才能触发，默认为至少 USER 权限
+    def require_user_perm(cls, level: int, reply:bool=False):
+        async def require_user_perm_deco(app: Ariadne, group: Group, user: Member):
+            member_level = cls.get(user)
+            if member_level < level:
+                if reply:
+                    await app.send_message(group, MessageChain("你不配啊你不配"))
+                raise ExecutionStop
+        return Depend(require_user_perm_deco)
 
-        :param level: 限制等级
-        ! NOT WORKING !
-        """
-
-        def perm_check(event: GroupMessage):
-            member_level = cls.get(event.sender)
-
-            if (
-                cls.GROUP_ADMIN > member_level >= level
-                and BotConfig.Debug.enable
-                and event.sender.group.id not in BotConfig.Debug.groups
-                or member_level < cls.GROUP_ADMIN
-                and member_level < level
-            ):
-                raise ExecutionStop()
-
-        return Depend(perm_check)
+    @classmethod
+    def require_group_perm(cls, cmd: str, reply:bool=False):
+        async def require_group_perm_deco(app: Ariadne, group: Group):
+            isTestGroup = group.id in BotConfig.Debug.groups
+            isAllowed = cls.get_group_permission(group, cmd)
+            
+            if not isAllowed:
+                if reply:
+                    await app.send_message(group, MessageChain("本群不开放此功能"))
+                raise ExecutionStop
+        return Depend(require_group_perm_deco)
 
     @classmethod
     def user_permission_check(cls, member: Member, level: int = DEFAULT):

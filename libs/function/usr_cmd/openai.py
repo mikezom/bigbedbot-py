@@ -32,9 +32,14 @@ def get_openai_api_key(path: str):
 
 
 openai.organization = ""
+openai.api_base = "https://api.nova-oss.com/v1"
 openai.api_key = get_openai_api_key("data/openAI/userinfo.json")
 
 channel = Channel.current()
+
+channel.name("chatGPT")
+channel.description("Yet Another ChatGPT Plugin")
+channel.author("Mikezom")
 
 
 @channel.use(
@@ -42,6 +47,10 @@ channel = Channel.current()
         listening_events=[GroupMessage],
         inline_dispatchers=[
             Twilight([FullMatch(">"), "anything" @ WildcardMatch()])
+        ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
         ],
     )
 )
@@ -52,28 +61,15 @@ async def main(
     anything: RegexResult,
     message: GroupMessage,
 ):
-    try:
-        Permission.group_permission_check(group, "chatGPT")
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"不准不准不准"))
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"chatGPT: 不配：{e}")
-        )
-
     if not anything.matched or anything.result is None:
-        await app.send_group_message(group, MessageChain(f"你问啥呢"))
+        await app.send_group_message(group, MessageChain("你问啥呢"))
     else:
         prompt_msg = anything.result.display.strip()
 
         if is_end_of_chat(prompt_msg):
             clear_chat_history(member.id, HISTORY_PATH)
             await app.send_group_message(
-                group, MessageChain(f"End of This Conversation")
+                group, MessageChain("End of This Conversation")
             )
         else:
             message_bundle = []
@@ -124,7 +120,7 @@ async def main(
                 await app.send_group_message(
                     group,
                     MessageChain(
-                        f"GPT doesn't understand your question."
+                        "GPT doesn't understand your question."
                     ),
                 )
 
@@ -136,7 +132,7 @@ def is_end_of_chat(msg: str):
         return False
 
 
-def ask_chatGPT(prompt_msg: list, model: str = "gpt-3.5-turbo"):
+def ask_chatGPT(prompt_msg: list, model: str = "gpt4-0613"):
     res = openai.ChatCompletion.create(model=model, messages=prompt_msg)
     try:
         content = res.choices[0].message.content  # type: ignore

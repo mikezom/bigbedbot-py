@@ -14,21 +14,21 @@ from libs.control import Permission
 
 channel = Channel.current()
 
+channel.name("random_4chan_pic")
+channel.description("randomly send a 4chan pic, translation from s1")
+channel.author("Mikezom")
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([FullMatch("random4chan")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def main(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "random_4chan_pic")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"member_permission_test: 不配：{e}")
-        )
-        raise ExecutionStop()
 
     getFourChanPic()
 

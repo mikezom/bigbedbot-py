@@ -34,7 +34,6 @@ channel.name("Aminer")
 channel.author("SAGIRI-kawaii")
 channel.description("一个搜索导师信息的插件")
 
-
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],

@@ -17,8 +17,13 @@ from libs.helper.p import get_p
 from libs.helper.shop import load_shop_item_list, purchase_item
 from libs.helper.backpack import get_backpack_brief
 
-channel = Channel.current()
 inc = create(InterruptControl)
+
+channel = Channel.current()
+
+channel.name("shop_cmd")
+channel.description("Shopping System for QQ Group")
+channel.author("Mikezom")
 
 
 # 我的批
@@ -26,22 +31,13 @@ inc = create(InterruptControl)
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight([RegexMatch("商店")])],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def cmd_shop(app: Ariadne, member: Member, group: Group):
-    try:
-        Permission.group_permission_check(group, "shop_cmd")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"你不配用：{e}"))
-
     shop_items = load_shop_item_list()
 
     # Need optimization

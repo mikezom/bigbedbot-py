@@ -16,21 +16,23 @@ from libs.control import Permission
 
 channel = Channel.current()
 
+channel.name("no_du")
+channel.description("禁嘟")
+channel.author("Mikezom")
 
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
         inline_dispatchers=[Twilight(["anything" @ WildcardMatch()])],
+        decorators=[
+            Permission.require_group_perm(channel.meta['name']),
+            Permission.require_user_perm(Permission.USER)
+        ]
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "no_du")
-    except Exception as e:
-        raise ExecutionStop()
-
     if anything.matched:
         msg = anything.result.display
         if "嘟" in msg:
