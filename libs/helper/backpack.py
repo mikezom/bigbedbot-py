@@ -2,21 +2,38 @@ import json
 import time
 from loguru import logger
 
-from libs.helper.info import QQInfoConfig, QQUser, Type_QQ, Item, EnhancedJSONEncoder
+from libs.helper.info import (
+    QQInfoConfig,
+    QQUser,
+    Type_QQ,
+    Item,
+    EnhancedJSONEncoder,
+)
 from libs.helper.google_sheet_loader import load_sheet
 
 PATH_LOCAL_ITEMINFO = "data/farm_rpg/local_items.json"
-PATH_USERINFO = 'data/info/user_info.json'
+PATH_USERINFO = "data/info/user_info.json"
 
-AVAILABLE_TARGETS = ['relic', 'crop', 'hoe', 'gloves', 'hund', 'item', 'seed']
+AVAILABLE_TARGETS = [
+    "relic",
+    "crop",
+    "hoe",
+    "gloves",
+    "hund",
+    "item",
+    "seed",
+]
+
 
 def load_backpack(id: int) -> list:
-    my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(id)
     if not isinstance(my_user_info, QQUser):
         logger.info("找不到这人")
         return []
     else:
         return my_user_info.backpack
+
 
 def reload_all_items():
     logger.info("Reloading All Items...")
@@ -39,26 +56,30 @@ def reload_all_items():
             new_item = Item(**item)
             new_item.id = int(new_item.id)
             item_list.append(new_item)
-    
+
     local_storage = {
         "reload_time": int(time.time()),
-        "items": item_list
+        "items": item_list,
     }
 
-    with open(PATH_LOCAL_ITEMINFO, 'w') as f:
-        f.write(json.dumps(local_storage, indent=4, cls=EnhancedJSONEncoder))
+    with open(PATH_LOCAL_ITEMINFO, "w") as f:
+        f.write(
+            json.dumps(local_storage, indent=4, cls=EnhancedJSONEncoder)
+        )
+
 
 def load_item() -> list[Item]:
-    with open(PATH_LOCAL_ITEMINFO, 'r') as f:
+    with open(PATH_LOCAL_ITEMINFO, "r") as f:
         item_info = json.load(f)
 
-    item_list = []    
+    item_list = []
     for item in item_info["items"]:
         new_item = Item(**item)
         new_item.id = int(new_item.id)
         item_list.append(new_item)
 
     return item_list
+
 
 def get_item_by_id(item_id: int) -> Item:
     itemlist = load_item()
@@ -68,8 +89,10 @@ def get_item_by_id(item_id: int) -> Item:
     logger.info(f"找不到id为{item_id}的物品")
     return None
 
+
 def is_player_has_item(pid: int, item: Item):
-    my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(pid)
     if not isinstance(my_user_info, QQUser):
         logger.info("找不到这人")
         return 0
@@ -88,13 +111,14 @@ def grant_player_item(pid: int, itemid: int, delta: int):
     """
     Currently we cannot store two items with the same id, but different state.
     """
-    if delta < 0 :
-        return 0 # 怕了还是得单写
+    if delta < 0:
+        return 0  # 怕了还是得单写
     item = get_item_by_id(itemid)
-    if item is None: 
+    if item is None:
         return 2
     logger.info(f"正在给玩家{delta}个{item.name}")
-    my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(pid)
     if not isinstance(my_user_info, QQUser):
         logger.info("找不到这人")
         return 3
@@ -109,17 +133,20 @@ def grant_player_item(pid: int, itemid: int, delta: int):
             new_item = item
             new_item.quantity = delta
             my_user_info.backpack.append(new_item)
-        QQInfoConfig.update_file(my_user_info)
+        # QQInfoConfig.update_file(my_user_info)
+        QQInfoConfig.save_user_info()
         return 1
 
+
 def remove_player_item(pid: int, itemid: int, quantity: int):
-    if quantity < 0 :
+    if quantity < 0:
         return 0
     item = get_item_by_id(itemid)
     if item is None:
         return None
     logger.info(f"正在给玩家删除{quantity}个{item.name}")
-    my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(pid, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(pid)
     if not isinstance(my_user_info, QQUser):
         logger.info("找不到这人")
         return None
@@ -132,22 +159,28 @@ def remove_player_item(pid: int, itemid: int, quantity: int):
                     if my_itm.quantity <= 0:
                         my_user_info.backpack.remove(my_itm)
             logger.info(my_user_info)
-            QQInfoConfig.update_file(my_user_info)
+            # QQInfoConfig.update_file(my_user_info)
+            QQInfoConfig.save_user_info()
         else:
             return None
 
+
 def get_backpack_brief(id: int) -> str:
-    my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(id)
     if not isinstance(my_user_info, QQUser):
         logger.info("找不到这人")
         return ""
     else:
-        logger.info(f"导入背包消息完成，群友{id}的背包内有{len(my_user_info.backpack)}种物品。")
+        logger.info(
+            f"导入背包消息完成，群友{id}的背包内有{len(my_user_info.backpack)}种物品。"
+        )
         ret = ""
         for item in my_user_info.backpack:
             logger.info(f"{item.name}, {item.quantity}")
             ret += f"{item.name}, {item.quantity}go\n"
         return ret
+
 
 def send_item_to_all_players(itemid: int, quantity: int):
     item = get_item_by_id(itemid)

@@ -26,6 +26,10 @@ from libs.helper.fashenme import (
 
 channel = Channel.current()
 
+channel.name("fashenme")
+channel.description("random fashenme")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
@@ -33,24 +37,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight([FullMatch("发什么"), "anything" @ WildcardMatch()])
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "fashenme")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(group, MessageChain(f"发什么：不配：{e}"))
-
     read_fashenme()
 
     if not anything.matched:
@@ -69,7 +64,7 @@ async def main(
                 range(get_fashenme_size()), 10
             ):
                 msg_chain += f"{get_fashenme(r_choice)}\n"
-            msg_chain += f"怎么发什么都要十连！"
+            msg_chain += "怎么发什么都要十连！"
 
             await app.send_group_message(group, MessageChain(msg_chain))
         elif to_search.isdigit():

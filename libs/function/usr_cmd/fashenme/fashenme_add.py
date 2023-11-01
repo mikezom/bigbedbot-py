@@ -26,6 +26,10 @@ from libs.helper.fashenme import (
 
 channel = Channel.current()
 
+channel.name("fashenme-add")
+channel.description("Add item to fsm database")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
@@ -33,26 +37,15 @@ channel = Channel.current()
         inline_dispatchers=[
             Twilight([FullMatch("加发"), "anything" @ WildcardMatch()])
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, anything: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "fashenme_add")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"添加发什么：不配：{e}")
-        )
-
     read_fashenme()
 
     if anything.matched:

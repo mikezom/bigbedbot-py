@@ -74,7 +74,8 @@ def reload_all_chest_rewards():
         chest_rewards.add_item(_item_)
 
 def get_chest_opened_today(id: int) -> int:
-    my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(id)
     if not isinstance(my_user_info, QQUser):
         logger.error("找不到这人")
         return -1
@@ -82,17 +83,20 @@ def get_chest_opened_today(id: int) -> int:
         return my_user_info.chest_opened_today
 
 def increment_chest_opened_today(id: int, delta: int=1):
-    my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(id)
     if not isinstance(my_user_info, QQUser):
         logger.error("找不到这人")
         return 0
     else:
         my_user_info.chest_opened_today += delta
-    QQInfoConfig.update_file(my_user_info)
+    # QQInfoConfig.update_file(my_user_info)
+    QQInfoConfig.save_user_info()
     return 1
 
 def total_p_requirement(id: int, n_chest: int, price_chest: int, bonus_threshold: int):
-    my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    # my_user_info = QQInfoConfig.load_file(id, Type_QQ.MEMBER)
+    my_user_info = QQInfoConfig.load_user_info(id)
     if not isinstance(my_user_info, QQUser):
         logger.error("找不到这人")
         return 0
@@ -107,6 +111,7 @@ def total_p_requirement(id: int, n_chest: int, price_chest: int, bonus_threshold
     return price_total
 
 def reset_chest_opened_today():
+    # TODO
     with open(USER_INFO_PATH, 'r') as f:
         user_info = json.load(f)
     

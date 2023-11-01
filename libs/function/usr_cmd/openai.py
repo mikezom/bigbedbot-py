@@ -119,9 +119,7 @@ async def main(
             else:
                 await app.send_group_message(
                     group,
-                    MessageChain(
-                        "GPT doesn't understand your question."
-                    ),
+                    MessageChain("烂了，可能需要>end清除消息记录"),
                 )
 
 
@@ -132,12 +130,14 @@ def is_end_of_chat(msg: str):
         return False
 
 
-def ask_chatGPT(prompt_msg: list, model: str = "gpt4-0613"):
-    res = openai.ChatCompletion.create(model=model, messages=prompt_msg)
+def ask_chatGPT(prompt_msg: list, model: str = "gpt-4-0613"):
     try:
+        res = openai.ChatCompletion.create(
+            model=model, messages=prompt_msg
+        )
         content = res.choices[0].message.content  # type: ignore
         return content
-    except:
+    except Exception:
         return None
 
 
@@ -148,7 +148,7 @@ def load_chat_history(qq_id: int, history_path: str):
     try:
         chat_history = openai_chat_history[str(qq_id)]
         return chat_history
-    except:
+    except Exception:
         return None
 
 

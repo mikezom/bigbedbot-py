@@ -10,14 +10,15 @@ from graia.saya.builtins.broadcast.schema import ListenerSchema
 import random
 
 from libs.control import Permission
-from libs.helper.info import *
+from libs.helper.info import QQInfoConfig
 
 channel = Channel.current()
 
 
 @channel.use(ListenerSchema(listening_events=[GroupMessage]))
 async def main(app: Ariadne, message: MessageChain, group: Group):
-    my_group_info = QQInfoConfig.load_file(group.id, Type_QQ.GROUP)
+    # my_group_info = QQInfoConfig.load_file(group.id, Type_QQ.GROUP)
+    my_group_info = QQInfoConfig.load_group_info(group.id)
     # logger.info(f"导入群信息完成，在群：{group.id} 的复读计数器为 {my_group_info.repeater_count}")
 
     if my_group_info.repeater_count > 1000:
@@ -43,4 +44,5 @@ async def main(app: Ariadne, message: MessageChain, group: Group):
     else:
         my_group_info.increment_repeater_count()
 
-    QQInfoConfig.update_file(my_group_info)
+    # QQInfoConfig.update_file(my_group_info)
+    QQInfoConfig.save_group_info()

@@ -128,7 +128,7 @@ class Permission:
     @classmethod
     def require_group_perm(cls, cmd: str, reply:bool=False):
         async def require_group_perm_deco(app: Ariadne, group: Group):
-            isTestGroup = group.id in BotConfig.Debug.groups
+            # isTestGroup = group.id in BotConfig.Debug.groups
             isAllowed = cls.get_group_permission(group, cmd)
             
             if not isAllowed:

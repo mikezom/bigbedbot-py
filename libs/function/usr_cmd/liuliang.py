@@ -107,7 +107,8 @@ async def remaining_traffic_warning(app: Ariadne):
 
     traffic_usage_delta = expected_traffic_usage - traffic_usage
 
-    my_group_info = QQInfoConfig.load_file(714870727, Type_QQ.GROUP)
+    # my_group_info = QQInfoConfig.load_file(714870727, Type_QQ.GROUP)
+    my_group_info = QQInfoConfig.load_group_info(714870727)
     global previous_traffic
     logger.info(f"previous traffic: {previous_traffic}")
     logger.info(f"current traffic: {traffic_current}")
@@ -172,7 +173,8 @@ async def remaining_traffic_warning(app: Ariadne):
         "Current threshold for group 714870727 is"
         f" {TRAFFIC_THRESHOLD[my_group_info.traffic_threshold_state]}"
     )
-    QQInfoConfig.update_file(my_group_info)
+    # QQInfoConfig.update_file(my_group_info)
+    QQInfoConfig.save_group_info()
     previous_traffic = traffic_current
 
 

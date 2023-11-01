@@ -10,7 +10,7 @@ data/play/sine.wav
 data/yecao/cookie.txt
 data/yecao/userdata.json
 data/play/taffy/
-data/avatar/result.png
+data/avatar/
 data/smzdm/
 data/group/group_info.json
 data/weather/userdata.json
@@ -21,6 +21,7 @@ data/bilibili_live_monitor/
 libs/helper/vits/
 libs/helper/MoeGoe/
 libs/helper/VITS_Paimon/
+321.gif
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

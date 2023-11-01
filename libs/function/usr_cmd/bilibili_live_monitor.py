@@ -30,11 +30,9 @@ channel.description("Monitoring bilibili lives")
 channel.author("Mikezom")
 
 
-########################################################
-# Update bilibili live info per minute
-#
 @channel.use(SchedulerSchema(timers.every_minute()))
 async def update_bili_monitor(app: Ariadne):
+    """Update bilibili live info per minute"""
     now_on_air = await update_bilibili_live_status()
     for room_id, info in now_on_air.items():
         for group_id in info["subscribed_group"]:
@@ -48,13 +46,6 @@ async def update_bili_monitor(app: Ariadne):
     logger.info("Updating bilibili information")
 
 
-#
-#
-########################################################
-
-
-########################################################
-#
 @channel.use(
     ListenerSchema(
         listening_events=[GroupMessage],
@@ -62,9 +53,9 @@ async def update_bili_monitor(app: Ariadne):
             Twilight([FullMatch("直播监控"), "anything" @ WildcardMatch()])
         ],
         decorators=[
-            Permission.require_group_perm(channel.meta['name']),
-            Permission.require_user_perm(Permission.USER)
-        ]
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
@@ -89,23 +80,21 @@ async def main(
                 )
                 if add_subscription_result == 1:
                     await app.send_group_message(
-                        group, MessageChain(f"添加频道成功")
+                        group, MessageChain("添加频道成功")
                     )
                 elif add_subscription_result == 2:
                     await app.send_group_message(
-                        group, MessageChain(f"找不到频道")
+                        group, MessageChain("找不到频道")
                     )
                 elif add_subscription_result == 3:
                     await app.send_group_message(
-                        group, MessageChain(f"该频道已经有啦")
+                        group, MessageChain("该频道已经有啦")
                     )
             else:
-                await app.send_group_message(
-                    group, MessageChain(f"没匹到")
-                )
+                await app.send_group_message(group, MessageChain("没匹到"))
         elif cmd.startswith("移除"):
             # 移除频道
-            await app.send_group_message(group, MessageChain(f"还没写"))
+            await app.send_group_message(group, MessageChain("还没写"))
         elif cmd.startswith("列表"):
             # 返回列表
             live_status = await get_subscribed_live_status_as_msg(group)

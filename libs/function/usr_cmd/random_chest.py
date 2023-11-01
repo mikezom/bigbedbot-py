@@ -21,7 +21,7 @@ from libs.helper.random_chest import (
     increment_chest_opened_today,
     total_p_requirement,
 )
-from libs.helper.rasin import change_rasin, get_rasin
+from libs.helper.rasin import change_rasin, get_rasin, require_rasin
 
 inc = create(InterruptControl)
 
@@ -42,7 +42,7 @@ COLOR_TO_CN = {
 
 DEFAULT_PRICE = 20
 BONUS_THRESHOLD = 30
-
+RASIN_PER_CHEST = 5
 
 # 开箱
 @channel.use(
@@ -52,12 +52,12 @@ BONUS_THRESHOLD = 30
         decorators=[
             Permission.require_group_perm(channel.meta["name"]),
             Permission.require_user_perm(Permission.USER),
+            require_rasin(RASIN_PER_CHEST)
         ],
     )
 )
 async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
     user_p = get_p(member.id)
-    user_rasin = get_rasin(member.id)
 
     user_chest_opened_today = get_chest_opened_today(member.id)
     if user_chest_opened_today < BONUS_THRESHOLD:
@@ -67,8 +67,6 @@ async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
 
     if user_p < user_price:
         await app.send_group_message(group, MessageChain("你没批啦！"))
-    elif user_rasin < 5:
-        await app.send_group_message(group, MessageChain("你没体力啦！"))
     else:
         increment_chest_opened_today(member.id)
         [
@@ -96,6 +94,7 @@ async def cmd_random_chest(app: Ariadne, member: Member, group: Group):
         decorators=[
             Permission.require_group_perm(channel.meta["name"]),
             Permission.require_user_perm(Permission.USER),
+            require_rasin(RASIN_PER_CHEST*10)
         ],
     )
 )
@@ -103,14 +102,11 @@ async def cmd_random_chest_times_ten(
     app: Ariadne, member: Member, group: Group
 ):
     user_p = get_p(member.id)
-    user_rasin = get_rasin(member.id)
     user_total_p_required = total_p_requirement(
         member.id, 10, DEFAULT_PRICE, BONUS_THRESHOLD
     )
     if user_p < user_total_p_required:
         await app.send_group_message(group, MessageChain("你没批啦！"))
-    elif user_rasin < 50:
-        await app.send_group_message(group, MessageChain("你没有足够多的体力！"))
     else:
         items = []
         for _ in range(10):

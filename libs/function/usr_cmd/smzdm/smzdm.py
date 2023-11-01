@@ -19,6 +19,10 @@ from libs.helper.smzdm import SMZDM
 
 channel = Channel.current()
 
+channel.name("smzdm")
+channel.description("什么值得买")
+channel.author("Mikezom")
+
 
 @channel.use(
     ListenerSchema(
@@ -28,26 +32,15 @@ channel = Channel.current()
                 [FullMatch("smzdm"), "arg" @ ParamMatch(optional=True)]
             )
         ],
+        decorators=[
+            Permission.require_group_perm(channel.meta["name"]),
+            Permission.require_user_perm(Permission.USER),
+        ],
     )
 )
 async def main(
     app: Ariadne, member: Member, group: Group, arg: RegexResult
 ):
-    try:
-        Permission.group_permission_check(group, "smzdm")
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"本群不开放此功能，错误信息：{e}")
-        )
-        raise ExecutionStop()
-
-    try:
-        Permission.user_permission_check(member, Permission.DEFAULT)
-    except Exception as e:
-        await app.send_group_message(
-            group, MessageChain(f"smzdm: 不配：{e}")
-        )
-
     if not arg.matched:
         await app.send_group_message(group, SMZDM.parse_smzdm())
     elif arg.matched:

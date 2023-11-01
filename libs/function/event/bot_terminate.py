@@ -6,6 +6,8 @@ from graia.saya import Channel
 
 from prompt_toolkit.styles import Style
 
+from libs.helper.info import QQInfoConfig
+
 channel = Channel.current()
 
 
@@ -17,5 +19,7 @@ async def stop(app: Ariadne, console: Console):
     )
     if res.lower() in ("y", "yes"):
         # Save player's information
+        QQInfoConfig.save_group_info()
+        QQInfoConfig.save_user_info()
         app.stop()
         console.stop()
