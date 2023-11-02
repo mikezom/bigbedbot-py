@@ -24,7 +24,8 @@ from libs.control import Permission
 from PIL import Image as PILImage
 from PIL.Image import Image as PILImageType
 from PIL import ImageSequence, ImageOps
-import requests
+
+# import requests
 import aiohttp
 from io import BytesIO
 import time
@@ -176,7 +177,7 @@ class ImgProcess:
     ) -> Tuple[PILImageType, dict]:
         """If the image is a GIF, create an its thumbnail here."""
         save_kwargs = dict()
-        new_images: List[Image] = []
+        new_images: List[PILImageType] = []
 
         for frame in images:
             thumbnail = frame.copy()  # type: Image
@@ -232,14 +233,14 @@ class ImgProcess:
 
         @classmethod
         def process_gif_img(
-            cls, img: PILImageType
+            cls, img: PILImageType, *args
         ) -> tuple[list[int], list[PILImageType]]:
             """Process a gif image"""
             duration = []
             sequence = []
             for i in ImageSequence.Iterator(img):
                 duration.append(i.info["duration"])
-                new_i = cls.process_static_img(i)
+                new_i = cls.process_static_img(i, *args)
                 sequence.append(new_i)
             return duration, sequence
 
@@ -275,15 +276,19 @@ class ImgProcess:
             """Save and export the path of a gif image"""
             if len(path) == 0:
                 path = cls.generate_default_filename("GIF")
-            # img_seq[0].save(
-            #     path,
-            #     save_all=True,
-            #     append_images=img_seq[1:],
-            #     loop=0,
-            #     duration=dur_seq,
-            # )
             ImgProcess.save_transparent_gif(img_seq, dur_seq, path)
             return path
+
+    @classmethod
+    def is_all_ratio_valid(cls, *args):
+        for arg in args:
+            if not isinstance(arg, float):
+                return False
+            if arg < 0.0 or arg > 1.0:
+                return False
+        if len(args) != len(set(args)):
+            return False
+        return True
 
     class ImgReverseFactory(AbsImgProcessFactory):
         @classmethod
@@ -313,46 +318,68 @@ class ImgProcess:
 
     class ImgLeftMirrorFactory(AbsImgProcessFactory):
         @classmethod
-        def process_static_img(cls, img: PILImageType,
-                                slice_r_ratio: float = 0.5,
-                                slice_l_ratio: float = 0.0) -> PILImageType:
+        def process_static_img(
+            cls,
+            img: PILImageType,
+            slice_r_ratio: float = 0.5,
+            slice_l_ratio: float = 0.0,
+        ) -> PILImageType:
+            if not ImgProcess.is_all_ratio_valid(
+                slice_l_ratio, slice_r_ratio
+            ):
+                raise ValueError
+
             if slice_l_ratio > slice_r_ratio:
-                slice_l_ratio, slice_r_ratio = slice_r_ratio, slice_l_ratio
+                slice_l_ratio, slice_r_ratio = (
+                    slice_r_ratio,
+                    slice_l_ratio,
+                )
             width, height = img.size
             l = round(slice_l_ratio * width)
             r = round(slice_r_ratio * width)
-            # if l == r:
-            #   raise
+            if l <= 0 or r <= 0:
+                raise ValueError
 
             l_half = img.crop((l, 0, r, height))
             r_half = ImageOps.mirror(l_half)
             new_img = PILImage.new(
-                "RGBA", ((r-l) * 2, height), (255, 255, 255, 0)
+                "RGBA", ((r - l) * 2, height), (255, 255, 255, 0)
             )
             new_img.paste(l_half, (0, 0))
-            new_img.paste(r_half, (r-l, 0))
+            new_img.paste(r_half, (r - l, 0))
             return new_img
 
     class ImgRightMirrorFactory(AbsImgProcessFactory):
         @classmethod
-        def process_static_img(cls, img: PILImageType, 
-                                slice_l_ratio: float = 0.5,
-                                slice_r_ratio: float = 1.0) -> PILImageType:
+        def process_static_img(
+            cls,
+            img: PILImageType,
+            slice_l_ratio: float = 0.5,
+            slice_r_ratio: float = 1.0,
+        ) -> PILImageType:
+            if not ImgProcess.is_all_ratio_valid(
+                slice_l_ratio, slice_r_ratio
+            ):
+                raise ValueError
+
             if slice_l_ratio > slice_r_ratio:
-                slice_l_ratio, slice_r_ratio = slice_r_ratio, slice_l_ratio
+                slice_l_ratio, slice_r_ratio = (
+                    slice_r_ratio,
+                    slice_l_ratio,
+                )
             width, height = img.size
             l = round(slice_l_ratio * width)
             r = round(slice_r_ratio * width)
-            # if l == r:
-            #   raise
+            if l <= 0 or r <= 0:
+                raise ValueError
 
             r_half = img.crop((l, 0, r, height))
             l_half = ImageOps.mirror(r_half)
             new_img = PILImage.new(
-                "RGBA", ((r-l) * 2, height), (255, 255, 255, 0)
+                "RGBA", ((r - l) * 2, height), (255, 255, 255, 0)
             )
             new_img.paste(l_half, (0, 0))
-            new_img.paste(r_half, (r-l, 0))
+            new_img.paste(r_half, (r - l, 0))
             return new_img
 
     class ImgCompressFactory(AbsImgProcessFactory):
@@ -385,28 +412,30 @@ class ImgProcess:
         ImgMirrorFactory: [],
         ImgLeftMirrorFactory: [float, float],
         ImgRightMirrorFactory: [float, float],
-        ImgCompressFactory: []
+        ImgCompressFactory: [],
     }
 
     @classmethod
-    def process_image(cls, img: PILImageType, 
-                      op: str, 
-                      args_str: str) -> str:
+    def process_image(
+        cls, img: PILImageType, op: str, args_str: str
+    ) -> str:
         if op not in cls.factory_name_dict.keys():
             raise NotImplementedError(f"No Such Image Operation {op}")
         img_process_factory = cls.factory_name_dict[op]
 
-        args_str = args_str.strip().split()
+        args_strs = args_str.strip().split()
         args_list = cls.factory_optional_args[img_process_factory]
         args = []
         for idx, type in enumerate(args_list):
             try:
-                args.append(type(args_str[idx]))
-            except:
+                args.append(type(args_strs[idx]))
+            except Exception:
                 continue
-        
+
         if not img.format == "GIF":
-            processed_img = img_process_factory.process_static_img(img, *args)
+            processed_img = img_process_factory.process_static_img(
+                img, *args
+            )
             file_path = cls.ImgExport.export_static_img(processed_img)
         else:
             dur, seq = img_process_factory.process_gif_img(img, *args)
@@ -441,7 +470,7 @@ channel.author("Mikezom")
             Twilight(
                 FullMatch("/").space(SpacePolicy.NOSPACE),
                 "op" @ ParamMatch().space(SpacePolicy.PRESERVE),
-                "optional_args" @ WildcardMatch(),
+                "optional_args_regexresult" @ WildcardMatch(),
             )
         ],
     )
@@ -452,12 +481,15 @@ async def img_process(
     group: Group,
     message: MessageChain,
     op: RegexResult,
-    optional_args: RegexResult
+    optional_args_regexresult: RegexResult,
 ):
     if not op.matched:
         await app.send_group_message(group, MessageChain("请重新输入指令"))
         raise ExecutionStop
-    operation = ImgProcess.get_operation(op.result.display.strip())
+    if op.result is None:
+        operation = ""
+    else:
+        operation = ImgProcess.get_operation(op.result.display.strip())
     logger.info(f"The opertion is {operation}")
     if operation == "":
         # await app.send_group_message(group, MessageChain("您输入的指令暂不支持哦"))
@@ -489,11 +521,20 @@ async def img_process(
         async with session.get(target_img_url) as response:
             img_data = await response.read()
     target_img = PILImage.open(BytesIO(img_data))
-    path_after_process = ImgProcess.process_image(
-        target_img, 
-        operation, 
-        optional_args
-    )
+    if optional_args_regexresult.result is None:
+        optional_args = ""
+    else:
+        optional_args = optional_args_regexresult.result.display
+    try:
+        path_after_process = ImgProcess.process_image(
+            target_img, operation, optional_args
+        )
+    except ValueError:
+        await app.send_group_message(
+            group,
+            MessageChain("数值不对啊，重新填吧！"),
+        )
+        raise ExecutionStop
 
     await app.send_group_message(
         group,
