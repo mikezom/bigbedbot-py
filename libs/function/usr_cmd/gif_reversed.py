@@ -313,34 +313,46 @@ class ImgProcess:
 
     class ImgLeftMirrorFactory(AbsImgProcessFactory):
         @classmethod
-        def process_static_img(cls, img: PILImageType) -> PILImageType:
-            img_org = img.copy()
-            img_mirrored = ImageOps.mirror(img.copy())
+        def process_static_img(cls, img: PILImageType,
+                                slice_r_ratio: float = 0.5,
+                                slice_l_ratio: float = 0.0) -> PILImageType:
+            if slice_l_ratio > slice_r_ratio:
+                slice_l_ratio, slice_r_ratio = slice_r_ratio, slice_l_ratio
             width, height = img.size
-            img_org = img_org.crop((0, 0, width // 2, height))
-            img_mirrored = img_mirrored.crop(
-                (width // 2, 0, width, height)
-            )
+            l = round(slice_l_ratio * width)
+            r = round(slice_r_ratio * width)
+            # if l == r:
+            #   raise
+
+            l_half = img.crop((l, 0, r, height))
+            r_half = ImageOps.mirror(l_half)
             new_img = PILImage.new(
-                "RGBA", (width, height), (255, 255, 255, 0)
+                "RGBA", ((r-l) * 2, height), (255, 255, 255, 0)
             )
-            new_img.paste(img_org, (0, 0))
-            new_img.paste(img_mirrored, (width // 2, 0))
+            new_img.paste(l_half, (0, 0))
+            new_img.paste(r_half, (r-l, 0))
             return new_img
 
     class ImgRightMirrorFactory(AbsImgProcessFactory):
         @classmethod
-        def process_static_img(cls, img: PILImageType) -> PILImageType:
-            img_org = img.copy()
-            img_mirrored = ImageOps.mirror(img.copy())
+        def process_static_img(cls, img: PILImageType, 
+                                slice_l_ratio: float = 0.5,
+                                slice_r_ratio: float = 1.0) -> PILImageType:
+            if slice_l_ratio > slice_r_ratio:
+                slice_l_ratio, slice_r_ratio = slice_r_ratio, slice_l_ratio
             width, height = img.size
-            img_org = img_org.crop((width // 2, 0, width, height))
-            img_mirrored = img_mirrored.crop((0, 0, width // 2, height))
+            l = round(slice_l_ratio * width)
+            r = round(slice_r_ratio * width)
+            # if l == r:
+            #   raise
+
+            r_half = img.crop((l, 0, r, height))
+            l_half = ImageOps.mirror(r_half)
             new_img = PILImage.new(
-                "RGBA", (width, height), (255, 255, 255, 0)
+                "RGBA", ((r-l) * 2, height), (255, 255, 255, 0)
             )
-            new_img.paste(img_mirrored, (0, 0))
-            new_img.paste(img_org, (width // 2, 0))
+            new_img.paste(l_half, (0, 0))
+            new_img.paste(r_half, (r-l, 0))
             return new_img
 
     class ImgCompressFactory(AbsImgProcessFactory):
@@ -368,16 +380,36 @@ class ImgProcess:
         "小": ImgCompressFactory,
     }
 
+    factory_optional_args = {
+        ImgReverseFactory: [],
+        ImgMirrorFactory: [],
+        ImgLeftMirrorFactory: [float, float],
+        ImgRightMirrorFactory: [float, float],
+        ImgCompressFactory: []
+    }
+
     @classmethod
-    def process_image(cls, img: PILImageType, op: str) -> str:
+    def process_image(cls, img: PILImageType, 
+                      op: str, 
+                      args_str: str) -> str:
         if op not in cls.factory_name_dict.keys():
             raise NotImplementedError(f"No Such Image Operation {op}")
         img_process_factory = cls.factory_name_dict[op]
+
+        args_str = args_str.strip().split()
+        args_list = cls.factory_optional_args[img_process_factory]
+        args = []
+        for idx, type in enumerate(args_list):
+            try:
+                args.append(type(args_str[idx]))
+            except:
+                continue
+        
         if not img.format == "GIF":
-            processed_img = img_process_factory.process_static_img(img)
+            processed_img = img_process_factory.process_static_img(img, *args)
             file_path = cls.ImgExport.export_static_img(processed_img)
         else:
-            dur, seq = img_process_factory.process_gif_img(img)
+            dur, seq = img_process_factory.process_gif_img(img, *args)
             file_path = cls.ImgExport.export_gif_img(seq, dur)
         return file_path
 
@@ -409,7 +441,7 @@ channel.author("Mikezom")
             Twilight(
                 FullMatch("/").space(SpacePolicy.NOSPACE),
                 "op" @ ParamMatch().space(SpacePolicy.PRESERVE),
-                "any" @ WildcardMatch(),
+                "optional_args" @ WildcardMatch(),
             )
         ],
     )
@@ -420,6 +452,7 @@ async def img_process(
     group: Group,
     message: MessageChain,
     op: RegexResult,
+    optional_args: RegexResult
 ):
     if not op.matched:
         await app.send_group_message(group, MessageChain("请重新输入指令"))
@@ -456,7 +489,11 @@ async def img_process(
         async with session.get(target_img_url) as response:
             img_data = await response.read()
     target_img = PILImage.open(BytesIO(img_data))
-    path_after_process = ImgProcess.process_image(target_img, operation)
+    path_after_process = ImgProcess.process_image(
+        target_img, 
+        operation, 
+        optional_args
+    )
 
     await app.send_group_message(
         group,
