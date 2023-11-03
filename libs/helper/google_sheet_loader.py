@@ -47,7 +47,7 @@ def load_sheet(target: str = 'item'):
         values = result.get('values', [])
 
         result_variable_names = sheet.values().get(spreadsheetId=ITEM_SPREADSHEET_ID,
-                                                   range=f"{target}!1:1").execute()
+                                                range=f"{target}!1:1").execute()
         values_variable_names = result_variable_names.get('values', [])
 
         if not values or not values_variable_names:

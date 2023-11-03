@@ -16,7 +16,9 @@ from graia.ariadne.message.parser.twilight import (
     RegexResult,
     SpacePolicy,
     WildcardMatch,
+    RegexMatch,
     ParamMatch,
+    ElementMatch,
 )
 
 from libs.control import Permission
@@ -337,7 +339,7 @@ class ImgProcess:
             width, height = img.size
             l = round(slice_l_ratio * width)
             r = round(slice_r_ratio * width)
-            if l <= 0 or r <= 0:
+            if abs(l - r) <= 0:
                 raise ValueError
 
             l_half = img.crop((l, 0, r, height))
@@ -370,7 +372,7 @@ class ImgProcess:
             width, height = img.size
             l = round(slice_l_ratio * width)
             r = round(slice_r_ratio * width)
-            if l <= 0 or r <= 0:
+            if abs(l - r) <= 0:
                 raise ValueError
 
             r_half = img.crop((l, 0, r, height))
@@ -470,7 +472,11 @@ channel.author("Mikezom")
             Twilight(
                 FullMatch("/").space(SpacePolicy.NOSPACE),
                 "op" @ ParamMatch().space(SpacePolicy.PRESERVE),
-                "optional_args_regexresult" @ WildcardMatch(),
+                "optional_args_regexresult"
+                @ RegexMatch(r"((\d+.?\d*) ?)+", optional=True).space(
+                    SpacePolicy.PRESERVE
+                ),
+                "tgt_img" @ ElementMatch(Image, optional=True),
             )
         ],
     )
