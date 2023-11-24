@@ -401,12 +401,28 @@ class ImgProcess:
             new_img = img.copy().resize(new_size)
             return new_img
 
+    class ImgWideFactory(AbsImgProcessFactory):
+        @classmethod
+        def process_static_img(
+            cls,
+            img: PILImageType,
+            widen_ratio: float = 2.0,
+        ) -> PILImageType:
+            width, height = img.size
+            new_img = img.copy().transform(
+                (int(width * widen_ratio), height),
+                PILImage.EXTENT,
+                data=[0, 0, width, height],
+            )
+            return new_img
+
     factory_name_dict = {
         "倒放": ImgReverseFactory,
         "镜像": ImgMirrorFactory,
         "左镜像": ImgLeftMirrorFactory,
         "右镜像": ImgRightMirrorFactory,
         "小": ImgCompressFactory,
+        "wide": ImgWideFactory,
     }
 
     factory_optional_args = {
@@ -415,6 +431,7 @@ class ImgProcess:
         ImgLeftMirrorFactory: [float, float],
         ImgRightMirrorFactory: [float, float],
         ImgCompressFactory: [],
+        ImgWideFactory: [float],
     }
 
     @classmethod
@@ -474,6 +491,10 @@ channel.author("Mikezom")
                 "op" @ ParamMatch().space(SpacePolicy.PRESERVE),
                 "optional_args_regexresult"
                 @ RegexMatch(r"((\d+.?\d*) ?)+", optional=True).space(
+                    SpacePolicy.PRESERVE
+                ),
+                "possible_enter"
+                @ RegexMatch(r"(\n?)", optional=True).space(
                     SpacePolicy.PRESERVE
                 ),
                 "tgt_img" @ ElementMatch(Image, optional=True),

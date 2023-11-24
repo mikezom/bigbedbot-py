@@ -3,8 +3,6 @@ from graia.ariadne.app import Ariadne
 from graia.ariadne.model import Group, Member
 from graia.ariadne.message.chain import MessageChain
 from graia.ariadne.event.message import GroupMessage
-from graia.ariadne.util.interrupt import FunctionWaiter
-from graia.broadcast.exceptions import ExecutionStop
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
@@ -23,6 +21,7 @@ from loguru import logger
 
 TIMEOUT = 60 * 30
 HISTORY_PATH = "data/openAI/chat_history.json"
+DEFAULT_MODEL = "gpt-4-1106-preview"
 
 
 def get_openai_api_key(path: str):
@@ -32,7 +31,6 @@ def get_openai_api_key(path: str):
 
 
 openai.organization = ""
-openai.api_base = "https://api.nova-oss.com/v1"
 openai.api_key = get_openai_api_key("data/openAI/userinfo.json")
 
 channel = Channel.current()
@@ -130,15 +128,17 @@ def is_end_of_chat(msg: str):
         return False
 
 
-def ask_chatGPT(prompt_msg: list, model: str = "gpt-4-0613"):
-    try:
-        res = openai.ChatCompletion.create(
-            model=model, messages=prompt_msg
-        )
-        content = res.choices[0].message.content  # type: ignore
-        return content
-    except Exception:
-        return None
+def ask_chatGPT(prompt_msg: list, model: str = DEFAULT_MODEL):
+    for _ in range(10):
+        try:
+            res = openai.ChatCompletion.create(
+                model=model, messages=prompt_msg
+            )
+            content = res.choices[0].message.content
+            return content
+        except Exception as e:
+            logger.error(e)
+    return None
 
 
 def load_chat_history(qq_id: int, history_path: str):

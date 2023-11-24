@@ -43,20 +43,17 @@ channel.description("一个搜索导师信息的插件")
                     UnionMatch("aminer"),
                     ArgumentMatch(
                         "-person", action="store_true", optional=True
-                    )
-                    @ "person",
+                    ) @ "person",
                     ArgumentMatch(
                         "-article",
                         "-a",
                         "-paper",
                         action="store_true",
                         optional=True,
-                    )
-                    @ "article",
+                    ) @ "article",
                     ArgumentMatch(
                         "-patent", action="store_true", optional=True
-                    )
-                    @ "patent",
+                    ) @ "patent",
                     WildcardMatch() @ "keyword",
                 ]
             )
