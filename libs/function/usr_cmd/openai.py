@@ -1,8 +1,8 @@
 from graia.saya import Channel
 from graia.ariadne.app import Ariadne
-from graia.ariadne.model import Group, Member
+from graia.ariadne.model import Group, Member, Friend
 from graia.ariadne.message.chain import MessageChain
-from graia.ariadne.event.message import GroupMessage
+from graia.ariadne.event.message import GroupMessage, FriendMessage
 from graia.saya.builtins.broadcast.schema import ListenerSchema
 from graia.ariadne.message.parser.twilight import (
     Twilight,
@@ -120,6 +120,80 @@ async def main(
                     MessageChain("烂了，可能需要>end清除消息记录"),
                 )
 
+@channel.use(
+    ListenerSchema(
+        listening_events=[FriendMessage],
+        inline_dispatchers=[
+            Twilight([FullMatch(">"), "anything" @ WildcardMatch()])
+        ],
+    )
+)
+async def friend_msg(
+    app: Ariadne,
+    friend: Friend,
+    anything: RegexResult,
+    message: FriendMessage,
+):
+    if not anything.matched or anything.result is None:
+        await app.send_friend_message(friend, MessageChain("你问啥呢"))
+    else:
+        prompt_msg = anything.result.display.strip()
+
+        if is_end_of_chat(prompt_msg):
+            clear_chat_history(friend.id, HISTORY_PATH)
+            await app.send_friend_message(
+                friend, MessageChain("End of This Conversation")
+            )
+        else:
+            message_bundle = []
+            chat_history = load_chat_history(friend.id, HISTORY_PATH)
+
+            if chat_history is None or chat_history == {}:
+                clear_chat_history(friend.id, HISTORY_PATH)
+                message_bundle = [
+                    {"role": "user", "content": prompt_msg}
+                ]
+            else:
+                history_time, history_chat = (
+                    float(chat_history["time"]),
+                    chat_history["chat"],
+                )
+                if (
+                    is_timeout(history_time)
+                    or history_chat is None
+                    or len(history_chat) == 0
+                ):
+                    clear_chat_history(friend.id, HISTORY_PATH)
+                    message_bundle = [
+                        {"role": "user", "content": prompt_msg}
+                    ]
+                else:
+                    message_bundle = chat_history["chat"]
+                    message_bundle.append(
+                        {"role": "user", "content": prompt_msg}
+                    )
+
+            logger.info(f"问问 {message_bundle}")
+
+            gpt_msg_ret = await asyncio.to_thread(
+                ask_chatGPT, message_bundle
+            )
+
+            if gpt_msg_ret is not None:
+                message_bundle.append(
+                    {"role": "assistant", "content": gpt_msg_ret}
+                )
+                save_chat_history(
+                    friend.id, HISTORY_PATH, message_bundle
+                )
+                await app.send_friend_message(
+                    friend, MessageChain(gpt_msg_ret), quote=message.id
+                )
+            else:
+                await app.send_friend_message(
+                    friend,
+                    MessageChain("烂了，可能需要>end清除消息记录"),
+                )
 
 def is_end_of_chat(msg: str):
     if msg.lower() == "end of chat" or msg.lower() == "end":
